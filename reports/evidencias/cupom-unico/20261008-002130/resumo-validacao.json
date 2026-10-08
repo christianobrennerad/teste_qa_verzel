@@ -1,0 +1,238 @@
+{
+  "resultado": "Aprovado para a prevenção de reaplicação pela interface",
+  "segunda_aplicacao_interface_enviada": false,
+  "motivo": "Campo e botão de aplicar cupom ausentes após aplicação; cupom não removido",
+  "antes": {
+    "cupom": "Cupom BEMVINDO10 aplicado.",
+    "cupomAplicadoCount": 1,
+    "removerCount": 1,
+    "campoCount": 0,
+    "aplicarCount": 0,
+    "requisicoesCalculo": 3,
+    "valores": {
+      "subtotal": "R$ 100,00",
+      "desconto": "- R$ 10,00",
+      "frete": "R$ 19,90",
+      "total": "R$ 109,90"
+    }
+  },
+  "depois": {
+    "cupom": "Cupom BEMVINDO10 aplicado.",
+    "cupomAplicadoCount": 1,
+    "removerCount": 1,
+    "campoCount": 0,
+    "aplicarCount": 0,
+    "requisicoesCalculo": 3,
+    "valores": {
+      "subtotal": "R$ 100,00",
+      "desconto": "- R$ 10,00",
+      "frete": "R$ 19,90",
+      "total": "R$ 109,90"
+    }
+  },
+  "interface": {
+    "data": "2026-10-08 00:21:37 (America/Fortaleza)",
+    "tls": "Verificação TLS ativa",
+    "etapas": [
+      "Abrir loja em contexto novo",
+      "Preparar 1 unidade de P005, sem cupom",
+      "Aplicar BEMVINDO10 pela primeira vez",
+      "Reaplicação impedida pelo fluxo da interface: não há campo nem botão Aplicar cupom após a primeira aplicação; cupom atual não foi removido"
+    ],
+    "verificacoes": [
+      {
+        "verificacao": "Estado inicial do cupom",
+        "esperado": 1,
+        "encontrado": 1,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Quantidade de cupons após tentativa",
+        "esperado": 1,
+        "encontrado": 1,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Cupom mantido",
+        "esperado": "Cupom BEMVINDO10 aplicado.",
+        "encontrado": "Cupom BEMVINDO10 aplicado.",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Desconto inicial",
+        "esperado": "- R$ 10,00",
+        "encontrado": "- R$ 10,00",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Total inicial",
+        "esperado": "R$ 109,90",
+        "encontrado": "R$ 109,90",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Desconto após tentativa",
+        "esperado": "- R$ 10,00",
+        "encontrado": "- R$ 10,00",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Total após tentativa",
+        "esperado": "R$ 109,90",
+        "encontrado": "R$ 109,90",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Frete após tentativa",
+        "esperado": "R$ 19,90",
+        "encontrado": "R$ 19,90",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Controles de reaplicação ausentes",
+        "esperado": {
+          "campo": 0,
+          "botao": 0
+        },
+        "encontrado": {
+          "campo": 0,
+          "botao": 0
+        },
+        "resultado": "Aprovado"
+      }
+    ],
+    "tentativa": "Reaplicação impedida pelo fluxo da interface: não há campo nem botão Aplicar cupom após a primeira aplicação; cupom atual não foi removido",
+    "resultado": "Aprovado"
+  },
+  "consultas_api": [
+    {
+      "data": "2026-10-08T00:21:30-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"BEMVINDO10\"}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status",
+          "esperado": "200",
+          "encontrado": "200",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cupom único",
+          "esperado": "BEMVINDO10 aplicado",
+          "encontrado": {
+            "codigo": "BEMVINDO10",
+            "aplicado": true,
+            "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+          },
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "subtotal",
+          "esperado": 100,
+          "encontrado": 100,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "desconto",
+          "esperado": 10,
+          "encontrado": 10,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "frete",
+          "esperado": 19.9,
+          "encontrado": 19.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "total",
+          "esperado": 109.9,
+          "encontrado": 109.9,
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-08T00:21:30-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"BEMVINDO10\"}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status",
+          "esperado": "200",
+          "encontrado": "200",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cupom único",
+          "esperado": "BEMVINDO10 aplicado",
+          "encontrado": {
+            "codigo": "BEMVINDO10",
+            "aplicado": true,
+            "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+          },
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "subtotal",
+          "esperado": 100,
+          "encontrado": 100,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "desconto",
+          "esperado": 10,
+          "encontrado": 10,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "frete",
+          "esperado": 19.9,
+          "encontrado": 19.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "total",
+          "esperado": 109.9,
+          "encontrado": 109.9,
+          "resultado": "Aprovado"
+        }
+      ]
+    }
+  ],
+  "limite_api": "Duas consultas independentes de cálculo; API sem estado. Não simulam duas aplicações acumuladas no navegador."
+}

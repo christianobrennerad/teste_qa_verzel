@@ -1,0 +1,14 @@
+{
+  "cupom": "Cupom BEMVINDO10 aplicado.",
+  "cupomAplicadoCount": 1,
+  "removerCount": 1,
+  "campoCount": 0,
+  "aplicarCount": 0,
+  "requisicoesCalculo": 3,
+  "valores": {
+    "subtotal": "R$ 100,00",
+    "desconto": "- R$ 10,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 109,90"
+  }
+}
