@@ -1,0 +1,24 @@
+{
+  "status": 200,
+  "itens": [
+    {
+      "produtoId": "P002",
+      "nome": "Calça Jeans Slim",
+      "precoUnitario": 139.9,
+      "quantidade": 1,
+      "total": 139.9
+    },
+    {
+      "produtoId": "P004",
+      "nome": "Boné Aba Curva",
+      "precoUnitario": 49.9,
+      "quantidade": 2,
+      "total": 99.8
+    }
+  ],
+  "cupom": {
+    "codigo": "BEMVINDO10",
+    "aplicado": true,
+    "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+  }
+}

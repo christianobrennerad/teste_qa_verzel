@@ -1,0 +1,136 @@
+{
+  "inicio": "2026-10-08T01:19:15-03:00",
+  "fim": "2026-10-08T01:19:15-03:00",
+  "timezone": "America/Fortaleza",
+  "ambiente": "https://verzel-store.qa-test-verzel-store.workers.dev",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"itens\":[{\"produtoId\":\"P002\",\"quantidade\":1},{\"produtoId\":\"P004\",\"quantidade\":2}],\"cupom\":\"BEMVINDO10\"}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "json_parse_error": null,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "esperado": 200,
+      "encontrado": "200",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Corpo JSON válido e objeto",
+      "esperado": "Objeto JSON",
+      "encontrado": "dict",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Quantidade de itens na resposta",
+      "esperado": 2,
+      "encontrado": 2,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P002: ocorrência única",
+      "esperado": 1,
+      "encontrado": 1,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P002.produtoId",
+      "esperado": "P002",
+      "encontrado": "P002",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P002.nome",
+      "esperado": "Calça Jeans Slim",
+      "encontrado": "Calça Jeans Slim",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P002.precoUnitario",
+      "esperado": 139.9,
+      "encontrado": 139.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P002.quantidade",
+      "esperado": 1,
+      "encontrado": 1,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P002.total",
+      "esperado": 139.9,
+      "encontrado": 139.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P004: ocorrência única",
+      "esperado": 1,
+      "encontrado": 1,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P004.produtoId",
+      "esperado": "P004",
+      "encontrado": "P004",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P004.nome",
+      "esperado": "Boné Aba Curva",
+      "encontrado": "Boné Aba Curva",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P004.precoUnitario",
+      "esperado": 49.9,
+      "encontrado": 49.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P004.quantidade",
+      "esperado": 2,
+      "encontrado": 2,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P004.total",
+      "esperado": 99.8,
+      "encontrado": 99.8,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "cupom.codigo",
+      "esperado": "BEMVINDO10",
+      "encontrado": "BEMVINDO10",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "cupom.aplicado",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "cupom.mensagem",
+      "esperado": "Cupom aplicado: 10% de desconto nos produtos.",
+      "encontrado": "Cupom aplicado: 10% de desconto nos produtos.",
+      "resultado": "Aprovado"
+    }
+  ]
+}
