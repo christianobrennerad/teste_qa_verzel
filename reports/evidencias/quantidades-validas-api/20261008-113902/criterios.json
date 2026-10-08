@@ -1,0 +1,39 @@
+{
+  "cliente": {
+    "nome": "Cliente Teste",
+    "email": "qa@example.com",
+    "cep": "01310-100"
+  },
+  "produtoId": "P008",
+  "precoUnitario": 50,
+  "casos": [
+    {
+      "pasta": "01-calculo-uma-unidade",
+      "endpoint": "/api/carrinho/calcular",
+      "quantidade": 1,
+      "status": 200,
+      "subtotal": 50
+    },
+    {
+      "pasta": "02-calculo-cinco-unidades",
+      "endpoint": "/api/carrinho/calcular",
+      "quantidade": 5,
+      "status": 200,
+      "subtotal": 250
+    },
+    {
+      "pasta": "03-pedido-uma-unidade",
+      "endpoint": "/api/pedidos",
+      "quantidade": 1,
+      "status": 201,
+      "subtotal": 50
+    },
+    {
+      "pasta": "04-pedido-cinco-unidades",
+      "endpoint": "/api/pedidos",
+      "quantidade": 5,
+      "status": 201,
+      "subtotal": 250
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 14:39:02 GMT
+server: envoy
+
+HTTP/2 201 
+date: Thu, 08 Oct 2026 14:39:03 GMT
+content-type: application/json; charset=utf-8
+content-length: 362
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1MZfXUTavzZFKRa%2BDeTzK6pw51zm6hhq28ppOjxzt3yRKfgB%2BWyH0JVgSQ1RqigZXEnb286%2F2oNF3DeI%2F0mlhTbedxF9E67z7Fcs2%2B89P2Ic%2BBBjHMhzmd1mOvpfpCWfVkY9ZceMUiX0EiUmC6iHtVv%2FGS5r0jmhNHG9J4l1wQc%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a475e48c8b979604-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 26
+
+{"numero":"VZ-655301","criadoEm":"2026-10-08T14:39:03.135Z","cliente":{"nome":"Cliente Teste","email":"qa@example.com","cep":"01310100"},"itens":[{"produtoId":"P008","nome":"Garrafa Térmica 750ml","precoUnitario":50,"quantidade":1,"total":50}],"subtotal":50,"desconto":0,"frete":19.9,"freteGratis":false,"valorFaltanteFreteGratis":150,"total":69.9,"cupom":null}
+CURL_HTTP_STATUS:201

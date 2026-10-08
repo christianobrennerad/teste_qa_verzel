@@ -1,0 +1,264 @@
+{
+  "inicio": "2026-10-08T11:39:02-03:00",
+  "fim": "2026-10-08T11:39:04-03:00",
+  "timezone": "America/Fortaleza",
+  "resultado": "Aprovado",
+  "casos": [
+    {
+      "pasta": "01-calculo-uma-unidade",
+      "endpoint": "/api/carrinho/calcular",
+      "quantidade": 1,
+      "inicio": "2026-10-08T11:39:02-03:00",
+      "fim": "2026-10-08T11:39:02-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 200,
+          "encontrado": "200",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Subtotal",
+          "esperado": 50,
+          "encontrado": 50,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Produto e quantidade retornados",
+          "esperado": {
+            "produtoId": "P008",
+            "quantidade": 1
+          },
+          "encontrado": [
+            {
+              "produtoId": "P008",
+              "nome": "Garrafa Térmica 750ml",
+              "precoUnitario": 50,
+              "quantidade": 1,
+              "total": 50
+            }
+          ],
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "02-calculo-cinco-unidades",
+      "endpoint": "/api/carrinho/calcular",
+      "quantidade": 5,
+      "inicio": "2026-10-08T11:39:02-03:00",
+      "fim": "2026-10-08T11:39:02-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":5}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 200,
+          "encontrado": "200",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Subtotal",
+          "esperado": 250,
+          "encontrado": 250,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Produto e quantidade retornados",
+          "esperado": {
+            "produtoId": "P008",
+            "quantidade": 5
+          },
+          "encontrado": [
+            {
+              "produtoId": "P008",
+              "nome": "Garrafa Térmica 750ml",
+              "precoUnitario": 50,
+              "quantidade": 5,
+              "total": 250
+            }
+          ],
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "03-pedido-uma-unidade",
+      "endpoint": "/api/pedidos",
+      "quantidade": 1,
+      "inicio": "2026-10-08T11:39:02-03:00",
+      "fim": "2026-10-08T11:39:03-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 201,
+          "encontrado": "201",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Subtotal",
+          "esperado": 50,
+          "encontrado": 50,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Produto e quantidade retornados",
+          "esperado": {
+            "produtoId": "P008",
+            "quantidade": 1
+          },
+          "encontrado": [
+            {
+              "produtoId": "P008",
+              "nome": "Garrafa Térmica 750ml",
+              "precoUnitario": 50,
+              "quantidade": 1,
+              "total": 50
+            }
+          ],
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "04-pedido-cinco-unidades",
+      "endpoint": "/api/pedidos",
+      "quantidade": 5,
+      "inicio": "2026-10-08T11:39:03-03:00",
+      "fim": "2026-10-08T11:39:04-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":5}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 201,
+          "encontrado": "201",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Subtotal",
+          "esperado": 250,
+          "encontrado": 250,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Produto e quantidade retornados",
+          "esperado": {
+            "produtoId": "P008",
+            "quantidade": 5
+          },
+          "encontrado": [
+            {
+              "produtoId": "P008",
+              "nome": "Garrafa Térmica 750ml",
+              "precoUnitario": 50,
+              "quantidade": 5,
+              "total": 250
+            }
+          ],
+          "resultado": "Aprovado"
+        }
+      ]
+    }
+  ]
+}
