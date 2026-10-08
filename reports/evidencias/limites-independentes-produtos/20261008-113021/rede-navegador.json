@@ -1,0 +1,272 @@
+[
+  {
+    "inicio": "2026-10-08T14:30:28.268Z",
+    "fim": "2026-10-08T14:30:28.329Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":1}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d7faeef567ac-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:28 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jeLiJvLSGh4UIopNJsC7NSGVptKAl%2BP8zxNA%2BAOvFboKvunbnkyOxjhxKbqThDDTLMk4JB7WNhq3KeMhUsY7U6I09s%2Fiw1Yxbrq8GrYgEQKUgp798q2l6fcASpc0RYxE9TWV8aacfkwS8LQyF1bpbT09M6PbxlW%2FoV49EnBBa3c%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "19",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":1,\"total\":50}],\"subtotal\":50,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":150,\"total\":69.9,\"cupom\":null}"
+  },
+  {
+    "inicio": "2026-10-08T14:30:28.380Z",
+    "fim": "2026-10-08T14:30:28.442Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":2}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d7fb99c93ec8-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:28 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=evG2%2FiqZEv2N3JgwFvEwqj4gFqLgaIaKod24mC3vpk%2F3zjL0xpwxkLUmgljltIDnsBiQfkDeQOvF8%2FbwGmccCEXyi%2BsTz3J8rn4m0X4Awkg1QHP8EzXsvBJqGCQf3%2FblVEGoM%2BLTgAIFuMm9T7n3%2FqV74RoOGjgc6xaRNVJRQiI%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "21",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":2,\"total\":100}],\"subtotal\":100,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":100,\"total\":119.9,\"cupom\":null}"
+  },
+  {
+    "inicio": "2026-10-08T14:30:28.479Z",
+    "fim": "2026-10-08T14:30:28.554Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":3}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d7fc487667ac-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:28 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=v%2BLRZf3o9UlRtkZ2yVcQNCPGpGe1qpPyqx7uW6c29JCufngR5RlO5qjMaps6YTgK9%2FsYvqOg8cOeE6miltj3PafhMWF%2BCSBJ6qHOrrlpQankShnQVpJyQuniFKC6KCMi%2B0W96ki8E2%2F1D4wFb5H9bCSmXxtVaYuAVEvYjX%2FVj5Q%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "15",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":3,\"total\":150}],\"subtotal\":150,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":50,\"total\":169.9,\"cupom\":null}"
+  },
+  {
+    "inicio": "2026-10-08T14:30:28.591Z",
+    "fim": "2026-10-08T14:30:28.686Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":4}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d7fcf8e267ac-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:28 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kNY%2Fr5AnNpHxGCxYcNc7JZCE%2Fxrjgms%2BFJQjBkOIm0KYcX0mS3oaZf4w1HUMW8WcHYFJ0ge1pfdz292QA4J4rg9eN94QXSlnTtD2X35DtaTw%2BMkv3k7MkfGdAcZp3MeoWdSCZ5RdJM5j9O3IQSUnQKYulGJGX%2FjoNE%2BgY2JbR8I%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "15",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":4,\"total\":200}],\"subtotal\":200,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":0,\"total\":219.9,\"cupom\":null}"
+  },
+  {
+    "inicio": "2026-10-08T14:30:28.760Z",
+    "fim": "2026-10-08T14:30:28.852Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":5}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d7fe29c067ac-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:28 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=BdHI6Svm5poMnBEu7WncMXVO6%2FHfCTKxjNs%2BIOHz6%2FU98b6%2B2JVJaZE54kSv1jLZbouXs%2B1%2BrHdKRAFQMl6aQxTzWmHZpbp8FDhBUVj2V%2FH39PdbtQ1k1UYBEH1POfPez2%2F1w6d8mkaOj%2BB0mfRR8DXqfxM0Dm%2BU7b9qx82p%2FZg%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "14",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":5,\"total\":250}],\"subtotal\":250,\"desconto\":0,\"frete\":0,\"freteGratis\":true,\"valorFaltanteFreteGratis\":0,\"total\":250,\"cupom\":null}"
+  },
+  {
+    "inicio": "2026-10-08T14:30:29.913Z",
+    "fim": "2026-10-08T14:30:29.968Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":5},{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d8053f373ec8-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:29 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=khQfgU9vQHc3GM8UrDafCwaMOPpthvS%2FtAq5O5d%2B36Z5PeBMaPYF7%2FjGvt%2FNI217Bqavz61Pajl6f1ibWSjo21RmkuZEWdKcLdjsmwSPsK%2FNiZ1kvXI%2Ba4rIGv38cWArhbqGhWGsHJbmL3c3x8GGJcbhmbim9j5fXagmfbCFvBs%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "8",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":5,\"total\":250},{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":1,\"total\":100}],\"subtotal\":350,\"desconto\":0,\"frete\":0,\"freteGratis\":true,\"valorFaltanteFreteGratis\":0,\"total\":350,\"cupom\":null}"
+  },
+  {
+    "inicio": "2026-10-08T14:30:30.007Z",
+    "fim": "2026-10-08T14:30:30.048Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":5},{\"produtoId\":\"P005\",\"quantidade\":2}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d805b8083ec8-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:30 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Zh89Tc6yAGlH32mNc03nV%2BAK8QsWI2o%2Bcn2hVCGV4C82pXoA7N71MHL%2FbWDov7bBtcUGpeZg18tA0BYEWTC4VIaK2zYtJEAJkC8oVKC%2Fh6ZqtyjKqohDyPTj6whgcDqgijCDwXBJfF7AJhjxJ0xJ3Jc1%2FN8KrhRryMLIcb7%2FuUc%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "10",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":5,\"total\":250},{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":2,\"total\":200}],\"subtotal\":450,\"desconto\":0,\"frete\":0,\"freteGratis\":true,\"valorFaltanteFreteGratis\":0,\"total\":450,\"cupom\":null}"
+  },
+  {
+    "inicio": "2026-10-08T14:30:30.137Z",
+    "fim": "2026-10-08T14:30:30.205Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":5},{\"produtoId\":\"P005\",\"quantidade\":3}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d806a95d3ec8-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:30 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=K8yu%2FLjtaJ2bQJpOIQoprEdWsELM%2B9hnzqdZ6cHMHP7pqTfNzIB2c6pOxXznCsbYPagkgCCizx3nmPPcFvNtU6Wpb8Q00yaMSMXldv3Gx9aLKj9o4KVXVWZvnS3OGinM1nzTLNwrBVwcKexmKzWPF30HnE5O7Dachkc7nVcT968%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "10",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":5,\"total\":250},{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":3,\"total\":300}],\"subtotal\":550,\"desconto\":0,\"frete\":0,\"freteGratis\":true,\"valorFaltanteFreteGratis\":0,\"total\":550,\"cupom\":null}"
+  },
+  {
+    "inicio": "2026-10-08T14:30:30.263Z",
+    "fim": "2026-10-08T14:30:30.315Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":5},{\"produtoId\":\"P005\",\"quantidade\":4}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d8075a543ec8-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:30 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=PGbnRuDC67seU5MTHnT8s7O8uyUzeCftUDtA7tYQRnEXonzEPPdKAfRGMjH50sgpzMbT8ewhCHg3N6UeNsM75hkDkd1%2BpZ6vfYs08dHugMub9v8fa5UrkBlYSZvih7%2FSTmy576iYJMLsd1IIApOUFepMLCiNhYXqfgt1nIUk%2BHA%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "9",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":5,\"total\":250},{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":4,\"total\":400}],\"subtotal\":650,\"desconto\":0,\"frete\":0,\"freteGratis\":true,\"valorFaltanteFreteGratis\":0,\"total\":650,\"cupom\":null}"
+  },
+  {
+    "inicio": "2026-10-08T14:30:30.384Z",
+    "fim": "2026-10-08T14:30:30.447Z",
+    "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "metodo": "POST",
+    "cabecalhosEnviados": {
+      "content-type": "application/json"
+    },
+    "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":5},{\"produtoId\":\"P005\",\"quantidade\":5}]}",
+    "status": 200,
+    "cabecalhosRecebidos": {
+      "access-control-allow-headers": "content-type",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-ray": "a475d808294f67ac-SJC",
+      "content-encoding": "zstd",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Thu, 08 Oct 2026 14:30:30 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=NMTr%2BBwCG9kx6RANkFqogti%2FHTJbHFrEPdE00mtwxuQx3gGivD4dNJg2oq5o29YhOiyp2zko%2BpiQVNoWDEZR8uNguoWDuiWRomoPg%2FFaNSX4KlyqTiHnZkMgkR3GUdJ4mCmJ96NUAU3vw2oFuSatZRPbNeU7ANEHKWXk6Llj7r0%3D\"}]}",
+      "server": "envoy",
+      "x-envoy-upstream-service-time": "18",
+      "x-firefox-spdy": "h2"
+    },
+    "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":5,\"total\":250},{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":5,\"total\":500}],\"subtotal\":750,\"desconto\":0,\"frete\":0,\"freteGratis\":true,\"valorFaltanteFreteGratis\":0,\"total\":750,\"cupom\":null}"
+  }
+]

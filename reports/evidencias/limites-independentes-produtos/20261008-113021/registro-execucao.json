@@ -1,0 +1,6 @@
+{
+  "comando": "PYTHONPATH=/tmp/verzel-marionette python /tmp/verzel-limites-independentes.py > /tmp/verzel-limites-independentes-stdout.txt 2> /tmp/verzel-limites-independentes-stderr.txt",
+  "codigoSaida": 0,
+  "stdout": "execucao-stdout.txt",
+  "stderr": "execucao-stderr.txt"
+}

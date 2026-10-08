@@ -1,0 +1,98 @@
+Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.
+
+verzel
+store
+Produtos
+Documentação
+Carrinho
+5
+Frete grátis a partir de R$ 200,00.
+
+E na primeira compra, o cupom BEMVINDO10 dá 10% de desconto nos produtos.
+
+Ver as regras da promoção
+Produtos
+
+Vestuário
+
+Camiseta Essencial
+
+Algodão penteado e corte reto.
+
+R$ 59,90
+
+Adicionar ao carrinho
+
+Vestuário
+
+Calça Jeans Slim
+
+Jeans com elastano e lavagem escura.
+
+R$ 139,90
+
+Adicionar ao carrinho
+
+Calçados
+
+Tênis Casual Urbano
+
+Solado de borracha e cabedal em lona.
+
+R$ 189,90
+
+Adicionar ao carrinho
+
+Acessórios
+
+Boné Aba Curva
+
+Ajuste traseiro com fivela metálica.
+
+R$ 49,90
+
+Adicionar ao carrinho
+
+Acessórios
+
+Mochila Urbana 20L
+
+Compartimento acolchoado para notebook.
+
+R$ 100,00
+
+Adicionar ao carrinho
+
+Vestuário
+
+Kit 3 Pares de Meias
+
+Cano médio, algodão com reforço no calcanhar.
+
+R$ 29,90
+
+Adicionar ao carrinho
+
+Vestuário
+
+Jaqueta Corta-Vento
+
+Tecido leve e repelente à água.
+
+R$ 229,90
+
+Adicionar ao carrinho
+
+Acessórios
+
+Garrafa Térmica 750ml
+
+Mantém a temperatura por até 12 horas.
+
+R$ 50,00
+
+Adicionar ao carrinho
+
+Limite de 5 unidades atingido.
+
+Verzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.

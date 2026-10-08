@@ -1,0 +1,1 @@
+PYTHONPATH=/tmp/verzel-marionette python /tmp/verzel-limites-independentes.py > /tmp/verzel-limites-independentes-stdout.txt 2> /tmp/verzel-limites-independentes-stderr.txt

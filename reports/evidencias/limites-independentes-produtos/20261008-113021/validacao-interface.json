@@ -1,0 +1,287 @@
+{
+  "inicio": "2026-10-08T11:30:21-03:00",
+  "timezone": "America/Fortaleza",
+  "verificacoes": [
+    {
+      "verificacao": "Produto e preço de P008",
+      "esperado": {
+        "nome": "Garrafa Térmica 750ml",
+        "preco": "R$ 50,00"
+      },
+      "encontrado": {
+        "nome": "Garrafa Térmica 750ml",
+        "preco": "R$ 50,00",
+        "botaoDesabilitado": false,
+        "aviso": ""
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Produto e preço de P005",
+      "esperado": {
+        "nome": "Mochila Urbana 20L",
+        "preco": "R$ 100,00"
+      },
+      "encontrado": {
+        "nome": "Mochila Urbana 20L",
+        "preco": "R$ 100,00",
+        "botaoDesabilitado": false,
+        "aviso": ""
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Preparação com P008 no limite",
+      "esperado": [
+        {
+          "produtoId": "P008",
+          "quantidade": 5
+        }
+      ],
+      "encontrado": [
+        {
+          "produtoId": "P008",
+          "quantidade": 5
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Subtotal da preparação",
+      "esperado": "R$ 250,00",
+      "encontrado": "R$ 250,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P008 bloqueado no próprio limite",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P005 continua disponível com P008 no limite",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P008 preservado ao adicionar unidade 1 de P005",
+      "esperado": {
+        "P008": 5,
+        "P005": 1
+      },
+      "encontrado": [
+        {
+          "produtoId": "P008",
+          "quantidade": 5
+        },
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P008 preservado ao adicionar unidade 2 de P005",
+      "esperado": {
+        "P008": 5,
+        "P005": 2
+      },
+      "encontrado": [
+        {
+          "produtoId": "P008",
+          "quantidade": 5
+        },
+        {
+          "produtoId": "P005",
+          "quantidade": 2
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P008 preservado ao adicionar unidade 3 de P005",
+      "esperado": {
+        "P008": 5,
+        "P005": 3
+      },
+      "encontrado": [
+        {
+          "produtoId": "P008",
+          "quantidade": 5
+        },
+        {
+          "produtoId": "P005",
+          "quantidade": 3
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P008 preservado ao adicionar unidade 4 de P005",
+      "esperado": {
+        "P008": 5,
+        "P005": 4
+      },
+      "encontrado": [
+        {
+          "produtoId": "P008",
+          "quantidade": 5
+        },
+        {
+          "produtoId": "P005",
+          "quantidade": 4
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P008 preservado ao adicionar unidade 5 de P005",
+      "esperado": {
+        "P008": 5,
+        "P005": 5
+      },
+      "encontrado": [
+        {
+          "produtoId": "P008",
+          "quantidade": 5
+        },
+        {
+          "produtoId": "P005",
+          "quantidade": 5
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cinco unidades de P008 no carrinho final",
+      "esperado": 5,
+      "encontrado": {
+        "armazenado": 5,
+        "exibido": "5"
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cinco unidades de P005 no carrinho final",
+      "esperado": 5,
+      "encontrado": {
+        "armazenado": 5,
+        "exibido": "5"
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Subtotal exibido",
+      "esperado": "R$ 750,00",
+      "encontrado": "R$ 750,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cálculo final aceito pela loja",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Subtotal retornado à interface",
+      "esperado": 750,
+      "encontrado": 750,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Dois produtos no cálculo final",
+      "esperado": {
+        "P008": 5,
+        "P005": 5
+      },
+      "encontrado": [
+        {
+          "produtoId": "P008",
+          "nome": "Garrafa Térmica 750ml",
+          "precoUnitario": 50,
+          "quantidade": 5,
+          "total": 250
+        },
+        {
+          "produtoId": "P005",
+          "nome": "Mochila Urbana 20L",
+          "precoUnitario": 100,
+          "quantidade": 5,
+          "total": 500
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Dois produtos enviados pela interface",
+      "esperado": {
+        "P008": 5,
+        "P005": 5
+      },
+      "encontrado": [
+        {
+          "produtoId": "P008",
+          "quantidade": 5
+        },
+        {
+          "produtoId": "P005",
+          "quantidade": 5
+        }
+      ],
+      "resultado": "Aprovado"
+    }
+  ],
+  "acoes": [
+    {
+      "data": "2026-10-08T11:30:28-03:00",
+      "acao": "Adicionou P008 pelo catálogo, preparando 1 unidade(s)."
+    },
+    {
+      "data": "2026-10-08T11:30:28-03:00",
+      "acao": "Adicionou P008 pelo catálogo, preparando 2 unidade(s)."
+    },
+    {
+      "data": "2026-10-08T11:30:28-03:00",
+      "acao": "Adicionou P008 pelo catálogo, preparando 3 unidade(s)."
+    },
+    {
+      "data": "2026-10-08T11:30:28-03:00",
+      "acao": "Adicionou P008 pelo catálogo, preparando 4 unidade(s)."
+    },
+    {
+      "data": "2026-10-08T11:30:28-03:00",
+      "acao": "Adicionou P008 pelo catálogo, preparando 5 unidade(s)."
+    },
+    {
+      "data": "2026-10-08T11:30:29-03:00",
+      "acao": "Adicionou P005 pelo catálogo, totalizando 1 unidade(s), mantendo P008 no carrinho."
+    },
+    {
+      "data": "2026-10-08T11:30:30-03:00",
+      "acao": "Adicionou P005 pelo catálogo, totalizando 2 unidade(s), mantendo P008 no carrinho."
+    },
+    {
+      "data": "2026-10-08T11:30:30-03:00",
+      "acao": "Adicionou P005 pelo catálogo, totalizando 3 unidade(s), mantendo P008 no carrinho."
+    },
+    {
+      "data": "2026-10-08T11:30:30-03:00",
+      "acao": "Adicionou P005 pelo catálogo, totalizando 4 unidade(s), mantendo P008 no carrinho."
+    },
+    {
+      "data": "2026-10-08T11:30:30-03:00",
+      "acao": "Adicionou P005 pelo catálogo, totalizando 5 unidade(s), mantendo P008 no carrinho."
+    }
+  ],
+  "navegador": {
+    "nome": "firefox",
+    "versao": "153.4.0",
+    "acceptInsecureCerts": false,
+    "janela": "1280 x 1000"
+  },
+  "tls": "Verificação ativa; certificado oficial do proxy somente no perfil temporário.",
+  "resultado": "Aprovado",
+  "fim": "2026-10-08T11:30:30-03:00"
+}

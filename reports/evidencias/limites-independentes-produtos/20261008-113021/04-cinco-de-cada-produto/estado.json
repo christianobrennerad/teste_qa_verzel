@@ -1,0 +1,46 @@
+{
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/carrinho",
+  "titulo": "Carrinho | Verzel Store",
+  "texto": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n10\nCarrinho\nEsvaziar carrinho\nGarrafa Térmica 750ml\n\nR$ 50,00 cada\n\nLimite de 5 unidades por produto.\n\n-\n5\n+\n\nR$ 250,00\n\nRemover\nMochila Urbana 20L\n\nR$ 100,00 cada\n\nLimite de 5 unidades por produto.\n\n-\n5\n+\n\nR$ 500,00\n\nRemover\nCupom de desconto\nAplicar cupom\nResumo do pedido\nSubtotal\nR$ 750,00\nDesconto\nR$ 0,00\nFrete\nGrátis\nTotal\nR$ 750,00\nFinalizar compra\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.",
+  "itens": [
+    {
+      "produtoId": "P008",
+      "quantidade": 5
+    },
+    {
+      "produtoId": "P005",
+      "quantidade": 5
+    }
+  ],
+  "cupom": null,
+  "catalogo": {
+    "P008": null,
+    "P005": null
+  },
+  "linhas": [
+    {
+      "nome": "Garrafa Térmica 750ml",
+      "precoUnitario": "R$ 50,00 cada",
+      "quantidade": "5",
+      "total": "R$ 250,00",
+      "aumentoDesabilitado": true,
+      "aviso": "Limite de 5 unidades por produto."
+    },
+    {
+      "nome": "Mochila Urbana 20L",
+      "precoUnitario": "R$ 100,00 cada",
+      "quantidade": "5",
+      "total": "R$ 500,00",
+      "aumentoDesabilitado": true,
+      "aviso": "Limite de 5 unidades por produto."
+    }
+  ],
+  "valores": {
+    "subtotal": "R$ 750,00",
+    "desconto": "R$ 0,00",
+    "frete": "Grátis",
+    "total": "R$ 750,00"
+  },
+  "calculosCapturados": 10,
+  "data": "2026-10-08T11:30:30-03:00"
+}

@@ -1,0 +1,1 @@
+{"evidencias": "reports/evidencias/limites-independentes-produtos/20261008-113021", "resultado": "Aprovado", "inicio": "2026-10-08T11:30:21-03:00", "fim": "2026-10-08T11:30:30-03:00", "verificacoes": 18, "erro": null, "falhas": []}

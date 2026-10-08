@@ -1,0 +1,24 @@
+{
+  "preparacao": [
+    {
+      "produtoId": "P008",
+      "quantidade": 5
+    }
+  ],
+  "precosUnitarios": {
+    "P008": 50,
+    "P005": 100
+  },
+  "itensFinais": [
+    {
+      "produtoId": "P008",
+      "quantidade": 5
+    },
+    {
+      "produtoId": "P005",
+      "quantidade": 5
+    }
+  ],
+  "subtotal": 750,
+  "cupom": null
+}

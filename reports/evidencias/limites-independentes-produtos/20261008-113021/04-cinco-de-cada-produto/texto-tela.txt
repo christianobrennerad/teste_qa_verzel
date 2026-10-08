@@ -1,0 +1,50 @@
+Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.
+
+verzel
+store
+Produtos
+Documentação
+Carrinho
+10
+Carrinho
+Esvaziar carrinho
+Garrafa Térmica 750ml
+
+R$ 50,00 cada
+
+Limite de 5 unidades por produto.
+
+-
+5
++
+
+R$ 250,00
+
+Remover
+Mochila Urbana 20L
+
+R$ 100,00 cada
+
+Limite de 5 unidades por produto.
+
+-
+5
++
+
+R$ 500,00
+
+Remover
+Cupom de desconto
+Aplicar cupom
+Resumo do pedido
+Subtotal
+R$ 750,00
+Desconto
+R$ 0,00
+Frete
+Grátis
+Total
+R$ 750,00
+Finalizar compra
+
+Verzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.

@@ -1,0 +1,27 @@
+mozversion INFO | application_buildid: 20260923073912
+mozversion INFO | application_changeset: ec9c1cc8a5cb6fac9d4d17e4f141fb42a8089b4c
+mozversion INFO | application_display_name: Firefox
+mozversion INFO | application_id: {ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+mozversion INFO | application_name: Firefox
+mozversion INFO | application_remotingname: firefox-esr
+mozversion INFO | application_repository: https://hg.mozilla.org/releases/mozilla-esr153
+mozversion INFO | application_vendor: Mozilla
+mozversion INFO | application_version: 153.4.0
+mozversion INFO | platform_buildid: 20260923073912
+mozversion INFO | platform_changeset: ec9c1cc8a5cb6fac9d4d17e4f141fb42a8089b4c
+mozversion INFO | platform_repository: https://hg.mozilla.org/releases/mozilla-esr153
+mozversion INFO | platform_version: 153.4.0
+Exception ignored in: <function BaseProfile.__del__ at 0x7f919ff409a0>
+Traceback (most recent call last):
+  File "/tmp/verzel-marionette/mozprofile/profile.py", line 84, in __del__
+  File "/tmp/verzel-marionette/mozprofile/profile.py", line 294, in cleanup
+  File "/tmp/verzel-marionette/mozprofile/profile.py", line 92, in cleanup
+  File "/tmp/verzel-marionette/mozfile/mozfile.py", line 214, in remove
+ImportError: sys.meta_path is None, Python is likely shutting down
+Exception ignored in: <function BaseProfile.__del__ at 0x7f919ff409a0>
+Traceback (most recent call last):
+  File "/tmp/verzel-marionette/mozprofile/profile.py", line 84, in __del__
+  File "/tmp/verzel-marionette/mozprofile/profile.py", line 294, in cleanup
+  File "/tmp/verzel-marionette/mozprofile/profile.py", line 92, in cleanup
+  File "/tmp/verzel-marionette/mozfile/mozfile.py", line 214, in remove
+ImportError: sys.meta_path is None, Python is likely shutting down
