@@ -1,0 +1,49 @@
+{
+  "data": "2026-10-07 23:53:17 (America/Fortaleza)",
+  "cupom_digitado": "BeMvInDo10",
+  "tls": "Verificação TLS ativa",
+  "etapas": [
+    "Abrir loja em contexto novo, sem compartilhar carrinho com outro exemplo",
+    "Adicionar 1 unidade de P005 e abrir carrinho",
+    "Aplicar o cupom pelo formulário"
+  ],
+  "verificacoes": [
+    {
+      "verificacao": "Cupom aplicado na tela",
+      "esperado": "Cupom BEMVINDO10 aplicado.",
+      "encontrado": "Cupom BEMVINDO10 aplicado.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Código retornado pela API",
+      "esperado": "BEMVINDO10",
+      "encontrado": "BEMVINDO10",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": "R$ 100,00",
+      "encontrado": "R$ 100,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": "- R$ 10,00",
+      "encontrado": "- R$ 10,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": "R$ 19,90",
+      "encontrado": "R$ 19,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": "R$ 109,90",
+      "encontrado": "R$ 109,90",
+      "resultado": "Aprovado"
+    }
+  ],
+  "resultado": "Aprovado"
+}
