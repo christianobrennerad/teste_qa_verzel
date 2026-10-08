@@ -1,0 +1,15 @@
+Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.
+
+verzel
+store
+Produtos
+Documentação
+Carrinho
+0
+Seu carrinho está vazio
+
+Escolha um produto na vitrine para começar.
+
+Ver produtos
+
+Verzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.

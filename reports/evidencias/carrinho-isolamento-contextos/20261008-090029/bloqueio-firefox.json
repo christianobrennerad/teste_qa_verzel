@@ -1,0 +1,32 @@
+{
+  "registro_em": "2026-10-08T09:03:12-03:00",
+  "tipo": "Resumo das tentativas observadas nas saídas das ferramentas; não é uma transcrição integral",
+  "navegador": "Firefox",
+  "instalado": false,
+  "tentativas": [
+    {
+      "comando": "PLAYWRIGHT_BROWSERS_PATH=/tmp/verzel-browsers node /tmp/verzel-browser/node_modules/playwright/cli.js install firefox",
+      "execucao": "Sandbox padrão e nova tentativa com permissão ampliada",
+      "exit_code": 1,
+      "hosts": [
+        "cdn.playwright.dev",
+        "playwright.download.prss.microsoft.com"
+      ],
+      "resposta": "HTTP 403: Domain forbidden"
+    },
+    {
+      "comando": [
+        "curl",
+        "-I",
+        "-L",
+        "--max-time",
+        "20",
+        "--silent",
+        "--show-error",
+        "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US"
+      ],
+      "exit_code": 56,
+      "resposta": "CONNECT tunnel failed, response 403"
+    }
+  ]
+}

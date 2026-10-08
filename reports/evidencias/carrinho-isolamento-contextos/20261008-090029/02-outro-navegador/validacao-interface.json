@@ -1,0 +1,44 @@
+{
+  "contexto": "outro navegador",
+  "inicio": "2026-10-08 09:03:32 (America/Fortaleza)",
+  "navegador": "Chromium 151.0.7922.173",
+  "verificacoes": [
+    {
+      "verificacao": "Original preparada com P005",
+      "esperado": "Uma unidade de P005",
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Status do cálculo da preparação",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Novo carrinho em outro navegador",
+      "esperado": "Carrinho vazio no Firefox",
+      "encontrado": "Navegador indisponível",
+      "resultado": "Bloqueado"
+    },
+    {
+      "verificacao": "Aba original mantém P005",
+      "esperado": "Uma unidade de P005",
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    }
+  ],
+  "bloqueio": "Firefox não instalado: os downloads oficiais do Playwright e a fonte alternativa da Mozilla foram recusados pelo ambiente com HTTP 403.",
+  "resultado": "Bloqueado",
+  "fim": "2026-10-08 09:03:36 (America/Fortaleza)"
+}

@@ -1,0 +1,48 @@
+{
+  "contexto": "outra aba",
+  "inicio": "2026-10-08 09:03:24 (America/Fortaleza)",
+  "navegador": "Chromium 151.0.7922.173",
+  "verificacoes": [
+    {
+      "verificacao": "Original preparada com P005",
+      "esperado": "Uma unidade de P005",
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Status do cálculo da preparação",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Novo contexto com carrinho vazio",
+      "esperado": "Aviso de carrinho vazio visível, sem produtos",
+      "encontrado": {
+        "avisoVisivel": true,
+        "itens": [],
+        "quantidadeP005": null
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Aba original mantém P005",
+      "esperado": "Uma unidade de P005",
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    }
+  ],
+  "metodo": "Nova aba no mesmo perfil do Chromium, sem opener e sem duplicar a aba original",
+  "resultado": "Aprovado",
+  "fim": "2026-10-08 09:03:31 (America/Fortaleza)"
+}
