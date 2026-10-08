@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 13:21:24 GMT
+server: envoy
+
+HTTP/2 422 
+date: Thu, 08 Oct 2026 13:21:24 GMT
+content-type: application/json; charset=utf-8
+content-length: 81
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Mv8SIXUVtffOdKcFWZFkyOL7vb4qfvOfvErqYdO7qvtRlQDC%2FrQ1Nvs7QiSIi1GE5UEHhLvLtc0xVPrFhse8jZ%2FEK%2BoPiLCECAQbKuqtfKvwB1583HsNzolaEJAm7FvqfhW7JGc%2F900eO7ebv%2FV1rk6gTutbgvO%2Fd02T8asg%2Fn0%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a47572ceea3c2d52-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 31
+
+{"erro":{"codigo":"CUPOM_EXPIRADO","mensagem":"Cupom expirado.","campo":"cupom"}}
+CURL_HTTP_STATUS:422

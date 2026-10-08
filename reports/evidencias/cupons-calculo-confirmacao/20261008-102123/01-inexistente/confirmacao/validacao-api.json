@@ -1,0 +1,60 @@
+{
+  "cupom": "INEXISTENTE",
+  "etapa": "confirmacao",
+  "inicio": "2026-10-08T10:21:23-03:00",
+  "fim": "2026-10-08T10:21:23-03:00",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"INEXISTENTE\"}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "json_parse_error": null,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "esperado": 422,
+      "encontrado": "422",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Corpo JSON válido e objeto",
+      "esperado": "Objeto JSON",
+      "encontrado": "dict",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "erro.codigo",
+      "esperado": "CUPOM_INVALIDO",
+      "encontrado": "CUPOM_INVALIDO",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Pedido não confirmado na resposta",
+      "esperado": "Status 422, erro de cupom e ausência de número/data de confirmação",
+      "encontrado": {
+        "status": "422",
+        "erro": {
+          "codigo": "CUPOM_INVALIDO",
+          "mensagem": "Cupom inválido.",
+          "campo": "cupom"
+        },
+        "camposConfirmacao": {}
+      },
+      "resultado": "Aprovado"
+    }
+  ]
+}

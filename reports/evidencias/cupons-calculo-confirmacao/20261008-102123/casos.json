@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "01-inexistente",
+    "cupom": "INEXISTENTE",
+    "mensagem": "Cupom inválido.",
+    "codigo": "CUPOM_INVALIDO"
+  },
+  {
+    "slug": "02-expirado",
+    "cupom": "VERAO2026",
+    "mensagem": "Cupom expirado.",
+    "codigo": "CUPOM_EXPIRADO"
+  }
+]

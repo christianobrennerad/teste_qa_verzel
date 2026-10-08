@@ -1,0 +1,303 @@
+{
+  "inicio": "2026-10-08T10:21:23-03:00",
+  "fim": "2026-10-08T10:21:24-03:00",
+  "timezone": "America/Fortaleza",
+  "resultado": "Aprovado",
+  "cliente": "Dados fictícios: Cliente Teste, qa@example.com; CEP de exemplo da documentação",
+  "casos": [
+    {
+      "cupom": "INEXISTENTE",
+      "etapas": [
+        {
+          "cupom": "INEXISTENTE",
+          "etapa": "calculo",
+          "inicio": "2026-10-08T10:21:23-03:00",
+          "fim": "2026-10-08T10:21:23-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"INEXISTENTE\"}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 200,
+              "encontrado": "200",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "cupom.aplicado",
+              "esperado": false,
+              "encontrado": false,
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "cupom.mensagem",
+              "esperado": "Cupom inválido.",
+              "encontrado": "Cupom inválido.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "desconto",
+              "esperado": 0,
+              "encontrado": 0,
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "total",
+              "esperado": 119.9,
+              "encontrado": 119.9,
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Uma unidade de P005",
+              "esperado": {
+                "produtoId": "P005",
+                "quantidade": 1
+              },
+              "encontrado": [
+                {
+                  "produtoId": "P005",
+                  "nome": "Mochila Urbana 20L",
+                  "precoUnitario": 100,
+                  "quantidade": 1,
+                  "total": 100
+                }
+              ],
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "cupom": "INEXISTENTE",
+          "etapa": "confirmacao",
+          "inicio": "2026-10-08T10:21:23-03:00",
+          "fim": "2026-10-08T10:21:23-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"INEXISTENTE\"}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "CUPOM_INVALIDO",
+              "encontrado": "CUPOM_INVALIDO",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Pedido não confirmado na resposta",
+              "esperado": "Status 422, erro de cupom e ausência de número/data de confirmação",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "CUPOM_INVALIDO",
+                  "mensagem": "Cupom inválido.",
+                  "campo": "cupom"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "cupom": "VERAO2026",
+      "etapas": [
+        {
+          "cupom": "VERAO2026",
+          "etapa": "calculo",
+          "inicio": "2026-10-08T10:21:23-03:00",
+          "fim": "2026-10-08T10:21:24-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"VERAO2026\"}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 200,
+              "encontrado": "200",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "cupom.aplicado",
+              "esperado": false,
+              "encontrado": false,
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "cupom.mensagem",
+              "esperado": "Cupom expirado.",
+              "encontrado": "Cupom expirado.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "desconto",
+              "esperado": 0,
+              "encontrado": 0,
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "total",
+              "esperado": 119.9,
+              "encontrado": 119.9,
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Uma unidade de P005",
+              "esperado": {
+                "produtoId": "P005",
+                "quantidade": 1
+              },
+              "encontrado": [
+                {
+                  "produtoId": "P005",
+                  "nome": "Mochila Urbana 20L",
+                  "precoUnitario": 100,
+                  "quantidade": 1,
+                  "total": 100
+                }
+              ],
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "cupom": "VERAO2026",
+          "etapa": "confirmacao",
+          "inicio": "2026-10-08T10:21:24-03:00",
+          "fim": "2026-10-08T10:21:24-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"VERAO2026\"}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "CUPOM_EXPIRADO",
+              "encontrado": "CUPOM_EXPIRADO",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Pedido não confirmado na resposta",
+              "esperado": "Status 422, erro de cupom e ausência de número/data de confirmação",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "CUPOM_EXPIRADO",
+                  "mensagem": "Cupom expirado.",
+                  "campo": "cupom"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    }
+  ]
+}
