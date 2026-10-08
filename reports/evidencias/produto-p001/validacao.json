@@ -1,0 +1,75 @@
+{
+  "data": "2026-10-07T21:45:18-03:00",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "GET",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/produtos/P001",
+    "-H",
+    "Content-Type: application/json",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Consulta concluída",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Status da consulta",
+      "esperado": "200",
+      "encontrado": "200",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Resposta em JSON com dados de um produto",
+      "esperado": "Objeto JSON",
+      "encontrado": "Objeto JSON",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Formato informado pelo serviço",
+      "esperado": "application/json",
+      "encontrado": "application/json",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "id",
+      "esperado": "P001",
+      "encontrado": "P001",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "nome",
+      "esperado": "Camiseta Essencial",
+      "encontrado": "Camiseta Essencial",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "descricao",
+      "esperado": "Algodão penteado e corte reto.",
+      "encontrado": "Algodão penteado e corte reto.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "categoria",
+      "esperado": "Vestuário",
+      "encontrado": "Vestuário",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "preco",
+      "esperado": 59.9,
+      "encontrado": 59.9,
+      "resultado": "Aprovado"
+    }
+  ]
+}

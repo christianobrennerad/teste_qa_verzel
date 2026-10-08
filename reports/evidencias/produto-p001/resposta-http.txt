@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 00:45:18 GMT
+server: envoy
+
+HTTP/2 200 
+date: Thu, 08 Oct 2026 00:45:18 GMT
+content-type: application/json; charset=utf-8
+content-length: 125
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=u5uBhYzEuMUv0o6ZuGrBFAcVE%2BJJ3QKeNrFWoI7JkkEpUP%2B9Gtmc%2BEEH%2BnuZ10GfkcJG7Vshm6Z14lYJ8hsZ7Vq3%2BU%2BMimRUb4K1KlvvOFUEty8Q4Fjyb6%2BTNYRTuewErK%2B%2BcWUKy%2FLujd0bIPgNZDLI4k2fRPmNeDL3JvMr%2FLE%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a4711f3dcb2dd81b-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 92
+
+{"id":"P001","nome":"Camiseta Essencial","descricao":"Algodão penteado e corte reto.","categoria":"Vestuário","preco":59.9}
+CURL_HTTP_STATUS:200
