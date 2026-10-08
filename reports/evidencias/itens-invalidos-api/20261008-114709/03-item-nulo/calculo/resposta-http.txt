@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 14:47:10 GMT
+server: envoy
+
+HTTP/2 422 
+date: Thu, 08 Oct 2026 14:47:10 GMT
+content-type: application/json; charset=utf-8
+content-length: 124
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2B2%2Br6bR6gR6L%2FsZzdUP1G6VU9zfMsY2VaO77tukdTVgzTg6rlaBziR%2FWQxv50FHubDLUlrBAxhy5KoqglgyCOcNtPodTV1oVA0NqIZ2jW%2FhL%2FHRife6zyr7mT4NShNhabUenghqAzn54ks1zLBDB%2FAqeECLFhhSORWz%2Fw19wV1Q%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a475f074f88c5b6a-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 31
+
+{"erro":{"codigo":"ITEM_INVALIDO","mensagem":"Cada item deve ser um objeto com produtoId e quantidade.","campo":"itens[0]"}}
+CURL_HTTP_STATUS:422

@@ -1,0 +1,75 @@
+{
+  "etapa": "calculo",
+  "endpoint": "/api/carrinho/calcular",
+  "inicio": "2026-10-08T11:47:13-03:00",
+  "fim": "2026-10-08T11:47:14-03:00",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":null}]}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "json_parse_error": null,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "esperado": 422,
+      "encontrado": "422",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Corpo JSON válido e objeto",
+      "esperado": "Objeto JSON",
+      "encontrado": "dict",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "erro.codigo",
+      "esperado": "QUANTIDADE_INVALIDA",
+      "encontrado": "QUANTIDADE_INVALIDA",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "erro.mensagem",
+      "esperado": "Texto não vazio explicando o erro",
+      "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "erro.campo relacionado ao problema",
+      "esperado": [
+        "itens[0]",
+        "itens[0].quantidade"
+      ],
+      "encontrado": "itens[0].quantidade",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Ausência de confirmação na resposta",
+      "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+      "encontrado": {
+        "status": "422",
+        "erro": {
+          "codigo": "QUANTIDADE_INVALIDA",
+          "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+          "campo": "itens[0].quantidade"
+        },
+        "camposConfirmacao": {}
+      },
+      "resultado": "Aprovado"
+    }
+  ]
+}

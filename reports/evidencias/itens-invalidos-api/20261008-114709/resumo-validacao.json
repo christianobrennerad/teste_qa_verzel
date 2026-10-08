@@ -1,0 +1,2202 @@
+{
+  "inicio": "2026-10-08T11:47:09-03:00",
+  "fim": "2026-10-08T11:47:14-03:00",
+  "timezone": "America/Fortaleza",
+  "resultado": "Falhou",
+  "casos": [
+    {
+      "pasta": "01-itens-ausentes",
+      "corpoOriginal": "{}",
+      "codigoEsperado": "ITENS_OBRIGATORIOS",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:09-03:00",
+          "fim": "2026-10-08T11:47:10-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITENS_OBRIGATORIOS",
+              "encontrado": "ITENS_OBRIGATORIOS",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Informe ao menos um item.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens"
+              ],
+              "encontrado": "itens",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "ITENS_OBRIGATORIOS",
+                  "mensagem": "Informe ao menos um item.",
+                  "campo": "itens"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:10-03:00",
+          "fim": "2026-10-08T11:47:10-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITENS_OBRIGATORIOS",
+              "encontrado": "ITENS_OBRIGATORIOS",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Informe ao menos um item.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens"
+              ],
+              "encontrado": "itens",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "ITENS_OBRIGATORIOS",
+                  "mensagem": "Informe ao menos um item.",
+                  "campo": "itens"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "02-itens-vazios",
+      "corpoOriginal": "{\"itens\":[]}",
+      "codigoEsperado": "ITENS_OBRIGATORIOS",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:10-03:00",
+          "fim": "2026-10-08T11:47:10-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITENS_OBRIGATORIOS",
+              "encontrado": "ITENS_OBRIGATORIOS",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Informe ao menos um item.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens"
+              ],
+              "encontrado": "itens",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "ITENS_OBRIGATORIOS",
+                  "mensagem": "Informe ao menos um item.",
+                  "campo": "itens"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:10-03:00",
+          "fim": "2026-10-08T11:47:10-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITENS_OBRIGATORIOS",
+              "encontrado": "ITENS_OBRIGATORIOS",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Informe ao menos um item.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens"
+              ],
+              "encontrado": "itens",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "ITENS_OBRIGATORIOS",
+                  "mensagem": "Informe ao menos um item.",
+                  "campo": "itens"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "03-item-nulo",
+      "corpoOriginal": "{\"itens\":[null]}",
+      "codigoEsperado": "ITEM_INVALIDO",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:10-03:00",
+          "fim": "2026-10-08T11:47:10-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[null]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITEM_INVALIDO",
+              "encontrado": "ITEM_INVALIDO",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Cada item deve ser um objeto com produtoId e quantidade.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]"
+              ],
+              "encontrado": "itens[0]",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "ITEM_INVALIDO",
+                  "mensagem": "Cada item deve ser um objeto com produtoId e quantidade.",
+                  "campo": "itens[0]"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:10-03:00",
+          "fim": "2026-10-08T11:47:11-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[null],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITEM_INVALIDO",
+              "encontrado": "ITEM_INVALIDO",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Cada item deve ser um objeto com produtoId e quantidade.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]"
+              ],
+              "encontrado": "itens[0]",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "ITEM_INVALIDO",
+                  "mensagem": "Cada item deve ser um objeto com produtoId e quantidade.",
+                  "campo": "itens[0]"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "04-item-texto",
+      "corpoOriginal": "{\"itens\":[\"P001\"]}",
+      "codigoEsperado": "ITEM_INVALIDO",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:11-03:00",
+          "fim": "2026-10-08T11:47:11-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[\"P001\"]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITEM_INVALIDO",
+              "encontrado": "ITEM_INVALIDO",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Cada item deve ser um objeto com produtoId e quantidade.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]"
+              ],
+              "encontrado": "itens[0]",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "ITEM_INVALIDO",
+                  "mensagem": "Cada item deve ser um objeto com produtoId e quantidade.",
+                  "campo": "itens[0]"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:11-03:00",
+          "fim": "2026-10-08T11:47:11-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[\"P001\"],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITEM_INVALIDO",
+              "encontrado": "ITEM_INVALIDO",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Cada item deve ser um objeto com produtoId e quantidade.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]"
+              ],
+              "encontrado": "itens[0]",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "ITEM_INVALIDO",
+                  "mensagem": "Cada item deve ser um objeto com produtoId e quantidade.",
+                  "campo": "itens[0]"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "05-produto-id-ausente",
+      "corpoOriginal": "{\"itens\":[{\"quantidade\":1}]}",
+      "codigoEsperado": "ITEM_INVALIDO",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:11-03:00",
+          "fim": "2026-10-08T11:47:11-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"quantidade\":1}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Falhou",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITEM_INVALIDO",
+              "encontrado": "PRODUTO_NAO_ENCONTRADO",
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Produto undefined não encontrado.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].produtoId"
+              ],
+              "encontrado": "itens[0].produtoId",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "PRODUTO_NAO_ENCONTRADO",
+                  "mensagem": "Produto undefined não encontrado.",
+                  "campo": "itens[0].produtoId"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:11-03:00",
+          "fim": "2026-10-08T11:47:11-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"quantidade\":1}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Falhou",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITEM_INVALIDO",
+              "encontrado": "PRODUTO_NAO_ENCONTRADO",
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Produto undefined não encontrado.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].produtoId"
+              ],
+              "encontrado": "itens[0].produtoId",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "PRODUTO_NAO_ENCONTRADO",
+                  "mensagem": "Produto undefined não encontrado.",
+                  "campo": "itens[0].produtoId"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Falhou"
+    },
+    {
+      "pasta": "06-quantidade-ausente",
+      "corpoOriginal": "{\"itens\":[{\"produtoId\":\"P001\"}]}",
+      "codigoEsperado": "ITEM_INVALIDO",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:11-03:00",
+          "fim": "2026-10-08T11:47:11-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\"}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Falhou",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITEM_INVALIDO",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:11-03:00",
+          "fim": "2026-10-08T11:47:12-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\"}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Falhou",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "ITEM_INVALIDO",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Falhou"
+    },
+    {
+      "pasta": "07-produto-inexistente",
+      "corpoOriginal": "{\"itens\":[{\"produtoId\":\"INEXISTENTE\",\"quantidade\":1}]}",
+      "codigoEsperado": "PRODUTO_NAO_ENCONTRADO",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:12-03:00",
+          "fim": "2026-10-08T11:47:12-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"INEXISTENTE\",\"quantidade\":1}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "PRODUTO_NAO_ENCONTRADO",
+              "encontrado": "PRODUTO_NAO_ENCONTRADO",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Produto INEXISTENTE não encontrado.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].produtoId"
+              ],
+              "encontrado": "itens[0].produtoId",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "PRODUTO_NAO_ENCONTRADO",
+                  "mensagem": "Produto INEXISTENTE não encontrado.",
+                  "campo": "itens[0].produtoId"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:12-03:00",
+          "fim": "2026-10-08T11:47:12-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"INEXISTENTE\",\"quantidade\":1}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "PRODUTO_NAO_ENCONTRADO",
+              "encontrado": "PRODUTO_NAO_ENCONTRADO",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "Produto INEXISTENTE não encontrado.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].produtoId"
+              ],
+              "encontrado": "itens[0].produtoId",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "PRODUTO_NAO_ENCONTRADO",
+                  "mensagem": "Produto INEXISTENTE não encontrado.",
+                  "campo": "itens[0].produtoId"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "08-quantidade-zero",
+      "corpoOriginal": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":0}]}",
+      "codigoEsperado": "QUANTIDADE_INVALIDA",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:12-03:00",
+          "fim": "2026-10-08T11:47:12-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":0}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:12-03:00",
+          "fim": "2026-10-08T11:47:12-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":0}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "09-quantidade-negativa",
+      "corpoOriginal": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":-1}]}",
+      "codigoEsperado": "QUANTIDADE_INVALIDA",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:12-03:00",
+          "fim": "2026-10-08T11:47:13-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":-1}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:13-03:00",
+          "fim": "2026-10-08T11:47:13-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":-1}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "10-quantidade-fracionada",
+      "corpoOriginal": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":1.5}]}",
+      "codigoEsperado": "QUANTIDADE_INVALIDA",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:13-03:00",
+          "fim": "2026-10-08T11:47:13-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":1.5}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:13-03:00",
+          "fim": "2026-10-08T11:47:13-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":1.5}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "11-quantidade-texto",
+      "corpoOriginal": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":\"1\"}]}",
+      "codigoEsperado": "QUANTIDADE_INVALIDA",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:13-03:00",
+          "fim": "2026-10-08T11:47:13-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":\"1\"}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:13-03:00",
+          "fim": "2026-10-08T11:47:13-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":\"1\"}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "12-quantidade-nula",
+      "corpoOriginal": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":null}]}",
+      "codigoEsperado": "QUANTIDADE_INVALIDA",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:13-03:00",
+          "fim": "2026-10-08T11:47:14-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":null}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:14-03:00",
+          "fim": "2026-10-08T11:47:14-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":null}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Aprovado",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "422",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_INVALIDA",
+              "encontrado": "QUANTIDADE_INVALIDA",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": "itens[0].quantidade",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "422",
+                "erro": {
+                  "codigo": "QUANTIDADE_INVALIDA",
+                  "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+                  "campo": "itens[0].quantidade"
+                },
+                "camposConfirmacao": {}
+              },
+              "resultado": "Aprovado"
+            }
+          ]
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "pasta": "13-quantidade-seis",
+      "corpoOriginal": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":6}]}",
+      "codigoEsperado": "QUANTIDADE_MAXIMA_EXCEDIDA",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:14-03:00",
+          "fim": "2026-10-08T11:47:14-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":6}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Falhou",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "200",
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_MAXIMA_EXCEDIDA",
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "200",
+                "erro": {},
+                "camposConfirmacao": {}
+              },
+              "resultado": "Falhou"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:14-03:00",
+          "fim": "2026-10-08T11:47:14-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":6}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Falhou",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "201",
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_MAXIMA_EXCEDIDA",
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "201",
+                "erro": {},
+                "camposConfirmacao": {
+                  "numero": "VZ-985961",
+                  "criadoEm": "2026-10-08T14:47:14.478Z"
+                }
+              },
+              "resultado": "Falhou"
+            }
+          ]
+        }
+      ],
+      "resultado": "Falhou"
+    },
+    {
+      "pasta": "14-quantidade-cem",
+      "corpoOriginal": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":100}]}",
+      "codigoEsperado": "QUANTIDADE_MAXIMA_EXCEDIDA",
+      "etapas": [
+        {
+          "etapa": "calculo",
+          "endpoint": "/api/carrinho/calcular",
+          "inicio": "2026-10-08T11:47:14-03:00",
+          "fim": "2026-10-08T11:47:14-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":100}]}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Falhou",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "200",
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_MAXIMA_EXCEDIDA",
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "200",
+                "erro": {},
+                "camposConfirmacao": {}
+              },
+              "resultado": "Falhou"
+            }
+          ]
+        },
+        {
+          "etapa": "pedido",
+          "endpoint": "/api/pedidos",
+          "inicio": "2026-10-08T11:47:14-03:00",
+          "fim": "2026-10-08T11:47:14-03:00",
+          "comando": [
+            "curl",
+            "-i",
+            "-X",
+            "POST",
+            "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+            "-H",
+            "Content-Type: application/json",
+            "--data-binary",
+            "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":100}],\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"}}",
+            "--max-time",
+            "30",
+            "--silent",
+            "--show-error",
+            "--write-out",
+            "\nCURL_HTTP_STATUS:%{http_code}\n"
+          ],
+          "curl_exit_code": 0,
+          "json_parse_error": null,
+          "resultado": "Falhou",
+          "verificacoes": [
+            {
+              "verificacao": "Status final da aplicação",
+              "esperado": 422,
+              "encontrado": "201",
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "Corpo JSON válido e objeto",
+              "esperado": "Objeto JSON",
+              "encontrado": "dict",
+              "resultado": "Aprovado"
+            },
+            {
+              "verificacao": "erro.codigo",
+              "esperado": "QUANTIDADE_MAXIMA_EXCEDIDA",
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.mensagem",
+              "esperado": "Texto não vazio explicando o erro",
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "erro.campo relacionado ao problema",
+              "esperado": [
+                "itens[0]",
+                "itens[0].quantidade"
+              ],
+              "encontrado": null,
+              "resultado": "Falhou"
+            },
+            {
+              "verificacao": "Ausência de confirmação na resposta",
+              "esperado": "Resposta de erro com status 422, sem numero ou criadoEm",
+              "encontrado": {
+                "status": "201",
+                "erro": {},
+                "camposConfirmacao": {
+                  "numero": "VZ-327453",
+                  "criadoEm": "2026-10-08T14:47:14.763Z"
+                }
+              },
+              "resultado": "Falhou"
+            }
+          ]
+        }
+      ],
+      "resultado": "Falhou"
+    }
+  ]
+}

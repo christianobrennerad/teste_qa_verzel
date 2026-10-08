@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 14:47:14 GMT
+server: envoy
+
+HTTP/2 200 
+date: Thu, 08 Oct 2026 14:47:14 GMT
+content-type: application/json; charset=utf-8
+content-length: 224
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zY2siVk%2B%2Fy9RbwA6zBpLmhoAdD4Jm3XRFBOR9ckYurkB6uhjpFlYMF3ACTBs2h0s%2FWKFAtntZ0elg5g%2Fp9AdOScv3DNjoBTjB8FqEG6H08ywQqRKixsaUUzLOmFIrQh%2FABzBYercqChfUvq1wZDUM3hav1Y7FTkDOvyHe347gIA%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a475f08c4e97fa4a-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 18
+
+{"itens":[{"produtoId":"P001","nome":"Camiseta Essencial","precoUnitario":59.9,"quantidade":100,"total":5990}],"subtotal":5990,"desconto":0,"frete":0,"freteGratis":true,"valorFaltanteFreteGratis":0,"total":5990,"cupom":null}
+CURL_HTTP_STATUS:200

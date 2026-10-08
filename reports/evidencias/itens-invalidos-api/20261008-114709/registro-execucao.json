@@ -1,0 +1,5 @@
+{
+  "comando": "python /tmp/verzel-itens-invalidos-api.py > /tmp/verzel-itens-invalidos-api-stdout.txt 2> /tmp/verzel-itens-invalidos-api-stderr.txt",
+  "codigoSaida": 1,
+  "motivo": "O script sinalizou divergências funcionais; os códigos de saída do curl estão registrados por chamada."
+}

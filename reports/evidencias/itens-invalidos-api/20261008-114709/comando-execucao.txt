@@ -1,0 +1,1 @@
+python /tmp/verzel-itens-invalidos-api.py > /tmp/verzel-itens-invalidos-api-stdout.txt 2> /tmp/verzel-itens-invalidos-api-stderr.txt

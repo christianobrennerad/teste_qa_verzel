@@ -1,0 +1,133 @@
+{
+  "status": 422,
+  "clientePedidos": {
+    "nome": "Cliente Teste",
+    "email": "qa@example.com",
+    "cep": "01310-100"
+  },
+  "formatoErro": "Objeto erro com codigo, mensagem e campo relacionado, como texto não vazio.",
+  "casos": [
+    {
+      "pasta": "01-itens-ausentes",
+      "corpo": "{}",
+      "codigo": "ITENS_OBRIGATORIOS",
+      "camposRelacionadosAceitos": [
+        "itens"
+      ]
+    },
+    {
+      "pasta": "02-itens-vazios",
+      "corpo": "{\"itens\":[]}",
+      "codigo": "ITENS_OBRIGATORIOS",
+      "camposRelacionadosAceitos": [
+        "itens"
+      ]
+    },
+    {
+      "pasta": "03-item-nulo",
+      "corpo": "{\"itens\":[null]}",
+      "codigo": "ITEM_INVALIDO",
+      "camposRelacionadosAceitos": [
+        "itens[0]"
+      ]
+    },
+    {
+      "pasta": "04-item-texto",
+      "corpo": "{\"itens\":[\"P001\"]}",
+      "codigo": "ITEM_INVALIDO",
+      "camposRelacionadosAceitos": [
+        "itens[0]"
+      ]
+    },
+    {
+      "pasta": "05-produto-id-ausente",
+      "corpo": "{\"itens\":[{\"quantidade\":1}]}",
+      "codigo": "ITEM_INVALIDO",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].produtoId"
+      ]
+    },
+    {
+      "pasta": "06-quantidade-ausente",
+      "corpo": "{\"itens\":[{\"produtoId\":\"P001\"}]}",
+      "codigo": "ITEM_INVALIDO",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].quantidade"
+      ]
+    },
+    {
+      "pasta": "07-produto-inexistente",
+      "corpo": "{\"itens\":[{\"produtoId\":\"INEXISTENTE\",\"quantidade\":1}]}",
+      "codigo": "PRODUTO_NAO_ENCONTRADO",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].produtoId"
+      ]
+    },
+    {
+      "pasta": "08-quantidade-zero",
+      "corpo": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":0}]}",
+      "codigo": "QUANTIDADE_INVALIDA",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].quantidade"
+      ]
+    },
+    {
+      "pasta": "09-quantidade-negativa",
+      "corpo": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":-1}]}",
+      "codigo": "QUANTIDADE_INVALIDA",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].quantidade"
+      ]
+    },
+    {
+      "pasta": "10-quantidade-fracionada",
+      "corpo": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":1.5}]}",
+      "codigo": "QUANTIDADE_INVALIDA",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].quantidade"
+      ]
+    },
+    {
+      "pasta": "11-quantidade-texto",
+      "corpo": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":\"1\"}]}",
+      "codigo": "QUANTIDADE_INVALIDA",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].quantidade"
+      ]
+    },
+    {
+      "pasta": "12-quantidade-nula",
+      "corpo": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":null}]}",
+      "codigo": "QUANTIDADE_INVALIDA",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].quantidade"
+      ]
+    },
+    {
+      "pasta": "13-quantidade-seis",
+      "corpo": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":6}]}",
+      "codigo": "QUANTIDADE_MAXIMA_EXCEDIDA",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].quantidade"
+      ]
+    },
+    {
+      "pasta": "14-quantidade-cem",
+      "corpo": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":100}]}",
+      "codigo": "QUANTIDADE_MAXIMA_EXCEDIDA",
+      "camposRelacionadosAceitos": [
+        "itens[0]",
+        "itens[0].quantidade"
+      ]
+    }
+  ]
+}
