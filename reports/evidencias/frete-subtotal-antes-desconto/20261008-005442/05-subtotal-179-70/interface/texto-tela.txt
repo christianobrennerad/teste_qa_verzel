@@ -1,0 +1,40 @@
+Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.
+
+verzel
+store
+Produtos
+Documentação
+Carrinho
+3
+Carrinho
+Esvaziar carrinho
+Camiseta Essencial
+
+R$ 59,90 cada
+
+-
+3
++
+
+R$ 179,70
+
+Remover
+
+Cupom BEMVINDO10 aplicado.
+
+Remover cupom
+Resumo do pedido
+Subtotal
+R$ 179,70
+Desconto (BEMVINDO10)
+- R$ 17,97
+Frete
+R$ 19,90
+Total
+R$ 181,63
+
+Faltam R$ 20,30 para o frete grátis.
+
+Finalizar compra
+
+Verzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.

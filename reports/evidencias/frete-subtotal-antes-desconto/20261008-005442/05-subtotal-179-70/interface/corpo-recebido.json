@@ -1,0 +1,1 @@
+{"itens":[{"produtoId":"P001","nome":"Camiseta Essencial","precoUnitario":59.9,"quantidade":3,"total":179.7}],"subtotal":179.7,"desconto":17.97,"frete":19.9,"freteGratis":false,"valorFaltanteFreteGratis":20.3,"total":181.63,"cupom":{"codigo":"BEMVINDO10","aplicado":true,"mensagem":"Cupom aplicado: 10% de desconto nos produtos."}}

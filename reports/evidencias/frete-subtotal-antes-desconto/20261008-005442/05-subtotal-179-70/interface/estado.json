@@ -1,0 +1,11 @@
+{
+  "data": "2026-10-08 00:55:31 (America/Fortaleza)",
+  "valores": {
+    "subtotal": "R$ 179,70",
+    "desconto": "- R$ 17,97",
+    "frete": "R$ 19,90",
+    "total": "R$ 181,63"
+  },
+  "avisoFrete": "Faltam R$ 20,30 para o frete grátis.",
+  "cupomAtivo": true
+}

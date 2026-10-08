@@ -1,0 +1,93 @@
+{
+  "caso": "02-subtotal-199-80",
+  "data": "2026-10-08T00:54:42-03:00",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"itens\":[{\"produtoId\":\"P002\",\"quantidade\":1},{\"produtoId\":\"P001\",\"quantidade\":1}],\"cupom\":\"BEMVINDO10\"}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status da aplicação",
+      "esperado": 200,
+      "encontrado": "200",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cupom válido aplicado",
+      "esperado": "BEMVINDO10 aplicado",
+      "encontrado": {
+        "codigo": "BEMVINDO10",
+        "aplicado": true,
+        "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": 199.8,
+      "encontrado": 199.8,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": 19.98,
+      "encontrado": 19.98,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "freteGratis",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "valorFaltanteFreteGratis",
+      "esperado": 0.2,
+      "encontrado": 0.2,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": 199.72,
+      "encontrado": 199.72,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Precisão monetária",
+      "esperado": "Até 2 casas decimais",
+      "encontrado": {
+        "subtotal": "199.8",
+        "desconto": "19.98",
+        "frete": "19.9",
+        "valorFaltanteFreteGratis": "0.2",
+        "total": "199.72",
+        "itens[0].precoUnitario": "139.9",
+        "itens[0].total": "139.9",
+        "itens[1].precoUnitario": "59.9",
+        "itens[1].total": "59.9"
+      },
+      "resultado": "Aprovado"
+    }
+  ]
+}

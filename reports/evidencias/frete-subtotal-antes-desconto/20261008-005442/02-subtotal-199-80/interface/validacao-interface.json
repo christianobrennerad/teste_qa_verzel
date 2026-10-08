@@ -1,0 +1,102 @@
+{
+  "caso": "02-subtotal-199-80",
+  "data": "2026-10-08 00:55:24 (America/Fortaleza)",
+  "itens": [
+    {
+      "produtoId": "P002",
+      "quantidade": 1
+    },
+    {
+      "produtoId": "P001",
+      "quantidade": 1
+    }
+  ],
+  "tls": "Verificação TLS ativa",
+  "verificacoes": [
+    {
+      "verificacao": "Status do cálculo na interface",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: subtotal",
+      "esperado": 199.8,
+      "encontrado": 199.8,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: desconto",
+      "esperado": 19.98,
+      "encontrado": 19.98,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: freteGratis",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: valorFaltanteFreteGratis",
+      "esperado": 0.2,
+      "encontrado": 0.2,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: total",
+      "esperado": 199.72,
+      "encontrado": 199.72,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cupom único aplicado",
+      "esperado": 1,
+      "encontrado": 1,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Valor na tela: subtotal",
+      "esperado": "R$ 199,80",
+      "encontrado": "R$ 199,80",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Valor na tela: desconto",
+      "esperado": "- R$ 19,98",
+      "encontrado": "- R$ 19,98",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Valor na tela: frete",
+      "esperado": "R$ 19,90",
+      "encontrado": "R$ 19,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Valor na tela: total",
+      "esperado": "R$ 199,72",
+      "encontrado": "R$ 199,72",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Indicação de frete grátis",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Aviso de valor faltante",
+      "esperado": "Faltam R$ 0,20 para o frete grátis.",
+      "encontrado": "Faltam R$ 0,20 para o frete grátis.",
+      "resultado": "Aprovado"
+    }
+  ],
+  "resultado": "Aprovado"
+}

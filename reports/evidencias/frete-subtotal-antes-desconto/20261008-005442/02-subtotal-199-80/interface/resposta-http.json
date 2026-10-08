@@ -1,0 +1,47 @@
+{
+  "status": 200,
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "headers": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a47235c0adec4aad-SJC",
+    "content-encoding": "zstd",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 03:55:26 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YSWIEkMkIKPQ5A%2BL5xQ%2F9vbhBdXVHp9M5hAdwMI17fS9JBSLkoOo7vEL9WPpAi16fDwPpoVulsgMLeGU3JdsfeoMWhpMoicNJkYw74W5Au8tDf%2BmWPdOv1zs%2BWB%2Fb%2F5TI9Xio5iPEMWc7vQTy%2F5tvIa5ajiNPWCPLIH6pIQJmEM%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "12"
+  },
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P002",
+        "nome": "Calça Jeans Slim",
+        "precoUnitario": 139.9,
+        "quantidade": 1,
+        "total": 139.9
+      },
+      {
+        "produtoId": "P001",
+        "nome": "Camiseta Essencial",
+        "precoUnitario": 59.9,
+        "quantidade": 1,
+        "total": 59.9
+      }
+    ],
+    "subtotal": 199.8,
+    "desconto": 19.98,
+    "frete": 19.9,
+    "freteGratis": false,
+    "valorFaltanteFreteGratis": 0.2,
+    "total": 199.72,
+    "cupom": {
+      "codigo": "BEMVINDO10",
+      "aplicado": true,
+      "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+    }
+  }
+}

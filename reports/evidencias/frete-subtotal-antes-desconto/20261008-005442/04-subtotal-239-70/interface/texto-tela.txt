@@ -1,0 +1,48 @@
+Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.
+
+verzel
+store
+Produtos
+Documentação
+Carrinho
+3
+Carrinho
+Esvaziar carrinho
+Calça Jeans Slim
+
+R$ 139,90 cada
+
+-
+1
++
+
+R$ 139,90
+
+Remover
+Boné Aba Curva
+
+R$ 49,90 cada
+
+-
+2
++
+
+R$ 99,80
+
+Remover
+
+Cupom BEMVINDO10 aplicado.
+
+Remover cupom
+Resumo do pedido
+Subtotal
+R$ 239,70
+Desconto (BEMVINDO10)
+- R$ 23,97
+Frete
+Grátis
+Total
+R$ 215,73
+Finalizar compra
+
+Verzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.

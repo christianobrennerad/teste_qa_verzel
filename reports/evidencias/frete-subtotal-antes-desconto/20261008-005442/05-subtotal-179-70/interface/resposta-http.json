@@ -1,0 +1,40 @@
+{
+  "status": 200,
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "headers": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a47235e0fad44aad-SJC",
+    "content-encoding": "zstd",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 03:55:31 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uYhCJSBUYtaO5E3bpSYjvGVzJRw3j097EJ1xsG4bUTJjCowGe%2FroFZq94zuyeuDXwCSCS57EqXJhCJ14cJVNjlVhg1Nmuibvjuo%2FchMSoV%2FdyOHmYrWh0CGkkDd2d3%2BVjnCp1uIFJvbEpvpnxvXzOADl6o%2FxRmp4u8%2BjRUQy87Q%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "14"
+  },
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P001",
+        "nome": "Camiseta Essencial",
+        "precoUnitario": 59.9,
+        "quantidade": 3,
+        "total": 179.7
+      }
+    ],
+    "subtotal": 179.7,
+    "desconto": 17.97,
+    "frete": 19.9,
+    "freteGratis": false,
+    "valorFaltanteFreteGratis": 20.3,
+    "total": 181.63,
+    "cupom": {
+      "codigo": "BEMVINDO10",
+      "aplicado": true,
+      "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+    }
+  }
+}
