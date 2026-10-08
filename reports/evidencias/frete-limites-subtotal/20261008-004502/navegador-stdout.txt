@@ -1,0 +1,76 @@
+[
+  {
+    "caso": "01-abaixo-189-90",
+    "data": "2026-10-08 00:46:11 (America/Fortaleza)",
+    "resultado": "Aprovado",
+    "falhas": []
+  },
+  {
+    "caso": "02-abaixo-199-80",
+    "data": "2026-10-08 00:46:14 (America/Fortaleza)",
+    "resultado": "Aprovado",
+    "falhas": []
+  },
+  {
+    "caso": "03-limite-200-00",
+    "data": "2026-10-08 00:46:17 (America/Fortaleza)",
+    "resultado": "Falhou",
+    "falhas": [
+      {
+        "verificacao": "API durante interação: frete",
+        "esperado": 0,
+        "encontrado": 19.9,
+        "resultado": "Falhou"
+      },
+      {
+        "verificacao": "API durante interação: freteGratis",
+        "esperado": true,
+        "encontrado": false,
+        "resultado": "Falhou"
+      },
+      {
+        "verificacao": "API durante interação: total",
+        "esperado": 200,
+        "encontrado": 219.9,
+        "resultado": "Falhou"
+      },
+      {
+        "verificacao": "Valor na tela: frete",
+        "esperado": "R$ 0,00",
+        "encontrado": "R$ 19,90",
+        "resultado": "Falhou"
+      },
+      {
+        "verificacao": "Valor na tela: total",
+        "esperado": "R$ 200,00",
+        "encontrado": "R$ 219,90",
+        "resultado": "Falhou"
+      },
+      {
+        "verificacao": "Indicação de frete grátis",
+        "esperado": true,
+        "encontrado": false,
+        "resultado": "Falhou"
+      },
+      {
+        "verificacao": "Aviso de valor faltante",
+        "esperado": null,
+        "encontrado": "Faltam R$ 0,00 para o frete grátis.",
+        "resultado": "Falhou"
+      }
+    ]
+  },
+  {
+    "caso": "04-acima-229-90",
+    "data": "2026-10-08 00:46:19 (America/Fortaleza)",
+    "resultado": "Falhou",
+    "falhas": [
+      {
+        "verificacao": "Duas casas na tela: frete",
+        "esperado": "Valor monetário com 2 casas decimais",
+        "encontrado": "Grátis",
+        "resultado": "Falhou"
+      }
+    ]
+  }
+]

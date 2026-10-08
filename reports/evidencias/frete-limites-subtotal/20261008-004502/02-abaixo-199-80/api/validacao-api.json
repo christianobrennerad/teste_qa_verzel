@@ -1,0 +1,83 @@
+{
+  "caso": "02-abaixo-199-80",
+  "data": "2026-10-08T00:45:02-03:00",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"itens\":[{\"produtoId\":\"P002\",\"quantidade\":1},{\"produtoId\":\"P001\",\"quantidade\":1}]}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status da aplicação",
+      "esperado": 200,
+      "encontrado": "200",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": 199.8,
+      "encontrado": 199.8,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "freteGratis",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "valorFaltanteFreteGratis",
+      "esperado": 0.2,
+      "encontrado": 0.2,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": 219.7,
+      "encontrado": 219.7,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Precisão monetária",
+      "esperado": "Até 2 casas decimais",
+      "encontrado": {
+        "subtotal": "199.8",
+        "desconto": "0",
+        "frete": "19.9",
+        "valorFaltanteFreteGratis": "0.2",
+        "total": "219.7",
+        "itens[0].precoUnitario": "139.9",
+        "itens[0].total": "139.9",
+        "itens[1].precoUnitario": "59.9",
+        "itens[1].total": "59.9"
+      },
+      "resultado": "Aprovado"
+    }
+  ]
+}

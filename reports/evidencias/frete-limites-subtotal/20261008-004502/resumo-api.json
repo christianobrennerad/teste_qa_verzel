@@ -1,0 +1,328 @@
+[
+  {
+    "caso": "01-abaixo-189-90",
+    "data": "2026-10-08T00:45:02-03:00",
+    "comando": [
+      "curl",
+      "-i",
+      "-X",
+      "POST",
+      "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+      "-H",
+      "Content-Type: application/json",
+      "--data-binary",
+      "{\"itens\":[{\"produtoId\":\"P003\",\"quantidade\":1}]}",
+      "--max-time",
+      "30",
+      "--silent",
+      "--show-error",
+      "--write-out",
+      "\nCURL_HTTP_STATUS:%{http_code}\n"
+    ],
+    "curl_exit_code": 0,
+    "resultado": "Aprovado",
+    "verificacoes": [
+      {
+        "verificacao": "Status da aplicação",
+        "esperado": 200,
+        "encontrado": "200",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "subtotal",
+        "esperado": 189.9,
+        "encontrado": 189.9,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "desconto",
+        "esperado": 0,
+        "encontrado": 0,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "frete",
+        "esperado": 19.9,
+        "encontrado": 19.9,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "freteGratis",
+        "esperado": false,
+        "encontrado": false,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "valorFaltanteFreteGratis",
+        "esperado": 10.1,
+        "encontrado": 10.1,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "total",
+        "esperado": 209.8,
+        "encontrado": 209.8,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Precisão monetária",
+        "esperado": "Até 2 casas decimais",
+        "encontrado": {
+          "subtotal": "189.9",
+          "desconto": "0",
+          "frete": "19.9",
+          "valorFaltanteFreteGratis": "10.1",
+          "total": "209.8",
+          "itens[0].precoUnitario": "189.9",
+          "itens[0].total": "189.9"
+        },
+        "resultado": "Aprovado"
+      }
+    ]
+  },
+  {
+    "caso": "02-abaixo-199-80",
+    "data": "2026-10-08T00:45:02-03:00",
+    "comando": [
+      "curl",
+      "-i",
+      "-X",
+      "POST",
+      "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+      "-H",
+      "Content-Type: application/json",
+      "--data-binary",
+      "{\"itens\":[{\"produtoId\":\"P002\",\"quantidade\":1},{\"produtoId\":\"P001\",\"quantidade\":1}]}",
+      "--max-time",
+      "30",
+      "--silent",
+      "--show-error",
+      "--write-out",
+      "\nCURL_HTTP_STATUS:%{http_code}\n"
+    ],
+    "curl_exit_code": 0,
+    "resultado": "Aprovado",
+    "verificacoes": [
+      {
+        "verificacao": "Status da aplicação",
+        "esperado": 200,
+        "encontrado": "200",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "subtotal",
+        "esperado": 199.8,
+        "encontrado": 199.8,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "desconto",
+        "esperado": 0,
+        "encontrado": 0,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "frete",
+        "esperado": 19.9,
+        "encontrado": 19.9,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "freteGratis",
+        "esperado": false,
+        "encontrado": false,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "valorFaltanteFreteGratis",
+        "esperado": 0.2,
+        "encontrado": 0.2,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "total",
+        "esperado": 219.7,
+        "encontrado": 219.7,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Precisão monetária",
+        "esperado": "Até 2 casas decimais",
+        "encontrado": {
+          "subtotal": "199.8",
+          "desconto": "0",
+          "frete": "19.9",
+          "valorFaltanteFreteGratis": "0.2",
+          "total": "219.7",
+          "itens[0].precoUnitario": "139.9",
+          "itens[0].total": "139.9",
+          "itens[1].precoUnitario": "59.9",
+          "itens[1].total": "59.9"
+        },
+        "resultado": "Aprovado"
+      }
+    ]
+  },
+  {
+    "caso": "03-limite-200-00",
+    "data": "2026-10-08T00:45:02-03:00",
+    "comando": [
+      "curl",
+      "-i",
+      "-X",
+      "POST",
+      "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+      "-H",
+      "Content-Type: application/json",
+      "--data-binary",
+      "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":2}]}",
+      "--max-time",
+      "30",
+      "--silent",
+      "--show-error",
+      "--write-out",
+      "\nCURL_HTTP_STATUS:%{http_code}\n"
+    ],
+    "curl_exit_code": 0,
+    "resultado": "Falhou",
+    "verificacoes": [
+      {
+        "verificacao": "Status da aplicação",
+        "esperado": 200,
+        "encontrado": "200",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "subtotal",
+        "esperado": 200,
+        "encontrado": 200,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "desconto",
+        "esperado": 0,
+        "encontrado": 0,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "frete",
+        "esperado": 0,
+        "encontrado": 19.9,
+        "resultado": "Falhou"
+      },
+      {
+        "verificacao": "freteGratis",
+        "esperado": true,
+        "encontrado": false,
+        "resultado": "Falhou"
+      },
+      {
+        "verificacao": "valorFaltanteFreteGratis",
+        "esperado": 0,
+        "encontrado": 0,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "total",
+        "esperado": 200,
+        "encontrado": 219.9,
+        "resultado": "Falhou"
+      },
+      {
+        "verificacao": "Precisão monetária",
+        "esperado": "Até 2 casas decimais",
+        "encontrado": {
+          "subtotal": "200",
+          "desconto": "0",
+          "frete": "19.9",
+          "valorFaltanteFreteGratis": "0",
+          "total": "219.9",
+          "itens[0].precoUnitario": "100",
+          "itens[0].total": "200"
+        },
+        "resultado": "Aprovado"
+      }
+    ]
+  },
+  {
+    "caso": "04-acima-229-90",
+    "data": "2026-10-08T00:45:03-03:00",
+    "comando": [
+      "curl",
+      "-i",
+      "-X",
+      "POST",
+      "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+      "-H",
+      "Content-Type: application/json",
+      "--data-binary",
+      "{\"itens\":[{\"produtoId\":\"P007\",\"quantidade\":1}]}",
+      "--max-time",
+      "30",
+      "--silent",
+      "--show-error",
+      "--write-out",
+      "\nCURL_HTTP_STATUS:%{http_code}\n"
+    ],
+    "curl_exit_code": 0,
+    "resultado": "Aprovado",
+    "verificacoes": [
+      {
+        "verificacao": "Status da aplicação",
+        "esperado": 200,
+        "encontrado": "200",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "subtotal",
+        "esperado": 229.9,
+        "encontrado": 229.9,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "desconto",
+        "esperado": 0,
+        "encontrado": 0,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "frete",
+        "esperado": 0,
+        "encontrado": 0,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "freteGratis",
+        "esperado": true,
+        "encontrado": true,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "valorFaltanteFreteGratis",
+        "esperado": 0,
+        "encontrado": 0,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "total",
+        "esperado": 229.9,
+        "encontrado": 229.9,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Precisão monetária",
+        "esperado": "Até 2 casas decimais",
+        "encontrado": {
+          "subtotal": "229.9",
+          "desconto": "0",
+          "frete": "0",
+          "valorFaltanteFreteGratis": "0",
+          "total": "229.9",
+          "itens[0].precoUnitario": "229.9",
+          "itens[0].total": "229.9"
+        },
+        "resultado": "Aprovado"
+      }
+    ]
+  }
+]

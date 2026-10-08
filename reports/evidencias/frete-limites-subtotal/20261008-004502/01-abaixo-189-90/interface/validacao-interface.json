@@ -1,0 +1,122 @@
+{
+  "caso": "01-abaixo-189-90",
+  "data": "2026-10-08 00:46:11 (America/Fortaleza)",
+  "itens": [
+    {
+      "produtoId": "P003",
+      "quantidade": 1
+    }
+  ],
+  "tls": "Verificação TLS ativa",
+  "verificacoes": [
+    {
+      "verificacao": "Status do cálculo na interface",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: subtotal",
+      "esperado": 189.9,
+      "encontrado": 189.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: desconto",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: freteGratis",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: valorFaltanteFreteGratis",
+      "esperado": 10.1,
+      "encontrado": 10.1,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "API durante interação: total",
+      "esperado": 209.8,
+      "encontrado": 209.8,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Ausência de cupom",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Valor na tela: subtotal",
+      "esperado": "R$ 189,90",
+      "encontrado": "R$ 189,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Duas casas na tela: subtotal",
+      "esperado": "Valor monetário com 2 casas decimais",
+      "encontrado": "R$ 189,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Valor na tela: desconto",
+      "esperado": "R$ 0,00",
+      "encontrado": "R$ 0,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Duas casas na tela: desconto",
+      "esperado": "Valor monetário com 2 casas decimais",
+      "encontrado": "R$ 0,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Valor na tela: frete",
+      "esperado": "R$ 19,90",
+      "encontrado": "R$ 19,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Duas casas na tela: frete",
+      "esperado": "Valor monetário com 2 casas decimais",
+      "encontrado": "R$ 19,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Valor na tela: total",
+      "esperado": "R$ 209,80",
+      "encontrado": "R$ 209,80",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Duas casas na tela: total",
+      "esperado": "Valor monetário com 2 casas decimais",
+      "encontrado": "R$ 209,80",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Indicação de frete grátis",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Aviso de valor faltante",
+      "esperado": "Faltam R$ 10,10 para o frete grátis.",
+      "encontrado": "Faltam R$ 10,10 para o frete grátis.",
+      "resultado": "Aprovado"
+    }
+  ],
+  "resultado": "Aprovado"
+}

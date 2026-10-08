@@ -1,0 +1,36 @@
+{
+  "status": 200,
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "headers": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a4722843fc93ccb8-SJC",
+    "content-encoding": "zstd",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 03:46:13 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Nyezvj4wAY8SI%2FFrwYaOVklTn8rvG4foBGebjJ9wFf0fsrLXUFY8RSZx%2BEquHb6Gpwpc%2FW%2B2J9JI11dz%2BA%2F8OQHVXmkC65vK1B2WZXpbYUSoDKEFhlcpBiA4Mv5TKuQooehuczzOi2uqEz4%2BGp1ZAG1lYNkiJJV5ZJDxaBbECaY%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "11"
+  },
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P003",
+        "nome": "Tênis Casual Urbano",
+        "precoUnitario": 189.9,
+        "quantidade": 1,
+        "total": 189.9
+      }
+    ],
+    "subtotal": 189.9,
+    "desconto": 0,
+    "frete": 19.9,
+    "freteGratis": false,
+    "valorFaltanteFreteGratis": 10.1,
+    "total": 209.8,
+    "cupom": null
+  }
+}

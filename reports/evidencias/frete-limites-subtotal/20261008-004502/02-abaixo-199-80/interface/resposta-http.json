@@ -1,0 +1,43 @@
+{
+  "status": 200,
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "headers": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a47228575a98f2cb-SJC",
+    "content-encoding": "zstd",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 03:46:16 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=UaZ4H3xYduEJH%2FiqIVIz8SG8rB4Zo1J25L97%2FfQI1DnXlD%2FyVLa3%2F4%2BFwiE2AfWEyrIED0yOK2XsgGfm8hxh3%2FT5zuA9Qw6hgDTSYO2lpQRGjkLfgjwk6r7wGzqJSaU1O1qXri3DpsoVWnzRynWVDvna%2BTqpCuDGfEHSXOKRl0I%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "16"
+  },
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P002",
+        "nome": "Calça Jeans Slim",
+        "precoUnitario": 139.9,
+        "quantidade": 1,
+        "total": 139.9
+      },
+      {
+        "produtoId": "P001",
+        "nome": "Camiseta Essencial",
+        "precoUnitario": 59.9,
+        "quantidade": 1,
+        "total": 59.9
+      }
+    ],
+    "subtotal": 199.8,
+    "desconto": 0,
+    "frete": 19.9,
+    "freteGratis": false,
+    "valorFaltanteFreteGratis": 0.2,
+    "total": 219.7,
+    "cupom": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "status": 200,
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "headers": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a472287bde1f2c2d-SJC",
+    "content-encoding": "zstd",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 03:46:22 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=CNiSey7Pe%2Bz0c731hpjUMS%2BwcJmveu8vA4jfCLsaLEDfvxVzISaMJQtqYTqnHZ9LFsX%2Bn%2BOg4XaUTAv6M2AGUv%2BQ8cGxL9eqWumrlgSaEArS2X8wwkICaUs8FD1MsGYI4mTH%2F3O55upv8YZdKIdJShOOMlhn2oGJlZE242NSMBA%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "18"
+  },
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P007",
+        "nome": "Jaqueta Corta-Vento",
+        "precoUnitario": 229.9,
+        "quantidade": 1,
+        "total": 229.9
+      }
+    ],
+    "subtotal": 229.9,
+    "desconto": 0,
+    "frete": 0,
+    "freteGratis": true,
+    "valorFaltanteFreteGratis": 0,
+    "total": 229.9,
+    "cupom": null
+  }
+}

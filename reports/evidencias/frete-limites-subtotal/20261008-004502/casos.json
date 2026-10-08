@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "01-abaixo-189-90",
+    "itens": [
+      {
+        "produtoId": "P003",
+        "quantidade": 1
+      }
+    ],
+    "esperado": {
+      "subtotal": 189.9,
+      "desconto": 0,
+      "frete": 19.9,
+      "freteGratis": false,
+      "valorFaltanteFreteGratis": 10.1,
+      "total": 209.8
+    }
+  },
+  {
+    "slug": "02-abaixo-199-80",
+    "itens": [
+      {
+        "produtoId": "P002",
+        "quantidade": 1
+      },
+      {
+        "produtoId": "P001",
+        "quantidade": 1
+      }
+    ],
+    "esperado": {
+      "subtotal": 199.8,
+      "desconto": 0,
+      "frete": 19.9,
+      "freteGratis": false,
+      "valorFaltanteFreteGratis": 0.2,
+      "total": 219.7
+    }
+  },
+  {
+    "slug": "03-limite-200-00",
+    "itens": [
+      {
+        "produtoId": "P005",
+        "quantidade": 2
+      }
+    ],
+    "esperado": {
+      "subtotal": 200,
+      "desconto": 0,
+      "frete": 0,
+      "freteGratis": true,
+      "valorFaltanteFreteGratis": 0,
+      "total": 200
+    }
+  },
+  {
+    "slug": "04-acima-229-90",
+    "itens": [
+      {
+        "produtoId": "P007",
+        "quantidade": 1
+      }
+    ],
+    "esperado": {
+      "subtotal": 229.9,
+      "desconto": 0,
+      "frete": 0,
+      "freteGratis": true,
+      "valorFaltanteFreteGratis": 0,
+      "total": 229.9
+    }
+  }
+]
