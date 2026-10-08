@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "01-p003",
+    "itens": [
+      {
+        "produtoId": "P003",
+        "quantidade": 1
+      }
+    ],
+    "esperado": {
+      "subtotal": 189.9,
+      "desconto": 0,
+      "frete": 19.9,
+      "freteGratis": false,
+      "valorFaltanteFreteGratis": 10.1,
+      "total": 209.8
+    }
+  }
+]

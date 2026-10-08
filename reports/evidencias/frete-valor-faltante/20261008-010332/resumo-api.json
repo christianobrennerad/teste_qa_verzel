@@ -1,0 +1,83 @@
+[
+  {
+    "caso": "01-p003",
+    "data": "2026-10-08T01:03:32-03:00",
+    "comando": [
+      "curl",
+      "-i",
+      "-X",
+      "POST",
+      "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+      "-H",
+      "Content-Type: application/json",
+      "--data-binary",
+      "{\"itens\":[{\"produtoId\":\"P003\",\"quantidade\":1}]}",
+      "--max-time",
+      "30",
+      "--silent",
+      "--show-error",
+      "--write-out",
+      "\nCURL_HTTP_STATUS:%{http_code}\n"
+    ],
+    "curl_exit_code": 0,
+    "resultado": "Aprovado",
+    "verificacoes": [
+      {
+        "verificacao": "Status da aplicação",
+        "esperado": 200,
+        "encontrado": "200",
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "subtotal",
+        "esperado": 189.9,
+        "encontrado": 189.9,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "desconto",
+        "esperado": 0,
+        "encontrado": 0,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "frete",
+        "esperado": 19.9,
+        "encontrado": 19.9,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "freteGratis",
+        "esperado": false,
+        "encontrado": false,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "valorFaltanteFreteGratis",
+        "esperado": 10.1,
+        "encontrado": 10.1,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "total",
+        "esperado": 209.8,
+        "encontrado": 209.8,
+        "resultado": "Aprovado"
+      },
+      {
+        "verificacao": "Precisão monetária",
+        "esperado": "Até 2 casas decimais",
+        "encontrado": {
+          "subtotal": "189.9",
+          "desconto": "0",
+          "frete": "19.9",
+          "valorFaltanteFreteGratis": "10.1",
+          "total": "209.8",
+          "itens[0].precoUnitario": "189.9",
+          "itens[0].total": "189.9"
+        },
+        "resultado": "Aprovado"
+      }
+    ]
+  }
+]

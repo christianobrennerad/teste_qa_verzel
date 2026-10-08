@@ -1,0 +1,66 @@
+{
+  "inicio": "2026-10-08 01:03:49 (America/Fortaleza)",
+  "tls": "Verificação TLS ativa",
+  "verificacoes": [
+    {
+      "verificacao": "Carrinho com uma unidade de P003",
+      "esperado": [
+        {
+          "produtoId": "P003",
+          "quantidade": 1
+        }
+      ],
+      "encontrado": [
+        {
+          "produtoId": "P003",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Subtotal do produto",
+      "esperado": "R$ 189,90",
+      "encontrado": "R$ 189,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Frete visível na tela",
+      "esperado": "R$ 19,90",
+      "encontrado": "R$ 19,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Aviso visível de valor faltante",
+      "esperado": "Faltam R$ 10,10 para o frete grátis.",
+      "encontrado": "Faltam R$ 10,10 para o frete grátis.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Sem cupom aplicado",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Status do cálculo recebido pelo navegador",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Frete retornado no cálculo",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Faltante retornado no cálculo",
+      "esperado": 10.1,
+      "encontrado": 10.1,
+      "resultado": "Aprovado"
+    }
+  ],
+  "resultado": "Aprovado",
+  "fim": "2026-10-08 01:03:52 (America/Fortaleza)"
+}

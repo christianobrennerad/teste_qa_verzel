@@ -1,0 +1,23 @@
+{
+  "data": "2026-10-08 01:03:52 (America/Fortaleza)",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/carrinho",
+  "valores": {
+    "subtotal": "R$ 189,90",
+    "desconto": "R$ 0,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 209,80"
+  },
+  "avisoFrete": "Faltam R$ 10,10 para o frete grátis.",
+  "avisoVisivel": true,
+  "freteVisivel": true,
+  "campos": [
+    {
+      "tipo": "text",
+      "nome": "",
+      "valor": "",
+      "min": "",
+      "max": ""
+    }
+  ],
+  "cupomAtivo": false
+}
