@@ -1,0 +1,224 @@
+{
+  "inicio": "2026-10-08T10:38:18-03:00",
+  "fim": "2026-10-08T10:38:19-03:00",
+  "timezone": "America/Fortaleza",
+  "resultado": "Falhou",
+  "etapas": [
+    {
+      "etapa": "calculo",
+      "inicio": "2026-10-08T10:38:18-03:00",
+      "fim": "2026-10-08T10:38:19-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":2}],\"cupom\":\"BEMVINDO10\"}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 200,
+          "encontrado": "200",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "subtotal",
+          "esperado": 200,
+          "encontrado": 200,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "desconto",
+          "esperado": 20,
+          "encontrado": 20,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "frete",
+          "esperado": 0,
+          "encontrado": 19.9,
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "total",
+          "esperado": 180,
+          "encontrado": 199.9,
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Duas unidades de P005",
+          "esperado": [
+            {
+              "produtoId": "P005",
+              "quantidade": 2
+            }
+          ],
+          "encontrado": [
+            {
+              "produtoId": "P005",
+              "nome": "Mochila Urbana 20L",
+              "precoUnitario": 100,
+              "quantidade": 2,
+              "total": 200
+            }
+          ],
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cupom BEMVINDO10 aplicado",
+          "esperado": {
+            "codigo": "BEMVINDO10",
+            "aplicado": true
+          },
+          "encontrado": {
+            "codigo": "BEMVINDO10",
+            "aplicado": true,
+            "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "etapa": "confirmacao",
+      "inicio": "2026-10-08T10:38:19-03:00",
+      "fim": "2026-10-08T10:38:19-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":2}],\"cupom\":\"BEMVINDO10\"}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 201,
+          "encontrado": "201",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Igualdade de itens",
+          "esperado": [
+            {
+              "produtoId": "P005",
+              "nome": "Mochila Urbana 20L",
+              "precoUnitario": 100,
+              "quantidade": 2,
+              "total": 200
+            }
+          ],
+          "encontrado": [
+            {
+              "produtoId": "P005",
+              "nome": "Mochila Urbana 20L",
+              "precoUnitario": 100,
+              "quantidade": 2,
+              "total": 200
+            }
+          ],
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Igualdade de subtotal",
+          "esperado": 200,
+          "encontrado": 200,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Igualdade de desconto",
+          "esperado": 20,
+          "encontrado": 20,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Igualdade de frete",
+          "esperado": 19.9,
+          "encontrado": 19.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Igualdade de freteGratis",
+          "esperado": false,
+          "encontrado": false,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Igualdade de valorFaltanteFreteGratis",
+          "esperado": 0,
+          "encontrado": 0,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Igualdade de total",
+          "esperado": 199.9,
+          "encontrado": 199.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Igualdade de cupom",
+          "esperado": {
+            "codigo": "BEMVINDO10",
+            "aplicado": true,
+            "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+          },
+          "encontrado": {
+            "codigo": "BEMVINDO10",
+            "aplicado": true,
+            "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    }
+  ],
+  "camposIguais": [
+    "itens",
+    "subtotal",
+    "desconto",
+    "frete",
+    "freteGratis",
+    "valorFaltanteFreteGratis",
+    "total",
+    "cupom"
+  ]
+}

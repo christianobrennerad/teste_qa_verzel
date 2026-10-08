@@ -1,0 +1,25 @@
+{
+  "itens": [
+    {
+      "produtoId": "P005",
+      "quantidade": 2
+    }
+  ],
+  "cupom": "BEMVINDO10",
+  "valoresEsperadosCalculo": {
+    "subtotal": 200,
+    "desconto": 20,
+    "frete": 0,
+    "total": 180
+  },
+  "camposIguais": [
+    "itens",
+    "subtotal",
+    "desconto",
+    "frete",
+    "freteGratis",
+    "valorFaltanteFreteGratis",
+    "total",
+    "cupom"
+  ]
+}
