@@ -1,0 +1,87 @@
+{
+  "data_api": "2026-10-07T23:31:26-03:00",
+  "resultado": "Bloqueado para conclusão do cenário de interface",
+  "resultado_api": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status da API",
+      "esperado": "200",
+      "encontrado": "200",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Item do carrinho",
+      "esperado": "1 unidade de P005 a R$ 100,00",
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "nome": "Mochila Urbana 20L",
+          "precoUnitario": 100,
+          "quantidade": 1,
+          "total": 100
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": 10,
+      "encontrado": 10,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": 109.9,
+      "encontrado": 109.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cupom aplicado",
+      "esperado": "BEMVINDO10",
+      "encontrado": {
+        "codigo": "BEMVINDO10",
+        "aplicado": true,
+        "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Mensagem devolvida pela API",
+      "esperado": "Cupom aplicado: 10% de desconto nos produtos.",
+      "encontrado": "Cupom aplicado: 10% de desconto nos produtos.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Desconto apenas sobre produtos",
+      "esperado": "10% de 100 = 10, sem desconto sobre frete",
+      "encontrado": "10",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Aplicação e exibição na interface",
+      "esperado": "Valores e mensagem visíveis após aplicar cupom",
+      "encontrado": "Navegação interrompida por net::ERR_CERT_AUTHORITY_INVALID",
+      "resultado": "Bloqueado"
+    }
+  ],
+  "execucao_interface": {
+    "data": "2026-10-07T23:34:52-03:00",
+    "ferramenta": "Playwright com Chromium /usr/bin/chromium",
+    "exit_code": 1,
+    "resultado": "Bloqueado",
+    "erro": "page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://verzel-store.qa-test-verzel-store.workers.dev/\nCall log:\n\u001b[2m  - navigating to \"https://verzel-store.qa-test-verzel-store.workers.dev/\", waiting until \"networkidle\"\u001b[22m\n\n",
+    "observacao": "Verificação TLS mantida ativa. Importação de CA no NSS rejeitada pela revisão automática por ampliar confiança TLS de forma persistente. Não foi contornado o bloqueio."
+  }
+}

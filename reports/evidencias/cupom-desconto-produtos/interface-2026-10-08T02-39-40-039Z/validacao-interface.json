@@ -1,0 +1,49 @@
+{
+  "data": "2026-10-07 23:39:40 (America/Fortaleza)",
+  "ferramenta": "Playwright com Chromium",
+  "tls": "Verificação de certificado ativa; CA oficial autorizada pelo usuário",
+  "etapas": [
+    "Abrir loja em contexto novo com carrinho vazio",
+    "Adicionar uma unidade de Mochila Urbana 20L",
+    "Aplicar BEMVINDO10 pelo formulário"
+  ],
+  "verificacoes": [
+    {
+      "verificacao": "subtotal",
+      "esperado": "R$ 100,00",
+      "encontrado": "R$ 100,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": "- R$ 10,00",
+      "encontrado": "- R$ 10,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": "R$ 19,90",
+      "encontrado": "R$ 19,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": "R$ 109,90",
+      "encontrado": "R$ 109,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Mensagem visível",
+      "esperado": "Cupom aplicado: 10% de desconto nos produtos.",
+      "encontrado": "Cupom BEMVINDO10 aplicado.",
+      "resultado": "Falhou"
+    },
+    {
+      "verificacao": "Cupom aplicado na tela",
+      "esperado": "BEMVINDO10 aplicado",
+      "encontrado": "BEMVINDO10 aplicado",
+      "resultado": "Aprovado"
+    }
+  ],
+  "resultado": "Falhou"
+}

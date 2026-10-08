@@ -1,0 +1,50 @@
+{
+  "resultado": "Falhou",
+  "motivo": "Mensagem da interface diferente do texto exigido pelo cenário",
+  "verificacoes_interface": [
+    {
+      "verificacao": "subtotal",
+      "esperado": "R$ 100,00",
+      "encontrado": "R$ 100,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": "- R$ 10,00",
+      "encontrado": "- R$ 10,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": "R$ 19,90",
+      "encontrado": "R$ 19,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": "R$ 109,90",
+      "encontrado": "R$ 109,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Mensagem visível",
+      "esperado": "Cupom aplicado: 10% de desconto nos produtos.",
+      "encontrado": "Cupom BEMVINDO10 aplicado.",
+      "resultado": "Falhou"
+    },
+    {
+      "verificacao": "Cupom aplicado na tela",
+      "esperado": "BEMVINDO10 aplicado",
+      "encontrado": "BEMVINDO10 aplicado",
+      "resultado": "Aprovado"
+    }
+  ],
+  "api_durante_interacao": {
+    "subtotal": 100,
+    "desconto": 10,
+    "frete": 19.9,
+    "total": 109.9,
+    "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+  },
+  "historico": "Tentativa bloqueada pelo certificado preservada em pasta própria. Nova execução após autorização do usuário; verificação TLS ativa."
+}

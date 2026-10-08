@@ -1,0 +1,13 @@
+{
+  "data": "2026-10-07 23:38:49 (America/Fortaleza)",
+  "ferramenta": "Playwright com Chromium",
+  "tls": "Verificação de certificado ativa; CA oficial autorizada pelo usuário",
+  "etapas": [
+    "Abrir loja em contexto novo com carrinho vazio",
+    "Adicionar uma unidade de Mochila Urbana 20L",
+    "Aplicar BEMVINDO10 pelo formulário"
+  ],
+  "verificacoes": [],
+  "resultado": "Bloqueado",
+  "erro": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#mensagem-cupom') to be visible\u001b[22m\n"
+}

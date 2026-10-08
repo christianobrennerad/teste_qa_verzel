@@ -1,0 +1,4 @@
+page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://verzel-store.qa-test-verzel-store.workers.dev/
+Call log:
+[2m  - navigating to "https://verzel-store.qa-test-verzel-store.workers.dev/", waiting until "networkidle"[22m
+

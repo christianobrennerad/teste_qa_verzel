@@ -1,0 +1,8 @@
+{
+  "data": "2026-10-07T23:34:52-03:00",
+  "ferramenta": "Playwright com Chromium /usr/bin/chromium",
+  "exit_code": 1,
+  "resultado": "Bloqueado",
+  "erro": "page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://verzel-store.qa-test-verzel-store.workers.dev/\nCall log:\n\u001b[2m  - navigating to \"https://verzel-store.qa-test-verzel-store.workers.dev/\", waiting until \"networkidle\"\u001b[22m\n\n",
+  "observacao": "Verificação TLS mantida ativa. Importação de CA no NSS rejeitada pela revisão automática por ampliar confiança TLS de forma persistente. Não foi contornado o bloqueio."
+}

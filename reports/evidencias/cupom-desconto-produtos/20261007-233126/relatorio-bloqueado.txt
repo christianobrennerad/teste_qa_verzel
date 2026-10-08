@@ -1,0 +1,81 @@
+# Relatório de teste — Aplicar desconto apenas aos produtos
+
+**Resultado: Bloqueado para concluir o cenário na interface.** O cálculo do cupom foi aprovado na API: a compra de R$ 100,00 recebeu R$ 10,00 de desconto, manteve frete de R$ 19,90 e totalizou R$ 109,90. A mensagem esperada também foi devolvida pelo serviço. A aplicação do cupom e a exibição na tela não puderam ser verificadas.
+
+**Data do teste da API:** 07/10/2026, às 23h31 (horário de Fortaleza). O horário da tentativa na interface está nos comprovantes.
+
+**Loja:** Verzel Store, ambiente de testes.
+
+**Referência:** VZS-142, versão 2.3.0, critérios CA01 e CA09; cenário em [cupons.feature](../features/cupons.feature).
+
+## O que foi testado
+
+Calculamos o carrinho com uma Mochila Urbana 20L (P005), de R$ 100,00, usando o cupom BEMVINDO10. Conferimos se os 10% de desconto se aplicam somente ao produto e se o frete permanece integral.
+
+Também tentamos abrir a loja em um navegador para aplicar o cupom e conferir a mensagem na tela. A navegação foi interrompida pela validação do certificado da conexão.
+
+## Cenário BDD
+
+O cenário descreve a experiência esperada do cliente. API é o serviço que calcula os valores; a resposta desse serviço foi conferida, mas isso não comprova sua exibição na tela.
+
+```gherkin
+Contexto:
+    Dado que o carrinho contém 1 unidade do produto "P005" de R$ 100,00
+
+  @CA01 @CA09
+  Cenário: Aplicar desconto apenas aos produtos
+    Quando aplico o cupom "BEMVINDO10"
+    Então o subtotal deve ser R$ 100,00
+    E o desconto deve ser R$ 10,00
+    E o frete deve ser R$ 19,90
+    E o total deve ser R$ 109,90
+    E deve ser exibida a mensagem "Cupom aplicado: 10% de desconto nos produtos."
+```
+
+## Resultados da conferência
+
+| Verificação | Esperado | Encontrado | Resultado |
+| --- | --- | --- | --- |
+| Cálculo concluído pelo serviço | Resposta bem-sucedida | Status 200 e dados em JSON | Aprovado |
+| Produto e quantidade | 1 unidade de P005 por R$ 100,00 | 1 unidade de P005 por R$ 100,00 | Aprovado |
+| Cupom aplicado no cálculo | BEMVINDO10 válido | BEMVINDO10 aplicado | Aprovado |
+| Subtotal | R$ 100,00 | R$ 100,00 | Aprovado |
+| Desconto sobre produtos | R$ 10,00 | R$ 10,00 | Aprovado |
+| Frete sem desconto | R$ 19,90 | R$ 19,90 | Aprovado |
+| Total da compra | R$ 109,90 | R$ 109,90 | Aprovado |
+| Mensagem devolvida pelo serviço | Cupom aplicado: 10% de desconto nos produtos. | Cupom aplicado: 10% de desconto nos produtos. | Aprovado |
+| Aplicação do cupom e exibição dos valores na tela | Cupom aplicado e valores corretos visíveis | A página não abriu devido ao certificado da conexão | Bloqueado |
+| Mensagem exibida ao cliente | Cupom aplicado: 10% de desconto nos produtos. | Exibição na tela não verificada | Bloqueado |
+
+A conta conferida foi **R$ 100,00 − R$ 10,00 + R$ 19,90 = R$ 109,90**. Não foi aplicado desconto sobre o frete.
+
+## Falhas encontradas
+
+Nenhuma divergência funcional foi encontrada no cálculo ou na mensagem devolvida pela API.
+
+**B01 — Validação na interface bloqueada pelo ambiente.** O navegador interrompeu a abertura da página com `net::ERR_CERT_AUTHORITY_INVALID`. A revisão automática de aprovação rejeitou importar o certificado oficial do proxy no armazenamento de confiança do navegador, pois isso amplia de forma persistente a confiança nas conexões. Não foi desativada a verificação de segurança nem contornado o bloqueio.
+
+A pendência é concluir o teste em um navegador com a conexão validada. Foi solicitada autorização ao usuário para ajustar a confiança do navegador. O bloqueio não demonstra um defeito no cupom; impede afirmar que a interface passou no cenário.
+
+## Comprovantes do teste
+
+- [Dados enviados para o cálculo](evidencias/cupom-desconto-produtos/20261007-233126/corpo-enviado.json).
+- [Registro completo da consulta](evidencias/cupom-desconto-produtos/20261007-233126/resposta-http.txt).
+- [Resultado do cálculo recebido](evidencias/cupom-desconto-produtos/20261007-233126/corpo.json).
+- [Dados da execução da API](evidencias/cupom-desconto-produtos/20261007-233126/execucao-api.json).
+- [Conferência detalhada dos resultados](evidencias/cupom-desconto-produtos/20261007-233126/validacao.json).
+- [Registro de erros da consulta à API](evidencias/cupom-desconto-produtos/20261007-233126/curl-stderr.txt): vazio nesta execução.
+- [Registro da tentativa na interface](evidencias/cupom-desconto-produtos/20261007-233126/execucao-interface.json).
+- [Erro de navegação do navegador](evidencias/cupom-desconto-produtos/20261007-233126/interface-stderr.txt).
+
+Para a equipe técnica, a consulta foi realizada com este comando, mantendo a verificação de segurança da conexão:
+
+```bash
+curl -i -X POST https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular -H 'Content-Type: application/json' --data-binary '{"itens":[{"produtoId":"P005","quantidade":1}],"cupom":"BEMVINDO10"}' --max-time 30 --silent --show-error --write-out '\nCURL_HTTP_STATUS:%{http_code}\n'
+```
+
+O marcador `CURL_HTTP_STATUS` é acrescentado pela ferramenta e não faz parte da resposta. A avaliação usa o status final da aplicação. Os arquivos da interface registram uma tentativa de navegação, sem simular aplicação de cupom ou inventar imagens de uma tela não acessada.
+
+## Limite desta avaliação
+
+O cálculo e a mensagem da API foram aprovados na execução indicada. A aplicação do cupom pela interface, a exibição da mensagem e dos valores ao cliente continuam bloqueadas. Outros produtos, cupons, troca ou remoção de cupom e confirmação de pedidos não foram avaliados neste teste.
