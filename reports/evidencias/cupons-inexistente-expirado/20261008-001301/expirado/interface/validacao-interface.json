@@ -1,0 +1,61 @@
+{
+  "data": "2026-10-08 00:13:57 (America/Fortaleza)",
+  "cupom_digitado": "VERAO2026",
+  "tls": "Verificação TLS ativa",
+  "etapas": [
+    "Abrir loja em contexto novo, sem compartilhar carrinho com outro exemplo",
+    "Adicionar 1 unidade de P005 e abrir carrinho",
+    "Aplicar o cupom pelo formulário"
+  ],
+  "verificacoes": [
+    {
+      "verificacao": "Mensagem exibida",
+      "esperado": "Cupom expirado.",
+      "encontrado": "Cupom expirado.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Nenhum cupom aplicado na tela",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Nenhum cupom aplicado na API",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Mensagem retornada pela API",
+      "esperado": "Cupom expirado.",
+      "encontrado": "Cupom expirado.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": "R$ 100,00",
+      "encontrado": "R$ 100,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": "R$ 0,00",
+      "encontrado": "R$ 0,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": "R$ 19,90",
+      "encontrado": "R$ 19,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": "R$ 119,90",
+      "encontrado": "R$ 119,90",
+      "resultado": "Aprovado"
+    }
+  ],
+  "resultado": "Aprovado"
+}

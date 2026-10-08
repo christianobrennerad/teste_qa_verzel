@@ -1,0 +1,67 @@
+{
+  "data": "2026-10-08T00:13:01-03:00",
+  "cupom_digitado": "INEXISTENTE",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"INEXISTENTE\"}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 56,
+  "resultado": "Bloqueado",
+  "verificacoes": [
+    {
+      "verificacao": "Status da aplicação",
+      "esperado": "200",
+      "encontrado": "000",
+      "resultado": "Bloqueado"
+    },
+    {
+      "verificacao": "Mensagem de recusa",
+      "esperado": "Cupom inválido.",
+      "encontrado": null,
+      "resultado": "Bloqueado"
+    },
+    {
+      "verificacao": "Nenhum cupom aplicado",
+      "esperado": false,
+      "encontrado": null,
+      "resultado": "Bloqueado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": null,
+      "resultado": "Bloqueado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": 0,
+      "encontrado": null,
+      "resultado": "Bloqueado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": null,
+      "resultado": "Bloqueado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": 119.9,
+      "encontrado": null,
+      "resultado": "Bloqueado"
+    }
+  ]
+}

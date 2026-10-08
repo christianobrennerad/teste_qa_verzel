@@ -1,0 +1,67 @@
+{
+  "data": "2026-10-08T00:13:49-03:00",
+  "cupom_digitado": "INEXISTENTE",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"INEXISTENTE\"}",
+    "--max-time",
+    "60",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status da aplicação",
+      "esperado": "200",
+      "encontrado": "200",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Mensagem de recusa",
+      "esperado": "Cupom inválido.",
+      "encontrado": "Cupom inválido.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Nenhum cupom aplicado",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": 119.9,
+      "encontrado": 119.9,
+      "resultado": "Aprovado"
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "resultado": "Aprovado",
+  "casos_executados": 2,
+  "interface": [
+    {
+      "data": "2026-10-08 00:13:54 (America/Fortaleza)",
+      "cupom_digitado": "INEXISTENTE",
+      "tls": "Verificação TLS ativa",
+      "etapas": [
+        "Abrir loja em contexto novo, sem compartilhar carrinho com outro exemplo",
+        "Adicionar 1 unidade de P005 e abrir carrinho",
+        "Aplicar o cupom pelo formulário"
+      ],
+      "verificacoes": [
+        {
+          "verificacao": "Mensagem exibida",
+          "esperado": "Cupom inválido.",
+          "encontrado": "Cupom inválido.",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Nenhum cupom aplicado na tela",
+          "esperado": false,
+          "encontrado": false,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Nenhum cupom aplicado na API",
+          "esperado": false,
+          "encontrado": false,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Mensagem retornada pela API",
+          "esperado": "Cupom inválido.",
+          "encontrado": "Cupom inválido.",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "subtotal",
+          "esperado": "R$ 100,00",
+          "encontrado": "R$ 100,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "desconto",
+          "esperado": "R$ 0,00",
+          "encontrado": "R$ 0,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "frete",
+          "esperado": "R$ 19,90",
+          "encontrado": "R$ 19,90",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "total",
+          "esperado": "R$ 119,90",
+          "encontrado": "R$ 119,90",
+          "resultado": "Aprovado"
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "data": "2026-10-08 00:13:57 (America/Fortaleza)",
+      "cupom_digitado": "VERAO2026",
+      "tls": "Verificação TLS ativa",
+      "etapas": [
+        "Abrir loja em contexto novo, sem compartilhar carrinho com outro exemplo",
+        "Adicionar 1 unidade de P005 e abrir carrinho",
+        "Aplicar o cupom pelo formulário"
+      ],
+      "verificacoes": [
+        {
+          "verificacao": "Mensagem exibida",
+          "esperado": "Cupom expirado.",
+          "encontrado": "Cupom expirado.",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Nenhum cupom aplicado na tela",
+          "esperado": false,
+          "encontrado": false,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Nenhum cupom aplicado na API",
+          "esperado": false,
+          "encontrado": false,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Mensagem retornada pela API",
+          "esperado": "Cupom expirado.",
+          "encontrado": "Cupom expirado.",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "subtotal",
+          "esperado": "R$ 100,00",
+          "encontrado": "R$ 100,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "desconto",
+          "esperado": "R$ 0,00",
+          "encontrado": "R$ 0,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "frete",
+          "esperado": "R$ 19,90",
+          "encontrado": "R$ 19,90",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "total",
+          "esperado": "R$ 119,90",
+          "encontrado": "R$ 119,90",
+          "resultado": "Aprovado"
+        }
+      ],
+      "resultado": "Aprovado"
+    }
+  ],
+  "api": [
+    {
+      "data": "2026-10-08T00:13:49-03:00",
+      "cupom_digitado": "INEXISTENTE",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"INEXISTENTE\"}",
+        "--max-time",
+        "60",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status da aplicação",
+          "esperado": "200",
+          "encontrado": "200",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Mensagem de recusa",
+          "esperado": "Cupom inválido.",
+          "encontrado": "Cupom inválido.",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Nenhum cupom aplicado",
+          "esperado": false,
+          "encontrado": false,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "subtotal",
+          "esperado": 100,
+          "encontrado": 100,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "desconto",
+          "esperado": 0,
+          "encontrado": 0,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "frete",
+          "esperado": 19.9,
+          "encontrado": 19.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "total",
+          "esperado": 119.9,
+          "encontrado": 119.9,
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "data": "2026-10-08T00:13:16-03:00",
+      "cupom_digitado": "VERAO2026",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"VERAO2026\"}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status da aplicação",
+          "esperado": "200",
+          "encontrado": "200",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Mensagem de recusa",
+          "esperado": "Cupom expirado.",
+          "encontrado": "Cupom expirado.",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Nenhum cupom aplicado",
+          "esperado": false,
+          "encontrado": false,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "subtotal",
+          "esperado": 100,
+          "encontrado": 100,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "desconto",
+          "esperado": 0,
+          "encontrado": 0,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "frete",
+          "esperado": 19.9,
+          "encontrado": 19.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "total",
+          "esperado": 119.9,
+          "encontrado": 119.9,
+          "resultado": "Aprovado"
+        }
+      ]
+    }
+  ],
+  "historico": {
+    "consulta_inicial_inexistente": {
+      "data": "2026-10-08T00:13:01-03:00",
+      "cupom_digitado": "INEXISTENTE",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"INEXISTENTE\"}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 56,
+      "resultado": "Bloqueado",
+      "verificacoes": [
+        {
+          "verificacao": "Status da aplicação",
+          "esperado": "200",
+          "encontrado": "000",
+          "resultado": "Bloqueado"
+        },
+        {
+          "verificacao": "Mensagem de recusa",
+          "esperado": "Cupom inválido.",
+          "encontrado": null,
+          "resultado": "Bloqueado"
+        },
+        {
+          "verificacao": "Nenhum cupom aplicado",
+          "esperado": false,
+          "encontrado": null,
+          "resultado": "Bloqueado"
+        },
+        {
+          "verificacao": "subtotal",
+          "esperado": 100,
+          "encontrado": null,
+          "resultado": "Bloqueado"
+        },
+        {
+          "verificacao": "desconto",
+          "esperado": 0,
+          "encontrado": null,
+          "resultado": "Bloqueado"
+        },
+        {
+          "verificacao": "frete",
+          "esperado": 19.9,
+          "encontrado": null,
+          "resultado": "Bloqueado"
+        },
+        {
+          "verificacao": "total",
+          "esperado": 119.9,
+          "encontrado": null,
+          "resultado": "Bloqueado"
+        }
+      ]
+    },
+    "bloqueio_inicial": "CONNECT tunnel failed, response 502; repetir após outra consulta ter concluído, com prazo maior",
+    "resultado_repeticao": "Aprovado"
+  }
+}
