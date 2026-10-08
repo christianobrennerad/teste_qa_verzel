@@ -6,7 +6,7 @@
 
 **Loja:** Verzel Store, ambiente de testes.
 
-**Referência:** VZS-142, versão 2.3.0.
+**Referência:** VZS-142, versão 2.3.0; cenário em [contrato_api.feature](../features/contrato_api.feature).
 
 ## O que foi testado
 
@@ -41,15 +41,17 @@ Funcionalidade: Catálogo e contrato HTTP da API
       | P008 | Garrafa Térmica 750ml | 50    |
 ```
 
-## O que encontramos
+## Resultados da conferência
 
-| Verificação | Resultado |
-| --- | --- |
-| A consulta ao catálogo funcionou | Aprovado |
-| Todos os oito produtos esperados estavam presentes | Aprovado |
-| Nenhum produto apareceu repetido | Aprovado |
-| Todos os produtos tinham nome, descrição, categoria e preço | Aprovado |
-| Os nomes e preços correspondiam à documentação | Aprovado |
+| Verificação | Esperado | Encontrado | Resultado |
+| --- | --- | --- | --- |
+| Consulta concluída | Consulta sem erros | Consulta sem erros | Aprovado |
+| Status da consulta | 200 (sucesso) | 200 (sucesso) | Aprovado |
+| Dados recebidos | Lista de produtos em JSON | Lista de produtos em JSON | Aprovado |
+| Informações de cada produto | Identificador, nome, descrição, categoria e preço | Todas as informações presentes nos 8 produtos | Aprovado |
+| Produtos no catálogo | 8 produtos, de P001 a P008 | 8 produtos, de P001 a P008 | Aprovado |
+| Produtos repetidos | Nenhum | Nenhum | Aprovado |
+| Formato dos preços | Valores numéricos em reais | Valores numéricos em reais | Aprovado |
 
 ### Produtos conferidos
 
@@ -64,6 +66,10 @@ Funcionalidade: Catálogo e contrato HTTP da API
 | Jaqueta Corta-Vento | R$ 229,90 | R$ 229,90 | Aprovado |
 | Garrafa Térmica 750ml | R$ 50,00 | R$ 50,00 | Aprovado |
 
+## Falhas encontradas
+
+Nenhuma falha foi encontrada nas verificações deste cenário.
+
 ## Comprovantes do teste
 
 Os registros abaixo guardam os dados recebidos e a conferência realizada. São arquivos técnicos disponíveis para consulta da equipe:
@@ -71,6 +77,19 @@ Os registros abaixo guardam os dados recebidos e a conferência realizada. São 
 - [Registro completo da consulta](evidencias/catalogo-produtos/resposta-http.txt).
 - [Dados dos produtos recebidos](evidencias/catalogo-produtos/corpo.json).
 - [Conferência detalhada dos resultados](evidencias/catalogo-produtos/validacao.json).
+- [Registro de erros da consulta](evidencias/catalogo-produtos/curl-stderr.txt): vazio nesta execução.
+
+Para a equipe técnica, a consulta foi realizada com este comando, sem desativar a verificação de segurança da conexão:
+
+```bash
+curl -i -X GET \
+  "https://verzel-store.qa-test-verzel-store.workers.dev/api/produtos" \
+  -H "Content-Type: application/json" \
+  --max-time 30 --silent --show-error \
+  --write-out '\nCURL_HTTP_STATUS:%{http_code}\n'
+```
+
+O registro inclui um marcador final acrescentado pela ferramenta para indicar o status da consulta. Ele não faz parte dos dados dos produtos. Eventuais cabeçalhos do túnel de conexão não são usados para avaliar o resultado do serviço.
 
 ## Limite desta avaliação
 
