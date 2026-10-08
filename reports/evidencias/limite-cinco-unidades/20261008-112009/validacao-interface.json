@@ -1,0 +1,148 @@
+{
+  "inicio": "2026-10-08T11:20:09-03:00",
+  "timezone": "America/Fortaleza",
+  "verificacoes": [
+    {
+      "verificacao": "Produto e preço no catálogo",
+      "esperado": "P008 — Garrafa Térmica 750ml, R$ 50,00",
+      "encontrado": {
+        "nome": "Garrafa Térmica 750ml",
+        "preco": "R$ 50,00"
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Pré-condição de quatro unidades",
+      "esperado": "Quatro unidades de P008",
+      "encontrado": {
+        "itens": [
+          {
+            "produtoId": "P008",
+            "quantidade": 4
+          }
+        ],
+        "quantidadeVisivel": "4"
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Subtotal inicial",
+      "esperado": "R$ 200,00",
+      "encontrado": "R$ 200,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Quinta unidade adicionada",
+      "esperado": "Cinco unidades de P008",
+      "encontrado": {
+        "itens": [
+          {
+            "produtoId": "P008",
+            "quantidade": 5
+          }
+        ],
+        "quantidadeVisivel": "5"
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Subtotal com cinco unidades",
+      "esperado": "R$ 250,00",
+      "encontrado": "R$ 250,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Quantidade após tentar sexta unidade",
+      "esperado": "Continuar com cinco unidades de P008",
+      "encontrado": {
+        "itens": [
+          {
+            "produtoId": "P008",
+            "quantidade": 5
+          }
+        ],
+        "quantidadeVisivel": "5"
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Subtotal após tentar sexta unidade",
+      "esperado": "Continuar em R$ 250,00",
+      "encontrado": "R$ 250,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Botão de aumento bloqueado no limite",
+      "esperado": true,
+      "encontrado": {
+        "disabled": true,
+        "ariaLabel": "Aumentar quantidade de Garrafa Térmica 750ml",
+        "texto": "+"
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Aviso do limite exibido",
+      "esperado": "Limite de 5 unidades por produto.",
+      "encontrado": "Limite de 5 unidades por produto.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cálculo da quinta unidade aceito pela loja",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Subtotal da quinta unidade retornado à interface",
+      "esperado": 250,
+      "encontrado": 250,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Tentativa bloqueada sem enviar sexta unidade",
+      "esperado": "Nenhuma chamada com quantidade acima de cinco e nenhuma chamada adicional após a tentativa",
+      "encontrado": {
+        "chamadasAcimaDoLimite": 0,
+        "antes": 5,
+        "depois": 5
+      },
+      "resultado": "Aprovado"
+    }
+  ],
+  "acoes": [
+    {
+      "data": "2026-10-08T11:20:27-03:00",
+      "acao": "Clicou em Adicionar ao carrinho de P008, preparando 1 unidade(s)."
+    },
+    {
+      "data": "2026-10-08T11:20:27-03:00",
+      "acao": "Clicou em Adicionar ao carrinho de P008, preparando 2 unidade(s)."
+    },
+    {
+      "data": "2026-10-08T11:20:27-03:00",
+      "acao": "Clicou em Adicionar ao carrinho de P008, preparando 3 unidade(s)."
+    },
+    {
+      "data": "2026-10-08T11:20:27-03:00",
+      "acao": "Clicou em Adicionar ao carrinho de P008, preparando 4 unidade(s)."
+    },
+    {
+      "data": "2026-10-08T11:20:28-03:00",
+      "acao": "Clicou no botão + do carrinho para adicionar a quinta unidade."
+    },
+    {
+      "data": "2026-10-08T11:20:28-03:00",
+      "acao": "Tentou clicar no botão + novamente, sem remover o bloqueio do limite."
+    }
+  ],
+  "navegador": {
+    "nome": "firefox",
+    "versao": "153.4.0",
+    "acceptInsecureCerts": false,
+    "janela": "1280 x 1000"
+  },
+  "tls": "Verificação ativa; certificado oficial do proxy somente no perfil temporário.",
+  "resultado": "Aprovado",
+  "fim": "2026-10-08T11:20:30-03:00"
+}

@@ -1,0 +1,1 @@
+PYTHONPATH=/tmp/verzel-marionette python /tmp/verzel-limite-cinco-unidades.py > /tmp/verzel-limite-cinco-unidades-stdout.txt 2> /tmp/verzel-limite-cinco-unidades-stderr.txt

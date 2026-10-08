@@ -1,0 +1,10 @@
+{
+  "produtoId": "P008",
+  "nome": "Garrafa Térmica 750ml",
+  "precoUnitario": 50,
+  "quantidadeInicial": 4,
+  "quantidadeAposAdicionar": 5,
+  "subtotal": 250,
+  "quantidadeAposTentarSexta": 5,
+  "subtotalAposTentarSexta": 250
+}

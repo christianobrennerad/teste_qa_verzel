@@ -1,0 +1,16 @@
+{
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/",
+  "titulo": "Produtos | Verzel Store",
+  "texto": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n0\nFrete grátis a partir de R$ 200,00.\n\nE na primeira compra, o cupom BEMVINDO10 dá 10% de desconto nos produtos.\n\nVer as regras da promoção\nProdutos\n\nVestuário\n\nCamiseta Essencial\n\nAlgodão penteado e corte reto.\n\nR$ 59,90\n\nAdicionar ao carrinho\n\nVestuário\n\nCalça Jeans Slim\n\nJeans com elastano e lavagem escura.\n\nR$ 139,90\n\nAdicionar ao carrinho\n\nCalçados\n\nTênis Casual Urbano\n\nSolado de borracha e cabedal em lona.\n\nR$ 189,90\n\nAdicionar ao carrinho\n\nAcessórios\n\nBoné Aba Curva\n\nAjuste traseiro com fivela metálica.\n\nR$ 49,90\n\nAdicionar ao carrinho\n\nAcessórios\n\nMochila Urbana 20L\n\nCompartimento acolchoado para notebook.\n\nR$ 100,00\n\nAdicionar ao carrinho\n\nVestuário\n\nKit 3 Pares de Meias\n\nCano médio, algodão com reforço no calcanhar.\n\nR$ 29,90\n\nAdicionar ao carrinho\n\nVestuário\n\nJaqueta Corta-Vento\n\nTecido leve e repelente à água.\n\nR$ 229,90\n\nAdicionar ao carrinho\n\nAcessórios\n\nGarrafa Térmica 750ml\n\nMantém a temperatura por até 12 horas.\n\nR$ 50,00\n\nAdicionar ao carrinho\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.",
+  "produtoCatalogo": "Garrafa Térmica 750ml",
+  "precoCatalogo": "R$ 50,00",
+  "precoNoCarrinho": null,
+  "itens": [],
+  "cupom": null,
+  "quantidade": null,
+  "valores": {},
+  "aumentarQuantidade": null,
+  "avisoLimite": null,
+  "calculosCapturados": 0,
+  "data": "2026-10-08T11:20:26-03:00"
+}

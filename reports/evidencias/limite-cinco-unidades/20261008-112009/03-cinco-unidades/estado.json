@@ -1,0 +1,30 @@
+{
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/carrinho",
+  "titulo": "Carrinho | Verzel Store",
+  "texto": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n5\nCarrinho\nEsvaziar carrinho\nGarrafa Térmica 750ml\n\nR$ 50,00 cada\n\nLimite de 5 unidades por produto.\n\n-\n5\n+\n\nR$ 250,00\n\nRemover\nCupom de desconto\nAplicar cupom\nResumo do pedido\nSubtotal\nR$ 250,00\nDesconto\nR$ 0,00\nFrete\nGrátis\nTotal\nR$ 250,00\nFinalizar compra\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.",
+  "produtoCatalogo": null,
+  "precoCatalogo": null,
+  "precoNoCarrinho": "R$ 50,00 cada",
+  "itens": [
+    {
+      "produtoId": "P008",
+      "quantidade": 5
+    }
+  ],
+  "cupom": null,
+  "quantidade": "5",
+  "valores": {
+    "subtotal": "R$ 250,00",
+    "desconto": "R$ 0,00",
+    "frete": "Grátis",
+    "total": "R$ 250,00"
+  },
+  "aumentarQuantidade": {
+    "disabled": true,
+    "ariaLabel": "Aumentar quantidade de Garrafa Térmica 750ml",
+    "texto": "+"
+  },
+  "avisoLimite": "Limite de 5 unidades por produto.",
+  "calculosCapturados": 5,
+  "data": "2026-10-08T11:20:28-03:00"
+}

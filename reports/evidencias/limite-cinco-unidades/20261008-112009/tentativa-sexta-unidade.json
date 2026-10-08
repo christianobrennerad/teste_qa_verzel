@@ -1,0 +1,11 @@
+{
+  "inicio": "2026-10-08T11:20:28-03:00",
+  "botaoHabilitadoAntes": false,
+  "acao": "Tentativa de clique no mesmo botão + via interação nativa WebDriver, sem alterar disabled ou o DOM.",
+  "retornoClique": "Comando concluído.",
+  "fim": "2026-10-08T11:20:30-03:00",
+  "botaoHabilitadoDepois": false,
+  "calculosAntes": 5,
+  "calculosDepois": 5,
+  "intervaloObservacaoSegundos": 1
+}

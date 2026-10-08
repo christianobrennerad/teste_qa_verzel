@@ -1,0 +1,1 @@
+{"evidencias": "reports/evidencias/limite-cinco-unidades/20261008-112009", "resultado": "Aprovado", "inicio": "2026-10-08T11:20:09-03:00", "fim": "2026-10-08T11:20:30-03:00", "erro": null, "falhas": []}
