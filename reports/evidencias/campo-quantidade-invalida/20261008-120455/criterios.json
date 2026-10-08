@@ -1,0 +1,8 @@
+{
+  "status": 422,
+  "erro": {
+    "codigo": "QUANTIDADE_INVALIDA",
+    "mensagem": "A quantidade deve ser um número inteiro maior ou igual a 1.",
+    "campo": "itens[0].quantidade"
+  }
+}
