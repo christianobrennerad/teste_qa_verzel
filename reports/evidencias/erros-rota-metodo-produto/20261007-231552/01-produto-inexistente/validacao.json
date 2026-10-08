@@ -1,0 +1,69 @@
+{
+  "caso": "01-produto-inexistente",
+  "requisicao": "GET /api/produtos/INEXISTENTE",
+  "data": "2026-10-07T23:15:52-03:00",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "GET",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/produtos/INEXISTENTE",
+    "-H",
+    "Content-Type: application/json",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "resultado": "Falhou",
+  "verificacoes": [
+    {
+      "verificacao": "Consulta concluída",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Status da aplicação",
+      "esperado": 404,
+      "encontrado": "404",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Corpo JSON",
+      "esperado": "Objeto JSON",
+      "encontrado": "Objeto JSON",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Tipo da resposta",
+      "esperado": "application/json",
+      "encontrado": "application/json",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Código do erro",
+      "esperado": "PRODUTO_NAO_ENCONTRADO",
+      "encontrado": "PRODUTO_NAO_ENCONTRADO",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Formato do erro",
+      "esperado": "Objeto erro com codigo e mensagem textual",
+      "encontrado": {
+        "codigo": "PRODUTO_NAO_ENCONTRADO",
+        "mensagem": "Produto INEXISTENTE não encontrado."
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Campo do erro conforme formato documentado",
+      "esperado": "Propriedade campo no objeto erro",
+      "encontrado": "Ausente",
+      "resultado": "Falhou"
+    }
+  ],
+  "campo_presente": false
+}
