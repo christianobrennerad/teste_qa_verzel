@@ -1,0 +1,99 @@
+{
+  "inicio": "2026-10-07T21:31:46-03:00",
+  "timezone": "America/Fortaleza",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "GET",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/produtos",
+    "-H",
+    "Content-Type: application/json",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "http_status": "200",
+  "resultado": "SUCESSO",
+  "verificacoes": [
+    {
+      "verificacao": "Execução do curl",
+      "resultado": "PASSOU",
+      "evidencia": "Código de saída: 0"
+    },
+    {
+      "verificacao": "Status HTTP da aplicação",
+      "resultado": "PASSOU",
+      "evidencia": "HTTP 200; o status do túnel do proxy não é usado como resultado da aplicação."
+    },
+    {
+      "verificacao": "Content-Type da resposta",
+      "resultado": "PASSOU",
+      "evidencia": "application/json; charset=utf-8"
+    },
+    {
+      "verificacao": "Corpo JSON válido e lista",
+      "resultado": "PASSOU",
+      "evidencia": "8 produtos retornados"
+    },
+    {
+      "verificacao": "Campos obrigatórios de todos os produtos",
+      "resultado": "PASSOU",
+      "evidencia": "id, nome, descricao, categoria e preco nos 8 produtos"
+    },
+    {
+      "verificacao": "Preços numéricos em reais",
+      "resultado": "PASSOU",
+      "evidencia": "Números JSON; valores comparados à tabela documentada em reais"
+    },
+    {
+      "verificacao": "Catálogo completo sem IDs duplicados",
+      "resultado": "PASSOU",
+      "evidencia": "P001 a P008, cada um exatamente uma vez"
+    },
+    {
+      "verificacao": "Produto P001",
+      "resultado": "PASSOU",
+      "evidencia": "Nome esperado: Camiseta Essencial; preço esperado: 59.9; recebido: [{'id': 'P001', 'nome': 'Camiseta Essencial', 'descricao': 'Algodão penteado e corte reto.', 'categoria': 'Vestuário', 'preco': 59.9}]"
+    },
+    {
+      "verificacao": "Produto P002",
+      "resultado": "PASSOU",
+      "evidencia": "Nome esperado: Calça Jeans Slim; preço esperado: 139.9; recebido: [{'id': 'P002', 'nome': 'Calça Jeans Slim', 'descricao': 'Jeans com elastano e lavagem escura.', 'categoria': 'Vestuário', 'preco': 139.9}]"
+    },
+    {
+      "verificacao": "Produto P003",
+      "resultado": "PASSOU",
+      "evidencia": "Nome esperado: Tênis Casual Urbano; preço esperado: 189.9; recebido: [{'id': 'P003', 'nome': 'Tênis Casual Urbano', 'descricao': 'Solado de borracha e cabedal em lona.', 'categoria': 'Calçados', 'preco': 189.9}]"
+    },
+    {
+      "verificacao": "Produto P004",
+      "resultado": "PASSOU",
+      "evidencia": "Nome esperado: Boné Aba Curva; preço esperado: 49.9; recebido: [{'id': 'P004', 'nome': 'Boné Aba Curva', 'descricao': 'Ajuste traseiro com fivela metálica.', 'categoria': 'Acessórios', 'preco': 49.9}]"
+    },
+    {
+      "verificacao": "Produto P005",
+      "resultado": "PASSOU",
+      "evidencia": "Nome esperado: Mochila Urbana 20L; preço esperado: 100; recebido: [{'id': 'P005', 'nome': 'Mochila Urbana 20L', 'descricao': 'Compartimento acolchoado para notebook.', 'categoria': 'Acessórios', 'preco': 100}]"
+    },
+    {
+      "verificacao": "Produto P006",
+      "resultado": "PASSOU",
+      "evidencia": "Nome esperado: Kit 3 Pares de Meias; preço esperado: 29.9; recebido: [{'id': 'P006', 'nome': 'Kit 3 Pares de Meias', 'descricao': 'Cano médio, algodão com reforço no calcanhar.', 'categoria': 'Vestuário', 'preco': 29.9}]"
+    },
+    {
+      "verificacao": "Produto P007",
+      "resultado": "PASSOU",
+      "evidencia": "Nome esperado: Jaqueta Corta-Vento; preço esperado: 229.9; recebido: [{'id': 'P007', 'nome': 'Jaqueta Corta-Vento', 'descricao': 'Tecido leve e repelente à água.', 'categoria': 'Vestuário', 'preco': 229.9}]"
+    },
+    {
+      "verificacao": "Produto P008",
+      "resultado": "PASSOU",
+      "evidencia": "Nome esperado: Garrafa Térmica 750ml; preço esperado: 50; recebido: [{'id': 'P008', 'nome': 'Garrafa Térmica 750ml', 'descricao': 'Mantém a temperatura por até 12 horas.', 'categoria': 'Acessórios', 'preco': 50}]"
+    }
+  ]
+}
