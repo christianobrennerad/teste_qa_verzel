@@ -1,0 +1,10 @@
+{
+  "corpoOriginal": "{\"itens\":[{\"produtoId\":\"P001\",\"quantidade\":3},{\"produtoId\":\"P001\",\"quantidade\":3}]}",
+  "clientePedidos": {
+    "nome": "Cliente Teste",
+    "email": "qa@example.com",
+    "cep": "01310-100"
+  },
+  "status": 422,
+  "erro.codigo": "ITEM_DUPLICADO"
+}
