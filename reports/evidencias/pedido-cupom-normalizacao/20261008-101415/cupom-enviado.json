@@ -1,0 +1,23 @@
+{
+  "cupomLiteral": "  bemvindo10  ",
+  "comprimento": 14,
+  "espacosNoInicio": 2,
+  "espacosNoFim": 2,
+  "codigosDosCaracteres": [
+    32,
+    32,
+    98,
+    101,
+    109,
+    118,
+    105,
+    110,
+    100,
+    111,
+    49,
+    48,
+    32,
+    32
+  ],
+  "observacao": "Enviado com --data-binary, sem remover espaços ou alterar letras localmente"
+}
