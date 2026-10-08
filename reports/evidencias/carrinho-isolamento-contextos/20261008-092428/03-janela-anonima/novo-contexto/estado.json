@@ -1,0 +1,12 @@
+{
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/carrinho",
+  "titulo": "Carrinho | Verzel Store",
+  "itens": [],
+  "cupom": null,
+  "temOpener": false,
+  "carrinhoVazioVisivel": true,
+  "quantidadeP005": null,
+  "nomesExibidos": [],
+  "texto": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n0\nSeu carrinho está vazio\n\nEscolha um produto na vitrine para começar.\n\nVer produtos\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.",
+  "data": "2026-10-08T09:25:36-03:00"
+}

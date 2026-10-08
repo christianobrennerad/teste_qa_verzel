@@ -1,24 +1,24 @@
 # Relatório de teste — Iniciar outro contexto de navegação com carrinho vazio
 
-**Resultado: Bloqueado parcialmente — dois exemplos aprovados e um bloqueado.** Outra aba e janela anônima começaram com o carrinho vazio, enquanto a aba original manteve uma unidade de P005. O exemplo de outro navegador não pôde ser executado porque o ambiente bloqueou o download do Firefox.
+**Resultado: Aprovado — os três exemplos passaram com Firefox.** A nova aba, o outro navegador e a janela anônima começaram com o carrinho vazio. Em todos os casos, a aba original do Firefox manteve uma unidade de P005.
 
-**Data do teste na interface:** 08/10/2026, das 09h03min21s às 09h03min43s (America/Fortaleza).
+**Data do teste:** 08/10/2026, das 09h24min34s às 09h25min37s (America/Fortaleza).
 
 **Loja:** [Verzel Store — ambiente de testes](https://verzel-store.qa-test-verzel-store.workers.dev).
 
 **Referência:** [Documentação VZS-142, versão 2.3.0](https://verzel-store.qa-test-verzel-store.workers.dev/documentacao), regra de carrinho restrito à aba; cenário em [isolamento.feature](../features/isolamento.feature).
 
+**Navegadores utilizados:** Firefox ESR 153.4.0 nas abas originais, na nova aba e na janela privada; Chromium 151.0.7922.173 como outro navegador.
+
 ## O que foi testado
 
-Verificamos se abrir a loja em outro contexto inicia um carrinho vazio e mantém os produtos da aba original.
+Executamos os três exemplos usando Firefox. Para cada caso, iniciamos uma sessão normal nova, adicionamos uma Mochila Urbana 20L (P005) pelo botão da loja e abrimos o carrinho.
 
-Para cada exemplo, começamos com uma sessão normal nova do Chromium, adicionamos uma Mochila Urbana 20L (P005) pelo botão da loja e abrimos o carrinho. Salvamos a tela original antes da tentativa e voltamos a ela ao final para conferir o produto.
+- **Outra aba:** abrimos uma nova aba no mesmo perfil do Firefox e acessamos a loja, sem duplicar a original.
+- **Outro navegador:** abrimos a loja no Chromium enquanto a aba original do Firefox continuava aberta.
+- **Janela anônima:** abrimos uma janela privada do Firefox enquanto a aba original permanecia na sessão normal.
 
-- **Outra aba:** abrimos uma aba nova no mesmo perfil do navegador, digitando o endereço da loja, sem duplicar a aba original.
-- **Janela anônima:** abrimos a loja em um contexto anônimo do Chromium, separado da sessão normal da aba original.
-- **Outro navegador:** escolhemos Firefox para comparar com Chromium. A preparação do carrinho original foi executada, mas a abertura no Firefox ficou bloqueada por indisponibilidade desse navegador.
-
-Os casos executados usaram Chromium 151.0.7922.173 em modo automatizado, sem janela visível. Além das capturas, conferimos a mensagem de carrinho vazio, a quantidade exibida e os itens guardados pela própria loja em cada aba.
+Em cada exemplo, conferimos a mensagem visível de carrinho vazio no novo contexto e depois voltamos à aba original para conferir P005. Também registramos os itens guardados pela loja em cada aba. Os navegadores foram controlados automaticamente, sem janela visível.
 
 ## Cenário BDD
 
@@ -44,60 +44,65 @@ Funcionalidade: Isolamento do carrinho e ausência de persistência da API
 
 | Verificação | Esperado | Encontrado | Resultado |
 | --- | --- | --- | --- |
-| Outra aba: novo carrinho | Carrinho vazio | “Seu carrinho está vazio”, contador zero e nenhum item guardado nessa aba | Aprovado |
-| Outra aba: carrinho original | Manter P005 | Mochila Urbana 20L visível, com uma unidade | Aprovado |
-| Outro navegador: novo carrinho | Carrinho vazio no Firefox | Abertura não executada: Firefox indisponível | Bloqueado |
-| Outro navegador: original após a abertura | Manter P005 após abrir a loja no outro navegador | Essa sequência não foi executada. A aba preparada continuou com P005 ao final da tentativa | Bloqueado |
-| Janela anônima: novo carrinho | Carrinho vazio | “Seu carrinho está vazio”, contador zero e nenhum item guardado nesse contexto | Aprovado |
-| Janela anônima: carrinho original | Manter P005 | Mochila Urbana 20L visível, com uma unidade | Aprovado |
+| Nova aba do Firefox: novo carrinho | Carrinho vazio | “Seu carrinho está vazio”, contador zero e nenhum item guardado na nova aba | Aprovado |
+| Nova aba do Firefox: original | Manter P005 | Mochila Urbana 20L visível, com uma unidade na aba original | Aprovado |
+| Outro navegador, Chromium: novo carrinho | Carrinho vazio | “Seu carrinho está vazio”, contador zero e nenhum item guardado no Chromium | Aprovado |
+| Outro navegador: original no Firefox | Manter P005 | Mochila Urbana 20L visível, com uma unidade no Firefox, enquanto o Chromium continuava aberto | Aprovado |
+| Janela privada do Firefox: novo carrinho | Carrinho vazio | “Seu carrinho está vazio”, contador zero e nenhum item guardado na janela privada | Aprovado |
+| Janela privada: original normal no Firefox | Manter P005 | Mochila Urbana 20L visível, com uma unidade na sessão normal | Aprovado |
 
-Nos três preparativos, P005 foi adicionado corretamente e o cálculo retornou status 200, indicando que a solicitação foi atendida. A observação da aba preparada no exemplo de Firefox não aprova esse cenário: a ação de abrir outro navegador não ocorreu.
+Nos três preparativos, P005 foi adicionado corretamente e o cálculo respondeu com status 200, indicando que a solicitação foi atendida. Todos os exemplos chegaram ao fim sem bloqueio.
 
 ## Falhas encontradas
 
-**Nenhuma falha funcional foi encontrada nos dois exemplos executados.** Os carrinhos da nova aba e da janela anônima começaram vazios, e as abas originais conservaram P005.
+Nenhuma falha funcional foi encontrada nesta execução. Os três exemplos foram aprovados.
 
-**B01 — Outro navegador indisponível no ambiente.** O Firefox não estava instalado. O download oficial pelo Playwright foi recusado com HTTP 403 e mensagem “Domain forbidden”, tanto na tentativa padrão quanto na tentativa com permissão ampliada. Uma fonte oficial alternativa da Mozilla também recebeu 403.
-
-**Impacto na avaliação:** não é possível aprovar ou reprovar o isolamento entre Chromium e Firefox nesta execução. Esse bloqueio pertence ao ambiente de testes e não demonstra defeito na loja.
-
-**Para concluir o exemplo pendente:** permitir o download oficial de Firefox em `cdn.playwright.dev` nas configurações de rede do ambiente, instalar o navegador e repetir o caso. A ferramenta também oferece o domínio alternativo `playwright.download.prss.microsoft.com`. Nenhuma restrição de conexão foi desativada.
+A ferramenta de automação registrou avisos ao limpar perfis temporários no encerramento do processo. As verificações e capturas já estavam concluídas, e o processo terminou com código zero. Esses avisos não representam falha funcional da loja.
 
 ## Comprovantes do teste
 
-### Outra aba — aprovado
+### Outra aba do Firefox — aprovado
 
-- Aba original: [tela antes](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/original-antes/tela.png), [estado antes](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/original-antes/estado.json), [tela depois](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/original-depois/tela.png) e [estado depois](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/original-depois/estado.json).
-- Nova aba: [tela do carrinho vazio](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/novo-contexto/tela.png), [texto exibido](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/novo-contexto/texto-tela.txt) e [estado sem itens](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/novo-contexto/estado.json).
-- [Dados enviados no preparo](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/corpo-enviado.json), [dados recebidos](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/corpo-recebido.json), [status e cabeçalhos](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/resposta-http.json) e [conferência detalhada](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/validacao-interface.json).
+- Aba original no Firefox: [tela antes](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/original-antes/tela.png), [estado antes](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/original-antes/estado.json), [tela depois](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/original-depois/tela.png) e [estado depois](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/original-depois/estado.json).
+- Novo contexto: [tela do carrinho vazio](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/novo-contexto/tela.png), [texto exibido](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/novo-contexto/texto-tela.txt) e [estado sem itens](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/novo-contexto/estado.json).
+- Preparo na interface: [dados enviados](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/corpo-enviado.json), [dados recebidos](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/corpo-recebido.json) e [status e cabeçalhos](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/resposta-http.json).
+- [Conferência de cada passo, horário e versão do navegador](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/validacao-interface.json) e [registro do Firefox](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/firefox-gecko.log).
+- [Abertura do contexto distinto da aba original](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/contexto-aberto.json).
 
-![Nova aba com carrinho vazio](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/novo-contexto/tela.png)
+### Outro navegador — Chromium com original no Firefox — aprovado
 
-![Aba original mantendo uma unidade de P005 após abrir a nova aba](evidencias/carrinho-isolamento-contextos/20261008-090029/01-outra-aba/original-depois/tela.png)
+- Aba original no Firefox: [tela antes](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/original-antes/tela.png), [estado antes](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/original-antes/estado.json), [tela depois](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/original-depois/tela.png) e [estado depois](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/original-depois/estado.json).
+- Novo contexto: [tela do carrinho vazio](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/novo-contexto/tela.png), [texto exibido](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/novo-contexto/texto-tela.txt) e [estado sem itens](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/novo-contexto/estado.json).
+- Preparo na interface: [dados enviados](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/corpo-enviado.json), [dados recebidos](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/corpo-recebido.json) e [status e cabeçalhos](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/resposta-http.json).
+- [Conferência de cada passo, horário e versão do navegador](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/validacao-interface.json) e [registro do Firefox](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/firefox-gecko.log).
 
-### Outro navegador — bloqueado
+### Janela privada do Firefox — aprovado
 
-- Preparo no Chromium: [tela original antes](evidencias/carrinho-isolamento-contextos/20261008-090029/02-outro-navegador/original-antes/tela.png), [estado antes](evidencias/carrinho-isolamento-contextos/20261008-090029/02-outro-navegador/original-antes/estado.json), [tela ao final da tentativa](evidencias/carrinho-isolamento-contextos/20261008-090029/02-outro-navegador/original-depois/tela.png) e [estado ao final](evidencias/carrinho-isolamento-contextos/20261008-090029/02-outro-navegador/original-depois/estado.json).
-- [Dados enviados no preparo](evidencias/carrinho-isolamento-contextos/20261008-090029/02-outro-navegador/corpo-enviado.json), [dados recebidos](evidencias/carrinho-isolamento-contextos/20261008-090029/02-outro-navegador/corpo-recebido.json), [status e cabeçalhos](evidencias/carrinho-isolamento-contextos/20261008-090029/02-outro-navegador/resposta-http.json) e [resultado bloqueado](evidencias/carrinho-isolamento-contextos/20261008-090029/02-outro-navegador/validacao-interface.json).
-- [Resumo das tentativas de obter Firefox, comandos e erros observados](evidencias/carrinho-isolamento-contextos/20261008-090029/bloqueio-firefox.json). Esse arquivo é um resumo das saídas das ferramentas, não uma transcrição integral. Não há captura de carrinho no Firefox, pois ele não foi iniciado.
+- Aba original no Firefox: [tela antes](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/original-antes/tela.png), [estado antes](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/original-antes/estado.json), [tela depois](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/original-depois/tela.png) e [estado depois](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/original-depois/estado.json).
+- Novo contexto: [tela do carrinho vazio](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/novo-contexto/tela.png), [texto exibido](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/novo-contexto/texto-tela.txt) e [estado sem itens](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/novo-contexto/estado.json).
+- Preparo na interface: [dados enviados](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/corpo-enviado.json), [dados recebidos](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/corpo-recebido.json) e [status e cabeçalhos](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/resposta-http.json).
+- [Conferência de cada passo, horário e versão do navegador](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/validacao-interface.json) e [registro do Firefox](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/firefox-gecko.log).
+- [Abertura do contexto distinto da aba original](evidencias/carrinho-isolamento-contextos/20261008-092428/03-janela-anonima/contexto-aberto.json). O registro da janela privada contém a opção `private: true`.
 
-### Janela anônima — aprovado
+![Nova aba do Firefox com carrinho vazio](evidencias/carrinho-isolamento-contextos/20261008-092428/01-outra-aba/novo-contexto/tela.png)
 
-- Aba original: [tela antes](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/original-antes/tela.png), [estado antes](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/original-antes/estado.json), [tela depois](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/original-depois/tela.png) e [estado depois](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/original-depois/estado.json).
-- Contexto anônimo: [tela do carrinho vazio](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/novo-contexto/tela.png), [texto exibido](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/novo-contexto/texto-tela.txt) e [estado sem itens](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/novo-contexto/estado.json).
-- [Dados enviados no preparo](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/corpo-enviado.json), [dados recebidos](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/corpo-recebido.json), [status e cabeçalhos](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/resposta-http.json) e [conferência detalhada](evidencias/carrinho-isolamento-contextos/20261008-090029/03-janela-anonima/validacao-interface.json).
+![Aba original do Firefox mantendo P005 após abrir o outro navegador](evidencias/carrinho-isolamento-contextos/20261008-092428/02-outro-navegador/original-depois/tela.png)
 
-### Registros gerais e reprodução
+### Registros gerais e preparação
 
-- [Resumo dos resultados e horários](evidencias/carrinho-isolamento-contextos/20261008-090029/resumo-interface.json), [script executado](evidencias/carrinho-isolamento-contextos/20261008-090029/teste-interface.js) e [saída do navegador](evidencias/carrinho-isolamento-contextos/20261008-090029/navegador-stdout.txt).
-- [Registro de erros da execução do Chromium](evidencias/carrinho-isolamento-contextos/20261008-090029/navegador-stderr.txt): vazio. O bloqueio de Firefox está registrado separadamente.
+- [Resumo dos três exemplos e horários](evidencias/carrinho-isolamento-contextos/20261008-092428/resumo-interface.json), [script do Firefox](evidencias/carrinho-isolamento-contextos/20261008-092428/teste-firefox.py) e [script do Chromium](evidencias/carrinho-isolamento-contextos/20261008-092428/teste-chromium-novo.js).
+- [Saída da execução](evidencias/carrinho-isolamento-contextos/20261008-092428/navegador-stdout.txt) e [mensagens da ferramenta, incluindo avisos de encerramento](evidencias/carrinho-isolamento-contextos/20261008-092428/navegador-stderr.txt).
+- [Origem, versão e resumo de integridade do pacote Firefox](evidencias/carrinho-isolamento-contextos/20261008-092428/preparacao/ambiente.json), [fontes oficiais usadas](evidencias/carrinho-isolamento-contextos/20261008-092428/preparacao/sources.list), [atualização dos índices autenticados](evidencias/carrinho-isolamento-contextos/20261008-092428/preparacao/update-stdout.txt) e [download do pacote](evidencias/carrinho-isolamento-contextos/20261008-092428/preparacao/download-stdout.txt).
+- [Script de instalação repetido com sucesso](evidencias/carrinho-isolamento-contextos/20261008-092428/preparacao/install-firefox.sh), [saída dessa instalação](evidencias/carrinho-isolamento-contextos/20261008-092428/preparacao/install-stdout.txt) e [mensagens da instalação](evidencias/carrinho-isolamento-contextos/20261008-092428/preparacao/install-stderr.txt).
 
-Para repetir os casos executados: adicionar P005 na aba normal, abrir uma nova aba com o endereço da loja ou abrir uma janela anônima, acessar **Carrinho** e conferir a mensagem de vazio. Em seguida, voltar à aba original e verificar que a Mochila Urbana 20L continua com uma unidade.
+Para reproduzir na interface: adicionar P005 em uma aba normal do Firefox, abrir uma nova aba, o Chromium ou uma janela privada do Firefox, acessar **Carrinho** e conferir a mensagem de vazio. Voltar à aba original e verificar que a Mochila Urbana 20L continua com uma unidade.
 
-O script salvou o corpo enviado e o recebido, além do status e dos cabeçalhos do cálculo disparado pela interface durante cada preparo. Não foram feitas consultas diretas para comprovar isolamento. O navegador manteve a verificação de segurança da conexão ativa, com a confiança no certificado oficial do proxy já autorizada pelo usuário.
+O certificado oficial do proxy foi confiado somente em perfis temporários do Firefox. A automação informou `acceptInsecureCerts: false` nos três exemplos. Os índices e o pacote Debian foram obtidos com a autenticação e a verificação de integridade do APT; o navegador não teve a verificação TLS desativada.
+
+O corpo enviado, o recebido, o status e os cabeçalhos do cálculo foram capturados durante a inclusão do produto pela interface. Não foram usadas chamadas independentes à API para comprovar o isolamento.
 
 ## Limite desta avaliação
 
-Foram concluídos os exemplos de nova aba e janela anônima no Chromium. O exemplo de outro navegador permanece pendente; o conjunto completo não está aprovado.
+A aprovação vale para os três exemplos desta execução: Firefox nas abas originais, outra aba e janela privada; Chromium como outro navegador. A abertura entre navegadores foi testada na direção Firefox → Chromium.
 
-A nova aba foi aberta sem vínculo de abertura com a original. Duplicação de aba e abertura por scripts ou pop-ups não foram avaliadas. Também não foram testados recarregamento, restauração de sessão, persistência da API, pedidos ou estoque; o título da funcionalidade não representa aprovação desses outros comportamentos.
+A nova aba foi aberta sem vínculo de abertura com a original. Duplicação de aba, pop-ups, recarregamento e restauração de sessão não foram avaliados. Também não foram testados persistência da API, pedidos ou estoque; o título da funcionalidade não representa aprovação desses outros comportamentos.

@@ -1,0 +1,58 @@
+{
+  "contexto": "janela anônima",
+  "inicio": "2026-10-08T09:25:15-03:00",
+  "verificacoes": [
+    {
+      "verificacao": "Original preparada com P005",
+      "esperado": "Uma unidade de P005",
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Status do cálculo da preparação",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Contexto distinto da aba original",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Novo contexto começa vazio",
+      "esperado": "Aviso visível de carrinho vazio, sem itens",
+      "encontrado": {
+        "avisoVisivel": true,
+        "itens": [],
+        "quantidadeP005": null
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Original mantém P005 após abrir novo contexto",
+      "esperado": "Uma unidade de P005",
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    }
+  ],
+  "navegadorOriginal": {
+    "nome": "firefox",
+    "versao": "153.4.0",
+    "acceptInsecureCerts": false
+  },
+  "metodo": "Nova janela privada do Firefox, criada com private=true",
+  "resultado": "Aprovado",
+  "fim": "2026-10-08T09:25:37-03:00"
+}

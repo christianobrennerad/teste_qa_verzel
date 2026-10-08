@@ -1,0 +1,3 @@
+{"contexto": "outra aba", "resultado": "Aprovado", "erro": null, "falhas": []}
+{"contexto": "outro navegador", "resultado": "Aprovado", "erro": null, "falhas": []}
+{"contexto": "janela anônima", "resultado": "Aprovado", "erro": null, "falhas": []}

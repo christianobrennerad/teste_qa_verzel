@@ -1,0 +1,14 @@
+{
+  "registro_em": "2026-10-08T09:24:28-03:00",
+  "pacote": "Package: firefox-esr\nVersion: 153.4.0esr-1~deb13u1\n",
+  "arquivo": "firefox-esr_153.4.0esr-1~deb13u1_amd64.deb",
+  "sha256": "ee4714cc163c9237ebb10694e2fc3026232f8d844e46325177dcda9261b99f53",
+  "origem": "Repositório oficial Debian trixie-security via HTTPS; índices autenticados pelo APT com debian-archive-keyring.gpg",
+  "driver": "marionette_driver 3.7.1",
+  "trust": "Certificado oficial do proxy importado apenas nos perfis temporários do Firefox; acceptInsecureCerts=false",
+  "dominios_adicionados_ao_rascunho": [
+    "cdn.playwright.dev",
+    "playwright.download.prss.microsoft.com"
+  ],
+  "rascunho_publicado": false
+}

@@ -1,0 +1,22 @@
+{
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "metodo": "POST",
+  "corpoEnviado": "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+  "status": 200,
+  "cabecalhos": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a475200bbdb26cb7-SJC",
+    "content-encoding": "zstd",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 12:24:54 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kDYjxJWVaVgW4L1dQcx%2BedbwwTQEWJMNyWnHJTfVg99V3Bl%2FvQOkHFwwmBSu7y0BQgc8er7D87fwgyY4kVpzSdDIyFG1eBCvxBUunjqqkBYnvOj%2BhXegCesjNqsDAgVReSFFkuNRp3lYqcbO2vMDTciKt%2FTBDuv1I5LCVuTaLFs%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "15",
+    "x-firefox-spdy": "h2"
+  },
+  "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":1,\"total\":100}],\"subtotal\":100,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":100,\"total\":119.9,\"cupom\":null}"
+}

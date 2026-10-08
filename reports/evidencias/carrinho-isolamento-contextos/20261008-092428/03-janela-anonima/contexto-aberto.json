@@ -1,0 +1,12 @@
+{
+  "solicitado": {
+    "type": "window",
+    "focus": true,
+    "private": true
+  },
+  "aberto": {
+    "handle": "da638354-4733-4d83-bd32-4bbe35d4379a",
+    "type": "window"
+  },
+  "distintoDaOriginal": true
+}

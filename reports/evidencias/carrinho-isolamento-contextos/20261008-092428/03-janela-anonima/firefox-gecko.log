@@ -1,0 +1,13 @@
+*** You are running in headless mode.
+1791462318117	Marionette	INFO	Marionette enabled
+1791462319027	Marionette	INFO	Listening on port 37461
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: RSLoader:
+  Failed to retrieve recipes from Remote Settings
+  Message: Error: Could not sync nimbus-desktop-experiments: get-exception
+  Stack:
+    RemoteSettingsSyncError@resource://nimbus/lib/RemoteSettingsExperimentLoader.sys.mjs:1415:5
+getRecipesFromCollection@resource://nimbus/lib/RemoteSettingsExperimentLoader.sys.mjs:687:13
+
+console.warn: BackupService: "There was an error while trying to get the Document's directory" [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIProperties.get]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource:///modules/backup/BackupService.sys.mjs :: get docsDirFolderPath :: line 1299"  data: no]
+JavaScript error: resource:///modules/backup/BackupService.sys.mjs, line 4408: NotAllowedError: PathUtils.join: PathUtils does not support empty paths

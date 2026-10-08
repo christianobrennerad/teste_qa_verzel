@@ -1,0 +1,81 @@
+Hit:1 https://deb.debian.org/debian trixie InRelease
+Hit:2 https://security.debian.org/debian-security trixie-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  fonts-stix | otf-stix pulseaudio
+The following NEW packages will be installed:
+  firefox-esr
+0 upgraded, 1 newly installed, 0 to remove and 107 not upgraded.
+Need to get 0 B/79.8 MB of archives.
+After this operation, 308 MB of additional disk space will be used.
+Download complete and in download only mode
+Collecting marionette_driver==3.7.1
+  Downloading marionette_driver-3.7.1-py3-none-any.whl.metadata (1.6 kB)
+Collecting mozrunner>=7.4.0 (from marionette_driver==3.7.1)
+  Downloading mozrunner-8.4.0-py2.py3-none-any.whl.metadata (1.6 kB)
+Collecting mozversion>=2.1.0 (from marionette_driver==3.7.1)
+  Downloading mozversion-2.4.0-py2.py3-none-any.whl.metadata (535 bytes)
+Collecting mozdevice<5,>=4.2.0 (from mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading mozdevice-4.2.0-py2.py3-none-any.whl.metadata (565 bytes)
+Collecting mozfile>=1.2 (from mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading mozfile-3.0.0-py2.py3-none-any.whl.metadata (777 bytes)
+Collecting mozinfo<2,>=0.7 (from mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading mozinfo-1.2.3-py2.py3-none-any.whl.metadata (649 bytes)
+Collecting mozlog>=6.0 (from mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading mozlog-8.1.0-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting mozprocess<2,>=1.3.0 (from mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading mozprocess-1.4.0-py2.py3-none-any.whl.metadata (728 bytes)
+Collecting mozprofile~=3.0 (from mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading mozprofile-3.0.0.tar.gz (28 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting distro>=1.4.0 (from mozinfo<2,>=0.7->mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting six<2,>=1.13.0 (from mozprofile~=3.0->mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting blessed>=1.19.1 (from mozlog>=6.0->mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading blessed-1.50.0-py3-none-any.whl.metadata (13 kB)
+Collecting mozterm (from mozlog>=6.0->mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading mozterm-1.0.0-py2.py3-none-any.whl.metadata (669 bytes)
+Collecting mozsystemmonitor (from mozlog>=6.0->mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading mozsystemmonitor-1.0.1-py2.py3-none-any.whl.metadata (475 bytes)
+Collecting wcwidth>=0.8.3 (from blessed>=1.19.1->mozlog>=6.0->mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+Collecting jinxed<3,>=2.1 (from blessed>=1.19.1->mozlog>=6.0->mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading jinxed-2.1.0-py2.py3-none-any.whl.metadata (7.2 kB)
+Collecting psutil>=3.1.1 (from mozsystemmonitor->mozlog>=6.0->mozrunner>=7.4.0->marionette_driver==3.7.1)
+  Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Downloading marionette_driver-3.7.1-py3-none-any.whl (54 kB)
+Downloading mozrunner-8.4.0-py2.py3-none-any.whl (47 kB)
+Downloading mozdevice-4.2.0-py2.py3-none-any.whl (44 kB)
+Downloading mozinfo-1.2.3-py2.py3-none-any.whl (7.5 kB)
+Downloading mozprocess-1.4.0-py2.py3-none-any.whl (23 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+Downloading mozfile-3.0.0-py2.py3-none-any.whl (8.2 kB)
+Downloading mozlog-8.1.0-py2.py3-none-any.whl (72 kB)
+Downloading blessed-1.50.0-py3-none-any.whl (140 kB)
+Downloading jinxed-2.1.0-py2.py3-none-any.whl (104 kB)
+Downloading mozversion-2.4.0-py2.py3-none-any.whl (4.3 kB)
+Downloading wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (769 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 769.8/769.8 kB 37.0 MB/s  0:00:00
+Downloading mozsystemmonitor-1.0.1-py2.py3-none-any.whl (8.5 kB)
+Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Downloading mozterm-1.0.0-py2.py3-none-any.whl (3.4 kB)
+Building wheels for collected packages: mozprofile
+  Building wheel for mozprofile (pyproject.toml): started
+  Building wheel for mozprofile (pyproject.toml): finished with status 'done'
+  Created wheel for mozprofile: filename=mozprofile-3.0.0-py2.py3-none-any.whl size=22205 sha256=10ae4a04f8d589b63f57b00b1726ebde6b720b5e6fd4519a5324a58d8125e4af
+  Stored in directory: /tmp/pip-ephem-wheel-cache-p6elczxn/wheels/2a/98/c2/385a3733e190ae2b170804566e081ce9690ad9154edfcc3e64
+Successfully built mozprofile
+Installing collected packages: jinxed, wcwidth, six, psutil, distro, mozterm, mozsystemmonitor, mozfile, blessed, mozlog, mozinfo, mozversion, mozprofile, mozprocess, mozdevice, mozrunner, marionette_driver
+
+Successfully installed blessed-1.50.0 distro-1.9.0 jinxed-2.1.0 marionette_driver-3.7.1 mozdevice-4.2.0 mozfile-3.0.0 mozinfo-1.2.3 mozlog-8.1.0 mozprocess-1.4.0 mozprofile-3.0.0 mozrunner-8.4.0 mozsystemmonitor-1.0.1 mozterm-1.0.0 mozversion-2.4.0 psutil-7.2.2 six-1.17.0 wcwidth-0.9.2
+Mozilla Firefox 153.4.0esr
