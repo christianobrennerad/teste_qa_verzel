@@ -1,0 +1,40 @@
+{
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "headers": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a472167eae70ce3c-SJC",
+    "content-encoding": "zstd",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 03:34:05 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4MdZSpktuVJC7wSOgDPh8dhIQkRzT563qMTwqiiouIjCyAMLCxjPH6cFr0Sy2KosP4n5zAX4JrHixTNdtVSth8PNC7KdBYsc%2FVY087G5Nez0L6c170fCqbPWXm9vcubMESW28LPCMMrRAQaGXurg%2BeRl%2BKdKTFG1iojrjXCP9WE%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "33"
+  },
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P005",
+        "nome": "Mochila Urbana 20L",
+        "precoUnitario": 100,
+        "quantidade": 1,
+        "total": 100
+      }
+    ],
+    "subtotal": 100,
+    "desconto": 0,
+    "frete": 19.9,
+    "freteGratis": false,
+    "valorFaltanteFreteGratis": 100,
+    "total": 119.9,
+    "cupom": {
+      "codigo": "VERAO2026",
+      "aplicado": false,
+      "mensagem": "Cupom expirado."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "headers": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a472167d3d0698ce-SJC",
+    "content-encoding": "zstd",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 03:34:05 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xpzdis8QVrYtyJonVh%2Bvr1DVBm5FWB99lS2XbnZ25%2B5x5SPF2sejMMkS4jkE8PMc3doXhqs32zAZh%2BeGR%2FsLl2Isb9kU36DRRE55vSeL8DijG8nY9KswiQh3aai%2FUfNvKNHz6pYZJ0%2B65yETI%2FNojesa9kYvDJkBn%2B%2FS9ogvbVU%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "15"
+  },
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P005",
+        "nome": "Mochila Urbana 20L",
+        "precoUnitario": 100,
+        "quantidade": 1,
+        "total": 100
+      }
+    ],
+    "subtotal": 100,
+    "desconto": 0,
+    "frete": 19.9,
+    "freteGratis": false,
+    "valorFaltanteFreteGratis": 100,
+    "total": 119.9,
+    "cupom": null
+  }
+}

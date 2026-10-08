@@ -1,0 +1,16 @@
+{
+  "data": "2026-10-08 00:34:05 (America/Fortaleza)",
+  "cupomExibido": "Cupom BEMVINDO10 aplicado.",
+  "mensagem": null,
+  "controles": {
+    "cupom": 1,
+    "campo": 0,
+    "remover": 1
+  },
+  "valores": {
+    "subtotal": "R$ 100,00",
+    "desconto": "- R$ 10,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 109,90"
+  }
+}
