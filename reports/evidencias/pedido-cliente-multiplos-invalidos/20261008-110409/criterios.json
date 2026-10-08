@@ -1,0 +1,9 @@
+{
+  "status": 422,
+  "erro.codigo": "DADOS_INVALIDOS",
+  "camposSolicitados": [
+    "cliente.nome",
+    "cliente.email"
+  ],
+  "observacaoAdicional": "Registrar também cliente.cep, esperado pela documentação e pela feature existente; a mensagem atual do usuário exige nome e email."
+}

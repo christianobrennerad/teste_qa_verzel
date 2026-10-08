@@ -1,0 +1,112 @@
+{
+  "inicio": "2026-10-08T11:04:09-03:00",
+  "fim": "2026-10-08T11:04:09-03:00",
+  "timezone": "America/Fortaleza",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"cliente\":{\"nome\":\"Maria\",\"email\":\"invalido\",\"cep\":\"123\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "json_parse_error": null,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "escopo": "Cenário solicitado",
+      "esperado": 422,
+      "encontrado": "422",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Corpo JSON válido e objeto",
+      "escopo": "Cenário solicitado",
+      "esperado": "Objeto JSON",
+      "encontrado": "dict",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "erro.codigo",
+      "escopo": "Cenário solicitado",
+      "esperado": "DADOS_INVALIDOS",
+      "encontrado": "DADOS_INVALIDOS",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Campo inválido em erro.campos: cliente.nome",
+      "escopo": "Cenário solicitado",
+      "esperado": "cliente.nome",
+      "encontrado": [
+        {
+          "campo": "cliente.nome",
+          "mensagem": "Informe nome e sobrenome."
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Campo inválido em erro.campos: cliente.email",
+      "escopo": "Cenário solicitado",
+      "esperado": "cliente.email",
+      "encontrado": [
+        {
+          "campo": "cliente.email",
+          "mensagem": "Informe um e-mail válido."
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Campo inválido em erro.campos: cliente.cep",
+      "escopo": "Conferência adicional",
+      "esperado": "cliente.cep",
+      "encontrado": [
+        {
+          "campo": "cliente.cep",
+          "mensagem": "Informe um CEP com 8 dígitos."
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Ausência de confirmação na resposta",
+      "escopo": "Conferência adicional",
+      "esperado": "Erro DADOS_INVALIDOS, status 422 e ausência de número/data de confirmação",
+      "encontrado": {
+        "status": "422",
+        "erro": {
+          "codigo": "DADOS_INVALIDOS",
+          "mensagem": "Existem campos inválidos no pedido.",
+          "campos": [
+            {
+              "campo": "cliente.nome",
+              "mensagem": "Informe nome e sobrenome."
+            },
+            {
+              "campo": "cliente.email",
+              "mensagem": "Informe um e-mail válido."
+            },
+            {
+              "campo": "cliente.cep",
+              "mensagem": "Informe um CEP com 8 dígitos."
+            }
+          ]
+        },
+        "camposConfirmacao": {}
+      },
+      "resultado": "Aprovado"
+    }
+  ]
+}
