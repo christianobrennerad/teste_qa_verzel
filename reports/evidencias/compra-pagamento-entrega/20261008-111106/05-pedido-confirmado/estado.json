@@ -1,0 +1,22 @@
+{
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/pedido-confirmado",
+  "caminho": "/pedido-confirmado",
+  "titulo": "Pedido confirmado | Verzel Store",
+  "texto": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n0\n\nPedido confirmado\n\nPedido VZ-784180\n\nObrigado, Maria. Seu pedido foi registrado e o pagamento será feito na entrega.\n\nItens do pedido\nSubtotal\nR$ 100,00\nDesconto (BEMVINDO10)\n- R$ 10,00\nFrete\nR$ 19,90\nTotal\nR$ 109,90\n1x Mochila Urbana 20L\nR$ 100,00\nContinuar comprando\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.",
+  "valores": {
+    "subtotal": "R$ 100,00",
+    "desconto": "- R$ 10,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 109,90"
+  },
+  "numeroPedido": "VZ-784180",
+  "cupomVisivel": null,
+  "pagamento": null,
+  "camposVisiveis": [],
+  "botoesVisiveis": [],
+  "iframesVisiveis": [],
+  "itensCarrinho": [],
+  "cupomCarrinho": null,
+  "quantidadeP005": null,
+  "data": "2026-10-08T11:11:23-03:00"
+}

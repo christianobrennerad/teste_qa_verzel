@@ -1,0 +1,51 @@
+{
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/checkout",
+  "caminho": "/checkout",
+  "titulo": "Finalizar compra | Verzel Store",
+  "texto": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n1\nFinalizar compra\nVoltar ao carrinho\nDados para entrega\nNome completo\nE-mail\nCEP\n\nSomente números ou no formato 00000-000.\n\nO pagamento é feito na entrega.\n\nConfirmar pedido\nResumo do pedido\nSubtotal\nR$ 100,00\nDesconto (BEMVINDO10)\n- R$ 10,00\nFrete\nR$ 19,90\nTotal\nR$ 109,90\n1x Mochila Urbana 20L\nR$ 100,00\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.",
+  "valores": {
+    "subtotal": "R$ 100,00",
+    "desconto": "- R$ 10,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 109,90"
+  },
+  "numeroPedido": null,
+  "cupomVisivel": null,
+  "pagamento": "O pagamento é feito na entrega.",
+  "camposVisiveis": [
+    {
+      "id": "campo-nome",
+      "nome": "nome",
+      "tipo": "text",
+      "valor": "Maria Silva",
+      "autocomplete": "name"
+    },
+    {
+      "id": "campo-email",
+      "nome": "email",
+      "tipo": "email",
+      "valor": "maria@exemplo.com",
+      "autocomplete": "email"
+    },
+    {
+      "id": "campo-cep",
+      "nome": "cep",
+      "tipo": "text",
+      "valor": "01310-100",
+      "autocomplete": "postal-code"
+    }
+  ],
+  "botoesVisiveis": [
+    "Confirmar pedido"
+  ],
+  "iframesVisiveis": [],
+  "itensCarrinho": [
+    {
+      "produtoId": "P005",
+      "quantidade": 1
+    }
+  ],
+  "cupomCarrinho": "BEMVINDO10",
+  "quantidadeP005": null,
+  "data": "2026-10-08T11:11:22-03:00"
+}

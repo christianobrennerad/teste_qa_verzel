@@ -1,0 +1,15 @@
+{
+  "produto": "P005",
+  "quantidade": 1,
+  "precoUnitario": 100,
+  "cupom": "BEMVINDO10",
+  "cliente": {
+    "nome": "Maria Silva",
+    "email": "maria@exemplo.com",
+    "cep": "01310-100"
+  },
+  "numeroPedidoRegex": "^VZ-[0-9]{6}$",
+  "total": 109.9,
+  "pagamento": "Na entrega",
+  "etapaPagamentoOnline": false
+}

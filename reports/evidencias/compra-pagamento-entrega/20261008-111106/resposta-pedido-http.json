@@ -1,0 +1,27 @@
+{
+  "inicio": "2026-10-08T14:11:23.152Z",
+  "fim": "2026-10-08T14:11:23.220Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+  "metodo": "POST",
+  "cabecalhosEnviados": {
+    "content-type": "application/json"
+  },
+  "corpoEnviado": "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"BEMVINDO10\"}",
+  "status": 201,
+  "cabecalhosRecebidos": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a475bc05e93abffc-SJC",
+    "content-length": "458",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 14:11:23 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ScEL7VxWuhM4KpQYy0l0yENAPDVf%2Bm4CEiBkfGY3T5lppPz%2Fj4WTm%2BhIHKtxJyjQ4AJRYM48Fn2WecLCAQ10K5S63etYj2ctlG5u3Rt%2FGKX8JpwyWb4A58mJGdyu5g5lrBNquyAYW%2BrvFimkdeQvqhXFJe6oReWu5JRdOuWCbk8%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "18",
+    "x-firefox-spdy": "h2"
+  },
+  "corpoRecebido": "{\"numero\":\"VZ-784180\",\"criadoEm\":\"2026-10-08T14:11:23.197Z\",\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":1,\"total\":100}],\"subtotal\":100,\"desconto\":10,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":100,\"total\":109.9,\"cupom\":{\"codigo\":\"BEMVINDO10\",\"aplicado\":true,\"mensagem\":\"Cupom aplicado: 10% de desconto nos produtos.\"}}"
+}

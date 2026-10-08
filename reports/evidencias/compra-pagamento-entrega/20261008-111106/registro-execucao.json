@@ -1,0 +1,7 @@
+{
+  "comando": "PYTHONPATH=/tmp/verzel-marionette python /tmp/verzel-compra-pagamento-entrega.py > /tmp/verzel-compra-pagamento-entrega-stdout.txt 2> /tmp/verzel-compra-pagamento-entrega-stderr.txt",
+  "codigoSaida": 0,
+  "stdout": "execucao-stdout.txt",
+  "stderr": "execucao-stderr.txt",
+  "observacao": "Os avisos de limpeza do perfil ocorreram no encerramento do Python, após o resultado aprovado e as capturas. Nenhuma nova chamada foi feita para criar este registro."
+}

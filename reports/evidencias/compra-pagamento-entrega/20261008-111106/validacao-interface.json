@@ -1,0 +1,170 @@
+{
+  "inicio": "2026-10-08T11:11:06-03:00",
+  "timezone": "America/Fortaleza",
+  "verificacoes": [
+    {
+      "verificacao": "Produto no catálogo",
+      "esperado": "P005 — Mochila Urbana 20L, R$ 100,00",
+      "encontrado": "Acessórios\nMochila Urbana 20L\nCompartimento acolchoado para notebook.\nR$ 100,00\nAdicionar ao carrinho",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Carrinho preparado",
+      "esperado": "Uma unidade de P005",
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cupom aplicado na interface",
+      "esperado": "BEMVINDO10 aplicado",
+      "encontrado": "Cupom BEMVINDO10 aplicado.\n\nRemover cupom",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Dados preenchidos na interface",
+      "esperado": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": "01310-100"
+      },
+      "encontrado": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": "01310-100"
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Uma confirmação enviada pela interface",
+      "esperado": 1,
+      "encontrado": 1,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Conteúdo do pedido enviado pela interface",
+      "esperado": {
+        "cliente": {
+          "nome": "Maria Silva",
+          "email": "maria@exemplo.com",
+          "cep": "01310-100"
+        },
+        "itens": [
+          {
+            "produtoId": "P005",
+            "quantidade": 1
+          }
+        ],
+        "cupom": "BEMVINDO10"
+      },
+      "encontrado": {
+        "cliente": {
+          "nome": "Maria Silva",
+          "email": "maria@exemplo.com",
+          "cep": "01310-100"
+        },
+        "itens": [
+          {
+            "produtoId": "P005",
+            "quantidade": 1
+          }
+        ],
+        "cupom": "BEMVINDO10"
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Pedido aceito pela API durante a compra",
+      "esperado": 201,
+      "encontrado": 201,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Número de confirmação exibido",
+      "esperado": "VZ- seguido por seis dígitos",
+      "encontrado": "VZ-784180",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Total confirmado na interface",
+      "esperado": "R$ 109,90",
+      "encontrado": "R$ 109,90",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Total retornado na confirmação",
+      "esperado": 109.9,
+      "encontrado": 109.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Pagamento na entrega antes da confirmação",
+      "esperado": "O pagamento é feito na entrega.",
+      "encontrado": "O pagamento é feito na entrega.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Pagamento na entrega após a confirmação",
+      "esperado": "Mensagem visível informando pagamento na entrega",
+      "encontrado": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n0\n\nPedido confirmado\n\nPedido VZ-784180\n\nObrigado, Maria. Seu pedido foi registrado e o pagamento será feito na entrega.\n\nItens do pedido\nSubtotal\nR$ 100,00\nDesconto (BEMVINDO10)\n- R$ 10,00\nFrete\nR$ 19,90\nTotal\nR$ 109,90\n1x Mochila Urbana 20L\nR$ 100,00\nContinuar comprando\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Fluxo sem etapa de pagamento online",
+      "esperado": "Produtos → carrinho → dados de entrega → confirmação; sem campos de pagamento ou iframe visível",
+      "encontrado": {
+        "rotas": [
+          "/",
+          "/carrinho",
+          "/checkout",
+          "/pedido-confirmado"
+        ],
+        "camposCheckout": [
+          "nome",
+          "email",
+          "cep"
+        ],
+        "camposConfirmacao": [],
+        "iframesCheckout": [],
+        "iframesConfirmacao": []
+      },
+      "resultado": "Aprovado"
+    }
+  ],
+  "acoes": [
+    {
+      "data": "2026-10-08T11:11:21-03:00",
+      "acao": "Clicou em Adicionar ao carrinho no produto Mochila Urbana 20L (P005)."
+    },
+    {
+      "data": "2026-10-08T11:11:22-03:00",
+      "acao": "Digitou BEMVINDO10 e clicou em Aplicar cupom."
+    },
+    {
+      "data": "2026-10-08T11:11:22-03:00",
+      "acao": "Clicou em Finalizar compra."
+    },
+    {
+      "data": "2026-10-08T11:11:22-03:00",
+      "acao": "Preencheu nome Maria Silva, e-mail maria@exemplo.com e CEP 01310-100."
+    },
+    {
+      "data": "2026-10-08T11:11:23-03:00",
+      "acao": "Clicou em Confirmar pedido uma vez."
+    }
+  ],
+  "navegador": {
+    "nome": "firefox",
+    "versao": "153.4.0",
+    "acceptInsecureCerts": false,
+    "viewport": "1280 x 1000"
+  },
+  "tls": "Verificação ativa; certificado oficial do proxy importado somente no perfil temporário do teste.",
+  "resultado": "Aprovado",
+  "numeroPedido": "VZ-784180",
+  "fim": "2026-10-08T11:11:23-03:00"
+}

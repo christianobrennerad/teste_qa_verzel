@@ -1,0 +1,1 @@
+{"evidencias": "reports/evidencias/compra-pagamento-entrega/20261008-111106", "resultado": "Aprovado", "inicio": "2026-10-08T11:11:06-03:00", "fim": "2026-10-08T11:11:23-03:00", "numeroPedido": "VZ-784180", "erro": null, "falhas": []}
