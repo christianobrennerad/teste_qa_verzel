@@ -1,0 +1,134 @@
+{
+  "inicio": "2026-10-08T10:46:46-03:00",
+  "fim": "2026-10-08T10:46:46-03:00",
+  "timezone": "America/Fortaleza",
+  "resultado": "Aprovado",
+  "casos": [
+    {
+      "cepEnviado": "01310-100",
+      "pasta": "01-com-hifen",
+      "inicio": "2026-10-08T10:46:46-03:00",
+      "fim": "2026-10-08T10:46:46-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 201,
+          "encontrado": "201",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "cliente.cep",
+          "esperado": "01310100",
+          "encontrado": "01310100",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Uma unidade de P005",
+          "esperado": {
+            "produtoId": "P005",
+            "quantidade": 1
+          },
+          "encontrado": [
+            {
+              "produtoId": "P005",
+              "nome": "Mochila Urbana 20L",
+              "precoUnitario": 100,
+              "quantidade": 1,
+              "total": 100
+            }
+          ],
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "cepEnviado": "01310100",
+      "pasta": "02-sem-hifen",
+      "inicio": "2026-10-08T10:46:46-03:00",
+      "fim": "2026-10-08T10:46:46-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 201,
+          "encontrado": "201",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "cliente.cep",
+          "esperado": "01310100",
+          "encontrado": "01310100",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Uma unidade de P005",
+          "esperado": {
+            "produtoId": "P005",
+            "quantidade": 1
+          },
+          "encontrado": [
+            {
+              "produtoId": "P005",
+              "nome": "Mochila Urbana 20L",
+              "precoUnitario": 100,
+              "quantidade": 1,
+              "total": 100
+            }
+          ],
+          "resultado": "Aprovado"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "casos": [
+    {
+      "pasta": "01-com-hifen",
+      "cep": "01310-100"
+    },
+    {
+      "pasta": "02-sem-hifen",
+      "cep": "01310100"
+    }
+  ],
+  "status": 201,
+  "cliente.cep": "01310100",
+  "itens": [
+    {
+      "produtoId": "P005",
+      "quantidade": 1
+    }
+  ]
+}
