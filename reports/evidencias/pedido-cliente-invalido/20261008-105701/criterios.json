@@ -1,0 +1,59 @@
+{
+  "clienteBase": {
+    "nome": "Maria Silva",
+    "email": "maria@exemplo.com",
+    "cep": "01310100"
+  },
+  "casos": [
+    {
+      "pasta": "01-nome-sem-sobrenome",
+      "campo": "nome",
+      "valor": "Maria"
+    },
+    {
+      "pasta": "02-nome-vazio",
+      "campo": "nome",
+      "valor": ""
+    },
+    {
+      "pasta": "03-email-sem-arroba",
+      "campo": "email",
+      "valor": "maria.exemplo.com"
+    },
+    {
+      "pasta": "04-email-vazio",
+      "campo": "email",
+      "valor": ""
+    },
+    {
+      "pasta": "05-cep-sete-digitos",
+      "campo": "cep",
+      "valor": "0131010"
+    },
+    {
+      "pasta": "06-cep-nove-digitos",
+      "campo": "cep",
+      "valor": "013101000"
+    },
+    {
+      "pasta": "07-cep-letras",
+      "campo": "cep",
+      "valor": "ABCDEFGH"
+    },
+    {
+      "pasta": "08-cep-vazio",
+      "campo": "cep",
+      "valor": ""
+    }
+  ],
+  "status": 422,
+  "erro.codigo": "DADOS_INVALIDOS",
+  "campos": "Deve indicar o campo inválido do exemplo",
+  "confirmacao": "Sem numero ou criadoEm",
+  "itens": [
+    {
+      "produtoId": "P005",
+      "quantidade": 1
+    }
+  ]
+}

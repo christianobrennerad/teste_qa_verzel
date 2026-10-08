@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 13:57:02 GMT
+server: envoy
+
+HTTP/2 422 
+date: Thu, 08 Oct 2026 13:57:03 GMT
+content-type: application/json; charset=utf-8
+content-length: 166
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Ijoq6phmBx%2FKPp%2BtowNrDUf3nyjc66TLv0rUSWU6d0MPmkgnzfbtQ9dnbQ2WL4zfz%2FB3ypzxnI%2FckEjdQoI4FBvS%2BpE8z7mFZDuaEp5Vo0BSGgaDnAGYFhDrt774nZnORLQDWziXl2ZCv5i3jBNzXwyT5DN4Ahv5%2BUnQth4Zpuc%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a475a7068c451643-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 9
+
+{"erro":{"codigo":"DADOS_INVALIDOS","mensagem":"Existem campos inválidos no pedido.","campos":[{"campo":"cliente.cep","mensagem":"Informe um CEP com 8 dígitos."}]}}
+CURL_HTTP_STATUS:422

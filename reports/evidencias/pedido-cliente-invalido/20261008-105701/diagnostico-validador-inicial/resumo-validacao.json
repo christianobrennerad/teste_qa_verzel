@@ -1,0 +1,680 @@
+{
+  "inicio": "2026-10-08T10:57:01-03:00",
+  "fim": "2026-10-08T10:57:03-03:00",
+  "timezone": "America/Fortaleza",
+  "resultado": "Falhou",
+  "casos": [
+    {
+      "pasta": "01-nome-sem-sobrenome",
+      "clienteEnviado": {
+        "nome": "Maria",
+        "email": "maria@exemplo.com",
+        "cep": "01310100"
+      },
+      "campoEsperado": "nome",
+      "inicio": "2026-10-08T10:57:01-03:00",
+      "fim": "2026-10-08T10:57:01-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Maria\",\"email\":\"maria@exemplo.com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 422,
+          "encontrado": "422",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "erro.codigo",
+          "esperado": "DADOS_INVALIDOS",
+          "encontrado": "DADOS_INVALIDOS",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Campo inválido identificado em campos",
+          "esperado": "nome",
+          "encontrado": {
+            "caminho": "erro.campos",
+            "campos": [
+              {
+                "campo": "cliente.nome",
+                "mensagem": "Informe nome e sobrenome."
+              }
+            ]
+          },
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Pedido não confirmado na resposta",
+          "esperado": "Status 422, erro DADOS_INVALIDOS e ausência de número/data de confirmação",
+          "encontrado": {
+            "status": "422",
+            "erro": {
+              "codigo": "DADOS_INVALIDOS",
+              "mensagem": "Existem campos inválidos no pedido.",
+              "campos": [
+                {
+                  "campo": "cliente.nome",
+                  "mensagem": "Informe nome e sobrenome."
+                }
+              ]
+            },
+            "camposConfirmacao": {}
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "02-nome-vazio",
+      "clienteEnviado": {
+        "nome": "",
+        "email": "maria@exemplo.com",
+        "cep": "01310100"
+      },
+      "campoEsperado": "nome",
+      "inicio": "2026-10-08T10:57:01-03:00",
+      "fim": "2026-10-08T10:57:01-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"\",\"email\":\"maria@exemplo.com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 422,
+          "encontrado": "422",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "erro.codigo",
+          "esperado": "DADOS_INVALIDOS",
+          "encontrado": "DADOS_INVALIDOS",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Campo inválido identificado em campos",
+          "esperado": "nome",
+          "encontrado": {
+            "caminho": "erro.campos",
+            "campos": [
+              {
+                "campo": "cliente.nome",
+                "mensagem": "Informe o nome completo."
+              }
+            ]
+          },
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Pedido não confirmado na resposta",
+          "esperado": "Status 422, erro DADOS_INVALIDOS e ausência de número/data de confirmação",
+          "encontrado": {
+            "status": "422",
+            "erro": {
+              "codigo": "DADOS_INVALIDOS",
+              "mensagem": "Existem campos inválidos no pedido.",
+              "campos": [
+                {
+                  "campo": "cliente.nome",
+                  "mensagem": "Informe o nome completo."
+                }
+              ]
+            },
+            "camposConfirmacao": {}
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "03-email-sem-arroba",
+      "clienteEnviado": {
+        "nome": "Maria Silva",
+        "email": "maria.exemplo.com",
+        "cep": "01310100"
+      },
+      "campoEsperado": "email",
+      "inicio": "2026-10-08T10:57:01-03:00",
+      "fim": "2026-10-08T10:57:02-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria.exemplo.com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 422,
+          "encontrado": "422",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "erro.codigo",
+          "esperado": "DADOS_INVALIDOS",
+          "encontrado": "DADOS_INVALIDOS",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Campo inválido identificado em campos",
+          "esperado": "email",
+          "encontrado": {
+            "caminho": "erro.campos",
+            "campos": [
+              {
+                "campo": "cliente.email",
+                "mensagem": "Informe um e-mail válido."
+              }
+            ]
+          },
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Pedido não confirmado na resposta",
+          "esperado": "Status 422, erro DADOS_INVALIDOS e ausência de número/data de confirmação",
+          "encontrado": {
+            "status": "422",
+            "erro": {
+              "codigo": "DADOS_INVALIDOS",
+              "mensagem": "Existem campos inválidos no pedido.",
+              "campos": [
+                {
+                  "campo": "cliente.email",
+                  "mensagem": "Informe um e-mail válido."
+                }
+              ]
+            },
+            "camposConfirmacao": {}
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "04-email-vazio",
+      "clienteEnviado": {
+        "nome": "Maria Silva",
+        "email": "",
+        "cep": "01310100"
+      },
+      "campoEsperado": "email",
+      "inicio": "2026-10-08T10:57:02-03:00",
+      "fim": "2026-10-08T10:57:02-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 422,
+          "encontrado": "422",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "erro.codigo",
+          "esperado": "DADOS_INVALIDOS",
+          "encontrado": "DADOS_INVALIDOS",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Campo inválido identificado em campos",
+          "esperado": "email",
+          "encontrado": {
+            "caminho": "erro.campos",
+            "campos": [
+              {
+                "campo": "cliente.email",
+                "mensagem": "Informe o e-mail."
+              }
+            ]
+          },
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Pedido não confirmado na resposta",
+          "esperado": "Status 422, erro DADOS_INVALIDOS e ausência de número/data de confirmação",
+          "encontrado": {
+            "status": "422",
+            "erro": {
+              "codigo": "DADOS_INVALIDOS",
+              "mensagem": "Existem campos inválidos no pedido.",
+              "campos": [
+                {
+                  "campo": "cliente.email",
+                  "mensagem": "Informe o e-mail."
+                }
+              ]
+            },
+            "camposConfirmacao": {}
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "05-cep-sete-digitos",
+      "clienteEnviado": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": "0131010"
+      },
+      "campoEsperado": "cep",
+      "inicio": "2026-10-08T10:57:02-03:00",
+      "fim": "2026-10-08T10:57:02-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"0131010\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 422,
+          "encontrado": "422",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "erro.codigo",
+          "esperado": "DADOS_INVALIDOS",
+          "encontrado": "DADOS_INVALIDOS",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Campo inválido identificado em campos",
+          "esperado": "cep",
+          "encontrado": {
+            "caminho": "erro.campos",
+            "campos": [
+              {
+                "campo": "cliente.cep",
+                "mensagem": "Informe um CEP com 8 dígitos."
+              }
+            ]
+          },
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Pedido não confirmado na resposta",
+          "esperado": "Status 422, erro DADOS_INVALIDOS e ausência de número/data de confirmação",
+          "encontrado": {
+            "status": "422",
+            "erro": {
+              "codigo": "DADOS_INVALIDOS",
+              "mensagem": "Existem campos inválidos no pedido.",
+              "campos": [
+                {
+                  "campo": "cliente.cep",
+                  "mensagem": "Informe um CEP com 8 dígitos."
+                }
+              ]
+            },
+            "camposConfirmacao": {}
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "06-cep-nove-digitos",
+      "clienteEnviado": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": "013101000"
+      },
+      "campoEsperado": "cep",
+      "inicio": "2026-10-08T10:57:02-03:00",
+      "fim": "2026-10-08T10:57:03-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"013101000\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 422,
+          "encontrado": "422",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "erro.codigo",
+          "esperado": "DADOS_INVALIDOS",
+          "encontrado": "DADOS_INVALIDOS",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Campo inválido identificado em campos",
+          "esperado": "cep",
+          "encontrado": {
+            "caminho": "erro.campos",
+            "campos": [
+              {
+                "campo": "cliente.cep",
+                "mensagem": "Informe um CEP com 8 dígitos."
+              }
+            ]
+          },
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Pedido não confirmado na resposta",
+          "esperado": "Status 422, erro DADOS_INVALIDOS e ausência de número/data de confirmação",
+          "encontrado": {
+            "status": "422",
+            "erro": {
+              "codigo": "DADOS_INVALIDOS",
+              "mensagem": "Existem campos inválidos no pedido.",
+              "campos": [
+                {
+                  "campo": "cliente.cep",
+                  "mensagem": "Informe um CEP com 8 dígitos."
+                }
+              ]
+            },
+            "camposConfirmacao": {}
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "07-cep-letras",
+      "clienteEnviado": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": "ABCDEFGH"
+      },
+      "campoEsperado": "cep",
+      "inicio": "2026-10-08T10:57:03-03:00",
+      "fim": "2026-10-08T10:57:03-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"ABCDEFGH\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 422,
+          "encontrado": "422",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "erro.codigo",
+          "esperado": "DADOS_INVALIDOS",
+          "encontrado": "DADOS_INVALIDOS",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Campo inválido identificado em campos",
+          "esperado": "cep",
+          "encontrado": {
+            "caminho": "erro.campos",
+            "campos": [
+              {
+                "campo": "cliente.cep",
+                "mensagem": "Informe um CEP com 8 dígitos."
+              }
+            ]
+          },
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Pedido não confirmado na resposta",
+          "esperado": "Status 422, erro DADOS_INVALIDOS e ausência de número/data de confirmação",
+          "encontrado": {
+            "status": "422",
+            "erro": {
+              "codigo": "DADOS_INVALIDOS",
+              "mensagem": "Existem campos inválidos no pedido.",
+              "campos": [
+                {
+                  "campo": "cliente.cep",
+                  "mensagem": "Informe um CEP com 8 dígitos."
+                }
+              ]
+            },
+            "camposConfirmacao": {}
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "pasta": "08-cep-vazio",
+      "clienteEnviado": {
+        "nome": "Maria Silva",
+        "email": "maria@exemplo.com",
+        "cep": ""
+      },
+      "campoEsperado": "cep",
+      "inicio": "2026-10-08T10:57:03-03:00",
+      "fim": "2026-10-08T10:57:03-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 422,
+          "encontrado": "422",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "erro.codigo",
+          "esperado": "DADOS_INVALIDOS",
+          "encontrado": "DADOS_INVALIDOS",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Campo inválido identificado em campos",
+          "esperado": "cep",
+          "encontrado": {
+            "caminho": "erro.campos",
+            "campos": [
+              {
+                "campo": "cliente.cep",
+                "mensagem": "Informe o CEP."
+              }
+            ]
+          },
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Pedido não confirmado na resposta",
+          "esperado": "Status 422, erro DADOS_INVALIDOS e ausência de número/data de confirmação",
+          "encontrado": {
+            "status": "422",
+            "erro": {
+              "codigo": "DADOS_INVALIDOS",
+              "mensagem": "Existem campos inválidos no pedido.",
+              "campos": [
+                {
+                  "campo": "cliente.cep",
+                  "mensagem": "Informe o CEP."
+                }
+              ]
+            },
+            "camposConfirmacao": {}
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    }
+  ]
+}

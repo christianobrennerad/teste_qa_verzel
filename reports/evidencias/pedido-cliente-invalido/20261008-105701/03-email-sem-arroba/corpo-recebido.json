@@ -1,0 +1,1 @@
+{"erro":{"codigo":"DADOS_INVALIDOS","mensagem":"Existem campos inválidos no pedido.","campos":[{"campo":"cliente.email","mensagem":"Informe um e-mail válido."}]}}

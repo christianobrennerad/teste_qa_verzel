@@ -1,0 +1,84 @@
+{
+  "pasta": "01-nome-sem-sobrenome",
+  "clienteEnviado": {
+    "nome": "Maria",
+    "email": "maria@exemplo.com",
+    "cep": "01310100"
+  },
+  "campoEsperado": "nome",
+  "inicio": "2026-10-08T10:57:01-03:00",
+  "fim": "2026-10-08T10:57:01-03:00",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"cliente\":{\"nome\":\"Maria\",\"email\":\"maria@exemplo.com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "json_parse_error": null,
+  "resultado": "Falhou",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "esperado": 422,
+      "encontrado": "422",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Corpo JSON válido e objeto",
+      "esperado": "Objeto JSON",
+      "encontrado": "dict",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "erro.codigo",
+      "esperado": "DADOS_INVALIDOS",
+      "encontrado": "DADOS_INVALIDOS",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Campo inválido identificado em campos",
+      "esperado": "nome",
+      "encontrado": {
+        "caminho": "erro.campos",
+        "campos": [
+          {
+            "campo": "cliente.nome",
+            "mensagem": "Informe nome e sobrenome."
+          }
+        ]
+      },
+      "resultado": "Falhou"
+    },
+    {
+      "verificacao": "Pedido não confirmado na resposta",
+      "esperado": "Status 422, erro DADOS_INVALIDOS e ausência de número/data de confirmação",
+      "encontrado": {
+        "status": "422",
+        "erro": {
+          "codigo": "DADOS_INVALIDOS",
+          "mensagem": "Existem campos inválidos no pedido.",
+          "campos": [
+            {
+              "campo": "cliente.nome",
+              "mensagem": "Informe nome e sobrenome."
+            }
+          ]
+        },
+        "camposConfirmacao": {}
+      },
+      "resultado": "Aprovado"
+    }
+  ]
+}
