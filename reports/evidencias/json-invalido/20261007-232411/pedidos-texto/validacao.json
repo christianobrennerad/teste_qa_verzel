@@ -1,0 +1,71 @@
+{
+  "caso": "pedidos-texto",
+  "endpoint": "POST /api/pedidos",
+  "corpo_enviado": "\"texto\"",
+  "data": "2026-10-07T23:24:12-03:00",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "\"texto\"",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "resultado": "Falhou",
+  "verificacoes": [
+    {
+      "verificacao": "Envio concluído",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Status da aplicação",
+      "esperado": 400,
+      "encontrado": "400",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Corpo JSON",
+      "esperado": "Objeto JSON",
+      "encontrado": "Objeto JSON",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Tipo da resposta",
+      "esperado": "application/json",
+      "encontrado": "application/json",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Código do erro",
+      "esperado": "JSON_INVALIDO",
+      "encontrado": "JSON_INVALIDO",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Código e mensagem do erro",
+      "esperado": "Objeto erro com codigo e mensagem textual",
+      "encontrado": {
+        "codigo": "JSON_INVALIDO",
+        "mensagem": "O corpo da requisição deve ser um objeto JSON válido."
+      },
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Formato comum documentado",
+      "esperado": "Propriedade campo no objeto erro",
+      "encontrado": "Ausente",
+      "resultado": "Falhou"
+    }
+  ]
+}
