@@ -1,0 +1,47 @@
+{
+  "inicio": "2026-10-08 01:12:46 (America/Fortaleza)",
+  "fim": "2026-10-08 01:12:49 (America/Fortaleza)",
+  "resultado": "Falhou",
+  "etapas": [
+    {
+      "etapa": "01-cupom-quantidade-1",
+      "resultado": "Aprovado",
+      "falhas": []
+    },
+    {
+      "etapa": "02-aumentar-para-2",
+      "resultado": "Falhou",
+      "falhas": [
+        {
+          "verificacao": "Tela: frete",
+          "esperado": "R$ 0,00",
+          "encontrado": "R$ 19,90",
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Cálculo recebido: frete",
+          "esperado": 0,
+          "encontrado": 19.9,
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Tela: total",
+          "esperado": "R$ 180,00",
+          "encontrado": "R$ 199,90",
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Cálculo recebido: total",
+          "esperado": 180,
+          "encontrado": 199.9,
+          "resultado": "Falhou"
+        }
+      ]
+    },
+    {
+      "etapa": "03-diminuir-para-1",
+      "resultado": "Aprovado",
+      "falhas": []
+    }
+  ]
+}

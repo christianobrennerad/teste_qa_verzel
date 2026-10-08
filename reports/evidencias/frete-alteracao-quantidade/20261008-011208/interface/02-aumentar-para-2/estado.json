@@ -1,0 +1,14 @@
+{
+  "data": "2026-10-08 01:12:49 (America/Fortaleza)",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/carrinho",
+  "quantidade": "2",
+  "valores": {
+    "subtotal": "R$ 200,00",
+    "desconto": "- R$ 20,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 199,90"
+  },
+  "cupom": "Cupom BEMVINDO10 aplicado. Remover cupom",
+  "quantidadeCupons": 1,
+  "avisoFrete": "Faltam R$ 0,00 para o frete grátis."
+}

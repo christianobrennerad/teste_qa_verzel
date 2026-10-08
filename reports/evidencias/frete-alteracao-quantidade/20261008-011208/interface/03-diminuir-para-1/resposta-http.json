@@ -1,0 +1,41 @@
+{
+  "data": "2026-10-08 01:12:49 (America/Fortaleza)",
+  "status": 200,
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "headers": {
+    "access-control-allow-headers": "content-type",
+    "access-control-allow-methods": "GET, POST, OPTIONS",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-ray": "a4724f37afbe37c1-SJC",
+    "content-encoding": "zstd",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 08 Oct 2026 04:12:49 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=fNtH0OOn%2B9wO8lOimaTarCHk2rP4GJ9LpOD17UFJhGHObTone3v%2Be5xIwLismhYf2tJZQu3sQIy9NU1KOy7i1XBdQkRPG4piXDodzT1Pd7pDtL4T9Gb14Vn4LYoQsKZoU%2BvqXPEE%2BQEYEoXKB%2BDp1muQYYmC4RheSybbQXDrKQA%3D\"}]}",
+    "server": "envoy",
+    "x-envoy-upstream-service-time": "14"
+  },
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P005",
+        "nome": "Mochila Urbana 20L",
+        "precoUnitario": 100,
+        "quantidade": 1,
+        "total": 100
+      }
+    ],
+    "subtotal": 100,
+    "desconto": 10,
+    "frete": 19.9,
+    "freteGratis": false,
+    "valorFaltanteFreteGratis": 100,
+    "total": 109.9,
+    "cupom": {
+      "codigo": "BEMVINDO10",
+      "aplicado": true,
+      "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+    }
+  }
+}

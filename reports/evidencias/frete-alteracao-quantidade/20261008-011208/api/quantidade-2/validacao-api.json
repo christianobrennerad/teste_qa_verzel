@@ -1,0 +1,77 @@
+{
+  "data": "2026-10-08T01:12:40-03:00",
+  "quantidade": 2,
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":2}],\"cupom\":\"BEMVINDO10\"}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "resultado": "Falhou",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "esperado": 200,
+      "encontrado": "200",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": 20,
+      "encontrado": 20,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": 0,
+      "encontrado": 19.9,
+      "resultado": "Falhou"
+    },
+    {
+      "verificacao": "total",
+      "esperado": 180,
+      "encontrado": 199.9,
+      "resultado": "Falhou"
+    },
+    {
+      "verificacao": "freteGratis",
+      "esperado": true,
+      "encontrado": false,
+      "resultado": "Falhou"
+    },
+    {
+      "verificacao": "valorFaltanteFreteGratis",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cupom aplicado",
+      "esperado": "BEMVINDO10",
+      "encontrado": {
+        "codigo": "BEMVINDO10",
+        "aplicado": true,
+        "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+      },
+      "resultado": "Aprovado"
+    }
+  ]
+}

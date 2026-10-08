@@ -1,0 +1,40 @@
+Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.
+
+verzel
+store
+Produtos
+Documentação
+Carrinho
+2
+Carrinho
+Esvaziar carrinho
+Mochila Urbana 20L
+
+R$ 100,00 cada
+
+-
+2
++
+
+R$ 200,00
+
+Remover
+
+Cupom BEMVINDO10 aplicado.
+
+Remover cupom
+Resumo do pedido
+Subtotal
+R$ 200,00
+Desconto (BEMVINDO10)
+- R$ 20,00
+Frete
+R$ 19,90
+Total
+R$ 199,90
+
+Faltam R$ 0,00 para o frete grátis.
+
+Finalizar compra
+
+Verzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.

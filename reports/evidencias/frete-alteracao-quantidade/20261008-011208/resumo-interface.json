@@ -1,0 +1,264 @@
+{
+  "inicio": "2026-10-08 01:12:46 (America/Fortaleza)",
+  "tls": "Verificação TLS ativa",
+  "sessao": "Mesma sessão de navegador nas três etapas",
+  "etapas": [
+    {
+      "etapa": "01-cupom-quantidade-1",
+      "inicio": "2026-10-08 01:12:48 (America/Fortaleza)",
+      "quantidadeEsperada": 1,
+      "verificacoes": [
+        {
+          "verificacao": "Quantidade exibida",
+          "esperado": "1",
+          "encontrado": "1",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "BEMVINDO10 permanece aplicado",
+          "esperado": "Um cupom BEMVINDO10 aplicado",
+          "encontrado": {
+            "quantidade": 1,
+            "texto": "Cupom BEMVINDO10 aplicado. Remover cupom",
+            "cupomRecebido": {
+              "codigo": "BEMVINDO10",
+              "aplicado": true,
+              "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+            }
+          },
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Status do cálculo",
+          "esperado": 200,
+          "encontrado": 200,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: subtotal",
+          "esperado": "R$ 100,00",
+          "encontrado": "R$ 100,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: subtotal",
+          "esperado": 100,
+          "encontrado": 100,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: desconto",
+          "esperado": "- R$ 10,00",
+          "encontrado": "- R$ 10,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: desconto",
+          "esperado": 10,
+          "encontrado": 10,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: frete",
+          "esperado": "R$ 19,90",
+          "encontrado": "R$ 19,90",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: frete",
+          "esperado": 19.9,
+          "encontrado": 19.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: total",
+          "esperado": "R$ 109,90",
+          "encontrado": "R$ 109,90",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: total",
+          "esperado": 109.9,
+          "encontrado": 109.9,
+          "resultado": "Aprovado"
+        }
+      ],
+      "fim": "2026-10-08 01:12:48 (America/Fortaleza)",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "02-aumentar-para-2",
+      "inicio": "2026-10-08 01:12:48 (America/Fortaleza)",
+      "quantidadeEsperada": 2,
+      "verificacoes": [
+        {
+          "verificacao": "Quantidade exibida",
+          "esperado": "2",
+          "encontrado": "2",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "BEMVINDO10 permanece aplicado",
+          "esperado": "Um cupom BEMVINDO10 aplicado",
+          "encontrado": {
+            "quantidade": 1,
+            "texto": "Cupom BEMVINDO10 aplicado. Remover cupom",
+            "cupomRecebido": {
+              "codigo": "BEMVINDO10",
+              "aplicado": true,
+              "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+            }
+          },
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Status do cálculo",
+          "esperado": 200,
+          "encontrado": 200,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: subtotal",
+          "esperado": "R$ 200,00",
+          "encontrado": "R$ 200,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: subtotal",
+          "esperado": 200,
+          "encontrado": 200,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: desconto",
+          "esperado": "- R$ 20,00",
+          "encontrado": "- R$ 20,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: desconto",
+          "esperado": 20,
+          "encontrado": 20,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: frete",
+          "esperado": "R$ 0,00",
+          "encontrado": "R$ 19,90",
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Cálculo recebido: frete",
+          "esperado": 0,
+          "encontrado": 19.9,
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Tela: total",
+          "esperado": "R$ 180,00",
+          "encontrado": "R$ 199,90",
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Cálculo recebido: total",
+          "esperado": 180,
+          "encontrado": 199.9,
+          "resultado": "Falhou"
+        }
+      ],
+      "fim": "2026-10-08 01:12:49 (America/Fortaleza)",
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "03-diminuir-para-1",
+      "inicio": "2026-10-08 01:12:49 (America/Fortaleza)",
+      "quantidadeEsperada": 1,
+      "verificacoes": [
+        {
+          "verificacao": "Quantidade exibida",
+          "esperado": "1",
+          "encontrado": "1",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "BEMVINDO10 permanece aplicado",
+          "esperado": "Um cupom BEMVINDO10 aplicado",
+          "encontrado": {
+            "quantidade": 1,
+            "texto": "Cupom BEMVINDO10 aplicado. Remover cupom",
+            "cupomRecebido": {
+              "codigo": "BEMVINDO10",
+              "aplicado": true,
+              "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+            }
+          },
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Status do cálculo",
+          "esperado": 200,
+          "encontrado": 200,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: subtotal",
+          "esperado": "R$ 100,00",
+          "encontrado": "R$ 100,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: subtotal",
+          "esperado": 100,
+          "encontrado": 100,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: desconto",
+          "esperado": "- R$ 10,00",
+          "encontrado": "- R$ 10,00",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: desconto",
+          "esperado": 10,
+          "encontrado": 10,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: frete",
+          "esperado": "R$ 19,90",
+          "encontrado": "R$ 19,90",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: frete",
+          "esperado": 19.9,
+          "encontrado": 19.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Tela: total",
+          "esperado": "R$ 109,90",
+          "encontrado": "R$ 109,90",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cálculo recebido: total",
+          "esperado": 109.9,
+          "encontrado": 109.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Aviso visível de quanto falta",
+          "esperado": "Faltam R$ 100,00 para o frete grátis.",
+          "encontrado": "Faltam R$ 100,00 para o frete grátis.",
+          "resultado": "Aprovado"
+        }
+      ],
+      "fim": "2026-10-08 01:12:49 (America/Fortaleza)",
+      "resultado": "Aprovado"
+    }
+  ],
+  "resultado": "Falhou",
+  "fim": "2026-10-08 01:12:49 (America/Fortaleza)"
+}
