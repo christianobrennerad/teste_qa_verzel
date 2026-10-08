@@ -1,57 +1,77 @@
 # Relatório de teste — Catálogo de produtos
 
-**Resultado: SUCESSO.** A execução independente confirmou o cenário “Listar o catálogo fixo de produtos”: HTTP 200, corpo JSON, campos obrigatórios presentes e os oito produtos com nomes e preços correspondentes à documentação.
+**Resultado: Aprovado.** Os oito produtos previstos na documentação foram encontrados, com os nomes e preços corretos. Nenhum problema foi identificado neste teste.
 
-- **Execução:** 2026-10-07T21:31:46-03:00 (America/Fortaleza, UTC−03:00).
-- **Referência:** VZS-142, versão 2.3.0; `features/contrato_api.feature`.
-- **Ambiente:** Verzel Store de QA, API pública acessada a partir do ambiente de desenvolvimento na nuvem.
-- **Escopo:** somente `GET /api/produtos`. Não foram testados pedidos, cupons, frete ou interface nesta execução.
+**Data do teste:** 07/10/2026, às 21h31 (horário de Fortaleza).
 
-## Procedimento
+**Loja:** Verzel Store, ambiente de testes.
 
-Foi enviada uma requisição GET com o cabeçalho definido no contexto do cenário. A resposta integral foi salva e o JSON foi analisado para verificar status, estrutura, tipos e dados de cada produto. O curl preservou TLS e não seguiu redirecionamentos.
+**Referência:** VZS-142, versão 2.3.0.
 
-```bash
-curl -i -X GET \
-  "https://verzel-store.qa-test-verzel-store.workers.dev/api/produtos" \
-  -H "Content-Type: application/json" \
-  --max-time 30 --silent --show-error \
-  --write-out '\nCURL_HTTP_STATUS:%{http_code}\n'
+## O que foi testado
+
+Conferimos se o serviço que fornece o catálogo da loja entrega todos os produtos esperados, sem repetições, com nome, descrição, categoria e preço preenchidos.
+
+## Cenário BDD
+
+O cenário abaixo descreve o comportamento esperado que foi conferido neste teste. Ele também está em [contrato_api.feature](../features/contrato_api.feature). Aqui, API significa o serviço que fornece os dados do catálogo; status 200 indica que a consulta foi atendida com sucesso, e JSON é o formato desses dados.
+
+```gherkin
+# language: pt
+@VZS-142 @api @contrato
+Funcionalidade: Catálogo e contrato HTTP da API
+
+  Contexto:
+    Dado que as requisições usam o cabeçalho "Content-Type" com valor "application/json"
+
+  Cenário: Listar o catálogo fixo de produtos
+    Quando envio uma requisição "GET /api/produtos"
+    Então a API deve responder com status 200 e corpo JSON
+    E cada produto deve conter id, nome, descricao, categoria e preco
+    E os preços devem ser números em reais
+    E o catálogo deve conter os produtos:
+      | id   | nome                  | preco |
+      | P001 | Camiseta Essencial    | 59.9  |
+      | P002 | Calça Jeans Slim      | 139.9 |
+      | P003 | Tênis Casual Urbano   | 189.9 |
+      | P004 | Boné Aba Curva        | 49.9  |
+      | P005 | Mochila Urbana 20L    | 100   |
+      | P006 | Kit 3 Pares de Meias  | 29.9  |
+      | P007 | Jaqueta Corta-Vento   | 229.9 |
+      | P008 | Garrafa Térmica 750ml | 50    |
 ```
 
-O marcador final `CURL_HTTP_STATUS` é metadado acrescentado pelo curl para registrar o status final; não faz parte do corpo da API. O arquivo HTTP pode incluir o cabeçalho de estabelecimento do túnel do proxy. A validação considera o status da resposta da aplicação.
+## O que encontramos
 
-## Verificações
+| Verificação | Resultado |
+| --- | --- |
+| A consulta ao catálogo funcionou | Aprovado |
+| Todos os oito produtos esperados estavam presentes | Aprovado |
+| Nenhum produto apareceu repetido | Aprovado |
+| Todos os produtos tinham nome, descrição, categoria e preço | Aprovado |
+| Os nomes e preços correspondiam à documentação | Aprovado |
 
-| Verificação | Resultado | Evidência |
-| --- | --- | --- |
-| Execução da requisição | PASSOU | curl retornou código 0 |
-| Status da aplicação | PASSOU | HTTP 200 |
-| Tipo e formato da resposta | PASSOU | application/json; charset=utf-8; JSON analisado com sucesso |
-| Campos de cada produto | PASSOU | id, nome, descricao, categoria e preco presentes nos 8 itens |
-| Tipo dos preços | PASSOU | Todos os preços são números JSON, com os valores documentados em reais |
-| Composição do catálogo | PASSOU | 8 produtos, IDs P001–P008 sem duplicidade |
+### Produtos conferidos
 
-| ID | Nome esperado | Preço esperado (R$) | Nome recebido | Preço recebido (R$) | Resultado |
-| --- | --- | --- | --- | --- | --- |
-| P001 | Camiseta Essencial | 59.9 | Camiseta Essencial | 59.9 | PASSOU |
-| P002 | Calça Jeans Slim | 139.9 | Calça Jeans Slim | 139.9 | PASSOU |
-| P003 | Tênis Casual Urbano | 189.9 | Tênis Casual Urbano | 189.9 | PASSOU |
-| P004 | Boné Aba Curva | 49.9 | Boné Aba Curva | 49.9 | PASSOU |
-| P005 | Mochila Urbana 20L | 100 | Mochila Urbana 20L | 100 | PASSOU |
-| P006 | Kit 3 Pares de Meias | 29.9 | Kit 3 Pares de Meias | 29.9 | PASSOU |
-| P007 | Jaqueta Corta-Vento | 229.9 | Jaqueta Corta-Vento | 229.9 | PASSOU |
-| P008 | Garrafa Térmica 750ml | 50 | Garrafa Térmica 750ml | 50 | PASSOU |
+| Produto | Preço esperado | Preço encontrado | Resultado |
+| --- | --- | --- | --- |
+| Camiseta Essencial | R$ 59,90 | R$ 59,90 | Aprovado |
+| Calça Jeans Slim | R$ 139,90 | R$ 139,90 | Aprovado |
+| Tênis Casual Urbano | R$ 189,90 | R$ 189,90 | Aprovado |
+| Boné Aba Curva | R$ 49,90 | R$ 49,90 | Aprovado |
+| Mochila Urbana 20L | R$ 100,00 | R$ 100,00 | Aprovado |
+| Kit 3 Pares de Meias | R$ 29,90 | R$ 29,90 | Aprovado |
+| Jaqueta Corta-Vento | R$ 229,90 | R$ 229,90 | Aprovado |
+| Garrafa Térmica 750ml | R$ 50,00 | R$ 50,00 | Aprovado |
 
-Os preços `100` e `50` são números válidos e equivalem a R$ 100,00 e R$ 50,00. Zeros decimais finais não são exigidos no JSON. A ordem dos produtos não foi usada como critério de aprovação, pois o cenário exige sua presença, sem definir ordenação.
+## Comprovantes do teste
 
-## Evidências
+Os registros abaixo guardam os dados recebidos e a conferência realizada. São arquivos técnicos disponíveis para consulta da equipe:
 
-- [Resposta HTTP integral](evidencias/catalogo-produtos/resposta-http.txt): cabeçalhos e corpo originais da execução registrada.
-- [Corpo JSON](evidencias/catalogo-produtos/corpo.json): corpo extraído da mesma resposta, sem nova consulta.
-- [Validação detalhada](evidencias/catalogo-produtos/validacao.json): horário, comando, status e resultado de cada comparação.
-- [Saída de erro do curl](evidencias/catalogo-produtos/curl-stderr.txt): vazia nesta execução.
+- [Registro completo da consulta](evidencias/catalogo-produtos/resposta-http.txt).
+- [Dados dos produtos recebidos](evidencias/catalogo-produtos/corpo.json).
+- [Conferência detalhada dos resultados](evidencias/catalogo-produtos/validacao.json).
 
-## Conclusão
+## Limite desta avaliação
 
-**Cenário aprovado nesta execução.** Nenhuma divergência foi encontrada nas verificações descritas. O resultado representa a resposta observada neste momento e não comprova disponibilidade futura nem aprovação das demais funcionalidades.
+A aprovação vale para os dados do catálogo consultados na data indicada. A aparência dos produtos na tela da loja não foi testada. Pedidos, cupons e frete também não fizeram parte desta avaliação.
