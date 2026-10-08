@@ -1,0 +1,15 @@
+{
+  "data": "2026-10-08 00:27:51 (America/Fortaleza)",
+  "cupomExibido": null,
+  "controles": {
+    "cupom": 0,
+    "campo": 1,
+    "remover": 0
+  },
+  "valores": {
+    "subtotal": "R$ 100,00",
+    "desconto": "R$ 0,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 119,90"
+  }
+}

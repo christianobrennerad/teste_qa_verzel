@@ -1,0 +1,352 @@
+{
+  "resultado": "Aprovado",
+  "fluxo": "Aplicar, remover e reaplicar no mesmo carrinho e contexto de navegador",
+  "interface": {
+    "data": "2026-10-08 00:27:49 (America/Fortaleza)",
+    "tls": "Verificação TLS ativa",
+    "etapas": [
+      "Preparar 1 unidade de P005 em um novo contexto de navegador",
+      "01-cupom-aplicado",
+      "02-cupom-removido",
+      "03-cupom-reaplicado"
+    ],
+    "verificacoes": [
+      {
+        "etapa": "01-cupom-aplicado",
+        "verificacao": "Status da API",
+        "esperado": 200,
+        "encontrado": 200,
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "01-cupom-aplicado",
+        "verificacao": "Quantidade de cupons na tela",
+        "esperado": 1,
+        "encontrado": 1,
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "01-cupom-aplicado",
+        "verificacao": "Cupom ativo",
+        "esperado": "BEMVINDO10",
+        "encontrado": "BEMVINDO10",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "01-cupom-aplicado",
+        "verificacao": "subtotal",
+        "esperado": "R$ 100,00",
+        "encontrado": "R$ 100,00",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "01-cupom-aplicado",
+        "verificacao": "desconto",
+        "esperado": "- R$ 10,00",
+        "encontrado": "- R$ 10,00",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "01-cupom-aplicado",
+        "verificacao": "frete",
+        "esperado": "R$ 19,90",
+        "encontrado": "R$ 19,90",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "01-cupom-aplicado",
+        "verificacao": "total",
+        "esperado": "R$ 109,90",
+        "encontrado": "R$ 109,90",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "01-cupom-aplicado",
+        "verificacao": "Valores da API",
+        "esperado": {
+          "desconto": 10,
+          "frete": 19.9,
+          "total": 109.9
+        },
+        "encontrado": {
+          "desconto": 10,
+          "frete": 19.9,
+          "total": 109.9
+        },
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "02-cupom-removido",
+        "verificacao": "Status da API",
+        "esperado": 200,
+        "encontrado": 200,
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "02-cupom-removido",
+        "verificacao": "Quantidade de cupons na tela",
+        "esperado": 0,
+        "encontrado": 0,
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "02-cupom-removido",
+        "verificacao": "Cupom removido da API",
+        "esperado": "Nenhum aplicado",
+        "encontrado": null,
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "02-cupom-removido",
+        "verificacao": "Formulário disponível novamente",
+        "esperado": true,
+        "encontrado": true,
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "02-cupom-removido",
+        "verificacao": "subtotal",
+        "esperado": "R$ 100,00",
+        "encontrado": "R$ 100,00",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "02-cupom-removido",
+        "verificacao": "desconto",
+        "esperado": "R$ 0,00",
+        "encontrado": "R$ 0,00",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "02-cupom-removido",
+        "verificacao": "frete",
+        "esperado": "R$ 19,90",
+        "encontrado": "R$ 19,90",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "02-cupom-removido",
+        "verificacao": "total",
+        "esperado": "R$ 119,90",
+        "encontrado": "R$ 119,90",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "02-cupom-removido",
+        "verificacao": "Valores da API",
+        "esperado": {
+          "desconto": 0,
+          "frete": 19.9,
+          "total": 119.9
+        },
+        "encontrado": {
+          "desconto": 0,
+          "frete": 19.9,
+          "total": 119.9
+        },
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "03-cupom-reaplicado",
+        "verificacao": "Status da API",
+        "esperado": 200,
+        "encontrado": 200,
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "03-cupom-reaplicado",
+        "verificacao": "Quantidade de cupons na tela",
+        "esperado": 1,
+        "encontrado": 1,
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "03-cupom-reaplicado",
+        "verificacao": "Cupom ativo",
+        "esperado": "BEMVINDO10",
+        "encontrado": "BEMVINDO10",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "03-cupom-reaplicado",
+        "verificacao": "subtotal",
+        "esperado": "R$ 100,00",
+        "encontrado": "R$ 100,00",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "03-cupom-reaplicado",
+        "verificacao": "desconto",
+        "esperado": "- R$ 10,00",
+        "encontrado": "- R$ 10,00",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "03-cupom-reaplicado",
+        "verificacao": "frete",
+        "esperado": "R$ 19,90",
+        "encontrado": "R$ 19,90",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "03-cupom-reaplicado",
+        "verificacao": "total",
+        "esperado": "R$ 109,90",
+        "encontrado": "R$ 109,90",
+        "resultado": "Aprovado"
+      },
+      {
+        "etapa": "03-cupom-reaplicado",
+        "verificacao": "Valores da API",
+        "esperado": {
+          "desconto": 10,
+          "frete": 19.9,
+          "total": 109.9
+        },
+        "encontrado": {
+          "desconto": 10,
+          "frete": 19.9,
+          "total": 109.9
+        },
+        "resultado": "Aprovado"
+      }
+    ],
+    "resultado": "Aprovado"
+  },
+  "consultas_independentes_api": [
+    {
+      "data": "2026-10-08T00:28:11-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"BEMVINDO10\"}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "status": "200",
+      "resultado": "Aprovado",
+      "verificacao": "Resposta coincide com os dados recebidos durante esta etapa da interface",
+      "encontrado": {
+        "itens": [
+          {
+            "produtoId": "P005",
+            "nome": "Mochila Urbana 20L",
+            "precoUnitario": 100,
+            "quantidade": 1,
+            "total": 100
+          }
+        ],
+        "subtotal": 100,
+        "desconto": 10,
+        "frete": 19.9,
+        "freteGratis": false,
+        "valorFaltanteFreteGratis": 100,
+        "total": 109.9,
+        "cupom": {
+          "codigo": "BEMVINDO10",
+          "aplicado": true,
+          "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+        }
+      }
+    },
+    {
+      "data": "2026-10-08T00:28:11-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "status": "200",
+      "resultado": "Aprovado",
+      "verificacao": "Resposta coincide com os dados recebidos durante esta etapa da interface",
+      "encontrado": {
+        "itens": [
+          {
+            "produtoId": "P005",
+            "nome": "Mochila Urbana 20L",
+            "precoUnitario": 100,
+            "quantidade": 1,
+            "total": 100
+          }
+        ],
+        "subtotal": 100,
+        "desconto": 0,
+        "frete": 19.9,
+        "freteGratis": false,
+        "valorFaltanteFreteGratis": 100,
+        "total": 119.9,
+        "cupom": null
+      }
+    },
+    {
+      "data": "2026-10-08T00:28:11-03:00",
+      "comando": [
+        "curl",
+        "-i",
+        "-X",
+        "POST",
+        "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+        "-H",
+        "Content-Type: application/json",
+        "--data-binary",
+        "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}],\"cupom\":\"BEMVINDO10\"}",
+        "--max-time",
+        "30",
+        "--silent",
+        "--show-error",
+        "--write-out",
+        "\nCURL_HTTP_STATUS:%{http_code}\n"
+      ],
+      "curl_exit_code": 0,
+      "status": "200",
+      "resultado": "Aprovado",
+      "verificacao": "Resposta coincide com os dados recebidos durante esta etapa da interface",
+      "encontrado": {
+        "itens": [
+          {
+            "produtoId": "P005",
+            "nome": "Mochila Urbana 20L",
+            "precoUnitario": 100,
+            "quantidade": 1,
+            "total": 100
+          }
+        ],
+        "subtotal": 100,
+        "desconto": 10,
+        "frete": 19.9,
+        "freteGratis": false,
+        "valorFaltanteFreteGratis": 100,
+        "total": 109.9,
+        "cupom": {
+          "codigo": "BEMVINDO10",
+          "aplicado": true,
+          "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+        }
+      }
+    }
+  ]
+}
