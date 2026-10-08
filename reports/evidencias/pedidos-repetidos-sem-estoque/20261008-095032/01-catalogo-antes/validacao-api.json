@@ -1,0 +1,51 @@
+{
+  "ordem": 1,
+  "inicio": "2026-10-08T09:50:32-03:00",
+  "fim": "2026-10-08T09:50:33-03:00",
+  "metodo": "GET",
+  "endpoint": "/api/produtos",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "GET",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/produtos",
+    "-H",
+    "Content-Type: application/json",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "json_parse_error": null,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "esperado": 200,
+      "encontrado": "200",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Resposta JSON válida e lista",
+      "esperado": "Lista JSON",
+      "encontrado": "list",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "P005 disponível no catálogo",
+      "esperado": "Uma entrada de P005",
+      "encontrado": 1,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Preço de P005",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    }
+  ]
+}

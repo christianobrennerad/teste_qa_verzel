@@ -1,0 +1,70 @@
+{
+  "ordem": 3,
+  "inicio": "2026-10-08T09:50:33-03:00",
+  "fim": "2026-10-08T09:50:34-03:00",
+  "metodo": "POST",
+  "endpoint": "/api/pedidos",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":5}]}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "json_parse_error": null,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "esperado": 201,
+      "encontrado": "201",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Resposta JSON válida e objeto",
+      "esperado": "Objeto JSON",
+      "encontrado": "dict",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": 500,
+      "encontrado": 500,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": 500,
+      "encontrado": 500,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Pedido contém cinco unidades de P005",
+      "esperado": {
+        "produtoId": "P005",
+        "quantidade": 5
+      },
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "nome": "Mochila Urbana 20L",
+          "precoUnitario": 100,
+          "quantidade": 5,
+          "total": 500
+        }
+      ],
+      "resultado": "Aprovado"
+    }
+  ]
+}
