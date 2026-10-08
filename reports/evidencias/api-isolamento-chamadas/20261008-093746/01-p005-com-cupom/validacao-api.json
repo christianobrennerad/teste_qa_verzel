@@ -1,0 +1,56 @@
+{
+  "ordem": 1,
+  "inicioDaSequencia": "2026-10-08T09:37:46-03:00",
+  "fimDaSequencia": "2026-10-08T09:37:47-03:00",
+  "statusAplicacao": "200",
+  "curl_exit_code": 0,
+  "json_parse_error": null,
+  "resultado": "Falhou",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "esperado": 200,
+      "encontrado": "200",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Corpo JSON válido e objeto",
+      "esperado": "Objeto JSON",
+      "encontrado": "dict",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": 180,
+      "encontrado": 199.9,
+      "resultado": "Falhou"
+    },
+    {
+      "verificacao": "Apenas o produto e a quantidade enviados",
+      "esperado": {
+        "produtoId": "P005",
+        "quantidade": 2
+      },
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "nome": "Mochila Urbana 20L",
+          "precoUnitario": 100,
+          "quantidade": 2,
+          "total": 200
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cupom da primeira chamada aplicado",
+      "esperado": "BEMVINDO10 aplicado",
+      "encontrado": {
+        "codigo": "BEMVINDO10",
+        "aplicado": true,
+        "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+      },
+      "resultado": "Aprovado"
+    }
+  ]
+}

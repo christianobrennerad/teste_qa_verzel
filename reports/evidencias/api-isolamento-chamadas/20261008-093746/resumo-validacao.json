@@ -1,0 +1,172 @@
+{
+  "inicio": "2026-10-08T09:37:46-03:00",
+  "fim": "2026-10-08T09:37:47-03:00",
+  "timezone": "America/Fortaleza",
+  "metodo": "Uma execução do curl; duas requisições sequenciais, separadas por --next; sem paralelismo",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":2}],\"cupom\":\"BEMVINDO10\"}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--output",
+    "/workspace/teste_qa_verzel/reports/evidencias/api-isolamento-chamadas/20261008-093746/01-p005-com-cupom/resposta-http.txt",
+    "--write-out",
+    "REQUISICAO_1_STATUS:%{http_code};EXIT:%{exitcode}\n",
+    "--next",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":1}]}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--output",
+    "/workspace/teste_qa_verzel/reports/evidencias/api-isolamento-chamadas/20261008-093746/02-p008-sem-cupom/resposta-http.txt",
+    "--write-out",
+    "REQUISICAO_2_STATUS:%{http_code};EXIT:%{exitcode}\n"
+  ],
+  "curl_exit_code": 0,
+  "resultado": "Falhou",
+  "chamadas": [
+    {
+      "ordem": 1,
+      "inicioDaSequencia": "2026-10-08T09:37:46-03:00",
+      "fimDaSequencia": "2026-10-08T09:37:47-03:00",
+      "statusAplicacao": "200",
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Falhou",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 200,
+          "encontrado": "200",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "total",
+          "esperado": 180,
+          "encontrado": 199.9,
+          "resultado": "Falhou"
+        },
+        {
+          "verificacao": "Apenas o produto e a quantidade enviados",
+          "esperado": {
+            "produtoId": "P005",
+            "quantidade": 2
+          },
+          "encontrado": [
+            {
+              "produtoId": "P005",
+              "nome": "Mochila Urbana 20L",
+              "precoUnitario": 100,
+              "quantidade": 2,
+              "total": 200
+            }
+          ],
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Cupom da primeira chamada aplicado",
+          "esperado": "BEMVINDO10 aplicado",
+          "encontrado": {
+            "codigo": "BEMVINDO10",
+            "aplicado": true,
+            "mensagem": "Cupom aplicado: 10% de desconto nos produtos."
+          },
+          "resultado": "Aprovado"
+        }
+      ]
+    },
+    {
+      "ordem": 2,
+      "inicioDaSequencia": "2026-10-08T09:37:46-03:00",
+      "fimDaSequencia": "2026-10-08T09:37:47-03:00",
+      "statusAplicacao": "200",
+      "curl_exit_code": 0,
+      "json_parse_error": null,
+      "resultado": "Aprovado",
+      "verificacoes": [
+        {
+          "verificacao": "Status final da aplicação",
+          "esperado": 200,
+          "encontrado": "200",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Corpo JSON válido e objeto",
+          "esperado": "Objeto JSON",
+          "encontrado": "dict",
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "subtotal",
+          "esperado": 50,
+          "encontrado": 50,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "desconto",
+          "esperado": 0,
+          "encontrado": 0,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "frete",
+          "esperado": 19.9,
+          "encontrado": 19.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "total",
+          "esperado": 69.9,
+          "encontrado": 69.9,
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Apenas o produto e a quantidade enviados",
+          "esperado": {
+            "produtoId": "P008",
+            "quantidade": 1
+          },
+          "encontrado": [
+            {
+              "produtoId": "P008",
+              "nome": "Garrafa Térmica 750ml",
+              "precoUnitario": 50,
+              "quantidade": 1,
+              "total": 50
+            }
+          ],
+          "resultado": "Aprovado"
+        },
+        {
+          "verificacao": "Nenhum cupom herdado da primeira chamada",
+          "esperado": null,
+          "encontrado": null,
+          "resultado": "Aprovado"
+        }
+      ]
+    }
+  ]
+}

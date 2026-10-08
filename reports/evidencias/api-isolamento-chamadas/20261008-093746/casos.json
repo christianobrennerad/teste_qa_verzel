@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "01-p005-com-cupom",
+    "corpo": "{\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":2}],\"cupom\":\"BEMVINDO10\"}",
+    "esperado": {
+      "total": 180
+    },
+    "produto": "P005",
+    "quantidade": 2
+  },
+  {
+    "slug": "02-p008-sem-cupom",
+    "corpo": "{\"itens\":[{\"produtoId\":\"P008\",\"quantidade\":1}]}",
+    "esperado": {
+      "subtotal": 50,
+      "desconto": 0,
+      "frete": 19.9,
+      "total": 69.9
+    },
+    "produto": "P008",
+    "quantidade": 1
+  }
+]

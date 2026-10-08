@@ -1,0 +1,15 @@
+HTTP/2 200 
+date: Thu, 08 Oct 2026 12:37:47 GMT
+content-type: application/json; charset=utf-8
+content-length: 226
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=yGvBNE87peBpAdwYLXq4WVmcvfEsNFsD3Xzv7qJMaZ3sUjyGoMVkQjqRmllnFMmuBtNNrdKF3%2F%2FrfKhXGrYUrR%2BZaMDWO1xquQP8kRq%2FKhUBwHZcOAxi6P%2FI%2B%2ByKBzjDri0fr7YWHTwfq3Jm8gFMGY7Nr2qGjF%2FGlBtrB38c354%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a47532eb8cc217c4-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 19
+
+{"itens":[{"produtoId":"P008","nome":"Garrafa Térmica 750ml","precoUnitario":50,"quantidade":1,"total":50}],"subtotal":50,"desconto":0,"frete":19.9,"freteGratis":false,"valorFaltanteFreteGratis":150,"total":69.9,"cupom":null}
