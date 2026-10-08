@@ -1,0 +1,128 @@
+{
+  "caso": "01-sem-cupom",
+  "inicio": "2026-10-08T10:04:09-03:00",
+  "fim": "2026-10-08T10:04:10-03:00",
+  "comando": [
+    "curl",
+    "-i",
+    "-X",
+    "POST",
+    "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+    "-H",
+    "Content-Type: application/json",
+    "--data-binary",
+    "{\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"01310-100\"},\"itens\":[{\"produtoId\":\"P005\",\"quantidade\":1}]}",
+    "--max-time",
+    "30",
+    "--silent",
+    "--show-error",
+    "--write-out",
+    "\nCURL_HTTP_STATUS:%{http_code}\n"
+  ],
+  "curl_exit_code": 0,
+  "json_parse_error": null,
+  "resultado": "Aprovado",
+  "verificacoes": [
+    {
+      "verificacao": "Status final da aplicação",
+      "esperado": 201,
+      "encontrado": "201",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Corpo JSON válido e objeto",
+      "esperado": "Objeto JSON",
+      "encontrado": "dict",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "numero",
+      "esperado": "^VZ-[0-9]{6}$",
+      "encontrado": "VZ-075471",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "criadoEm",
+      "esperado": "Data e hora ISO 8601 válidas",
+      "encontrado": "2026-10-08T13:04:10.364Z",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "cliente.nome",
+      "esperado": "Maria Silva",
+      "encontrado": "Maria Silva",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "cliente.email",
+      "esperado": "maria@exemplo.com",
+      "encontrado": "maria@exemplo.com",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "cliente.cep",
+      "esperado": "01310100",
+      "encontrado": "01310100",
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "desconto",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "valorFaltanteFreteGratis",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "total",
+      "esperado": 119.9,
+      "encontrado": 119.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "freteGratis",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Uma unidade de P005",
+      "esperado": {
+        "produtoId": "P005",
+        "quantidade": 1
+      },
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "nome": "Mochila Urbana 20L",
+          "precoUnitario": 100,
+          "quantidade": 1,
+          "total": 100
+        }
+      ],
+      "resultado": "Aprovado"
+    },
+    {
+      "verificacao": "Cupom correspondente ao exemplo",
+      "esperado": null,
+      "encontrado": null,
+      "resultado": "Aprovado"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "01-sem-cupom",
+    "cupom": null,
+    "desconto": 0,
+    "total": 119.9
+  },
+  {
+    "slug": "02-com-bemvindo10",
+    "cupom": "BEMVINDO10",
+    "desconto": 10,
+    "total": 109.9
+  }
+]
