@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 03:45:02 GMT
+server: envoy
+
+HTTP/2 200 
+date: Thu, 08 Oct 2026 03:45:02 GMT
+content-type: application/json; charset=utf-8
+content-length: 235
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=uH9ZNZQnKK1M46EgsEFFEyKM2jzqQ0kbZqvk9o23mBVG0p21aFYGUwqp%2BV2EJwS%2Bak7L%2B3YFgIbyG%2FCuRDVOxqEE5GMlHwsETUhCs7PDUyhJwfMIhei3ecphfVsx6sBqtHGbd%2BS7RqhYBGNOPAgsoZ2%2BlRRnOjC267oKLTNoCNs%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a47226866f85d883-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 90
+
+{"itens":[{"produtoId":"P003","nome":"Tênis Casual Urbano","precoUnitario":189.9,"quantidade":1,"total":189.9}],"subtotal":189.9,"desconto":0,"frete":19.9,"freteGratis":false,"valorFaltanteFreteGratis":10.1,"total":209.8,"cupom":null}
+CURL_HTTP_STATUS:200

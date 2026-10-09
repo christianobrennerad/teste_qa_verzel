@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 03:45:02 GMT
+server: envoy
+
+HTTP/2 200 
+date: Thu, 08 Oct 2026 03:45:03 GMT
+content-type: application/json; charset=utf-8
+content-length: 227
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=yGfsVpO287yalniB5cvy2j1wHa5sQm%2BouHJnNAWVqOYjMIgkXYb6pT7ldkGR3RW1mu4QpDVM7g7YDg7kCeqW%2BOIz2Xlh76sdebHnW0cxo8LgUmX9MyAw7nB3aqAv74kRVVULK8nwDHrWxfBpPHq3nrBIbKC%2FH9D8SzMz79tTdys%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a472268bb9e24aad-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 93
+
+{"itens":[{"produtoId":"P007","nome":"Jaqueta Corta-Vento","precoUnitario":229.9,"quantidade":1,"total":229.9}],"subtotal":229.9,"desconto":0,"frete":0,"freteGratis":true,"valorFaltanteFreteGratis":0,"total":229.9,"cupom":null}
+CURL_HTTP_STATUS:200

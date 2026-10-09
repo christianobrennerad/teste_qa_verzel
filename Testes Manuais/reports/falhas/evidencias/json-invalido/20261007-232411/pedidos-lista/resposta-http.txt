@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 02:24:11 GMT
+server: envoy
+
+HTTP/2 400 
+date: Thu, 08 Oct 2026 02:24:12 GMT
+content-type: application/json; charset=utf-8
+content-length: 105
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=RliSK10LGSnUBZA0INoQgteQ9Hj3orb0%2FyQTlJ0KbxtDDjcLHDlhriDTAWbyFg%2Bt1B4tnvMHA0wzrxcUpskbDdi3Mx5dCSG63rOFdXgAbaKVJidtiEGVb1qIPrxau1bd%2BU8KgT0Do2ZxFT0TEgS35jFUkx8f0lA1%2Bm8YbeJ2mFU%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a471b01ba82822ea-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 28
+
+{"erro":{"codigo":"JSON_INVALIDO","mensagem":"O corpo da requisição deve ser um objeto JSON válido."}}
+CURL_HTTP_STATUS:400

@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 13:57:01 GMT
+server: envoy
+
+HTTP/2 422 
+date: Thu, 08 Oct 2026 13:57:02 GMT
+content-type: application/json; charset=utf-8
+content-length: 164
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BIwN6VKaytQjBctwbadkIiu8l5H7QolLxqOZW3Qde2%2F8fwF431LsT8C665ygAaP8ClpZFzmvMthmlMUUT%2FeOwmB6c7NFsZeftPL0ab0QXC%2FGQDcAq4e0fsvZlUsbiScHLmyx8F4%2BXSeDQia6c40Wnko0%2Fbbb3ZU%2BOubPsyseFZk%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a475a7014e1ef9f9-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 111
+
+{"erro":{"codigo":"DADOS_INVALIDOS","mensagem":"Existem campos inválidos no pedido.","campos":[{"campo":"cliente.email","mensagem":"Informe um e-mail válido."}]}}
+CURL_HTTP_STATUS:422

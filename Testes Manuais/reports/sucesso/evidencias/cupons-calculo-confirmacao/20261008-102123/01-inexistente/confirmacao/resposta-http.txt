@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 13:21:23 GMT
+server: envoy
+
+HTTP/2 422 
+date: Thu, 08 Oct 2026 13:21:23 GMT
+content-type: application/json; charset=utf-8
+content-length: 82
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dA0%2FJJiF4%2BcY3Qu9HRBZnhASvif9L17BKd2IwBOMsJ3WSFvVY8pCLgFTXA1zHDDsWmvpK5andNFar6GITfDokreqaiKQOreLVO65gKEf3gt%2BGeLirpq9cAwzbJMOcQ1KGePIxmxwrsSMqpMQegd2J8Vl%2BpoITuAfgGZYctLAH6o%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a47572cb4f6acfe5-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 116
+
+{"erro":{"codigo":"CUPOM_INVALIDO","mensagem":"Cupom inválido.","campo":"cupom"}}
+CURL_HTTP_STATUS:422

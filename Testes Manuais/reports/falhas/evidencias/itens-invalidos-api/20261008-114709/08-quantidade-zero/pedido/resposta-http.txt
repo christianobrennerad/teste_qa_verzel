@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 14:47:12 GMT
+server: envoy
+
+HTTP/2 422 
+date: Thu, 08 Oct 2026 14:47:12 GMT
+content-type: application/json; charset=utf-8
+content-length: 145
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=c5e0iXgpxQKQMCoFdYik1QHaR9z7E2Vbpw7aMdRuWKh96C6FfLzKsOfqD%2Bzzc9ydn11wJxikkuXagmW41YUoKSwg6ARo5zbf%2BBkJq5237%2FBQ%2BjkBRZ5n7D9U%2FTjhgCNj9NGx%2BaSO5rm5uWO0oO%2B3IEpkBRpBzowcTNbfYBqu9oI%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a475f080fbee7ae2-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 18
+
+{"erro":{"codigo":"QUANTIDADE_INVALIDA","mensagem":"A quantidade deve ser um número inteiro maior ou igual a 1.","campo":"itens[0].quantidade"}}
+CURL_HTTP_STATUS:422

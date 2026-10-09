@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 00:31:45 GMT
+server: envoy
+
+HTTP/2 200 
+date: Thu, 08 Oct 2026 00:31:46 GMT
+content-type: application/json; charset=utf-8
+content-length: 1069
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=B9ky9%2FyZHa33RC9JzZXtft7e6JjXhLPOOyCEeoURkzmfT8ui3WyOeKIezHaC4LdgEE5qZ4eCqtiXzq6%2FgB4vXawdyFBdMbEK4D99atfzAwzv%2BGbPsp4aCBKUvotwkHUvoZUUqW4cY%2FSWbDebNLwcQjg5b7UoH4Svky1neGP9FuI%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a4710b693c68ba62-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 10
+
+[{"id":"P001","nome":"Camiseta Essencial","descricao":"Algodão penteado e corte reto.","categoria":"Vestuário","preco":59.9},{"id":"P002","nome":"Calça Jeans Slim","descricao":"Jeans com elastano e lavagem escura.","categoria":"Vestuário","preco":139.9},{"id":"P003","nome":"Tênis Casual Urbano","descricao":"Solado de borracha e cabedal em lona.","categoria":"Calçados","preco":189.9},{"id":"P004","nome":"Boné Aba Curva","descricao":"Ajuste traseiro com fivela metálica.","categoria":"Acessórios","preco":49.9},{"id":"P005","nome":"Mochila Urbana 20L","descricao":"Compartimento acolchoado para notebook.","categoria":"Acessórios","preco":100},{"id":"P006","nome":"Kit 3 Pares de Meias","descricao":"Cano médio, algodão com reforço no calcanhar.","categoria":"Vestuário","preco":29.9},{"id":"P007","nome":"Jaqueta Corta-Vento","descricao":"Tecido leve e repelente à água.","categoria":"Vestuário","preco":229.9},{"id":"P008","nome":"Garrafa Térmica 750ml","descricao":"Mantém a temperatura por até 12 horas.","categoria":"Acessórios","preco":50}]
+CURL_HTTP_STATUS:200

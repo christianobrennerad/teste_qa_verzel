@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 13:04:10 GMT
+server: envoy
+
+HTTP/2 201 
+date: Thu, 08 Oct 2026 13:04:10 GMT
+content-type: application/json; charset=utf-8
+content-length: 363
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=US%2BpEq4de1MebqkC2VfUE%2FjK8XryzsDnxfj8pPL%2FE%2Bf3xRGLlzzYZkKqtwjj%2BKHa%2FCnigCdBYhADaJ1aQyBEF%2FxS86YD4lNouqC%2BdGEGeBgR8uFeIe5d6oNCZxUBD4XXWuAMxfg8HmGt%2FXRlpp2cTJcCmXgS5K%2FSAJS5VFg12rc%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a47559909e3134c3-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 95
+
+{"numero":"VZ-075471","criadoEm":"2026-10-08T13:04:10.364Z","cliente":{"nome":"Maria Silva","email":"maria@exemplo.com","cep":"01310100"},"itens":[{"produtoId":"P005","nome":"Mochila Urbana 20L","precoUnitario":100,"quantidade":1,"total":100}],"subtotal":100,"desconto":0,"frete":19.9,"freteGratis":false,"valorFaltanteFreteGratis":100,"total":119.9,"cupom":null}
+CURL_HTTP_STATUS:201

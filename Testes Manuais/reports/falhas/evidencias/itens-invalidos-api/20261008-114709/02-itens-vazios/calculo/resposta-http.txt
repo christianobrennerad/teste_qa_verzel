@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+date: Thu, 08 Oct 2026 14:47:10 GMT
+server: envoy
+
+HTTP/2 422 
+date: Thu, 08 Oct 2026 14:47:10 GMT
+content-type: application/json; charset=utf-8
+content-length: 95
+access-control-allow-origin: *
+access-control-allow-headers: content-type
+access-control-allow-methods: GET, POST, OPTIONS
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=M8oBvJS1jZxsJ8O3tUCig8u5J1bY%2BS4Us0M2bKg4caQJDaidlysihkeaeidpyWhW4cdAKNkxvFtw8gBGeQT5McGQQNAsH1vptRHJE48deoHccE933NL04Isa2vlE2b0znY9CejkuOiy3W2pz2NfpuVKUlPj1flLXjoTUA3U9AQE%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: envoy
+cf-ray: a475f07239e9f64e-SJC
+alt-svc: h3=":443"; ma=86400
+x-envoy-upstream-service-time: 9
+
+{"erro":{"codigo":"ITENS_OBRIGATORIOS","mensagem":"Informe ao menos um item.","campo":"itens"}}
+CURL_HTTP_STATUS:422
