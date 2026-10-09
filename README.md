@@ -27,10 +27,10 @@ As conclusões apresentadas nos relatórios estão ligadas às respostas e telas
 
 ## O que foi entregue
 
-- [Cenários BDD](<../Testes Manuais/features/README.md>) para catálogo, cupons, frete, pedidos, validação de itens e isolamento do carrinho.
-- [Relatórios manuais](<../Testes Manuais/reports/README.md>) com resultados e evidências das execuções anteriores.
-- [Testes automatizados](<tests/README.md>) de API e interface.
-- [Relatórios automatizados](<reports/README.md>) organizados em sucesso e falhas, com evidências e histórico das execuções.
+- [Cenários BDD](<Testes Manuais/features/README.md>) para catálogo, cupons, frete, pedidos, validação de itens e isolamento do carrinho.
+- [Relatórios manuais](<Testes Manuais/reports/README.md>) com resultados e evidências das execuções anteriores.
+- [Testes automatizados](<Testes Automatizados/tests/README.md>) de API e interface.
+- [Relatórios automatizados](<Testes Automatizados/reports/README.md>) organizados em sucesso e falhas, com evidências e histórico das execuções.
 
 ```text
 teste_qa_verzel/
@@ -39,7 +39,6 @@ teste_qa_verzel/
 │   ├── features/
 │   └── reports/
 └── Testes Automatizados/
-    ├── README.md
     ├── tests/
     │   ├── api/
     │   └── interface/
@@ -53,7 +52,7 @@ teste_qa_verzel/
 
 ## Pasta de testes automatizados
 
-A pasta [Testes Automatizados](<README.md>) reúne o código dos testes em Playwright com TypeScript, as configurações para executá-los e os relatórios com evidências.
+A pasta [Testes Automatizados](<Testes Automatizados/README.md>) reúne o código dos testes em Playwright com TypeScript, as configurações para executá-los e os relatórios com evidências.
 
 | Local | Conteúdo |
 | --- | --- |
@@ -63,26 +62,23 @@ A pasta [Testes Automatizados](<README.md>) reúne o código dos testes em Playw
 | `Testes Automatizados/reports/falhas/` | Relatórios dos cenários reprovados, diferenças encontradas e suas evidências. |
 | `Testes Automatizados/reports/execucoes/` | Histórico das execuções, resultados completos, relatórios HTML e capturas de tela. |
 
-O [guia de automação](<tests/README.md>) explica como executar os testes. O [índice dos relatórios](<reports/README.md>) permite consultar os resultados e as evidências.
+O [guia de automação](<Testes Automatizados/tests/README.md>) explica como executar os testes. O [índice dos relatórios](<Testes Automatizados/reports/README.md>) permite consultar os resultados e as evidências.
 
 ## Como executar os testes
 
-Requisito: **Node.js 20 ou superior**. Execute os comandos dentro desta pasta, `Testes Automatizados`:
+Requisito: **Node.js 20 ou superior**. Na pasta do repositório, execute:
 
 ```bash
+cd "Testes Automatizados"
 npm ci
 npx playwright install chromium
 npm test
 npm run report
 ```
 
-Se estiver na raiz do repositório, entre primeiro nesta pasta com `cd "Testes Automatizados"`.
-
 `npm test` executa todos os testes configurados. Para rodar somente os seis cenários do reteste, use `npm run test:reteste`. Para um exemplo exclusivamente de API, use `npm run test:quantidade-zero`; esse teste não precisa abrir navegador.
 
-O conjunto de reteste verifica frete nos limites do subtotal, alteração de quantidade, erros de rota e método, desconto com cupom, produto duplicado e formatos de CEP. Na nuvem, também é possível usar o Chromium já instalado indicando `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`, conforme o guia.
-
-O Playwright executa os arquivos `.spec.ts`. Os arquivos `.feature` documentam os cenários e não são executados automaticamente por essa configuração. O [guia de automação](<tests/README.md>) detalha os comandos e a configuração do ambiente.
+O Playwright executa os arquivos `.spec.ts`. Os arquivos `.feature` documentam os cenários e não são executados automaticamente por essa configuração. O [guia de automação](<Testes Automatizados/tests/README.md>) detalha os comandos e a configuração do ambiente.
 
 ## Resultado da última execução completa
 
@@ -94,10 +90,10 @@ Execução em **09/10/2026, das 18h36min57s às 18h37min25s**, no horário de Fo
 
 As reprovações envolveram cobrança de frete no subtotal exato de R$ 200,00, mensagem do cupom diferente da prevista, ausência de `erro.campo` e apresentação de “Grátis” em um cenário que exige duas casas decimais. A obrigatoriedade de `erro.campo` em erros de rota/método e o critério de apresentação do frete foram destacados como pontos de esclarecimento com Produto.
 
-- [Relatório HTML](<reports/execucoes/20261009-183657/html/index.html>).
-- [Pacote completo do HTML e seus anexos](<reports/execucoes/20261009-183657/relatorio-html.zip>).
-- [Captura de tela do relatório](<reports/execucoes/20261009-183657/print-relatorio-html-fortaleza.png>).
-- [Resumo dos 20 casos](<reports/execucoes/20261009-183657/resumo.json>).
+- [Relatório HTML](<Testes Automatizados/reports/execucoes/20261009-183657/html/index.html>).
+- [Pacote completo do HTML e seus anexos](<Testes Automatizados/reports/execucoes/20261009-183657/relatorio-html.zip>).
+- [Captura de tela do relatório](<Testes Automatizados/reports/execucoes/20261009-183657/print-relatorio-html-fortaleza.png>).
+- [Resumo dos 20 casos](<Testes Automatizados/reports/execucoes/20261009-183657/resumo.json>).
 
 Para abrir o HTML preservado desta execução, dentro de `Testes Automatizados`:
 
