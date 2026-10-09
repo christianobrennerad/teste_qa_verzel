@@ -1,0 +1,62 @@
+{
+  "inicio": "2026-10-09T21:37:07.486Z",
+  "fim": "2026-10-09T21:37:07.558Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+  "status": 201,
+  "statusText": "Created",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 21:37:07 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "content-length",
+      "value": "357"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YQyr1UQwKhofl3Ve89XHdDJTGVaakn5nWX0r09Q3%2F6202QpYl%2FQrwM1sP87LCh9OJaPX24us99rDFNw87HRJ4dXazMLY%2BWK9gsB9aDK0%2FwbqgjSfqgCLMmuqNcoigH8MzDjEdUZlI%2FOoN3gY2frA4JE5srmlYmCI7wHQRfbddWk%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a48086561dfe7af2-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "20"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    }
+  ],
+  "corpoRecebido": "{\"numero\":\"VZ-911458\",\"criadoEm\":\"2026-10-09T21:37:07.546Z\",\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":5,\"total\":250}],\"subtotal\":250,\"desconto\":0,\"frete\":0,\"freteGratis\":true,\"valorFaltanteFreteGratis\":0,\"total\":250,\"cupom\":null}"
+}

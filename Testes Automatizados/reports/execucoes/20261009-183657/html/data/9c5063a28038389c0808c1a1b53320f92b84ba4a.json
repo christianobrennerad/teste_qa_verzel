@@ -1,0 +1,61 @@
+{
+  "horario": "2026-10-09T21:37:06.963Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+  "status": 422,
+  "statusText": "Unprocessable Entity",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 21:37:06 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "content-length",
+      "value": "118"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Kwy1XLlur1j6wvImqX6YcoIUE%2BD5cZLobOhFlZJoKKq62BLL4FCiKGbILhwX5GBdn3MUI9WHAgTtRdinL%2F3TYe2nHTlYrIHAv9DtVO%2BO9V0lLb%2BlOgzfC9tep6un%2Bmjm58mDoAF%2BLPSylvRzSgOtlaEtEUbLQliQCt8IykGfSWY%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a48086522f4fdc0d-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "76"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    }
+  ],
+  "corpoRecebido": "{\"erro\":{\"codigo\":\"ITEM_DUPLICADO\",\"mensagem\":\"O produto P001 aparece mais de uma vez.\",\"campo\":\"itens[1].produtoId\"}}"
+}

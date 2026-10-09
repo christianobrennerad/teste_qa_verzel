@@ -1,0 +1,120 @@
+{
+  "escopo": "Suíte completa Playwright",
+  "inicio": "2026-10-09T18:36:57.847934-03:00",
+  "fim": "2026-10-09T18:37:25.361504-03:00",
+  "timezone": "America/Fortaleza",
+  "total": 20,
+  "aprovados": 11,
+  "falharam": 9,
+  "pulados": 0,
+  "bloqueados": 0,
+  "comando": "npm test",
+  "codigoSaida": 1,
+  "casos": [
+    {
+      "teste": "Identificar o campo da quantidade inválida",
+      "projeto": "api",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Erros de rota: GET /api/produtos/INEXISTENTE",
+      "projeto": "api",
+      "resultado": "failed"
+    },
+    {
+      "teste": "Erros de rota: GET /api/rota-inexistente",
+      "projeto": "api",
+      "resultado": "failed"
+    },
+    {
+      "teste": "Erros de rota: POST /api/produtos",
+      "projeto": "api",
+      "resultado": "failed"
+    },
+    {
+      "teste": "Erros de rota: GET /api/carrinho/calcular",
+      "projeto": "api",
+      "resultado": "failed"
+    },
+    {
+      "teste": "Erros de rota: GET /api/pedidos",
+      "projeto": "api",
+      "resultado": "failed"
+    },
+    {
+      "teste": "Pedido com CEP 01310-100",
+      "projeto": "api",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Pedido com CEP 01310100",
+      "projeto": "api",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Produto duplicado: calculo",
+      "projeto": "api",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Produto duplicado: pedido",
+      "projeto": "api",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Aceitar 1 unidade(s) de P008 ao calcular",
+      "projeto": "api",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Aceitar 5 unidade(s) de P008 ao calcular",
+      "projeto": "api",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Aceitar 1 unidade(s) de P008 ao confirmar",
+      "projeto": "api",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Aceitar 5 unidade(s) de P008 ao confirmar",
+      "projeto": "api",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+      "projeto": "interface-chromium",
+      "resultado": "failed"
+    },
+    {
+      "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+      "projeto": "interface-chromium",
+      "resultado": "failed"
+    },
+    {
+      "teste": "Frete nos limites: P003-1",
+      "projeto": "interface-chromium",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Frete nos limites: P002-1-P001-1",
+      "projeto": "interface-chromium",
+      "resultado": "passed"
+    },
+    {
+      "teste": "Frete nos limites: P005-2",
+      "projeto": "interface-chromium",
+      "resultado": "failed"
+    },
+    {
+      "teste": "Frete nos limites: P007-1",
+      "projeto": "interface-chromium",
+      "resultado": "failed"
+    }
+  ],
+  "comparacoesDoRetesteDosSeisRelatorios": {
+    "Aprovado": 183,
+    "Falhou": 21
+  },
+  "anexos": 169
+}

@@ -1,0 +1,1185 @@
+[
+  {
+    "teste": "Identificar o campo da quantidade inválida",
+    "projeto": "api",
+    "anexo": "requisicao.json",
+    "arquivo": "artefatos/anexos-inline/0a13f9ce988e26c5b247-a0cf3c863d705252d3bb/requisicao.json",
+    "sha256": "d688def644ad555b0f2257105f9d1eff5c8a711e2c674f6faac1066c57b51e1f"
+  },
+  {
+    "teste": "Identificar o campo da quantidade inválida",
+    "projeto": "api",
+    "anexo": "resposta-http.json",
+    "arquivo": "artefatos/anexos-inline/0a13f9ce988e26c5b247-a0cf3c863d705252d3bb/resposta-http.json",
+    "sha256": "c8d248baa966c706705d95b308c99cf6183f4cc4abaed60fec0caf54740b5b79"
+  },
+  {
+    "teste": "Identificar o campo da quantidade inválida",
+    "projeto": "api",
+    "anexo": "corpo-recebido.json",
+    "arquivo": "artefatos/anexos-inline/0a13f9ce988e26c5b247-a0cf3c863d705252d3bb/corpo-recebido.json",
+    "sha256": "c90f56b70fbe1e4a6c867fef09ae5f9de4fa78cad61328e519d06896de1ce1f0"
+  },
+  {
+    "teste": "Erros de rota: GET /api/produtos/INEXISTENTE",
+    "projeto": "api",
+    "anexo": "api-inicio.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-inicio-json-8ce0c7abca8575da578fbbc6eaede8cc69d66ce6.json",
+    "sha256": "d68d329ab4141a657bdbde7bb11c83432f188c6232d8a25efad63909f88f9043"
+  },
+  {
+    "teste": "Erros de rota: GET /api/produtos/INEXISTENTE",
+    "projeto": "api",
+    "anexo": "api-requisicao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-requisicao-json-143cb503845d034ce5673bdb1fd76f21f8de221c.json",
+    "sha256": "85e85c25d1395d0d872bcea86a98e8d63b34c264bd25a8bed472962940400d36"
+  },
+  {
+    "teste": "Erros de rota: GET /api/produtos/INEXISTENTE",
+    "projeto": "api",
+    "anexo": "api-resposta-http.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-resposta-http-json-f4f938384dcb3ce6f2996d58c1606e02f351eb56.json",
+    "sha256": "81be3fa45674bf618d28b33c5d358b7fe76e0f1e35c0d675764b6c0fd283ec04"
+  },
+  {
+    "teste": "Erros de rota: GET /api/produtos/INEXISTENTE",
+    "projeto": "api",
+    "anexo": "api-corpo-recebido.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-corpo-recebido-json-77e10f22e97329fb00c967141eff2144e2bbd246.json",
+    "sha256": "1fc5de0a24bfe68b4903cd2931051704ede95590d38d0266e78f4d3968bdb9df"
+  },
+  {
+    "teste": "Erros de rota: GET /api/produtos/INEXISTENTE",
+    "projeto": "api",
+    "anexo": "api-comando.txt",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-comando-txt-d8dcd4909cc77348e4e0cf4d57ebe8b5add2163e.txt",
+    "sha256": "3b68e99ef23d58acdb9a1387697b01fe4cd75e6d8d29b68f9669e131e944a129"
+  },
+  {
+    "teste": "Erros de rota: GET /api/produtos/INEXISTENTE",
+    "projeto": "api",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/validacao-json-e1c91236ed0dcde93b7d63cecb56309f25750d3d.json",
+    "sha256": "0b84437c105f10d01910f6c3ac60d29dce15e1f381ad180b1a782819c249ed7c"
+  },
+  {
+    "teste": "Erros de rota: GET /api/produtos/INEXISTENTE",
+    "projeto": "api",
+    "anexo": "error-context",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/error-context.md",
+    "sha256": "30deb3c22887dbda28cc97fd72b4c24837f432f80bddb20bfda7c9ff901ee090"
+  },
+  {
+    "teste": "Erros de rota: GET /api/rota-inexistente",
+    "projeto": "api",
+    "anexo": "api-inicio.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-inicio-json-db28792bd61ed96384314cb5fdf9c5e32bb4bc26.json",
+    "sha256": "591cec6622dce04351d8c27ac503e023d5af5d8cc84be3b570cacbe6a2df9e13"
+  },
+  {
+    "teste": "Erros de rota: GET /api/rota-inexistente",
+    "projeto": "api",
+    "anexo": "api-requisicao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-requisicao-json-54a5ccf75bc4f18a426f824e2731ab19747011be.json",
+    "sha256": "c48e034808d2935105f1f7a4962e65378f478d9db402f3b99f719a8edd2bb28a"
+  },
+  {
+    "teste": "Erros de rota: GET /api/rota-inexistente",
+    "projeto": "api",
+    "anexo": "api-resposta-http.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-resposta-http-json-3dec76443bc866c890950e2ccfb3ab7536a5d0ec.json",
+    "sha256": "d98e0c625bc1f2b061f89fdddca56b0f00dda0f1853bd2c2c22bd8f34e54d82c"
+  },
+  {
+    "teste": "Erros de rota: GET /api/rota-inexistente",
+    "projeto": "api",
+    "anexo": "api-corpo-recebido.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-corpo-recebido-json-4e8934d2743f7a3877398bfbfafd95d8c657560a.json",
+    "sha256": "6c3c13d855c4333dd53a66dfecd718ffafdaf2a9c21676ba3060e7c73f60df09"
+  },
+  {
+    "teste": "Erros de rota: GET /api/rota-inexistente",
+    "projeto": "api",
+    "anexo": "api-comando.txt",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-comando-txt-cc712186631a23167d2e862eeb801d3959bb4610.txt",
+    "sha256": "0b4e8cd82605bd9ce9f4e9575a3ed387df1c46f5f4f525ec6957c9b926ff4cea"
+  },
+  {
+    "teste": "Erros de rota: GET /api/rota-inexistente",
+    "projeto": "api",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/validacao-json-9497ea1da0bd2ac7bc33432fdbc2d37d9e719478.json",
+    "sha256": "316ebb98313fa328f6c78edfa63dee32e626d1fa5915aa0aeeb764e565e5cb7d"
+  },
+  {
+    "teste": "Erros de rota: GET /api/rota-inexistente",
+    "projeto": "api",
+    "anexo": "error-context",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/error-context.md",
+    "sha256": "350c284c72769a06740d0c0ec722b661de635bef13fb28008045c0521b1233b5"
+  },
+  {
+    "teste": "Erros de rota: POST /api/produtos",
+    "projeto": "api",
+    "anexo": "api-inicio.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-inicio-json-2d9c494ebb5eee1250433e51532d47ccc5ebbaff.json",
+    "sha256": "35069b23786b83c65597dff673e9e48120bb6a58a9c82e719ecec1bd9c207c07"
+  },
+  {
+    "teste": "Erros de rota: POST /api/produtos",
+    "projeto": "api",
+    "anexo": "api-requisicao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-requisicao-json-ab92b5f46c2568c3c0bf9d97c13899b2c1b04353.json",
+    "sha256": "05b0243e760a3acab4b1673e6f3e01d154d1de1efc8e15aa51f9d43dd7351c9a"
+  },
+  {
+    "teste": "Erros de rota: POST /api/produtos",
+    "projeto": "api",
+    "anexo": "api-resposta-http.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-resposta-http-json-a9a52b3d69b4d589d4f5a6aba728f69a7fa0961e.json",
+    "sha256": "280421ea982b1785eb093f26f4cbd91a5214b0071f00b32d38e5a1ca4235bdfc"
+  },
+  {
+    "teste": "Erros de rota: POST /api/produtos",
+    "projeto": "api",
+    "anexo": "api-corpo-recebido.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-corpo-recebido-json-2e08ce3157b2f80fd5eece93becf441a58f1d100.json",
+    "sha256": "24ee4b47f1e66b45e8647f00c6eaf62fe4cf5b491172586c40e9e1e6409bf056"
+  },
+  {
+    "teste": "Erros de rota: POST /api/produtos",
+    "projeto": "api",
+    "anexo": "api-comando.txt",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-comando-txt-7e5b03e04ebd0a4334f36ac9ba09cf8125fd4d5f.txt",
+    "sha256": "ade1413653a45799fa85363cbeaef44f1f5d7c91143ffa843cee45e946cddea4"
+  },
+  {
+    "teste": "Erros de rota: POST /api/produtos",
+    "projeto": "api",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/validacao-json-bdf87bb3daf4e088767a81efc1062f74cdb45538.json",
+    "sha256": "685e746a63bbd5c85f5aada542d89c8d9ac1f7369c638300cc8d5e6c29642bcb"
+  },
+  {
+    "teste": "Erros de rota: POST /api/produtos",
+    "projeto": "api",
+    "anexo": "error-context",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/error-context.md",
+    "sha256": "6cc09b1a63bddc51d2169ff2cc78e1d19b7e28740ae4f1759bec7ba53f548df6"
+  },
+  {
+    "teste": "Erros de rota: GET /api/carrinho/calcular",
+    "projeto": "api",
+    "anexo": "api-inicio.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-inicio-json-5dc009eddabedf6f4170b9c1a5caedcf0cb01927.json",
+    "sha256": "3fbc83322a690c94836820f41f7d6da93561216a3fca1d331465c99839042bb5"
+  },
+  {
+    "teste": "Erros de rota: GET /api/carrinho/calcular",
+    "projeto": "api",
+    "anexo": "api-requisicao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-requisicao-json-17988c6a8a5a43267cb42e5efcdb90ada10aa454.json",
+    "sha256": "188d2f7f45eed4602fd5c21a24b11ccb4ba98f67b7403b97ca405ca4526dbcbf"
+  },
+  {
+    "teste": "Erros de rota: GET /api/carrinho/calcular",
+    "projeto": "api",
+    "anexo": "api-resposta-http.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-resposta-http-json-fe142b92ed6278ba2e899fdd61754a7f0a189ac5.json",
+    "sha256": "6b93949317deb9e83a7c2b7946de786ec059ecd6c22e1d4e08a16b6918cd000f"
+  },
+  {
+    "teste": "Erros de rota: GET /api/carrinho/calcular",
+    "projeto": "api",
+    "anexo": "api-corpo-recebido.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-corpo-recebido-json-8eb04e73cc86cef095b73cb0026912b4e81fa920.json",
+    "sha256": "21e49dabbe06f7ca901d78d6525ab5930e627a19b352f6fc01cebc8b32138c4d"
+  },
+  {
+    "teste": "Erros de rota: GET /api/carrinho/calcular",
+    "projeto": "api",
+    "anexo": "api-comando.txt",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-comando-txt-7bc525beef6dfac8cd43ab0c4c3c63a4bed8d08b.txt",
+    "sha256": "c976985081922fce7770a42dc7878f2e728086cc2db3176290aa843bd1d0680a"
+  },
+  {
+    "teste": "Erros de rota: GET /api/carrinho/calcular",
+    "projeto": "api",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/validacao-json-dc939fe5a483c56315c4e910b0f224b826b048f7.json",
+    "sha256": "17f39f9fc24e9f890e1cc00ed2d778fd05380f2c797cb8bf80b5283eb4d82837"
+  },
+  {
+    "teste": "Erros de rota: GET /api/carrinho/calcular",
+    "projeto": "api",
+    "anexo": "error-context",
+    "arquivo": "artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/error-context.md",
+    "sha256": "d5d768f741275fe25733b0a42654e05b7be687d4c790e29468947fc5216d505d"
+  },
+  {
+    "teste": "Erros de rota: GET /api/pedidos",
+    "projeto": "api",
+    "anexo": "api-inicio.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-inicio-json-1ceb51ace8fdccddf67757f6b925db51c2be8f52.json",
+    "sha256": "54b779bef8cac210351e413ca773c05cebb44547207a5f4986e9e9d4f3eb6a80"
+  },
+  {
+    "teste": "Erros de rota: GET /api/pedidos",
+    "projeto": "api",
+    "anexo": "api-requisicao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-requisicao-json-9e770ee90035cbd5faf1ecac708e14371bdc4453.json",
+    "sha256": "6b4bc52283951c2cfefa3e8e75c4e1bb97c77f53f4b3f36adf771261f20aa072"
+  },
+  {
+    "teste": "Erros de rota: GET /api/pedidos",
+    "projeto": "api",
+    "anexo": "api-resposta-http.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-resposta-http-json-fcfd670e88cc81214712720df3c077f424a821c2.json",
+    "sha256": "1d50fcb630a573dcc177e1556e662521d941717bd62e1900d0210f49d503f320"
+  },
+  {
+    "teste": "Erros de rota: GET /api/pedidos",
+    "projeto": "api",
+    "anexo": "api-corpo-recebido.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-corpo-recebido-json-036d07a35ee21cd1d9a0e555b5a0695e221c4d87.json",
+    "sha256": "21e49dabbe06f7ca901d78d6525ab5930e627a19b352f6fc01cebc8b32138c4d"
+  },
+  {
+    "teste": "Erros de rota: GET /api/pedidos",
+    "projeto": "api",
+    "anexo": "api-comando.txt",
+    "arquivo": "artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-comando-txt-f675a10ae20dffc33592da6f9a2d9ac2432de71c.txt",
+    "sha256": "9759c9cb400d98609e114bb2b4f92e6c6350d3af1816e6065e6202d58268fb66"
+  },
+  {
+    "teste": "Erros de rota: GET /api/pedidos",
+    "projeto": "api",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/validacao-json-a92b53b9d2e5c3d49ab1a217d198d09d7fc9b2e0.json",
+    "sha256": "c188e25c0dd5ead9b156497ddd9e01bdd2ce55c60fe40258539cc4af68dcb22b"
+  },
+  {
+    "teste": "Erros de rota: GET /api/pedidos",
+    "projeto": "api",
+    "anexo": "error-context",
+    "arquivo": "artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/error-context.md",
+    "sha256": "06ed66afa0437b34ec18c117db80973e8dcb0bf60653fce300256227fff645e6"
+  },
+  {
+    "teste": "Pedido com CEP 01310-100",
+    "projeto": "api",
+    "anexo": "api-inicio.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-inicio-json-ac32984fec3cd85c33def83eccc03cc8649124f1.json",
+    "sha256": "86751058f271a4994ff884f1fe8750db37752f21ed28c2d6a24454d008d4df74"
+  },
+  {
+    "teste": "Pedido com CEP 01310-100",
+    "projeto": "api",
+    "anexo": "api-requisicao.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-requisicao-json-9227575a7cbdf5f8407cdfd22e3739cfcd85f302.json",
+    "sha256": "18cc94d451cca430af0c0272186646eda0ae7aff98cf0bf3dc0427112b37beec"
+  },
+  {
+    "teste": "Pedido com CEP 01310-100",
+    "projeto": "api",
+    "anexo": "api-resposta-http.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-resposta-http-json-adab23246ece03ef07a69a988c8d4cac4a2225cc.json",
+    "sha256": "06f13589a27eb3163e3ad17b27b5760ec8ae0525442e4684b30d15fdfd02ac35"
+  },
+  {
+    "teste": "Pedido com CEP 01310-100",
+    "projeto": "api",
+    "anexo": "api-corpo-recebido.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-corpo-recebido-json-42abd095285d4716cfff4e6a38336689f0209d56.json",
+    "sha256": "0b49fe85b6c6fbd2e7f839ac4b19d661f8aca85a457e674b8ecce9156ec32d67"
+  },
+  {
+    "teste": "Pedido com CEP 01310-100",
+    "projeto": "api",
+    "anexo": "api-comando.txt",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-comando-txt-c6c5c80236b79b28486a8a34a73a6ab790468d2d.txt",
+    "sha256": "1d53b377eb6d8ae5a0924562a8c509461a4ffac8e2b50c5d3680f3aa18da52e4"
+  },
+  {
+    "teste": "Pedido com CEP 01310-100",
+    "projeto": "api",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/validacao-json-292ca61bf3ecf04fbd33b8001b4a7e15b3a51a21.json",
+    "sha256": "1d4497ca31806eacb8b89e7aef43a2534d0d7dc0a9b517257c798f607a3b3278"
+  },
+  {
+    "teste": "Pedido com CEP 01310100",
+    "projeto": "api",
+    "anexo": "api-inicio.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-inicio-json-2729c1f6535111aa56314cb5928f04e3dfa707e1.json",
+    "sha256": "eb7a2ba746a701f09315307c3bf8ecf10541845b11b28a01ed6008a1a74798a8"
+  },
+  {
+    "teste": "Pedido com CEP 01310100",
+    "projeto": "api",
+    "anexo": "api-requisicao.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-requisicao-json-d4b92a453ebfbd668dd979959efcb8e511136a35.json",
+    "sha256": "d4b7e43d9d2a94c358f1fae386cbb5284a76014249af0a0975fa8c672dd51539"
+  },
+  {
+    "teste": "Pedido com CEP 01310100",
+    "projeto": "api",
+    "anexo": "api-resposta-http.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-resposta-http-json-57b29a56114b8a4efda1e5f48f234ffc273da7b7.json",
+    "sha256": "9c28b26edc0f85894e81d31caff03605335fbe657a3ce1e7e8cd32d0bf664b15"
+  },
+  {
+    "teste": "Pedido com CEP 01310100",
+    "projeto": "api",
+    "anexo": "api-corpo-recebido.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-corpo-recebido-json-50cb61bfae53a4527888b664cc8432350d1769e6.json",
+    "sha256": "31f3a76a7f593cce586a09c66df049c17d8f05cbb19deaa457494d5693e19c52"
+  },
+  {
+    "teste": "Pedido com CEP 01310100",
+    "projeto": "api",
+    "anexo": "api-comando.txt",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-comando-txt-d418c61a4d2be95907189298165ceec5c61f4f29.txt",
+    "sha256": "d294920a783a7a62c735d8da52eb789624acfa801b57a178f0eefa5e0a06d3ea"
+  },
+  {
+    "teste": "Pedido com CEP 01310100",
+    "projeto": "api",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/validacao-json-43da9fa869a97bd383c28086b89ac68dc424cf0d.json",
+    "sha256": "7bb156299db7fee2e6604909daa2e88daa4a2f11a65d7a92c107b446f77654d7"
+  },
+  {
+    "teste": "Produto duplicado: calculo",
+    "projeto": "api",
+    "anexo": "api-inicio.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-inicio-json-f046c3dd6bccc7a3874e58d831a7ae93662d4ed5.json",
+    "sha256": "c0c5481fa001de30c66183fa19538aa4e0549ecc928ebdf8711fad42b086ee5f"
+  },
+  {
+    "teste": "Produto duplicado: calculo",
+    "projeto": "api",
+    "anexo": "api-requisicao.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-requisicao-json-ed56d565b3c7bb797842985e1ee2819c75cb2318.json",
+    "sha256": "ec8544eb6b968a4dc98a2ce0b1abcfc950fbedb7177bfedcf3ea07e0fe983593"
+  },
+  {
+    "teste": "Produto duplicado: calculo",
+    "projeto": "api",
+    "anexo": "api-resposta-http.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-resposta-http-json-adbf4aff307bf305140bdf50398512c0158fe390.json",
+    "sha256": "e88c2b167e2f591817e305fdc7798deb3e95401b73fad4db7dc6c0b0f9b31d16"
+  },
+  {
+    "teste": "Produto duplicado: calculo",
+    "projeto": "api",
+    "anexo": "api-corpo-recebido.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-corpo-recebido-json-eefd68b07e2c07b8a3a652ea28c84064a30723c3.json",
+    "sha256": "59e1e4b1e9c79dc07420e0a93fc9df2cc064e55ed5699c6d36d2fe4576efc289"
+  },
+  {
+    "teste": "Produto duplicado: calculo",
+    "projeto": "api",
+    "anexo": "api-comando.txt",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-comando-txt-b965b5bc98b689b78e90c91b8458de0179c79eaf.txt",
+    "sha256": "d1c2d554b096581fc83d05bd0574f4989d0ea4648e61364999aa504759b64776"
+  },
+  {
+    "teste": "Produto duplicado: calculo",
+    "projeto": "api",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/validacao-json-ebba410e81bda9073dbd54b198cd2115af733dea.json",
+    "sha256": "be8cbda35e020a55725a16106473216c1373ee9043cc7bafe61175e1a30a3245"
+  },
+  {
+    "teste": "Produto duplicado: pedido",
+    "projeto": "api",
+    "anexo": "api-inicio.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-inicio-json-ec98dcc2fd0b8543959cee7588489175c5849cb8.json",
+    "sha256": "fdd13403cddd29cc0faac68daade034f2428b60d97056112e8e4bdb4ea4d38d0"
+  },
+  {
+    "teste": "Produto duplicado: pedido",
+    "projeto": "api",
+    "anexo": "api-requisicao.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-requisicao-json-3cf89cd5a946295ae4fcbdbbd3fc938a4f88b5f5.json",
+    "sha256": "9a7c8907aee2e3252b37de85be358ec7315ca0f0e3dcc76a950f52ab2282624e"
+  },
+  {
+    "teste": "Produto duplicado: pedido",
+    "projeto": "api",
+    "anexo": "api-resposta-http.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-resposta-http-json-53424db20e88429e35f8331af6daae9b2cefdeee.json",
+    "sha256": "2db524f4c7aa5de18f7030f99a10f174c67d9f9149b46f79c9aaf28821c1afbf"
+  },
+  {
+    "teste": "Produto duplicado: pedido",
+    "projeto": "api",
+    "anexo": "api-corpo-recebido.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-corpo-recebido-json-243d86871e930ceb020d93aa055a479212802954.json",
+    "sha256": "59e1e4b1e9c79dc07420e0a93fc9df2cc064e55ed5699c6d36d2fe4576efc289"
+  },
+  {
+    "teste": "Produto duplicado: pedido",
+    "projeto": "api",
+    "anexo": "api-comando.txt",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-comando-txt-326d0e4f5a0c31dc299051d63ac62fd11a04869c.txt",
+    "sha256": "35d9807f5b5933c642f228651e88f9a7da004ac8ed2ce24d24206856a50f8b1a"
+  },
+  {
+    "teste": "Produto duplicado: pedido",
+    "projeto": "api",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/validacao-json-8ea0d624d983f6f594928c20139620bec29156ea.json",
+    "sha256": "3e99154d5958035bf64f8fdc82abcf662eab3111fdfa363d48a8c98272bfdf10"
+  },
+  {
+    "teste": "Aceitar 1 unidade(s) de P008 ao calcular",
+    "projeto": "api",
+    "anexo": "requisicao.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-471f4399784fa5d46faf/requisicao.json",
+    "sha256": "dd5c4749aa2b6d63dfed5cff4705d6a3a30e5ad7e94949761e6297e6ec60a005"
+  },
+  {
+    "teste": "Aceitar 1 unidade(s) de P008 ao calcular",
+    "projeto": "api",
+    "anexo": "resposta-http.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-471f4399784fa5d46faf/resposta-http.json",
+    "sha256": "639719d58295d288b70439bad04cc44b73a16e4e8a3cb49cee375503fdef078e"
+  },
+  {
+    "teste": "Aceitar 1 unidade(s) de P008 ao calcular",
+    "projeto": "api",
+    "anexo": "corpo-recebido.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-471f4399784fa5d46faf/corpo-recebido.json",
+    "sha256": "254baf327e06e053b4ba05623c1c71b6ef2e29e1fafd053d3bc91f4a4335d42d"
+  },
+  {
+    "teste": "Aceitar 5 unidade(s) de P008 ao calcular",
+    "projeto": "api",
+    "anexo": "requisicao.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-9e7ac80142b03a043ad3/requisicao.json",
+    "sha256": "b1b9677a75bec3ea66d98b3db043d517553b764b96ee6ff61235bf4c84af67ae"
+  },
+  {
+    "teste": "Aceitar 5 unidade(s) de P008 ao calcular",
+    "projeto": "api",
+    "anexo": "resposta-http.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-9e7ac80142b03a043ad3/resposta-http.json",
+    "sha256": "5ac6538cce50291ba5e603a47d31a16ca829692e15108d60460e195db0633c87"
+  },
+  {
+    "teste": "Aceitar 5 unidade(s) de P008 ao calcular",
+    "projeto": "api",
+    "anexo": "corpo-recebido.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-9e7ac80142b03a043ad3/corpo-recebido.json",
+    "sha256": "4cb290a56916f91b936a97413ff8b46bc7ab510ea47de411cc3fc04fd66d0260"
+  },
+  {
+    "teste": "Aceitar 1 unidade(s) de P008 ao confirmar",
+    "projeto": "api",
+    "anexo": "requisicao.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-9f2e59aa93bd750f0494/requisicao.json",
+    "sha256": "b2b34852ca442bc7f0df6e2b3ef318b588c25d1d8c449e987a2940ea06fd3600"
+  },
+  {
+    "teste": "Aceitar 1 unidade(s) de P008 ao confirmar",
+    "projeto": "api",
+    "anexo": "resposta-http.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-9f2e59aa93bd750f0494/resposta-http.json",
+    "sha256": "faafae2ddade051d727f27be39932d26b02e1c96e1eebe85c4e882e120334358"
+  },
+  {
+    "teste": "Aceitar 1 unidade(s) de P008 ao confirmar",
+    "projeto": "api",
+    "anexo": "corpo-recebido.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-9f2e59aa93bd750f0494/corpo-recebido.json",
+    "sha256": "d39510198da139eef3910e0ecf8c12ae4fbfff5f78ad472ef1f876529b0bd441"
+  },
+  {
+    "teste": "Aceitar 5 unidade(s) de P008 ao confirmar",
+    "projeto": "api",
+    "anexo": "requisicao.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-251e5a958b5841954dc4/requisicao.json",
+    "sha256": "bfbbb4f7e9de10a0f6f39bb3857cf90511542bd53962de00d6c7f0d2c2cb5743"
+  },
+  {
+    "teste": "Aceitar 5 unidade(s) de P008 ao confirmar",
+    "projeto": "api",
+    "anexo": "resposta-http.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-251e5a958b5841954dc4/resposta-http.json",
+    "sha256": "3ef2678ce5da4fb2d24dae415c7f293e30b19b5a2eb4829598f7016c9859b29f"
+  },
+  {
+    "teste": "Aceitar 5 unidade(s) de P008 ao confirmar",
+    "projeto": "api",
+    "anexo": "corpo-recebido.json",
+    "arquivo": "artefatos/anexos-inline/8bec7eb387cd0dc8ae26-251e5a958b5841954dc4/corpo-recebido.json",
+    "sha256": "f9f92340ef1a88cc2cd52f2b8822965780a484b75843c58c247e6f41ed53bf17"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-inicio.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-inicio-json-c06493d954debfe4574204f33aac3cd08cb85b48.json",
+    "sha256": "eb038483912616d9ad9b452d235bcdcfa9f3856a742b8abfa2d4a342e4ae9b66"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-requisicao.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-requisicao-json-cb69f75b8f0989f64a0364c0854bb4829e7019e6.json",
+    "sha256": "cb59d8a46d5dac1d79a1a5c4f9ae1a8b72e78592276df66dfad4f5d93877ab9d"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-resposta-http.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-resposta-http-json-21c469d903bd12e7ffc4fc6cc34b77883c6d337f.json",
+    "sha256": "ea723e4eb24f08144f2d769aa5ffa7f676d60d5120f57ee0ad261648002b788a"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-corpo-recebido.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-corpo-recebido-json-97ff5b1ff4b7c21795291bff0bbb765f5e48c0dd.json",
+    "sha256": "010238cee850d5f5676f37e8908e710f54084d5a9a0677b6acf2069d3b2f94f0"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-comando.txt",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-comando-txt-4836c8c7946f4c8f8963d297615f561911758849.txt",
+    "sha256": "5c3f8f8f653333fce55825827a88a5a392a1125f70fbadae6f79fcc805a6563c"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "antes-do-cupom-estado-interface.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-estado-interface-json-854302cf025e041e5a8262be280b9e271101f9e6.json",
+    "sha256": "c4ad0efa3b69c8f0c4f03e4499d8178a861bedfa11022eb06928fc541c2cf51e"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "antes-do-cupom-texto-tela.txt",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-texto-tela-txt-b39f2cf44f33b67a0643854af18af8e941c9cf5f.txt",
+    "sha256": "1d12dacd6813b49c369bc445526e1388b765b487240c647ff82ed7baedd18f89"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "antes-do-cupom-tela.png",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-tela-png-03e0a137213fc8b5043873c0037d8a70936afda6.png",
+    "sha256": "2f4988254d00e497c555bbe9c340b9349ca3e584068392084a1ac0830a30a3e0"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-requisicao.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-requisicao-json-ecb7525922affb23f4720b22e7a5bbd0911a30ee.json",
+    "sha256": "38942eb30e4baedd097d5906a65bd63cff356f146a6c65ca31c73d0e7cc73939"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-resposta-http.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-resposta-http-json-2551d3d4823e0a8f0829038bc0bc9ca4e58ac96a.json",
+    "sha256": "207593bdfb512002f28aa191322aa702146aae6f7c61b846a965a0e9935065fe"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-corpo-recebido.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-corpo-recebido-json-8b591d597bf19a7935c45e6ec900df9d7962afc0.json",
+    "sha256": "010238cee850d5f5676f37e8908e710f54084d5a9a0677b6acf2069d3b2f94f0"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-comando.txt",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-comando-txt-bf07b527714b9a93ec762848f78178167fedc6c9.txt",
+    "sha256": "5c3f8f8f653333fce55825827a88a5a392a1125f70fbadae6f79fcc805a6563c"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "depois-do-cupom-estado-interface.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-estado-interface-json-ca658d44ce96d3f931038b4c00edf4439e45daa8.json",
+    "sha256": "700424d7bd9c3a05f22ade70251290e9f8211ca2ab4806994de83277cadca0be"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "depois-do-cupom-texto-tela.txt",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-texto-tela-txt-d79a8b48ac71123b33545fad2a3307cfe69ae1a3.txt",
+    "sha256": "d638d64c2be05c2148201c8ca66926fed68e9a9abda96cea5adc908d80cab5be"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "depois-do-cupom-tela.png",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-tela-png-ddfa2ccebf56d72bf6282e6d3c26d43eec4fefde.png",
+    "sha256": "af7b1e564a9892db99b7b9e388ae269a609d2ebb4ba0c5ec2fa7c6e8ab5a642e"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "mensagens-interface.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/mensagens-interface-json-e80e4416a7c31d468da9bf8d38befd49b5b2140c.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/validacao-json-cf9d126f969bf9421a00fc8b30e8f80970d22313.json",
+    "sha256": "4ba94436eae35facc7030767c35f619ea6c8cee64c4d0bc374aba5c56fb325b0"
+  },
+  {
+    "teste": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+    "projeto": "interface-chromium",
+    "anexo": "error-context",
+    "arquivo": "artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/error-context.md",
+    "sha256": "364a5c24a3121150e2a47e6974f6830a53f4b7adddc518ea0c716ecb3a8e14f2"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "1-quantidade-1-api-requisicao.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-requisicao-json-6a32f53253620c9c8022a6d5343c42a338bd5007.json",
+    "sha256": "fb6da4c4ce0121e3916b6a64f0da6fd3dd2f5f1b9ff9e814bf52644669d33088"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "1-quantidade-1-api-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-resposta-http-json-65044b2c1709214588168ed62a118491a867621e.json",
+    "sha256": "61d00c953f40a4165e182629aa96bd0263c6d3f267b7fa1b51f0fdefbf09b9dd"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "1-quantidade-1-api-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-corpo-recebido-json-3e1ec549f2481503d0ce61092c0a1146f865ae20.json",
+    "sha256": "010238cee850d5f5676f37e8908e710f54084d5a9a0677b6acf2069d3b2f94f0"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "1-quantidade-1-api-comando.txt",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-comando-txt-492bade21e510db1fc14e7e54ed709d9b340515e.txt",
+    "sha256": "5c3f8f8f653333fce55825827a88a5a392a1125f70fbadae6f79fcc805a6563c"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "1-quantidade-1-estado-interface.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-estado-interface-json-c2865e06efdc69dab0db65ff0bbff106f4dc1141.json",
+    "sha256": "b19e2e49ad1025697760d833703729defa01456a94b07c115d3e79a5a0852614"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "1-quantidade-1-texto-tela.txt",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-texto-tela-txt-eabbffeff9d376488e4e0a3281243f55b45424f6.txt",
+    "sha256": "d638d64c2be05c2148201c8ca66926fed68e9a9abda96cea5adc908d80cab5be"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "1-quantidade-1-tela.png",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-tela-png-961a41d93f08764f1b6201ce003653d32fda0c31.png",
+    "sha256": "af7b1e564a9892db99b7b9e388ae269a609d2ebb4ba0c5ec2fa7c6e8ab5a642e"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "2-quantidade-2-api-requisicao.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-requisicao-json-9c0bbc7b4219f07b5e4c52d9258b587180fcd28f.json",
+    "sha256": "3c55cfb33091eefcb32ff449615510397e2c99ad7c1fcd26a41e9d1ce0392f80"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "2-quantidade-2-api-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-resposta-http-json-1b2ffd528521ab3fe03da1ff98bd1f6a0f2298f4.json",
+    "sha256": "85816d48d9d8e0e0c2df5ef3806014f9496e44014d5a06ead68a4a0c1c4cfc7e"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "2-quantidade-2-api-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-corpo-recebido-json-5c440221ed0531f4da29ae1e839fa5e0dcaf6674.json",
+    "sha256": "cb9c7d72d591e967a531cfbb951aaca262852dc632c823bda13128577d9b07bf"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "2-quantidade-2-api-comando.txt",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-comando-txt-14d2e9f7158f1d2a5d272749dcfe14c7c15ef16f.txt",
+    "sha256": "b66b502bf0bf7e27b31dbc86979cf4499fff8024154c4826715414532cffaa6f"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "2-quantidade-2-estado-interface.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-estado-interface-json-c897a571e87e5f37558f1e9b190ea5db275aea47.json",
+    "sha256": "a21ade3e90ebcf996178d8204a7875799ab132d33462ba3a3c37cf8a931ba6d2"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "2-quantidade-2-texto-tela.txt",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-texto-tela-txt-25ad769b7272247ee79aeda47bc08ed4064538f4.txt",
+    "sha256": "e6c3d34134881bdc655583c39b6fecc7d2afdf9c14737de51a990f31989c308d"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "2-quantidade-2-tela.png",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-tela-png-282082e535d42eb4ee829153b25bfa750f4802d5.png",
+    "sha256": "3c3620aa44ad14b1cc0d0fe2c8c5b8a4ae1773ea18928e946ad06131691d9457"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "3-quantidade-1-api-requisicao.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-requisicao-json-07b4b3af60e28ff01289dac03eaec0d518a02702.json",
+    "sha256": "f8523a52e9f92bb580fa48faec93fff3a3192b3591a425b6a767a7a3dff6b7e7"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "3-quantidade-1-api-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-resposta-http-json-8250c2afcb56fc074bc13267ee06d104c56120a7.json",
+    "sha256": "95cb1e8032328c4f336d2d2879c8dd99d2122242f8e207e0dcf9eae15c93e71b"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "3-quantidade-1-api-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-corpo-recebido-json-75d076cf2226acea262e1975c7f0c46ac5b35785.json",
+    "sha256": "010238cee850d5f5676f37e8908e710f54084d5a9a0677b6acf2069d3b2f94f0"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "3-quantidade-1-api-comando.txt",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-comando-txt-406f9c3ece410b8ac0941dda47584c8118c65b69.txt",
+    "sha256": "5c3f8f8f653333fce55825827a88a5a392a1125f70fbadae6f79fcc805a6563c"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "3-quantidade-1-estado-interface.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-estado-interface-json-28c75742c5fa430f28d21c335d41d903110023a5.json",
+    "sha256": "b4e2d7211968a99501e47db12535bbca2e27cb5f68c49f8efd3672c525880987"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "3-quantidade-1-texto-tela.txt",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-texto-tela-txt-0680aaebe3a8598e37a36846050532985fe89734.txt",
+    "sha256": "d638d64c2be05c2148201c8ca66926fed68e9a9abda96cea5adc908d80cab5be"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "3-quantidade-1-tela.png",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-tela-png-211e09114b3bdcd1c6be2c64852fcc55921ba73b.png",
+    "sha256": "dd2cfb9a08e9f10ddce515b53f4d1c7b3d7d951059d677c54cc5c535270314c8"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/validacao-json-eaa3b20996710e90d29e1f0db22868e04079fb44.json",
+    "sha256": "555f97739bd8184267505ab93daad06ff221566a38c42289e45f6b8d7ab90f9b"
+  },
+  {
+    "teste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+    "projeto": "interface-chromium",
+    "anexo": "error-context",
+    "arquivo": "artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/error-context.md",
+    "sha256": "3b59f0a5c3b7a5fa366de52a4c91dbc609eee3ee1535495bee92a6d8b421f0d3"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-inicio.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-inicio-json-822f6e6be9a9244f24530c3fd9a9a0e61e3c1a96.json",
+    "sha256": "4f4dbe1a6da02f5f5b68780251b339b94393553160229c4ab81665f821f3f78e"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-requisicao.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-requisicao-json-6c23599c3a7bbfb35eaf1aa3af6520bd1d4bcd3d.json",
+    "sha256": "927fabe2da9f5cdf3a3937fa678700ac0eae385bf1def438af15273bd1f69107"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-resposta-http-json-33a60ae02d3b48d18153e162d2dfa7d0fe3994b3.json",
+    "sha256": "e11572a4a08789f16faf9652564e011c5aa6515a9c8b454c1454484111a78357"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-corpo-recebido-json-c28b44d343f362f21eef822e042b49e7d409a8aa.json",
+    "sha256": "0f5ccb3d55664b7753c74ade1b93aa8ea08ca1406935a34921dde6ca030d82b1"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-comando.txt",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-comando-txt-0a600cfb41acfed62295db125541c644264f74dd.txt",
+    "sha256": "c45efbd1a3ef15db9ee14e74bee014c066f5070d56bf71d03315341ffcab8f90"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-requisicao.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-requisicao-json-39c702cd33a6032c8f4bd92b337d7d6de79ae2bc.json",
+    "sha256": "c863e3db0115ec3c92e02a1b126438410621685780eb9e27cd140bdb65d40ef5"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-resposta-http-json-7674255fa56054cad17e62919001dadef6a09dd5.json",
+    "sha256": "caf65b7506d013ade9d383505e95e3de68da3c80d8010c33c6da435ab7de50ce"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-corpo-recebido-json-1fc4120acdc5748ed3fc8d357ed547db5c60c3c3.json",
+    "sha256": "0f5ccb3d55664b7753c74ade1b93aa8ea08ca1406935a34921dde6ca030d82b1"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-comando.txt",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-comando-txt-758962cb6a72283a4a3bc4f7e4f49d65e0721f46.txt",
+    "sha256": "c45efbd1a3ef15db9ee14e74bee014c066f5070d56bf71d03315341ffcab8f90"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-estado-interface.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-estado-interface-json-7ce7ffd77eb143db1cb285c54293c93df59da8e0.json",
+    "sha256": "c5225e93d16ecaf193b0127a532ce05a4a3b332bf64d19ed2176e97e9063aa56"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-texto-tela.txt",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-texto-tela-txt-62f6f4540187e703e7d7331a63b5b8e6b3e0ed50.txt",
+    "sha256": "8f2fbdca0a45b3328efc54263387b24cecb0192e68f1a37c989e9eebff656cb6"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-tela.png",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-tela-png-55faf51edb967e6b183ac6cdd2002fc6ee593f52.png",
+    "sha256": "842f867009d42a60760ee8a919b9faf8210443f7e5c3a19bcaedb8ec74795ffb"
+  },
+  {
+    "teste": "Frete nos limites: P003-1",
+    "projeto": "interface-chromium",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/validacao-json-68cf15301ce6a4e0da63884ec7bab18913446eca.json",
+    "sha256": "84f33b7a32066ee7daacab3b1a498bdf720cef469a08276e7a241d984d6def47"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-inicio.json",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-inicio-json-5cbb1426c54d4f2dd69036b480e9f4a08415624c.json",
+    "sha256": "656e3a2c6c5b2b029b2f716d5781f7e0fa2be598642d5171327c147adbba0daf"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-requisicao.json",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-requisicao-json-4e62a183559737b529b7614f409ee88f777b76a9.json",
+    "sha256": "d63027b1b1c32a298a634e9a7729fa7d88fc46146aaf594a55a082f646056ebd"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-resposta-http-json-dbd1e2381af674a14ad68b4fe6d864f585a08d1f.json",
+    "sha256": "4004a4515c9ec78ad14f3551afa397d8a64bbf498404f8bade5b1a3113a5a46e"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-corpo-recebido-json-530e97b05543a1464c6daba7f0953f4ee3fcfc57.json",
+    "sha256": "53a3e5ea100ab278f0c9c1b85bb75569690d67db42a552292d5e17f4d354468d"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-comando.txt",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-comando-txt-1e15001d05ba376d3a0d5326f49d86e873079780.txt",
+    "sha256": "17309c6ab010bdad354de8b3395f80be364714436d476ab5653a759f9a61eb44"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-requisicao.json",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-requisicao-json-8e4563f00876fe9e184dd2b6cdc41027f38bdafd.json",
+    "sha256": "5d91e744ea0a355f66436dd5507d2bfa1dd3dd9b9235a17017a6d0406703ddd8"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-resposta-http-json-061753001af923ecf8b016b89247b42969a2868f.json",
+    "sha256": "78de3aac5b09e55a17b820dd691417109d584b0debfeec2bc682e497a5e97001"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-corpo-recebido-json-a948dafbc5d1a12a9c9e33df030935ac7c237547.json",
+    "sha256": "53a3e5ea100ab278f0c9c1b85bb75569690d67db42a552292d5e17f4d354468d"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-comando.txt",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-comando-txt-fb0a0d5fb1dae2bad125da62487e844f75b23bf9.txt",
+    "sha256": "17309c6ab010bdad354de8b3395f80be364714436d476ab5653a759f9a61eb44"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-estado-interface.json",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/carrinho-estado-interface-json-37ebc74f27b61bb0ca2e95854d81f4ecd6ec20c6.json",
+    "sha256": "6e450f8d356a1896a6daa31e506929b7859c7c6e42f4c1f64842caa83a0f3f85"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-texto-tela.txt",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/carrinho-texto-tela-txt-e97bc8d86d00ed16ffb19be91d6675523d150718.txt",
+    "sha256": "270d1cbf84e8feafa9e3de01da3a34f4f37149fb9024da16ec75b013d8c97e53"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-tela.png",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/carrinho-tela-png-620a45887a466492df622849a8e9a12d2c1ebd41.png",
+    "sha256": "e3eea410f7466638356b4030d1c03ae7fb23e23662a4bb684f4106010dead904"
+  },
+  {
+    "teste": "Frete nos limites: P002-1-P001-1",
+    "projeto": "interface-chromium",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/validacao-json-99793ecc2e8833b5b227f1cb4e69d52dd4b5d9ad.json",
+    "sha256": "2993d7afa2afdd514146a8ba7b3057f0f500a1ca19be94dae3c5d3da1f339754"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-inicio.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-inicio-json-1c44e172eb57e376ba08e1a740794feeba65d826.json",
+    "sha256": "44ef7e0149c15f5df569c1cb79f35e166c1c5d0b6a09510a1b503dde967a4ad2"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-requisicao.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-requisicao-json-6a0736aa2870417c5974f2146aab60ad4382a9cd.json",
+    "sha256": "f9aaf5733f0f6bccd966d2fb622bc6aba758f3c49589b9db27b7592e3fd7c244"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-resposta-http-json-41024e1316d855c28d170b3872b013572036aee1.json",
+    "sha256": "a535fbd63d59e7d945733639561ee9cfb78c67c834eb988e9bce0135309c40d1"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-corpo-recebido-json-fe318b3e17522a42893d1ee30acb2c8f4c530b3c.json",
+    "sha256": "80af9eba078a014a06246d4acfdc7225d32e09fff797c9e56f26eee03fccb046"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-comando.txt",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-comando-txt-443768c29c406d3bb09e30f6e3baf95e064be522.txt",
+    "sha256": "d4abbb11d131631a500a4709ddc75b68d99a20482d2a5868d600c7cb0b416d74"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-requisicao.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-requisicao-json-8a12ca36639eba382a0385d2d1018679d963ab65.json",
+    "sha256": "4364aed25c97ff199fda0d9bb4cf35c8d8e1a8a712ef14ad536ae5f01f4a0696"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-resposta-http-json-a861f9d4fe9062a5a06fa208f3feb2edf6954954.json",
+    "sha256": "12c3cabcc91849fb8565af64000016e80a30376171b34e76d7eb01e2a6b62cc9"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-corpo-recebido-json-4c4404a69307f93c3bf381da408cf6bb5cd49ca7.json",
+    "sha256": "80af9eba078a014a06246d4acfdc7225d32e09fff797c9e56f26eee03fccb046"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-comando.txt",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-comando-txt-e5dada1d06693c2a63e04fb1039367d212863734.txt",
+    "sha256": "d4abbb11d131631a500a4709ddc75b68d99a20482d2a5868d600c7cb0b416d74"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-estado-interface.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-estado-interface-json-fd9f4fc66b6037bcb7dc35ca812afc938103b062.json",
+    "sha256": "9538dfeed76538d21338778a899fa47a3eab333531c96da3fb62054049ec101a"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-texto-tela.txt",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-texto-tela-txt-2c5f72f068b90673c9e0742ef0358ae115256d68.txt",
+    "sha256": "f127573e209ea6b554b627df6f2bfd9ea53696d8990a27016769d11272e3b398"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-tela.png",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-tela-png-ec2ad79a86f41e927c02d3465ce76d9697728716.png",
+    "sha256": "39c488fd442d2ab9c71eb87f8c572ce252b9bcee70fb9a55109e4fd4ea73dd1b"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/validacao-json-6dd56241f45326782bc9f8a071baa1b711881038.json",
+    "sha256": "e1acbd89730c8757dbc4082b1e2c5efd2f425191399ae50d9773c00567737f75"
+  },
+  {
+    "teste": "Frete nos limites: P005-2",
+    "projeto": "interface-chromium",
+    "anexo": "error-context",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/error-context.md",
+    "sha256": "e2765f8c59ae447d9965168bdcd5a0e273c3887f4cf51c3db7f05e3914618069"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-inicio.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-inicio-json-2c026dd992bcaabf58f0500d858d3a00531872ef.json",
+    "sha256": "64ee999dacf2433378174831b8094a1b3eea1b1a4309d6b74ab4a16b4d557455"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-requisicao.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-requisicao-json-43f5f4f7eff0506358d02bdfcdca16d66bf10706.json",
+    "sha256": "b3640e10e09c7a48c9365c645328240090dc7b8e6d79791e8a98c737e2046f6f"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-resposta-http-json-75f891477825385016ed570e4b29632092222bcf.json",
+    "sha256": "3a70c9bc3973c27f7be755646c54bd3d544f204d4be70ebfef8acd8bc7b96b8d"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-corpo-recebido-json-e5556caf4a4dfa33728e3aaeb1dea47ae8421037.json",
+    "sha256": "d8aa345d572249d780305b12700b57e44a79c468cdb05a09fdf3701fbf839f31"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-independente-comando.txt",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-comando-txt-5834c277967e47cb4034b312ba7c8dcae3ecffc4.txt",
+    "sha256": "f2830678c7c66e09dd0b4bd1321f89ae65842fe4305f3ccd0f4674a192e7d803"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-requisicao.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-requisicao-json-c3be4bd6ab79c319effe1c198a5fcf6dd18192d0.json",
+    "sha256": "323a313bd6005af67cce1b4ba69c21f7fbcd087a82e5e6884c526c1730691f78"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-resposta-http.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-resposta-http-json-640826fb6589ce746bee15ac0c8f97aa424bc682.json",
+    "sha256": "50cc27cd474e1526e198084f836cbaddeeea64e4691b7b1c36c71b6cf66eb07b"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-corpo-recebido.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-corpo-recebido-json-15cc4b118ad982e000f31a2cdb28af98d6f2f319.json",
+    "sha256": "d8aa345d572249d780305b12700b57e44a79c468cdb05a09fdf3701fbf839f31"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "api-interface-comando.txt",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-comando-txt-3f4d408a7e0d159aa8ca21892895cf01e9924037.txt",
+    "sha256": "f2830678c7c66e09dd0b4bd1321f89ae65842fe4305f3ccd0f4674a192e7d803"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-estado-interface.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-estado-interface-json-2be944aa1ff3c40a0c83126d07924db8ff0cf76a.json",
+    "sha256": "6d0191ebfb934fac20d2c74c0ce997b190f7391bf4070c2a77bfb327c215695d"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-texto-tela.txt",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-texto-tela-txt-3b13976b0707be8d0cc55246adead0990f8fc8b0.txt",
+    "sha256": "ced50a97c47c434bfcd307cef612601224d571786afa4baf1a9961c395f4556c"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "carrinho-tela.png",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-tela-png-f50c5192bbc2edc6277ab2f7b7b2d9e3589d0149.png",
+    "sha256": "1a02d5471b23eb4718af80ae04458d98e12c1a2afafa37b7466fb3ec27d7cf35"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "validacao.json",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/validacao-json-c01807d7bb1ba185249df0e43751e54b3168ab47.json",
+    "sha256": "a2ae5194523f4eaea83213376a683d95ef3ce391b8aa583024e389aba16d266d"
+  },
+  {
+    "teste": "Frete nos limites: P007-1",
+    "projeto": "interface-chromium",
+    "anexo": "error-context",
+    "arquivo": "artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/error-context.md",
+    "sha256": "54f7520d3a2b7d7b93622ca49a8ae4c1cefc89923ec8ea925459cc9188e7e1a6"
+  }
+]

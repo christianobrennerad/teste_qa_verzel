@@ -1,0 +1,57 @@
+{
+  "horario": "2026-10-09T21:37:18.210Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "statusText": "",
+  "cabecalhos": [
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a4808697fa2a2a0c-SJC"
+    },
+    {
+      "name": "content-encoding",
+      "value": "zstd"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 21:37:18 GMT"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YFdN%2Flkp4MQ2BIPZF1F%2Bdv%2BTOQKdwSSKcoVetPKiqJRqworinvBQA%2FG9nmjV3XRlTpmuPOW1%2BUZIV7j%2BcGLBXZ%2BFToJ%2BzVQhuaevij71O6cuAl0nFmFf2XE4ToX7I2vpxODNw2CCe1DN0YyCWhHgSTFo%2FF8qjmxH0Wi2PFjZlNk%3D\"}]}"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "10"
+    }
+  ],
+  "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P003\",\"nome\":\"Tênis Casual Urbano\",\"precoUnitario\":189.9,\"quantidade\":1,\"total\":189.9}],\"subtotal\":189.9,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":10.1,\"total\":209.8,\"cupom\":null}"
+}

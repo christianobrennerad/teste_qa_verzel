@@ -1,0 +1,46 @@
+{
+  "relatorio": "pedido-cep-formatos",
+  "caso": "sem-hifen",
+  "tituloTeste": "Pedido com CEP 01310100",
+  "arquivoTeste": "/workspace/teste_qa_verzel/Testes Automatizados/tests/api/pedido-cep-formatos.spec.ts",
+  "projeto": "api",
+  "inicio": "2026-10-09T21:37:06.495Z",
+  "fim": "2026-10-09T21:37:06.591Z",
+  "timezone": "America/Fortaleza",
+  "concluido": true,
+  "resultado": "Aprovado",
+  "observacoes": [],
+  "verificacoes": [
+    {
+      "etapa": "API",
+      "verificacao": "Pedido confirmado",
+      "esperado": 201,
+      "encontrado": 201,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "CEP normalizado, incluindo zero inicial",
+      "esperado": "01310100",
+      "encontrado": "01310100",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Produto e quantidade",
+      "esperado": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "encontrado": [
+        {
+          "produtoId": "P005",
+          "quantidade": 1
+        }
+      ],
+      "resultado": "Aprovado"
+    }
+  ]
+}

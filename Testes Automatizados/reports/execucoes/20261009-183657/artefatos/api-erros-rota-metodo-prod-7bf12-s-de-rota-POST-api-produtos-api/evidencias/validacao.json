@@ -1,0 +1,52 @@
+{
+  "relatorio": "erros-rota-metodo-produto",
+  "caso": "3-metodo_nao_permitido",
+  "tituloTeste": "Erros de rota: POST /api/produtos",
+  "arquivoTeste": "/workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts",
+  "projeto": "api",
+  "inicio": "2026-10-09T21:37:03.258Z",
+  "fim": "2026-10-09T21:37:03.455Z",
+  "timezone": "America/Fortaleza",
+  "concluido": true,
+  "resultado": "Falhou",
+  "observacoes": [
+    "O relatório original exige campo no formato comum. A documentação não esclarece a omissão desse campo em erros de rota e método; manter essa dúvida para Produto."
+  ],
+  "verificacoes": [
+    {
+      "etapa": "API",
+      "verificacao": "Status da resposta",
+      "esperado": 405,
+      "encontrado": 405,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Resposta JSON",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Código do erro",
+      "esperado": "METODO_NAO_PERMITIDO",
+      "encontrado": "METODO_NAO_PERMITIDO",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Mensagem do erro preenchida",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Formato documentado inclui campo relacionado",
+      "esperado": true,
+      "encontrado": false,
+      "resultado": "Falhou"
+    }
+  ]
+}

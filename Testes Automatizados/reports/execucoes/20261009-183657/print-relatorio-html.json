@@ -1,0 +1,13 @@
+{
+  "capturadoEm": "2026-10-09T21:42:56.618Z",
+  "timezone": "America/Fortaleza",
+  "origem": "html/index.html",
+  "execucao": "20261009-183657",
+  "navegador": "151.0.7922.173",
+  "viewport": {
+    "width": 1440,
+    "height": 1100
+  },
+  "paginaCompleta": true,
+  "textoTela": "All20\nPassed11\nFailed9\nFlaky0\nSkipped0\n10/9/2026, 9:36:59 PM\nTotal time: 25.7s\napi/erros-rota-metodo-produto.spec.ts\nErros de rota: GET /api/produtos/INEXISTENTEapiapi\n203ms\napi/erros-rota-metodo-produto.spec.ts:13\nErros de rota: GET /api/rota-inexistenteapiapi\n317ms\napi/erros-rota-metodo-produto.spec.ts:13\nErros de rota: POST /api/produtosapiapi\n214ms\napi/erros-rota-metodo-produto.spec.ts:13\nErros de rota: GET /api/carrinho/calcularapiapi\n201ms\napi/erros-rota-metodo-produto.spec.ts:13\nErros de rota: GET /api/pedidosapiapi\n166ms\napi/erros-rota-metodo-produto.spec.ts:13\ninterface/frete-limites-subtotal.spec.ts\nFrete nos limites: P005-2interface-chromiumapiinterfaceCA06CA07CA11\n1.8s\ninterface/frete-limites-subtotal.spec.ts:13\nFrete nos limites: P007-1interface-chromiumapiinterfaceCA06CA07CA11\n1.9s\ninterface/frete-limites-subtotal.spec.ts:13\nFrete nos limites: P003-1interface-chromiumapiinterfaceCA06CA07CA11\n2.0s\ninterface/frete-limites-subtotal.spec.ts:13\nFrete nos limites: P002-1-P001-1interface-chromiumapiinterfaceCA06CA07CA11\n1.7s\ninterface/frete-limites-subtotal.spec.ts:13\ninterface/cupom-desconto-produtos.spec.ts\nAplicar desconto apenas aos produtos e exibir a mensagem do BDDinterface-chromiuminterfaceCA01CA09\n2.8s\ninterface/cupom-desconto-produtos.spec.ts:5\ninterface/frete-alteracao-quantidade.spec.ts\nFrete após alterar quantidade com cupom: 1 para 2 e volta para 1interface-chromiuminterfaceCA06CA07CA08\n2.3s\ninterface/frete-alteracao-quantidade.spec.ts:5\napi/campo-quantidade-invalida.spec.ts\nIdentificar o campo da quantidade inválidaapiapi\n315ms\napi/campo-quantidade-invalida.spec.ts:5\napi/pedido-cep-formatos.spec.ts\nPedido com CEP 01310-100apiapi\n257ms\napi/pedido-cep-formatos.spec.ts:5\nPedido com CEP 01310100apiapi\n119ms\napi/pedido-cep-formatos.spec.ts:5\napi/produto-duplicado.spec.ts\nProduto duplicado: calculoapiapiCA10\n112ms\napi/produto-duplicado.spec.ts:5\nProduto duplicado: pedidoapiapiCA10\n170ms\napi/produto-duplicado.spec.ts:5\napi/quantidades-validas.spec.ts\nAceitar 1 unidade(s) de P008 ao calcularapiapiCA10\n135ms\napi/quantidades-validas.spec.ts:13\nAceitar 5 unidade(s) de P008 ao calcularapiapiCA10\n118ms\napi/quantidades-validas.spec.ts:13\nAceitar 1 unidade(s) de P008 ao confirmarapiapiCA10\n168ms\napi/quantidades-validas.spec.ts:13\nAceitar 5 unidade(s) de P008 ao confirmarapiapiCA10\n105ms\napi/quantidades-validas.spec.ts:13"
+}

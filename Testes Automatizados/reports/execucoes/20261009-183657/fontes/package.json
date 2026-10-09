@@ -1,0 +1,22 @@
+{
+  "name": "teste-qa-verzel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automação dos cenários de QA da Verzel Store com Playwright e TypeScript.",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:reteste": "playwright test tests/api/erros-rota-metodo-produto.spec.ts tests/api/produto-duplicado.spec.ts tests/api/pedido-cep-formatos.spec.ts tests/interface/frete-limites-subtotal.spec.ts tests/interface/frete-alteracao-quantidade.spec.ts tests/interface/cupom-desconto-produtos.spec.ts",
+    "test:quantidade-zero": "playwright test tests/api/campo-quantidade-invalida.spec.ts --project=api",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "24.19.1",
+    "typescript": "7.0.2"
+  }
+}

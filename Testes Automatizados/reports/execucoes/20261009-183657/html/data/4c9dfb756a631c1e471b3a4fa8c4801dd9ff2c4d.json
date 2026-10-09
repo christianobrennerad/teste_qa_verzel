@@ -1,0 +1,61 @@
+{
+  "horario": "2026-10-09T21:37:03.433Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/produtos",
+  "status": 405,
+  "statusText": "Method Not Allowed",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 21:37:03 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "content-length",
+      "value": "100"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=amjuTgzhgY5%2BspkdALTc71qVz2ky54qtQzHzZiJ0WnoKpH%2B%2FO64Mo4AWvwSZN7YQPLbta35ktn0t%2FfQkTBpboC%2Bz9CEO79fGqHKqgo7TdaKIBGeDw%2F22nOpDROfWAS4RL3GkKwzULK5Ix1mKg7iIBYsxzfgXC2sAvbY%2ByPExu4s%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a480863c4f932a0c-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "12"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    }
+  ],
+  "corpoRecebido": "{\"erro\":{\"codigo\":\"METODO_NAO_PERMITIDO\",\"mensagem\":\"O método POST não é permitido nesta rota.\"}}"
+}

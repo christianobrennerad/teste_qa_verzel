@@ -1,0 +1,22 @@
+{
+  "inicio": "2026-10-09T21:37:06.812Z",
+  "metodo": "POST",
+  "endpoint": "/api/pedidos",
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P001",
+        "quantidade": 3
+      },
+      {
+        "produtoId": "P001",
+        "quantidade": 3
+      }
+    ],
+    "cliente": {
+      "nome": "Cliente Teste",
+      "email": "qa@example.com",
+      "cep": "01310-100"
+    }
+  }
+}

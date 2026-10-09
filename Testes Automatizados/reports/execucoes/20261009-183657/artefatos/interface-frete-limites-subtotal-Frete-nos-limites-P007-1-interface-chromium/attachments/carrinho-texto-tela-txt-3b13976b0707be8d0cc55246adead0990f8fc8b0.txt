@@ -1,0 +1,35 @@
+Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.
+
+verzel
+store
+Produtos
+Documentação
+Carrinho
+1
+Carrinho
+Esvaziar carrinho
+Jaqueta Corta-Vento
+
+R$ 229,90 cada
+
+-
+1
++
+
+R$ 229,90
+
+Remover
+Cupom de desconto
+Aplicar cupom
+Resumo do pedido
+Subtotal
+R$ 229,90
+Desconto
+R$ 0,00
+Frete
+Grátis
+Total
+R$ 229,90
+Finalizar compra
+
+Verzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.

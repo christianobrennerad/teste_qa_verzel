@@ -1,0 +1,905 @@
+
+> teste-qa-verzel@1.0.0 test
+> playwright test
+
+
+Running 20 tests using 1 worker
+
+  ✓   1 [api] › tests/api/campo-quantidade-invalida.spec.ts:5:5 › Identificar o campo da quantidade inválida @api (315ms)
+  ✘   2 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/produtos/INEXISTENTE @api (203ms)
+  ✘   3 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/rota-inexistente @api (317ms)
+  ✘   4 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: POST /api/produtos @api (214ms)
+  ✘   5 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/carrinho/calcular @api (201ms)
+  ✘   6 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/pedidos @api (166ms)
+  ✓   7 [api] › tests/api/pedido-cep-formatos.spec.ts:5:7 › Pedido com CEP 01310-100 @api (257ms)
+  ✓   8 [api] › tests/api/pedido-cep-formatos.spec.ts:5:7 › Pedido com CEP 01310100 @api (119ms)
+  ✓   9 [api] › tests/api/produto-duplicado.spec.ts:5:7 › Produto duplicado: calculo @api @CA10 (112ms)
+  ✓  10 [api] › tests/api/produto-duplicado.spec.ts:5:7 › Produto duplicado: pedido @api @CA10 (170ms)
+  ✓  11 [api] › tests/api/quantidades-validas.spec.ts:13:7 › Aceitar 1 unidade(s) de P008 ao calcular @api @CA10 (135ms)
+  ✓  12 [api] › tests/api/quantidades-validas.spec.ts:13:7 › Aceitar 5 unidade(s) de P008 ao calcular @api @CA10 (118ms)
+  ✓  13 [api] › tests/api/quantidades-validas.spec.ts:13:7 › Aceitar 1 unidade(s) de P008 ao confirmar @api @CA10 (168ms)
+  ✓  14 [api] › tests/api/quantidades-validas.spec.ts:13:7 › Aceitar 5 unidade(s) de P008 ao confirmar @api @CA10 (105ms)
+  ✘  15 [interface-chromium] › tests/interface/cupom-desconto-produtos.spec.ts:5:5 › Aplicar desconto apenas aos produtos e exibir a mensagem do BDD @interface @CA01 @CA09 (2.8s)
+  ✘  16 [interface-chromium] › tests/interface/frete-alteracao-quantidade.spec.ts:5:5 › Frete após alterar quantidade com cupom: 1 para 2 e volta para 1 @interface @CA06 @CA07 @CA08 (2.3s)
+  ✓  17 [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P003-1 @api @interface @CA06 @CA07 @CA11 (2.0s)
+  ✓  18 [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P002-1-P001-1 @api @interface @CA06 @CA07 @CA11 (1.7s)
+  ✘  19 [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P005-2 @api @interface @CA06 @CA07 @CA11 (1.8s)
+  ✘  20 [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P007-1 @api @interface @CA06 @CA07 @CA11 (1.9s)
+
+
+  1) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/produtos/INEXISTENTE @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-inicio-json-8ce0c7abca8575da578fbbc6eaede8cc69d66ce6.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-requisicao-json-143cb503845d034ce5673bdb1fd76f21f8de221c.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-resposta-http-json-f4f938384dcb3ce6f2996d58c1606e02f351eb56.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-corpo-recebido-json-77e10f22e97329fb00c967141eff2144e2bbd246.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-comando-txt-d8dcd4909cc77348e4e0cf4d57ebe8b5add2163e.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/validacao-json-e1c91236ed0dcde93b7d63cecb56309f25750d3d.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/error-context.md
+
+  2) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/rota-inexistente @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-inicio-json-db28792bd61ed96384314cb5fdf9c5e32bb4bc26.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-requisicao-json-54a5ccf75bc4f18a426f824e2731ab19747011be.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-resposta-http-json-3dec76443bc866c890950e2ccfb3ab7536a5d0ec.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-corpo-recebido-json-4e8934d2743f7a3877398bfbfafd95d8c657560a.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-comando-txt-cc712186631a23167d2e862eeb801d3959bb4610.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/validacao-json-9497ea1da0bd2ac7bc33432fdbc2d37d9e719478.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/error-context.md
+
+  3) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: POST /api/produtos @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-inicio-json-2d9c494ebb5eee1250433e51532d47ccc5ebbaff.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-requisicao-json-ab92b5f46c2568c3c0bf9d97c13899b2c1b04353.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-resposta-http-json-a9a52b3d69b4d589d4f5a6aba728f69a7fa0961e.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-corpo-recebido-json-2e08ce3157b2f80fd5eece93becf441a58f1d100.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-comando-txt-7e5b03e04ebd0a4334f36ac9ba09cf8125fd4d5f.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/validacao-json-bdf87bb3daf4e088767a81efc1062f74cdb45538.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/error-context.md
+
+  4) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/carrinho/calcular @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-inicio-json-5dc009eddabedf6f4170b9c1a5caedcf0cb01927.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-requisicao-json-17988c6a8a5a43267cb42e5efcdb90ada10aa454.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-resposta-http-json-fe142b92ed6278ba2e899fdd61754a7f0a189ac5.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-corpo-recebido-json-8eb04e73cc86cef095b73cb0026912b4e81fa920.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-comando-txt-7bc525beef6dfac8cd43ab0c4c3c63a4bed8d08b.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/validacao-json-dc939fe5a483c56315c4e910b0f224b826b048f7.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/error-context.md
+
+  5) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/pedidos @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-inicio-json-1ceb51ace8fdccddf67757f6b925db51c2be8f52.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-requisicao-json-9e770ee90035cbd5faf1ecac708e14371bdc4453.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-resposta-http-json-fcfd670e88cc81214712720df3c077f424a821c2.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-corpo-recebido-json-036d07a35ee21cd1d9a0e555b5a0695e221c4d87.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-comando-txt-f675a10ae20dffc33592da6f9a2d9ac2432de71c.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/validacao-json-a92b53b9d2e5c3d49ab1a217d198d09d7fc9b2e0.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/execucoes/20261009-183657/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/error-context.md
+
+  6) [interface-chromium] › tests/interface/cupom-desconto-produtos.spec.ts:5:5 › Aplicar desconto apenas aos produtos e exibir a mensagem do BDD @interface @CA01 @CA09 
+
+    Error: Interface: Mensagem exigida pelo BDD exibida na tela
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:24:7
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:6:3
+
+    attachment #1: api-independente-inicio.json (application/json) ─────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-inicio-json-c06493d954debfe4574204f33aac3cd08cb85b48.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-independente-requisicao.json (application/json) ─────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-requisicao-json-cb69f75b8f0989f64a0364c0854bb4829e7019e6.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-independente-resposta-http.json (application/json) ──────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-resposta-http-json-21c469d903bd12e7ffc4fc6cc34b77883c6d337f.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-independente-corpo-recebido.json (application/json) ─────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-corpo-recebido-json-97ff5b1ff4b7c21795291bff0bbb765f5e48c0dd.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-independente-comando.txt (text/plain) ───────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-comando-txt-4836c8c7946f4c8f8963d297615f561911758849.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: antes-do-cupom-estado-interface.json (application/json) ─────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-estado-interface-json-854302cf025e041e5a8262be280b9e271101f9e6.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: antes-do-cupom-texto-tela.txt (text/plain) ──────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-texto-tela-txt-b39f2cf44f33b67a0643854af18af8e941c9cf5f.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: antes-do-cupom-tela.png (image/png) ─────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-tela-png-03e0a137213fc8b5043873c0037d8a70936afda6.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: api-interface-requisicao.json (application/json) ────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-requisicao-json-ecb7525922affb23f4720b22e7a5bbd0911a30ee.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: api-interface-resposta-http.json (application/json) ────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-resposta-http-json-2551d3d4823e0a8f0829038bc0bc9ca4e58ac96a.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #11: api-interface-corpo-recebido.json (application/json) ───────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-corpo-recebido-json-8b591d597bf19a7935c45e6ec900df9d7962afc0.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #12: api-interface-comando.txt (text/plain) ─────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-comando-txt-bf07b527714b9a93ec762848f78178167fedc6c9.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #13: depois-do-cupom-estado-interface.json (application/json) ───────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-estado-interface-json-ca658d44ce96d3f931038b4c00edf4439e45daa8.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #14: depois-do-cupom-texto-tela.txt (text/plain) ────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-texto-tela-txt-d79a8b48ac71123b33545fad2a3307cfe69ae1a3.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #15: depois-do-cupom-tela.png (image/png) ───────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-tela-png-ddfa2ccebf56d72bf6282e6d3c26d43eec4fefde.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #16: mensagens-interface.json (application/json) ────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/mensagens-interface-json-e80e4416a7c31d468da9bf8d38befd49b5b2140c.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #17: validacao.json (application/json) ──────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/validacao-json-cf9d126f969bf9421a00fc8b30e8f80970d22313.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/execucoes/20261009-183657/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/error-context.md
+
+  7) [interface-chromium] › tests/interface/frete-alteracao-quantidade.spec.ts:5:5 › Frete após alterar quantidade com cupom: 1 para 2 e volta para 1 @interface @CA06 @CA07 @CA08 
+
+    Error: API 2-quantidade-2: frete
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 0
+    Received: 19.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:22:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3
+
+    Error: API 2-quantidade-2: total
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 180
+    Received: 199.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:22:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3
+
+    Error: Interface 2-quantidade-2: frete
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 0
+    Received: 19.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3
+
+    Error: Interface 2-quantidade-2: total
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 180
+    Received: 199.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3
+
+    attachment #1: 1-quantidade-1-api-requisicao.json (application/json) ───────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-requisicao-json-6a32f53253620c9c8022a6d5343c42a338bd5007.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: 1-quantidade-1-api-resposta-http.json (application/json) ────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-resposta-http-json-65044b2c1709214588168ed62a118491a867621e.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: 1-quantidade-1-api-corpo-recebido.json (application/json) ───────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-corpo-recebido-json-3e1ec549f2481503d0ce61092c0a1146f865ae20.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: 1-quantidade-1-api-comando.txt (text/plain) ─────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-comando-txt-492bade21e510db1fc14e7e54ed709d9b340515e.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: 1-quantidade-1-estado-interface.json (application/json) ─────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-estado-interface-json-c2865e06efdc69dab0db65ff0bbff106f4dc1141.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: 1-quantidade-1-texto-tela.txt (text/plain) ──────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-texto-tela-txt-eabbffeff9d376488e4e0a3281243f55b45424f6.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: 1-quantidade-1-tela.png (image/png) ─────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-tela-png-961a41d93f08764f1b6201ce003653d32fda0c31.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: 2-quantidade-2-api-requisicao.json (application/json) ───────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-requisicao-json-9c0bbc7b4219f07b5e4c52d9258b587180fcd28f.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: 2-quantidade-2-api-resposta-http.json (application/json) ────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-resposta-http-json-1b2ffd528521ab3fe03da1ff98bd1f6a0f2298f4.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: 2-quantidade-2-api-corpo-recebido.json (application/json) ──────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-corpo-recebido-json-5c440221ed0531f4da29ae1e839fa5e0dcaf6674.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #11: 2-quantidade-2-api-comando.txt (text/plain) ────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-comando-txt-14d2e9f7158f1d2a5d272749dcfe14c7c15ef16f.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #12: 2-quantidade-2-estado-interface.json (application/json) ────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-estado-interface-json-c897a571e87e5f37558f1e9b190ea5db275aea47.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #13: 2-quantidade-2-texto-tela.txt (text/plain) ─────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-texto-tela-txt-25ad769b7272247ee79aeda47bc08ed4064538f4.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #14: 2-quantidade-2-tela.png (image/png) ────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-tela-png-282082e535d42eb4ee829153b25bfa750f4802d5.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #15: 3-quantidade-1-api-requisicao.json (application/json) ──────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-requisicao-json-07b4b3af60e28ff01289dac03eaec0d518a02702.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #16: 3-quantidade-1-api-resposta-http.json (application/json) ───────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-resposta-http-json-8250c2afcb56fc074bc13267ee06d104c56120a7.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #17: 3-quantidade-1-api-corpo-recebido.json (application/json) ──────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-corpo-recebido-json-75d076cf2226acea262e1975c7f0c46ac5b35785.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #18: 3-quantidade-1-api-comando.txt (text/plain) ────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-comando-txt-406f9c3ece410b8ac0941dda47584c8118c65b69.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #19: 3-quantidade-1-estado-interface.json (application/json) ────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-estado-interface-json-28c75742c5fa430f28d21c335d41d903110023a5.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #20: 3-quantidade-1-texto-tela.txt (text/plain) ─────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-texto-tela-txt-0680aaebe3a8598e37a36846050532985fe89734.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #21: 3-quantidade-1-tela.png (image/png) ────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-tela-png-211e09114b3bdcd1c6be2c64852fcc55921ba73b.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #22: validacao.json (application/json) ──────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/validacao-json-eaa3b20996710e90d29e1f0db22868e04079fb44.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/execucoes/20261009-183657/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/error-context.md
+
+  8) [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P005-2 @api @interface @CA06 @CA07 @CA11 
+
+    Error: API independente: frete
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 0
+    Received: 19.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API independente: freteGratis
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API independente: total
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 200
+    Received: 219.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API usada pela interface: frete
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 0
+    Received: 19.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:29:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API usada pela interface: freteGratis
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:29:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API usada pela interface: total
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 200
+    Received: 219.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:29:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: Interface: frete exibido com duas casas
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: "R$ 0,00"
+    Received: "R$ 19,90"
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: Interface: total exibido com duas casas
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: "R$ 200,00"
+    Received: "R$ 219,90"
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: Interface: Frete grátis
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:36:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: Interface: Informação de quanto falta para frete grátis
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: null
+    Received: "Faltam R$ 0,00 para o frete grátis."
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:38:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    attachment #1: api-independente-inicio.json (application/json) ─────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-inicio-json-1c44e172eb57e376ba08e1a740794feeba65d826.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-independente-requisicao.json (application/json) ─────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-requisicao-json-6a0736aa2870417c5974f2146aab60ad4382a9cd.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-independente-resposta-http.json (application/json) ──────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-resposta-http-json-41024e1316d855c28d170b3872b013572036aee1.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-independente-corpo-recebido.json (application/json) ─────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-corpo-recebido-json-fe318b3e17522a42893d1ee30acb2c8f4c530b3c.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-independente-comando.txt (text/plain) ───────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-comando-txt-443768c29c406d3bb09e30f6e3baf95e064be522.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: api-interface-requisicao.json (application/json) ────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-requisicao-json-8a12ca36639eba382a0385d2d1018679d963ab65.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: api-interface-resposta-http.json (application/json) ─────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-resposta-http-json-a861f9d4fe9062a5a06fa208f3feb2edf6954954.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: api-interface-corpo-recebido.json (application/json) ────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-corpo-recebido-json-4c4404a69307f93c3bf381da408cf6bb5cd49ca7.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: api-interface-comando.txt (text/plain) ──────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-comando-txt-e5dada1d06693c2a63e04fb1039367d212863734.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: carrinho-estado-interface.json (application/json) ──────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-estado-interface-json-fd9f4fc66b6037bcb7dc35ca812afc938103b062.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #11: carrinho-texto-tela.txt (text/plain) ───────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-texto-tela-txt-2c5f72f068b90673c9e0742ef0358ae115256d68.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #12: carrinho-tela.png (image/png) ──────────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-tela-png-ec2ad79a86f41e927c02d3465ce76d9697728716.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #13: validacao.json (application/json) ──────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/validacao-json-6dd56241f45326782bc9f8a071baa1b711881038.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/error-context.md
+
+  9) [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P007-1 @api @interface @CA06 @CA07 @CA11 
+
+    Error: Interface: frete exibido com duas casas
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: "R$ 0,00"
+    Received: "Grátis"
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    attachment #1: api-independente-inicio.json (application/json) ─────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-inicio-json-2c026dd992bcaabf58f0500d858d3a00531872ef.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-independente-requisicao.json (application/json) ─────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-requisicao-json-43f5f4f7eff0506358d02bdfcdca16d66bf10706.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-independente-resposta-http.json (application/json) ──────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-resposta-http-json-75f891477825385016ed570e4b29632092222bcf.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-independente-corpo-recebido.json (application/json) ─────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-corpo-recebido-json-e5556caf4a4dfa33728e3aaeb1dea47ae8421037.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-independente-comando.txt (text/plain) ───────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-comando-txt-5834c277967e47cb4034b312ba7c8dcae3ecffc4.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: api-interface-requisicao.json (application/json) ────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-requisicao-json-c3be4bd6ab79c319effe1c198a5fcf6dd18192d0.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: api-interface-resposta-http.json (application/json) ─────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-resposta-http-json-640826fb6589ce746bee15ac0c8f97aa424bc682.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: api-interface-corpo-recebido.json (application/json) ────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-corpo-recebido-json-15cc4b118ad982e000f31a2cdb28af98d6f2f319.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: api-interface-comando.txt (text/plain) ──────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-comando-txt-3f4d408a7e0d159aa8ca21892895cf01e9924037.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: carrinho-estado-interface.json (application/json) ──────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-estado-interface-json-2be944aa1ff3c40a0c83126d07924db8ff0cf76a.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #11: carrinho-texto-tela.txt (text/plain) ───────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-texto-tela-txt-3b13976b0707be8d0cc55246adead0990f8fc8b0.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #12: carrinho-tela.png (image/png) ──────────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-tela-png-f50c5192bbc2edc6277ab2f7b7b2d9e3589d0149.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #13: validacao.json (application/json) ──────────────────────────────────────────────
+    reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/validacao-json-c01807d7bb1ba185249df0e43751e54b3168ab47.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/execucoes/20261009-183657/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/error-context.md
+
+  9 failed
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/produtos/INEXISTENTE @api 
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/rota-inexistente @api 
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: POST /api/produtos @api 
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/carrinho/calcular @api 
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/pedidos @api 
+    [interface-chromium] › tests/interface/cupom-desconto-produtos.spec.ts:5:5 › Aplicar desconto apenas aos produtos e exibir a mensagem do BDD @interface @CA01 @CA09 
+    [interface-chromium] › tests/interface/frete-alteracao-quantidade.spec.ts:5:5 › Frete após alterar quantidade com cupom: 1 para 2 e volta para 1 @interface @CA06 @CA07 @CA08 
+    [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P005-2 @api @interface @CA06 @CA07 @CA11 
+    [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P007-1 @api @interface @CA06 @CA07 @CA11 
+  11 passed (25.7s)

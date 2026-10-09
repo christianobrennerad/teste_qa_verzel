@@ -1,0 +1,38 @@
+Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.
+
+verzel
+store
+Produtos
+Documentação
+Carrinho
+1
+Carrinho
+Esvaziar carrinho
+Tênis Casual Urbano
+
+R$ 189,90 cada
+
+-
+1
++
+
+R$ 189,90
+
+Remover
+Cupom de desconto
+Aplicar cupom
+Resumo do pedido
+Subtotal
+R$ 189,90
+Desconto
+R$ 0,00
+Frete
+R$ 19,90
+Total
+R$ 209,80
+
+Faltam R$ 10,10 para o frete grátis.
+
+Finalizar compra
+
+Verzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.

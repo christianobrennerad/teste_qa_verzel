@@ -1,0 +1,49 @@
+Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.
+
+verzel
+store
+Produtos
+Documentação
+Carrinho
+2
+Carrinho
+Esvaziar carrinho
+Calça Jeans Slim
+
+R$ 139,90 cada
+
+-
+1
++
+
+R$ 139,90
+
+Remover
+Camiseta Essencial
+
+R$ 59,90 cada
+
+-
+1
++
+
+R$ 59,90
+
+Remover
+Cupom de desconto
+Aplicar cupom
+Resumo do pedido
+Subtotal
+R$ 199,80
+Desconto
+R$ 0,00
+Frete
+R$ 19,90
+Total
+R$ 219,70
+
+Faltam R$ 0,20 para o frete grátis.
+
+Finalizar compra
+
+Verzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real.

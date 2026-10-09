@@ -1,0 +1,62 @@
+{
+  "inicio": "2026-10-09T21:37:07.303Z",
+  "fim": "2026-10-09T21:37:07.459Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+  "status": 201,
+  "statusText": "Created",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 21:37:07 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "content-length",
+      "value": "362"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=GkSV7N7tszYShqNe4pbTBiWtvxrVd2i%2BeDo8aZlhsPAnQ1AE4nIUXJXbPd%2FJ%2Fp%2FsKNA2N%2BZDRAptJ4XDqDAIA0KSVDAJVTtiLVe3%2FBRMCxrugfO6UjmmJFIveGnH76Raln8ztgCSz43khgiUbPA9w4gLRvvKDWqTuV7qolWNGjA%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a48086554e2d4e48-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "94"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    }
+  ],
+  "corpoRecebido": "{\"numero\":\"VZ-063574\",\"criadoEm\":\"2026-10-09T21:37:07.444Z\",\"cliente\":{\"nome\":\"Cliente Teste\",\"email\":\"qa@example.com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P008\",\"nome\":\"Garrafa Térmica 750ml\",\"precoUnitario\":50,\"quantidade\":1,\"total\":50}],\"subtotal\":50,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":150,\"total\":69.9,\"cupom\":null}"
+}

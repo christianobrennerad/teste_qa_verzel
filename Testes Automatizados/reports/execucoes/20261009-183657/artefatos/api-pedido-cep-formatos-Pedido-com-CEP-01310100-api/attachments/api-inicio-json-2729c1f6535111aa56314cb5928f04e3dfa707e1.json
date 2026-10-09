@@ -1,0 +1,18 @@
+{
+  "inicio": "2026-10-09T21:37:06.495Z",
+  "metodo": "POST",
+  "endpoint": "/api/pedidos",
+  "corpo": {
+    "cliente": {
+      "nome": "Maria Silva",
+      "email": "maria@exemplo.com",
+      "cep": "01310100"
+    },
+    "itens": [
+      {
+        "produtoId": "P005",
+        "quantidade": 1
+      }
+    ]
+  }
+}

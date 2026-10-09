@@ -1,0 +1,8 @@
+{
+  "horario": "2026-10-09T21:37:02.349Z",
+  "metodo": "GET",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/rota-inexistente",
+  "cabecalhos": {
+    "Content-Type": "application/json"
+  }
+}

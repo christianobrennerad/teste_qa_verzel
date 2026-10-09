@@ -1,5 +1,27 @@
 # Relatórios dos testes automatizados
 
+## Última execução — suíte completa
+
+Em **09/10/2026, das 18h36min57s às 18h37min25s (America/Fortaleza)**, executamos todos os 20 testes configurados: **11 aprovados e 9 com falhas**, sem casos pulados ou bloqueados. O comando foi `npm test`, com Playwright 1.64.0 e Chromium 151.0.7922.173, mantendo a validação de certificados ativa.
+
+- [Relatório HTML desta execução](execucoes/20261009-183657/html/index.html).
+- [Captura de tela do relatório HTML](execucoes/20261009-183657/print-relatorio-html-fortaleza.png).
+- [Pacote completo do HTML e seus anexos](execucoes/20261009-183657/relatorio-html.zip).
+- [Resumo dos 20 casos](execucoes/20261009-183657/resumo.json).
+- [Resultado original do Playwright](execucoes/20261009-183657/resultados.json).
+- [Índice e integridade dos 169 anexos](execucoes/20261009-183657/indice-evidencias.json).
+- [Versões, horários e comando executado](execucoes/20261009-183657/execucao.json).
+
+Para abrir o relatório com todas as evidências, execute dentro de `Testes Automatizados`:
+
+```bash
+npm run report -- reports/execucoes/20261009-183657/html
+```
+
+As reprovações continuam concentradas nos erros de rota/método, na mensagem do cupom e nos cenários de frete. A ausência de `erro.campo` e a apresentação de “Grátis” seguem os critérios dos relatórios de referência e os pontos de esclarecimento descritos abaixo. O código 1 do runner indica as nove reprovações; a execução foi concluída.
+
+## Reteste anterior — seis relatórios
+
 **Resultado:** 15 casos executados com Playwright: 6 aprovados e 9 com falha. Nenhum bloqueado ou pulado. As 204 comparações resultaram em 183 aprovações e 21 falhas.
 
 **Execução:** 2026-10-09T16:58:27.772121-03:00 a 2026-10-09T16:58:53.235496-03:00 (America/Fortaleza).

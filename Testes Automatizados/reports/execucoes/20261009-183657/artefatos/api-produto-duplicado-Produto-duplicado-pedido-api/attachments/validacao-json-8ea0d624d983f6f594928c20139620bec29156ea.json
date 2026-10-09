@@ -1,0 +1,36 @@
+{
+  "relatorio": "produto-duplicado-api",
+  "caso": "pedido",
+  "tituloTeste": "Produto duplicado: pedido",
+  "arquivoTeste": "/workspace/teste_qa_verzel/Testes Automatizados/tests/api/produto-duplicado.spec.ts",
+  "projeto": "api",
+  "inicio": "2026-10-09T21:37:06.812Z",
+  "fim": "2026-10-09T21:37:06.972Z",
+  "timezone": "America/Fortaleza",
+  "concluido": true,
+  "resultado": "Aprovado",
+  "observacoes": [],
+  "verificacoes": [
+    {
+      "etapa": "API",
+      "verificacao": "Requisição recusada",
+      "esperado": 422,
+      "encontrado": 422,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Código de duplicidade",
+      "esperado": "ITEM_DUPLICADO",
+      "encontrado": "ITEM_DUPLICADO",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Sem confirmação de pedido",
+      "esperado": false,
+      "encontrado": false,
+      "resultado": "Aprovado"
+    }
+  ]
+}

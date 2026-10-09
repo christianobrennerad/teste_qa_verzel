@@ -1,0 +1,1 @@
+{"numero":"VZ-911458","criadoEm":"2026-10-09T21:37:07.546Z","cliente":{"nome":"Cliente Teste","email":"qa@example.com","cep":"01310100"},"itens":[{"produtoId":"P008","nome":"Garrafa Térmica 750ml","precoUnitario":50,"quantidade":5,"total":250}],"subtotal":250,"desconto":0,"frete":0,"freteGratis":true,"valorFaltanteFreteGratis":0,"total":250,"cupom":null}

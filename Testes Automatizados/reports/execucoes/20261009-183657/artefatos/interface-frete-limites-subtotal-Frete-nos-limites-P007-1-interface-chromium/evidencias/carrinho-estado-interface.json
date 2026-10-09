@@ -1,0 +1,14 @@
+{
+  "horario": "2026-10-09T21:37:24.798Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/carrinho",
+  "valores": {
+    "subtotal": "R$ 229,90",
+    "desconto": "R$ 0,00",
+    "frete": "Grátis",
+    "total": "R$ 229,90"
+  },
+  "avisoFrete": null,
+  "quantidadeCupons": 0,
+  "cupom": null,
+  "textoTela": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n1\nCarrinho\nEsvaziar carrinho\nJaqueta Corta-Vento\n\nR$ 229,90 cada\n\n-\n1\n+\n\nR$ 229,90\n\nRemover\nCupom de desconto\nAplicar cupom\nResumo do pedido\nSubtotal\nR$ 229,90\nDesconto\nR$ 0,00\nFrete\nGrátis\nTotal\nR$ 229,90\nFinalizar compra\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real."
+}

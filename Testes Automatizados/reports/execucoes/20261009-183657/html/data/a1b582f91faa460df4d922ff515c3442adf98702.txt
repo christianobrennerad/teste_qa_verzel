@@ -1,0 +1,1 @@
+curl -i -X POST 'https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos' -H 'Content-Type: application/json' --data-binary '{"itens":[{"produtoId":"P001","quantidade":3},{"produtoId":"P001","quantidade":3}],"cliente":{"nome":"Cliente Teste","email":"qa@example.com","cep":"01310-100"}}' --max-time 30 --silent --show-error

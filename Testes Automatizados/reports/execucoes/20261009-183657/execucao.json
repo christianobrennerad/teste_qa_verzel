@@ -1,0 +1,33 @@
+{
+  "escopo": "Todos os testes .spec.ts configurados nos projetos api e interface-chromium.",
+  "inicio": "2026-10-09T18:36:57.847934-03:00",
+  "fim": "2026-10-09T18:37:25.361504-03:00",
+  "timezone": "America/Fortaleza",
+  "comando": "npm test",
+  "diretorio": "/workspace/teste_qa_verzel/Testes Automatizados",
+  "codigoSaida": 1,
+  "node": "v24.19.0",
+  "playwright": "1.64.0",
+  "chromium": "Chromium 151.0.7922.173 built on Debian GNU/Linux 13 (trixie)",
+  "certificadosVerificados": true,
+  "bypassTLS": false,
+  "commitBase": "afece2b9fe5cb6dd94b5de5af1b8a2cfad7b4956",
+  "fontesSha256": {
+    "package-lock.json": "cd48cfc3ebe2300132ad22b6f182bf0f9a5be880fe89939a452e47bd96a46347",
+    "package.json": "c9c1d976f8dd1bbae670e937af40be8d1bc7be14f085fc7432fbaa1f289053a0",
+    "tsconfig.json": "95f7e2ac3180906bdf25919e6df53ad42ab021c0fb1ef370a33f099abb3c3a48",
+    "playwright.config.ts": "ecd7818326fc2320c82efa32e5c9a33ff3eb412a18cf4327ef618580950b9ff5",
+    "tests/interface/frete-limites-subtotal.spec.ts": "cbc63c1775c8029e7953826b7f8ae86e51f33baf8d9a57b81d048d8df42176e3",
+    "tests/interface/cupom-desconto-produtos.spec.ts": "790db61d128961ac1306c3a1404c52c0369f8ad2533e98ea8e861e1a7333f71b",
+    "tests/interface/frete-alteracao-quantidade.spec.ts": "a2dc05e3c82545078ede0e76b07fdd94c313506356338a3a804527575e4f21b4",
+    "tests/api/campo-quantidade-invalida.spec.ts": "ee635ac9a51be9a6a475d3adf58dc40b024ca9af08ba3bec65bf022c88a055c4",
+    "tests/api/produto-duplicado.spec.ts": "83c51ee2f5b9a350c21ae097fdf3801d2188ce2b7b209f3cca57f4c280b860f7",
+    "tests/api/erros-rota-metodo-produto.spec.ts": "0304b9131b7880e42cd6853b6b1d5920378f0871e0dd57141a02975d08f5eafd",
+    "tests/api/pedido-cep-formatos.spec.ts": "47b7f6d36a33846022e5a82c4c98bf830d85bc1aea7e62075776ea3fed4bcde5",
+    "tests/api/quantidades-validas.spec.ts": "14715f79df910897ca5106bf1582bb5ab1c3ca1dc4e26f6a9011c7e86ea28a93",
+    "tests/suporte/conferencia.ts": "51a6ad128662940f906a33d91aabfce958db1f8c3c58d3a1fa541f864abfd6c9",
+    "tests/suporte/http.ts": "30f4c46b9980dc97884d615de0e721e89b9f7fc6e077b1ed9f5e698774ff8e98",
+    "tests/suporte/fixtures.ts": "5e70ceca0112b3e6273c250f13428f13443abc75a3ee8b98d4e9e53df263dd48",
+    "tests/suporte/carrinho.ts": "ca74a50b058a42071b357ad713c73cc417e1f6bd3a971b7bd460b4cfc3933ee3"
+  }
+}
