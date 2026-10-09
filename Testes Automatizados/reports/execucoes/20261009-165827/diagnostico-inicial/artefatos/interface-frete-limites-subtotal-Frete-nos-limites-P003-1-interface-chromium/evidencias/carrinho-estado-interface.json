@@ -1,0 +1,14 @@
+{
+  "horario": "2026-10-09T19:57:01.924Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/carrinho",
+  "valores": {
+    "subtotal": "R$ 189,90",
+    "desconto": "R$ 0,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 209,80"
+  },
+  "avisoFrete": "Faltam R$ 10,10 para o frete grátis.",
+  "quantidadeCupons": 0,
+  "cupom": null,
+  "textoTela": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n1\nCarrinho\nEsvaziar carrinho\nTênis Casual Urbano\n\nR$ 189,90 cada\n\n-\n1\n+\n\nR$ 189,90\n\nRemover\nCupom de desconto\nAplicar cupom\nResumo do pedido\nSubtotal\nR$ 189,90\nDesconto\nR$ 0,00\nFrete\nR$ 19,90\nTotal\nR$ 209,80\n\nFaltam R$ 10,10 para o frete grátis.\n\nFinalizar compra\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real."
+}

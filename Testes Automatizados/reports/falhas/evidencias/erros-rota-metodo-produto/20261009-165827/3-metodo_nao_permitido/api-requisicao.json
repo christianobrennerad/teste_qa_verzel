@@ -1,0 +1,8 @@
+{
+  "horario": "2026-10-09T19:58:32.621Z",
+  "metodo": "POST",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/produtos",
+  "cabecalhos": {
+    "Content-Type": "application/json"
+  }
+}

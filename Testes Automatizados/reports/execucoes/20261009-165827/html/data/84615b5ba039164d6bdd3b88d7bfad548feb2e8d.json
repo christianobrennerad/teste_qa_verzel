@@ -1,0 +1,57 @@
+{
+  "horario": "2026-10-09T19:58:48.078Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "statusText": "",
+  "cabecalhos": [
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff64dca9ead44-SJC"
+    },
+    {
+      "name": "content-encoding",
+      "value": "zstd"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:58:47 GMT"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=AdulyZTQkXYi%2BnuLvV5rl3S%2F2djlaP5igzeF0QuToRlkDWKApoSZBra6u2cor8NIT1%2B0ddPXUtu1B4EZEbRL9yBDja3gksrCcBjR5kMica2MA0swaBEvvaYmOR9ZZtrGhEOjv4pbVrFpRYCn0QKE5J9WlOGQ8AlGSbKBC70iB8g%3D\"}]}"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "9"
+    }
+  ],
+  "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P002\",\"nome\":\"Calça Jeans Slim\",\"precoUnitario\":139.9,\"quantidade\":1,\"total\":139.9},{\"produtoId\":\"P001\",\"nome\":\"Camiseta Essencial\",\"precoUnitario\":59.9,\"quantidade\":1,\"total\":59.9}],\"subtotal\":199.8,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":0.2,\"total\":219.7,\"cupom\":null}"
+}

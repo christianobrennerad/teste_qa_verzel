@@ -1,0 +1,65 @@
+{
+  "horario": "2026-10-09T19:57:09.797Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "statusText": "OK",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:57:09 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=VCkrw0uGxBFhUFtZXV3kBQodlW2kJK%2B0Q3cqZ%2Baf7vYlATzzftaqe%2Bu0Tei2DdLWJLdcWf2Jp8YQI1RWBIb4fz6SGSmPWEqR5%2FWVl7MAGYXKNbapdZY7QlTizhmFleJss1KPOcrEovNLhpw2EYajUOEn2HoaVNYShFaw%2B9REfoY%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "content-encoding",
+      "value": "br"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff3e7d96ad4f9-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "26"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "transfer-encoding",
+      "value": "chunked"
+    }
+  ],
+  "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P007\",\"nome\":\"Jaqueta Corta-Vento\",\"precoUnitario\":229.9,\"quantidade\":1,\"total\":229.9}],\"subtotal\":229.9,\"desconto\":0,\"frete\":0,\"freteGratis\":true,\"valorFaltanteFreteGratis\":0,\"total\":229.9,\"cupom\":null}"
+}

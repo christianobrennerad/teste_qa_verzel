@@ -1,0 +1,61 @@
+{
+  "horario": "2026-10-09T19:56:47.880Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 405,
+  "statusText": "Method Not Allowed",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:56:47 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "content-length",
+      "value": "99"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=BNua2ulvg7q0XI1uRrNZL15pGSTg%2BXHUxeCU7eT2r7O20Z6B%2FAmNJZtMdy%2FEzkS0A3yInhhMLbuy%2BZVIQ4eRswySZwTft6KUiooCzZsf6xPJbIEO97zHS%2BNlgqQYkm%2B%2BZCqCOCoSOE6%2B959pubjg9edEOB4Z%2BQamnKdEmx%2Fd7Bk%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff35f1e26a2db-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "24"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    }
+  ],
+  "corpoRecebido": "{\"erro\":{\"codigo\":\"METODO_NAO_PERMITIDO\",\"mensagem\":\"O método GET não é permitido nesta rota.\"}}"
+}

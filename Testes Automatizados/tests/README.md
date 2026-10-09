@@ -1,6 +1,6 @@
 # Como executar os cenários com Playwright
 
-A automação foi iniciada em TypeScript com dois cenários que você já testou:
+A automação foi iniciada em TypeScript com dois cenários de API:
 
 - [Identificar o campo da quantidade inválida](api/campo-quantidade-invalida.spec.ts): um teste com quantidade zero.
 - [Aceitar os limites válidos de quantidade](api/quantidades-validas.spec.ts): quatro testes, um para cada linha da tabela de exemplos.
@@ -48,7 +48,7 @@ Cada objeto em `exemplos` corresponde a uma linha da tabela do BDD. O laço cria
 um teste independente para cada combinação de operação e quantidade. Assim,
 você consegue identificar qual exemplo passou ou falhou.
 
-Para executar os cinco testes:
+Para executar todos os testes de API disponíveis:
 
 ```bash
 npm run test:api
@@ -79,7 +79,7 @@ Os arquivos gerados ficam em:
 - `playwright-report/`: relatório HTML.
 - `test-results/`: anexos e resumo `resultados.json`.
 
-Essas pastas estão no `.gitignore`. Cada execução substitui os resultados
+Essas pastas estão no `.gitignore`. Cada execução padrão substitui os resultados
 anteriores nessas pastas. Para guardar uma execução histórica, copie os
 resultados para uma pasta nova de evidências antes de executar novamente.
 O relatório automático é HTML/JSON; relatórios de QA em Markdown continuam
@@ -131,6 +131,63 @@ usa esse proxy sem gravar suas credenciais nos anexos. A verificação de
 certificados permanece ativa. Se o ambiente fornecer uma autoridade de
 certificação oficial, o Node pode usá-la por `NODE_EXTRA_CA_CERTS`.
 
-Este projeto ainda não tem testes de interface do Playwright. Os exemplos
-atuais demonstram o fluxo de API; testes de interface também exigirão o
-navegador correspondente instalado pelo Playwright.
+## Retestar os seis relatórios solicitados
+
+Execute os comandos dentro de `Testes Automatizados`:
+
+```bash
+npm ci
+npx playwright install chromium
+npm run test:reteste
+npm run report
+```
+
+O conjunto possui 15 testes independentes:
+
+| Cenário | Casos | Arquivo |
+| --- | --- | --- |
+| Frete nos limites do subtotal | 4 | [Teste](interface/frete-limites-subtotal.spec.ts) |
+| Frete após alterar a quantidade | 1, com os passos 1 → 2 → 1 | [Teste](interface/frete-alteracao-quantidade.spec.ts) |
+| Erros de rota, método e produto | 5 | [Teste](api/erros-rota-metodo-produto.spec.ts) |
+| Cupom de desconto apenas nos produtos | 1 | [Teste](interface/cupom-desconto-produtos.spec.ts) |
+| Produto duplicado | 2 | [Teste](api/produto-duplicado.spec.ts) |
+| CEP com ou sem hífen | 2 | [Teste](api/pedido-cep-formatos.spec.ts) |
+
+Os testes de interface usam Chromium. Cada teste começa em um contexto novo,
+monta o carrinho pelos botões da loja e salva telas, valores, requisições e
+respostas. As comparações continuam após uma reprovação para conferir os
+demais passos do BDD. O teste permanece reprovado quando uma comparação falha.
+
+Para repetir apenas um arquivo, por exemplo:
+
+```bash
+npx playwright test tests/interface/frete-alteracao-quantidade.spec.ts --project=interface-chromium
+npx playwright test tests/api/pedido-cep-formatos.spec.ts --project=api
+```
+
+As requisições são reais e usam somente o ambiente de QA. O desconto exibido
+como `- R$ 10,00` é comparado como uma dedução de R$ 10,00. A palavra `Grátis`
+representa frete zero nos cenários de valor; no cenário que exige literalmente
+duas casas decimais, a apresentação também é comparada com o texto exigido.
+
+Os [relatórios preservados](../reports/README.md) documentam a execução com
+6 casos aprovados e 9 reprovados em 09/10/2026. Para abrir esse HTML:
+
+```bash
+npm run report -- reports/execucoes/20261009-165827/html
+```
+
+Na nuvem, foi usado o navegador em `/usr/bin/chromium`. Para reutilizá-lo em
+um ambiente com esse arquivo e a confiança no certificado oficial já
+configurada, execute:
+
+```bash
+PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium \
+NODE_EXTRA_CA_CERTS=/usr/local/share/ca-certificates/environment-proxy-ca.crt \
+npm run test:reteste
+```
+
+`NODE_EXTRA_CA_CERTS` configura a confiança das chamadas Node. O navegador
+também precisa confiar no certificado oficial do ambiente; essa variável não
+substitui a configuração de confiança do Chromium. Os testes mantêm a
+verificação de certificados ativa.

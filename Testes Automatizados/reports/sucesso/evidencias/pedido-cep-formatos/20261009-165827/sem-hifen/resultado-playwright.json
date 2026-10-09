@@ -1,0 +1,44 @@
+{
+  "workerIndex": 5,
+  "parallelIndex": 0,
+  "status": "passed",
+  "duration": 122,
+  "errors": [],
+  "stdout": [],
+  "stderr": [],
+  "retry": 0,
+  "startTime": "2026-10-09T19:58:35.596Z",
+  "annotations": [],
+  "attachments": [
+    {
+      "name": "api-inicio.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-inicio-json-80dcef5fc6d0042040df9f5b268333fc3670f74f.json"
+    },
+    {
+      "name": "api-requisicao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-requisicao-json-9fb085954c870c9833c5e52b2ad739dc63abd25b.json"
+    },
+    {
+      "name": "api-resposta-http.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-resposta-http-json-18728dfafa6b336fcd448c6b6829b62407d5a069.json"
+    },
+    {
+      "name": "api-corpo-recebido.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-corpo-recebido-json-739f4ad6d90da9e5887dca8818ff17c98b53ca9a.json"
+    },
+    {
+      "name": "api-comando.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-comando-txt-f1988412fb53c6aad6fc7de999cde027912eaa33.txt"
+    },
+    {
+      "name": "validacao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/validacao-json-4d91e6bb2633d7bc5d96cfe8db310605b60761bd.json"
+    }
+  ]
+}

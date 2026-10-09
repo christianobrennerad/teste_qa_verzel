@@ -1,0 +1,772 @@
+[
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-inicio-json-65f752625725f7a8e1c6813ade1435b2dd304952.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/1-produto_nao_encontrado/api-inicio.json",
+    "sha256": "efc84f532d18dae44a6507c018a407531115067ccdf72b2ce3f6196772fa0c96"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-requisicao-json-659e8e7465026cb5179deff47f90f603a62d3a94.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/1-produto_nao_encontrado/api-requisicao.json",
+    "sha256": "2a6158a21e2c8c2337a25e5b9048acac092875c8185e7d30582ed8299d5ff25b"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-resposta-http-json-e422cff84ed5a883de8395ecc4396a52f57ea6ba.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/1-produto_nao_encontrado/api-resposta-http.json",
+    "sha256": "1d7e5aa74d27a8c2d6c37bbf28338665b046493db17929f20855190bc7db584a"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-corpo-recebido-json-75941215973aa83d5b7e55a098f6b5acae4b6a4e.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/1-produto_nao_encontrado/api-corpo-recebido.json",
+    "sha256": "1fc5de0a24bfe68b4903cd2931051704ede95590d38d0266e78f4d3968bdb9df"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-comando-txt-b557e6dea9798aae357aa9977c7d5c7e7747adb6.txt",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/1-produto_nao_encontrado/api-comando.txt",
+    "sha256": "3b68e99ef23d58acdb9a1387697b01fe4cd75e6d8d29b68f9669e131e944a129"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/validacao-json-5b944b9ff5b028c879c2ce716830cb5b0a3c5476.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/1-produto_nao_encontrado/validacao.json",
+    "sha256": "17db54f579337f7ca4f1834ef6259a91f2663c8a042319540272f4434a63d1c5"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/error-context.md",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/1-produto_nao_encontrado/error-context",
+    "sha256": "30deb3c22887dbda28cc97fd72b4c24837f432f80bddb20bfda7c9ff901ee090"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-inicio-json-5e012f63dfbbc033662074aaf167272131a05b45.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/2-rota_nao_encontrada/api-inicio.json",
+    "sha256": "307ee7ab1b9a1eb5335ef3458e9ed9ce95df2a96c15c933241bc2535f8da4035"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-requisicao-json-1633d8d300088989f225d1ac01c15a9efd5bd78d.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/2-rota_nao_encontrada/api-requisicao.json",
+    "sha256": "333e0a070279a9ceb5284c400f5d71e0cdc3be4d641449ea59591d0b4cad8788"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-resposta-http-json-a5ba1f8a2f6f51bfc000988e09dcdd7464289335.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/2-rota_nao_encontrada/api-resposta-http.json",
+    "sha256": "208517b76e34920dd060f1eb4787697f8b4e37d5505e535eacc31410e0add54d"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-corpo-recebido-json-305c5447ad2ccc42ee113f7977d828e659eda057.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/2-rota_nao_encontrada/api-corpo-recebido.json",
+    "sha256": "6c3c13d855c4333dd53a66dfecd718ffafdaf2a9c21676ba3060e7c73f60df09"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-comando-txt-5b442147e2e663e38b80695a55c5031585744020.txt",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/2-rota_nao_encontrada/api-comando.txt",
+    "sha256": "0b4e8cd82605bd9ce9f4e9575a3ed387df1c46f5f4f525ec6957c9b926ff4cea"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/validacao-json-491b6ced90de1f8189a9685a9dec0a5909f3ccd1.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/2-rota_nao_encontrada/validacao.json",
+    "sha256": "514ab2a937602a523f61d541a14ec92a6afbf8d164fd05fcd4f580bbbe0002e5"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/error-context.md",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/2-rota_nao_encontrada/error-context",
+    "sha256": "350c284c72769a06740d0c0ec722b661de635bef13fb28008045c0521b1233b5"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-inicio-json-398405417113b555be5895303ccc1a1ca9b48ff5.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/3-metodo_nao_permitido/api-inicio.json",
+    "sha256": "ded46b987e67e316de17a9b981416c4c0439cf96bdea07ebb39709888c333612"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-requisicao-json-4f9c2ad6754ca3a0edb57c3721c17422f369ed0b.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/3-metodo_nao_permitido/api-requisicao.json",
+    "sha256": "6306377e5be6cca2147aa323ceaf15c61579870a70a339125b01d7e3d82b7db7"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-resposta-http-json-3bb1df4d0db9dcb24731ee67b56c9524777228ee.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/3-metodo_nao_permitido/api-resposta-http.json",
+    "sha256": "7d5ae53d4b3dbf22560dd1e56bb039900031371319a18b67bf0762936e0d10aa"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-corpo-recebido-json-ce95bc37fa6ba4fa66559c1c312776a15ecd49d4.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/3-metodo_nao_permitido/api-corpo-recebido.json",
+    "sha256": "24ee4b47f1e66b45e8647f00c6eaf62fe4cf5b491172586c40e9e1e6409bf056"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-comando-txt-0c87f1d25b8d5b01df8673395a5384fa39abd9a7.txt",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/3-metodo_nao_permitido/api-comando.txt",
+    "sha256": "ade1413653a45799fa85363cbeaef44f1f5d7c91143ffa843cee45e946cddea4"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/validacao-json-49e4e025c3ed265187beae9409bbdbb69510cece.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/3-metodo_nao_permitido/validacao.json",
+    "sha256": "e5b5d7aaea2f40b95f4f2cc683c9e1a05a7de33d5beb76ce655404597386488b"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/error-context.md",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/3-metodo_nao_permitido/error-context",
+    "sha256": "6cc09b1a63bddc51d2169ff2cc78e1d19b7e28740ae4f1759bec7ba53f548df6"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-inicio-json-b4815e6971ff45beeb2ef071452c7ecf898a2ec3.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/4-metodo_nao_permitido/api-inicio.json",
+    "sha256": "813278c0ef4e8eeb201d0ba7149582e7ffdd5cbfd8761dc4552a892525d6f246"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-requisicao-json-e485ab47b89cc3dbc18a429c63f33c1878bcd8b1.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/4-metodo_nao_permitido/api-requisicao.json",
+    "sha256": "7274c31ffee983af5331a831cc0198b418f3c91b70db0c5a8a601fa1f867d059"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-resposta-http-json-05c186dfe3807baf4cc633156ff42dc001de3081.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/4-metodo_nao_permitido/api-resposta-http.json",
+    "sha256": "d31fd41aa762b5425c34de85c1643105af378763123b5cc7aa7e19dec722ac5c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-corpo-recebido-json-8f5e995eca9916086993172430e2ef6327a0a5f9.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/4-metodo_nao_permitido/api-corpo-recebido.json",
+    "sha256": "21e49dabbe06f7ca901d78d6525ab5930e627a19b352f6fc01cebc8b32138c4d"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-comando-txt-8e470b312de119c37b08deea519558af14281dcf.txt",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/4-metodo_nao_permitido/api-comando.txt",
+    "sha256": "c976985081922fce7770a42dc7878f2e728086cc2db3176290aa843bd1d0680a"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/validacao-json-647cd4f2d435e2ba6a95d1237f8d4f194dd348e7.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/4-metodo_nao_permitido/validacao.json",
+    "sha256": "c11fb7caab62a8c34b74b6e976b958482b9f154c40edd89410a6b00dacc7c9e7"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/error-context.md",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/4-metodo_nao_permitido/error-context",
+    "sha256": "d5d768f741275fe25733b0a42654e05b7be687d4c790e29468947fc5216d505d"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-inicio-json-8c2f3b7f2a396df1d41a884d4968e7ad43991943.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/5-metodo_nao_permitido/api-inicio.json",
+    "sha256": "7bcb464e85eab09d007f89932fd4731fccd2ec0172a3835bb7458ab74b078299"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-requisicao-json-d85258ba4422af6ee8eb7d0f0d3af554e1f221cd.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/5-metodo_nao_permitido/api-requisicao.json",
+    "sha256": "0b1e3660860efe2897e3c0f80747e219526652e0a43d00bcd54e1f4eb69d125b"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-resposta-http-json-48738458b85317c8d5dd39b6998ccaa6c443e50a.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/5-metodo_nao_permitido/api-resposta-http.json",
+    "sha256": "1dd903bf6f173a3abdc3f5a99a962774cf1bb9127c6adda93c843daeb8c37ffe"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-corpo-recebido-json-2d79d800c8d5fd181fd6afc389c74f0626bb424c.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/5-metodo_nao_permitido/api-corpo-recebido.json",
+    "sha256": "21e49dabbe06f7ca901d78d6525ab5930e627a19b352f6fc01cebc8b32138c4d"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-comando-txt-5fe2f3381f38d1571adc5da7ec9ca1ea84da5ab1.txt",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/5-metodo_nao_permitido/api-comando.txt",
+    "sha256": "9759c9cb400d98609e114bb2b4f92e6c6350d3af1816e6065e6202d58268fb66"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/validacao-json-3ab93184266ae4fc5ed8b4c84201b64528933391.json",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/5-metodo_nao_permitido/validacao.json",
+    "sha256": "4c26963489f40fcecdb7ce265c99d5e721237613a6682d247edda95d741a60d9"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/error-context.md",
+    "arquivo": "reports/falhas/evidencias/erros-rota-metodo-produto/20261009-165827/5-metodo_nao_permitido/error-context",
+    "sha256": "06ed66afa0437b34ec18c117db80973e8dcb0bf60653fce300256227fff645e6"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-inicio-json-b3bf6b604258e436d5a91df19ad9c17d41cec24b.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/com-hifen/api-inicio.json",
+    "sha256": "4a874ac6dd742760acf28874a86108f935d88b566b16362c62580622cfe15406"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-requisicao-json-336bfdd0622d7c31b11c61d70eec59afd6c86e38.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/com-hifen/api-requisicao.json",
+    "sha256": "6586621b25752b15f3f95737e82af4b6728ead359a16f6cc3b407c80f2cb2441"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-resposta-http-json-83fb6c971ee02ed8081ee569bd9bd6cdc31720e0.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/com-hifen/api-resposta-http.json",
+    "sha256": "3e56c92d79ea580d5be060066a93372df08bd8f8b82938e64656d92225fafb8b"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-corpo-recebido-json-c8e6b1e63cbe4be1763b6d2c9079187d6413de51.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/com-hifen/api-corpo-recebido.json",
+    "sha256": "0ba848d3ff986f54a28e4c68ac9e1fad56038627967f922ba36cbea38e9d33bf"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-comando-txt-3ae963b5b38a2ff9c47b566ba42e96178ba2a3e6.txt",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/com-hifen/api-comando.txt",
+    "sha256": "1d53b377eb6d8ae5a0924562a8c509461a4ffac8e2b50c5d3680f3aa18da52e4"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/validacao-json-0e0b1e402828fe26eb90557674fda821e725ee36.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/com-hifen/validacao.json",
+    "sha256": "9dee024aabf1fc705fe19432c088012118a173eeda32bc3a858687f7ccc3ca1c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-inicio-json-80dcef5fc6d0042040df9f5b268333fc3670f74f.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/sem-hifen/api-inicio.json",
+    "sha256": "eae20ab141305221a0309095022e18ef5acccac4f75d4857f6ff28b090710365"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-requisicao-json-9fb085954c870c9833c5e52b2ad739dc63abd25b.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/sem-hifen/api-requisicao.json",
+    "sha256": "e22c5211683836a39702349cee03fc2b2aaa2f8395a073c9cd5fd4ce44921ae5"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-resposta-http-json-18728dfafa6b336fcd448c6b6829b62407d5a069.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/sem-hifen/api-resposta-http.json",
+    "sha256": "6ab94aabd800c2c163e3ed1d0351a95dd815dd72be0dfbc08a8460fc638f9c16"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-corpo-recebido-json-739f4ad6d90da9e5887dca8818ff17c98b53ca9a.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/sem-hifen/api-corpo-recebido.json",
+    "sha256": "39e8931a9d83f5d6bcabc66ee73eaa2e98cfbb3104c15f963b122898f6142db5"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-comando-txt-f1988412fb53c6aad6fc7de999cde027912eaa33.txt",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/sem-hifen/api-comando.txt",
+    "sha256": "d294920a783a7a62c735d8da52eb789624acfa801b57a178f0eefa5e0a06d3ea"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/validacao-json-4d91e6bb2633d7bc5d96cfe8db310605b60761bd.json",
+    "arquivo": "reports/sucesso/evidencias/pedido-cep-formatos/20261009-165827/sem-hifen/validacao.json",
+    "sha256": "b5fa53960a26dcd9ef1203dd01a277c88a769c8e0991d5b9b1c67de9e5ea8f82"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-inicio-json-1cd6f5e1fa68c469b47cf229b90675e39eddc180.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/calculo/api-inicio.json",
+    "sha256": "08bf9a8c0842ed091dc0b0614292da053bac5894b344222c8d4f123bf0951cf1"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-requisicao-json-4558812bce732d4ee452ffbc1b6e1df66b89c71d.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/calculo/api-requisicao.json",
+    "sha256": "896d1cb20f8b37b190860456b09599f499d81b63e8259d49c1ad430a1715a862"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-resposta-http-json-25f725d562ed511386f28ecb2170fbeb0955cf3f.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/calculo/api-resposta-http.json",
+    "sha256": "a4ca44eb1fa3ffcdbe5eb4370eaaf65cf4ebc2ff2ccf0ef1cd4d9c3e5b4b6336"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-corpo-recebido-json-01f393e2371b2f15815c6a6d1444266c48743b85.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/calculo/api-corpo-recebido.json",
+    "sha256": "59e1e4b1e9c79dc07420e0a93fc9df2cc064e55ed5699c6d36d2fe4576efc289"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-comando-txt-e6dbfcfa737f27136a314e58870f0b445a330e0b.txt",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/calculo/api-comando.txt",
+    "sha256": "d1c2d554b096581fc83d05bd0574f4989d0ea4648e61364999aa504759b64776"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/validacao-json-c4d88f8e05c308695fb9c6de767c1c3c8263119e.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/calculo/validacao.json",
+    "sha256": "435ac4d6d650621855bce2bf82c3d47854fc3cb069bd67c904fc5c436ae320d4"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-inicio-json-4c07156351ad2a78cfd3ae28c8442b1a4e84ada3.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/pedido/api-inicio.json",
+    "sha256": "3253911d058cdb2b9bb219cdea782e7a6aca8d57ec76029fd2e772f771f0bb9c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-requisicao-json-b3ef78081af8c70b65d22c6861035bfbc72d57b2.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/pedido/api-requisicao.json",
+    "sha256": "9c9d766ec83d003620d1ef5541b14ad3be9a40b8a489235fdf05a6bae55f2b86"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-resposta-http-json-d26c2192e7613c76f6bcf648e73861fd059ea9b8.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/pedido/api-resposta-http.json",
+    "sha256": "e1e4edc3be0822cb9873a11824b8ed82f20c84218cbea4ea28edf8acabc7aee2"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-corpo-recebido-json-1b94feeed730115b8b54829d1eb8aeaac14141da.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/pedido/api-corpo-recebido.json",
+    "sha256": "59e1e4b1e9c79dc07420e0a93fc9df2cc064e55ed5699c6d36d2fe4576efc289"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-comando-txt-2dba766493b9982cba2b772989316b8af7101c5f.txt",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/pedido/api-comando.txt",
+    "sha256": "35d9807f5b5933c642f228651e88f9a7da004ac8ed2ce24d24206856a50f8b1a"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/validacao-json-bc80239ab9753fbbd60048f55ce89765c7cb84c3.json",
+    "arquivo": "reports/sucesso/evidencias/produto-duplicado-api/20261009-165827/pedido/validacao.json",
+    "sha256": "319f0ca1cce26f30105446701d5864830fbf8a4645866e531784a91fb8e2af91"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-inicio-json-ec68b7d7b9588d184878a882ee876b605135677a.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/api-independente-inicio.json",
+    "sha256": "243ee0c4b909d06053d62cd207a1d901e73dcd9072245a4ea09dfb40548a8826"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-requisicao-json-db67f720caae5b5b59fb210795ee427e4f20a612.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/api-independente-requisicao.json",
+    "sha256": "2cdaaac2ef6527f02f672a48af5512cd4d0524eda960d35b793739fd20a42514"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-resposta-http-json-78ae7ca3cdbf33944225de0641a2c12715bb39d3.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/api-independente-resposta-http.json",
+    "sha256": "0b3abb889875637396f9e3dcb52c656ba3ab4755a513432d04fbf380d93e878a"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-corpo-recebido-json-112b8a16b0a81472d0cef92b4e0d5c032bf452c0.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/api-independente-corpo-recebido.json",
+    "sha256": "010238cee850d5f5676f37e8908e710f54084d5a9a0677b6acf2069d3b2f94f0"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-comando-txt-9f44699f3262d1b87e119bd54d094facb6c02085.txt",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/api-independente-comando.txt",
+    "sha256": "5c3f8f8f653333fce55825827a88a5a392a1125f70fbadae6f79fcc805a6563c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-estado-interface-json-9bdf31e2b077006ee09c795e48f52de9d7318fe0.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/antes-do-cupom-estado-interface.json",
+    "sha256": "f9abf83d353dfe0ec501278babc80c585dc19955f20db6e871abd73aa56f7dc5"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-texto-tela-txt-c66ce09465aaa560fcdf3d178c8e959855cca59b.txt",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/antes-do-cupom-texto-tela.txt",
+    "sha256": "1d12dacd6813b49c369bc445526e1388b765b487240c647ff82ed7baedd18f89"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-tela-png-ea0ac8f50e00edf68abc6082d349373b1acf869a.png",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/antes-do-cupom-tela.png",
+    "sha256": "2f4988254d00e497c555bbe9c340b9349ca3e584068392084a1ac0830a30a3e0"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-requisicao-json-63a5fe204e21d1640545631df4f375d0626b41e0.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/api-interface-requisicao.json",
+    "sha256": "d93763cf2e12529d1ec41e37d78957d71867f0016062595598efe6de273e5ac0"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-resposta-http-json-ce6b7e8fba65d35805d0e341f83ab2a7bca7acab.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/api-interface-resposta-http.json",
+    "sha256": "8e0693bcff9579eb39ec26f41f70fac3e8642a2bb8affc941ac1bc0108a20c6f"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-corpo-recebido-json-df15f998da369e5b46242ec9a63754fcb9313b8f.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/api-interface-corpo-recebido.json",
+    "sha256": "010238cee850d5f5676f37e8908e710f54084d5a9a0677b6acf2069d3b2f94f0"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-comando-txt-140f3b7757b8a263aafebb6d71fbff6998143277.txt",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/api-interface-comando.txt",
+    "sha256": "5c3f8f8f653333fce55825827a88a5a392a1125f70fbadae6f79fcc805a6563c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-estado-interface-json-bb7b755e9edce06a5c0b499caa4b6e09f97eb60e.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/depois-do-cupom-estado-interface.json",
+    "sha256": "8bb353a94314863a1841806efdb52e173264494b3f0f842bedfa046469f4e06e"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-texto-tela-txt-84be739cd024d078c7dca50faf0dbc939ae2d653.txt",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/depois-do-cupom-texto-tela.txt",
+    "sha256": "d638d64c2be05c2148201c8ca66926fed68e9a9abda96cea5adc908d80cab5be"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-tela-png-0fa40f892be5d555899f4890109cf91b0258c094.png",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/depois-do-cupom-tela.png",
+    "sha256": "af7b1e564a9892db99b7b9e388ae269a609d2ebb4ba0c5ec2fa7c6e8ab5a642e"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/mensagens-interface-json-69a5e8bab369b409087c33851cfd87c8b2ea784c.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/mensagens-interface.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/validacao-json-9a84724bdd8da27ef1844da5fa05f304e3fdee09.json",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/validacao.json",
+    "sha256": "be10b6fa455162aecbda2463a9a7a8030380ad8f8831bfc6c950cef77bb9cbdd"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/error-context.md",
+    "arquivo": "reports/falhas/evidencias/cupom-desconto-produtos/20261009-165827/bemvindo10-P005-1/error-context",
+    "sha256": "364a5c24a3121150e2a47e6974f6830a53f4b7adddc518ea0c716ecb3a8e14f2"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-requisicao-json-0d6807a1e6ccf184040e66e0d6541bc279b7ecef.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/1-quantidade-1-api-requisicao.json",
+    "sha256": "075cb03db01c7d49ef98e1f9bf91ee27f2705a5bfe8eb0d9188ec6077fd43c4c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-resposta-http-json-624815b9792d43f429dd97fd794cfb918a482d81.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/1-quantidade-1-api-resposta-http.json",
+    "sha256": "dd0768d51b6ec43df374116f1ae6ee33e4a2beb9cbf9eab744d63fcf447fbd3b"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-corpo-recebido-json-f8e11e9af611d7ec661ec5eb36ca1d69d25e95a3.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/1-quantidade-1-api-corpo-recebido.json",
+    "sha256": "010238cee850d5f5676f37e8908e710f54084d5a9a0677b6acf2069d3b2f94f0"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-comando-txt-343336d3f7623180caa85ae62dffe2ccc459b81b.txt",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/1-quantidade-1-api-comando.txt",
+    "sha256": "5c3f8f8f653333fce55825827a88a5a392a1125f70fbadae6f79fcc805a6563c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-estado-interface-json-677d365991e2ac64879fc0e8fe4b1f9a2eb6eb89.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/1-quantidade-1-estado-interface.json",
+    "sha256": "823ac6cf4cabc13a612d05172d1b1fae8de0596fe794211089fd633bd8497a54"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-texto-tela-txt-e5edc97140e89b247d921dfc6225d4005e4b8fd8.txt",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/1-quantidade-1-texto-tela.txt",
+    "sha256": "d638d64c2be05c2148201c8ca66926fed68e9a9abda96cea5adc908d80cab5be"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-tela-png-26ab62931a18307ff1ba54038d5ac4ae2b4c0ea7.png",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/1-quantidade-1-tela.png",
+    "sha256": "af7b1e564a9892db99b7b9e388ae269a609d2ebb4ba0c5ec2fa7c6e8ab5a642e"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-requisicao-json-7093bc74857d14a87f60a052c9a32ed93f638b47.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/2-quantidade-2-api-requisicao.json",
+    "sha256": "af723686ca2d6cf0574a99fda55a5720a5ca7ab00bc299694bb3d96f77b506d7"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-resposta-http-json-57343eda82653ae1bbc64039c26629b17c5acb43.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/2-quantidade-2-api-resposta-http.json",
+    "sha256": "78d887fa361403b030f2be59582d64ef53c0a263fca16ef1b5d05a130ab0e043"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-corpo-recebido-json-a4097a8d91db05e9dd386595b4a973100be87680.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/2-quantidade-2-api-corpo-recebido.json",
+    "sha256": "cb9c7d72d591e967a531cfbb951aaca262852dc632c823bda13128577d9b07bf"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-comando-txt-721cc45e5b6116b548f90fe7f2c29feaa51edc2f.txt",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/2-quantidade-2-api-comando.txt",
+    "sha256": "b66b502bf0bf7e27b31dbc86979cf4499fff8024154c4826715414532cffaa6f"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-estado-interface-json-593e364e505606517d6b18989a70e77a1e410caa.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/2-quantidade-2-estado-interface.json",
+    "sha256": "9c5f5e8b6d3cb4f36d62824dc76cf4bf7899c83445058dc706f08c6fe7b233ef"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-texto-tela-txt-011b3ee6ab6e6ed01658e689eb84d0dbb446d94a.txt",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/2-quantidade-2-texto-tela.txt",
+    "sha256": "e6c3d34134881bdc655583c39b6fecc7d2afdf9c14737de51a990f31989c308d"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-tela-png-f13a71507c0f85051ccc25d435c4e56495bd05ce.png",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/2-quantidade-2-tela.png",
+    "sha256": "3c3620aa44ad14b1cc0d0fe2c8c5b8a4ae1773ea18928e946ad06131691d9457"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-requisicao-json-cf45a7fda8c023e0de45defd3af5a1b84fd50352.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/3-quantidade-1-api-requisicao.json",
+    "sha256": "7622c4497e599e724040cae8ef12e60ce7a6955522be7f3c2f40d1d2e6b9202e"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-resposta-http-json-1b211dfc744f843cfe0abfa3442bedc86a85ad63.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/3-quantidade-1-api-resposta-http.json",
+    "sha256": "93cdcfe37a5db27f6a25d8e991b83a5b208af872a1b5a5f36ab00e099bb9f4b3"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-corpo-recebido-json-7c8d455399a274f4bf9785f466cd4f496d8a4d45.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/3-quantidade-1-api-corpo-recebido.json",
+    "sha256": "010238cee850d5f5676f37e8908e710f54084d5a9a0677b6acf2069d3b2f94f0"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-comando-txt-e116643df573c3348f90673677b2acd14e3bc6e9.txt",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/3-quantidade-1-api-comando.txt",
+    "sha256": "5c3f8f8f653333fce55825827a88a5a392a1125f70fbadae6f79fcc805a6563c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-estado-interface-json-a286fa3c2a81ff126e9e26d45eecb91c3dec70b9.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/3-quantidade-1-estado-interface.json",
+    "sha256": "f53b6afb33030e62d8b9788d4a49c709159fdaa66485f6b636e746dcbb5c7a7c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-texto-tela-txt-a2d87957a504db34577528c3bc8fbc9433532775.txt",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/3-quantidade-1-texto-tela.txt",
+    "sha256": "d638d64c2be05c2148201c8ca66926fed68e9a9abda96cea5adc908d80cab5be"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-tela-png-1e235f7f6839f88f07fe9872ae72afd8ee9ef447.png",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/3-quantidade-1-tela.png",
+    "sha256": "dd2cfb9a08e9f10ddce515b53f4d1c7b3d7d951059d677c54cc5c535270314c8"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/validacao-json-6bd8c7f1b1f1bb204a4d563bd4c040ade0cd4ca2.json",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/validacao.json",
+    "sha256": "724c999ff757b01fcca4e622d64691adcdbebcf28041d9f7ec35dc75fddb4346"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/error-context.md",
+    "arquivo": "reports/falhas/evidencias/frete-alteracao-quantidade/20261009-165827/quantidade-1-2-1/error-context",
+    "sha256": "3b59f0a5c3b7a5fa366de52a4c91dbc609eee3ee1535495bee92a6d8b421f0d3"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-inicio-json-683e3491d9712769df5be4323ec1b920fccabfc5.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/api-independente-inicio.json",
+    "sha256": "6af36f7bdd73a0abbaa1c02bc6e311d946473b8e273a7b5bae6960cbabc79001"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-requisicao-json-42646a6ece66813ac78c87c377df7d32492a1e33.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/api-independente-requisicao.json",
+    "sha256": "e7e640cf351fbfc1f6b9a53f711b046d965f00508a1ff33fc6594621da28d7fd"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-resposta-http-json-5ac9d009bc03637ad7aba2d2911fe683c1977781.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/api-independente-resposta-http.json",
+    "sha256": "4aa24e7bbdec36d28d8cec9b4e71638126367e5daf0565d627a42fdfbb990dff"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-corpo-recebido-json-0322b197253d5701c6cb48550116abca8a67e312.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/api-independente-corpo-recebido.json",
+    "sha256": "0f5ccb3d55664b7753c74ade1b93aa8ea08ca1406935a34921dde6ca030d82b1"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-comando-txt-87e323a4c8f8866b8d903eb3e07b267ef572b45f.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/api-independente-comando.txt",
+    "sha256": "c45efbd1a3ef15db9ee14e74bee014c066f5070d56bf71d03315341ffcab8f90"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-requisicao-json-7d1b075a70669e536aa66505737480f0cc443346.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/api-interface-requisicao.json",
+    "sha256": "52b379b622653c8daf54c82cdef9d3b323c8a22c7874df58fe5c8c0eb9d07467"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-resposta-http-json-07c49a72bc6a4816ec439661a03d243e39766132.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/api-interface-resposta-http.json",
+    "sha256": "10e9c75d853665f4d434e116e7fdc6923c50c8ce32846d2ef406abbacdc4191d"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-corpo-recebido-json-c9b4e92e33b8fb9b341745c9f79fcd7db7b27154.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/api-interface-corpo-recebido.json",
+    "sha256": "0f5ccb3d55664b7753c74ade1b93aa8ea08ca1406935a34921dde6ca030d82b1"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-comando-txt-b70e0da367cbf0046242f0e6c610cd96ca953ed5.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/api-interface-comando.txt",
+    "sha256": "c45efbd1a3ef15db9ee14e74bee014c066f5070d56bf71d03315341ffcab8f90"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-estado-interface-json-a4affadb5d5291f34ffb3b125530652a838032cc.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/carrinho-estado-interface.json",
+    "sha256": "78decd7ed208c2ad1ffe7a8af45273432ee5358f286dd3933c039d39400bbf7b"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-texto-tela-txt-e39bb33acc1fd22cac68ac3cad780516f9473d68.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/carrinho-texto-tela.txt",
+    "sha256": "8f2fbdca0a45b3328efc54263387b24cecb0192e68f1a37c989e9eebff656cb6"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-tela-png-4e88a1a9d5cde61b3392740595662d0767616b68.png",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/carrinho-tela.png",
+    "sha256": "842f867009d42a60760ee8a919b9faf8210443f7e5c3a19bcaedb8ec74795ffb"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/validacao-json-0ad618c53e68aa3c3715575434b81a0b88b23271.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P003-1/validacao.json",
+    "sha256": "4e886f0e19abe9f0adb33e63f723d82eb734e7634467eb4b593cbbfeefe45b32"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-inicio-json-88b3bb6362b79c285689cfee573d37e25f47776f.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/api-independente-inicio.json",
+    "sha256": "a5656f72a465497b753ee9787bf6b853e7a5f45af775db25d8dede5781a5ad09"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-requisicao-json-292a9770454054b73bc493f768ef6c81542b0b84.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/api-independente-requisicao.json",
+    "sha256": "3f522ea066d99d10182a091ed347b2ea03a551825bf4cef6992ddfa4511c09b5"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-resposta-http-json-4754a99aa5b9d1e813adb063d2a69fa02bee71e9.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/api-independente-resposta-http.json",
+    "sha256": "e08bb40950b53e7e60e20512725009270cc58817d174d9dbfb777b28a45dc463"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-corpo-recebido-json-5ad237462165dfbf78834ed769829c533d1b69f7.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/api-independente-corpo-recebido.json",
+    "sha256": "53a3e5ea100ab278f0c9c1b85bb75569690d67db42a552292d5e17f4d354468d"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-comando-txt-1c7368624c19c25425046b8c2d507abd235ae98c.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/api-independente-comando.txt",
+    "sha256": "17309c6ab010bdad354de8b3395f80be364714436d476ab5653a759f9a61eb44"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-requisicao-json-b97952a0b9ee64e2e7a03e9c3f400f516026f577.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/api-interface-requisicao.json",
+    "sha256": "6cf049bc75b9ea55ab2f55d3f1956ef3d361af94bb95884e9b291fd96610d80f"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-resposta-http-json-5048eb1a60ea875fadd441c1cd36b9316a954289.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/api-interface-resposta-http.json",
+    "sha256": "036fd0653433b014b4d1afd4405d407bb68eae65638de1a601f5c5ab3019539e"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-corpo-recebido-json-7081bc466996ee9f90b284e4b954157ea5103a5e.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/api-interface-corpo-recebido.json",
+    "sha256": "53a3e5ea100ab278f0c9c1b85bb75569690d67db42a552292d5e17f4d354468d"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-comando-txt-ecf10fb84634a073ba930741ec24c0e89390a27c.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/api-interface-comando.txt",
+    "sha256": "17309c6ab010bdad354de8b3395f80be364714436d476ab5653a759f9a61eb44"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/carrinho-estado-interface-json-0dc66162716ef17dcacdbb274ab0b31a8f9da580.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/carrinho-estado-interface.json",
+    "sha256": "358d15ea405188daa2f910dc1c1c7b97cceaa9de6fae82b4b2ab28dc4145aac3"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/carrinho-texto-tela-txt-108703ccfd1acb2646bc3cd2cd65d46c5c5d1a2a.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/carrinho-texto-tela.txt",
+    "sha256": "270d1cbf84e8feafa9e3de01da3a34f4f37149fb9024da16ec75b013d8c97e53"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/carrinho-tela-png-46fe94e4bf0140d6d634123753dc31c7c87d4ee7.png",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/carrinho-tela.png",
+    "sha256": "e3eea410f7466638356b4030d1c03ae7fb23e23662a4bb684f4106010dead904"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/validacao-json-422279b8239abfd63a1af6cd325fb64170b04020.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P002-1-P001-1/validacao.json",
+    "sha256": "001c60d8149cf0d04ceef5db4c6ef3870f9a55b687b68f2a33a138f063395942"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-inicio-json-5cf4a6753ce730533f37dda8c9ab6a150b70abb8.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/api-independente-inicio.json",
+    "sha256": "94f3ac916afeae123ff9eb062d71962c3a1b8d22c8936bda78864f8ca3011f2a"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-requisicao-json-17dd519376eedf74e2e0fbfa963ab762aa40c80f.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/api-independente-requisicao.json",
+    "sha256": "8667759832f77047057fecc343d1d6c1711e84f83518ea91ea3a59c278500bcd"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-resposta-http-json-714338f695b0223df2e88be61e3055d4a3257010.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/api-independente-resposta-http.json",
+    "sha256": "fa6a647dac7f49ad24c1ec7962e8fb53eee428bbe709bf07b86331540cebc09a"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-corpo-recebido-json-729d27e3dc9a51889402fb1a25c1c3aa2be15536.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/api-independente-corpo-recebido.json",
+    "sha256": "80af9eba078a014a06246d4acfdc7225d32e09fff797c9e56f26eee03fccb046"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-comando-txt-a591f1cba1fccbd4d48c2cc0ee2a697e79d8ef74.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/api-independente-comando.txt",
+    "sha256": "d4abbb11d131631a500a4709ddc75b68d99a20482d2a5868d600c7cb0b416d74"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-requisicao-json-6887bd727019dcf76cc1ddadc2e116b89e00ed76.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/api-interface-requisicao.json",
+    "sha256": "41e4f5580dade1af87b8a200b0afa0cce5c971f89f01d59a3953811a0b672eed"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-resposta-http-json-4262aea1fde2c085e0c635e914cc600a14bcd9fa.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/api-interface-resposta-http.json",
+    "sha256": "31bbaa7365950d1dca28c4430ba924196ac14be7d151e91e0ff3ec54ed8734c8"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-corpo-recebido-json-e101af17f1e9b78768c60adf5642d8258a2d5e89.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/api-interface-corpo-recebido.json",
+    "sha256": "80af9eba078a014a06246d4acfdc7225d32e09fff797c9e56f26eee03fccb046"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-comando-txt-221fe3f069c74d2a7c4fdba438896466ccaf05f0.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/api-interface-comando.txt",
+    "sha256": "d4abbb11d131631a500a4709ddc75b68d99a20482d2a5868d600c7cb0b416d74"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-estado-interface-json-f6677ee7131661bb8944270224d00058afbcb18f.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/carrinho-estado-interface.json",
+    "sha256": "ecd37630103a7496fb8ab1a1234ae65bce51fd4ab5d02701c20edf5cc846430f"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-texto-tela-txt-0145ab5b999bac5103a1bece2595e846505c9d64.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/carrinho-texto-tela.txt",
+    "sha256": "f127573e209ea6b554b627df6f2bfd9ea53696d8990a27016769d11272e3b398"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-tela-png-d93e5f90a44b9eea0bc67c01bce2eae7fbe2147e.png",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/carrinho-tela.png",
+    "sha256": "39c488fd442d2ab9c71eb87f8c572ce252b9bcee70fb9a55109e4fd4ea73dd1b"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/validacao-json-c6ae287f323376f232c6eb43011fdf46b6e2aedc.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/validacao.json",
+    "sha256": "6e969ac981f8eb77abc17ed94d0a274d183bc17964ecfd563e17888ea4fc1294"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/error-context.md",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P005-2/error-context",
+    "sha256": "e2765f8c59ae447d9965168bdcd5a0e273c3887f4cf51c3db7f05e3914618069"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-inicio-json-54a4835fb0c749caa90418db24089a028a66f09e.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/api-independente-inicio.json",
+    "sha256": "216746f776582a0566b659d37f31514a0dcd58bf5032a5860f395f0d1bc956b3"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-requisicao-json-badac2f411b1a314bc98f045d24c928215294e62.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/api-independente-requisicao.json",
+    "sha256": "a0c0e45cb219cdbf3c1fe6ddbb52ce80258dd432e6fa132cfcbd4c84d83b565c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-resposta-http-json-d3c82f90ea441a68b68e33f4d5d110542ecc504d.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/api-independente-resposta-http.json",
+    "sha256": "9a1a15fb0298367508afe83c2048950bda5e8165f951ccb30e92ec801c1fde80"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-corpo-recebido-json-45e16d537b8dcb8aabb0924a900070b9b7a8898f.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/api-independente-corpo-recebido.json",
+    "sha256": "d8aa345d572249d780305b12700b57e44a79c468cdb05a09fdf3701fbf839f31"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-comando-txt-e2b0bafeeff2e12b39f096b4493542a82a0f32e3.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/api-independente-comando.txt",
+    "sha256": "f2830678c7c66e09dd0b4bd1321f89ae65842fe4305f3ccd0f4674a192e7d803"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-requisicao-json-fde571902cb12615afb29bdfbff55cacbf25229f.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/api-interface-requisicao.json",
+    "sha256": "52baf7f0ca7177d933ddc9e0a7b3cf3edae58abe35fa46f7e2f50c0cd6499ff4"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-resposta-http-json-4ecef17eaa590d7d8899999cfc32d7740aabafa4.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/api-interface-resposta-http.json",
+    "sha256": "4afb62d66cd7c964cb7b17f546fcad744b17f4e3a1e4d5068d885174096ff446"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-corpo-recebido-json-f50a843b99cb698472551fec55694720cf17a077.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/api-interface-corpo-recebido.json",
+    "sha256": "d8aa345d572249d780305b12700b57e44a79c468cdb05a09fdf3701fbf839f31"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-comando-txt-842ed948e3864f83728c93732e7d264cfaa02d5c.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/api-interface-comando.txt",
+    "sha256": "f2830678c7c66e09dd0b4bd1321f89ae65842fe4305f3ccd0f4674a192e7d803"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-estado-interface-json-fdaf990abd14340f2e8ad8314e1eb2fd2c3909fc.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/carrinho-estado-interface.json",
+    "sha256": "6a56ca3ef545bdc1ddd16b42cb13ae90d2d71903a8e466c052b0d5aa7c808038"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-texto-tela-txt-53f490d5077fe9afea83e221ad59fa2256b54c8e.txt",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/carrinho-texto-tela.txt",
+    "sha256": "ced50a97c47c434bfcd307cef612601224d571786afa4baf1a9961c395f4556c"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-tela-png-547441fe71e4770869e79b60bf0eca7bf87a4383.png",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/carrinho-tela.png",
+    "sha256": "1a02d5471b23eb4718af80ae04458d98e12c1a2afafa37b7466fb3ec27d7cf35"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/validacao-json-8bd8f93236db6c9812876944e7e3b8968e348cd7.json",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/validacao.json",
+    "sha256": "f385375484b436c19d722f546abb43292306e15bfca805e6dee780c2ff4181da"
+  },
+  {
+    "origem": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/error-context.md",
+    "arquivo": "reports/falhas/evidencias/frete-limites-subtotal/20261009-165827/P007-1/error-context",
+    "sha256": "54f7520d3a2b7d7b93622ca49a8ae4c1cefc89923ec8ea925459cc9188e7e1a6"
+  }
+]

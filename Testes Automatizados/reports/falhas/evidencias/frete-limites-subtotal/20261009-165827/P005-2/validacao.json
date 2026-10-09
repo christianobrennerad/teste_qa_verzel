@@ -1,0 +1,227 @@
+{
+  "relatorio": "frete-limites-subtotal",
+  "caso": "P005-2",
+  "tituloTeste": "Frete nos limites: P005-2",
+  "arquivoTeste": "/workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts",
+  "projeto": "interface-chromium",
+  "inicio": "2026-10-09T19:58:48.406Z",
+  "fim": "2026-10-09T19:58:50.068Z",
+  "timezone": "America/Fortaleza",
+  "concluido": true,
+  "resultado": "Falhou",
+  "observacoes": [
+    "Navegador: Chromium 151.0.7922.173; certificados verificados."
+  ],
+  "verificacoes": [
+    {
+      "etapa": "API independente",
+      "verificacao": "Status",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "subtotal",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "desconto",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "frete",
+      "esperado": 0,
+      "encontrado": 19.9,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "freteGratis",
+      "esperado": true,
+      "encontrado": false,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "valorFaltanteFreteGratis",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "total",
+      "esperado": 200,
+      "encontrado": 219.9,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "Até duas casas decimais: subtotal",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "Até duas casas decimais: desconto",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "Até duas casas decimais: frete",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "Até duas casas decimais: valorFaltanteFreteGratis",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "Até duas casas decimais: total",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "Status",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "subtotal",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "desconto",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "frete",
+      "esperado": 0,
+      "encontrado": 19.9,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "freteGratis",
+      "esperado": true,
+      "encontrado": false,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "valorFaltanteFreteGratis",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "total",
+      "esperado": 200,
+      "encontrado": 219.9,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "Sem cupom aplicado",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "subtotal exibido com duas casas",
+      "esperado": "R$ 200,00",
+      "encontrado": "R$ 200,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API e interface",
+      "verificacao": "subtotal sem divergência",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "desconto exibido com duas casas",
+      "esperado": "R$ 0,00",
+      "encontrado": "R$ 0,00",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API e interface",
+      "verificacao": "desconto sem divergência",
+      "esperado": 0,
+      "encontrado": 0,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "frete exibido com duas casas",
+      "esperado": "R$ 0,00",
+      "encontrado": "R$ 19,90",
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "API e interface",
+      "verificacao": "frete sem divergência",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "total exibido com duas casas",
+      "esperado": "R$ 200,00",
+      "encontrado": "R$ 219,90",
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "API e interface",
+      "verificacao": "total sem divergência",
+      "esperado": 219.9,
+      "encontrado": 219.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "Frete grátis",
+      "esperado": true,
+      "encontrado": false,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "Informação de quanto falta para frete grátis",
+      "esperado": null,
+      "encontrado": "Faltam R$ 0,00 para o frete grátis.",
+      "resultado": "Falhou"
+    }
+  ]
+}

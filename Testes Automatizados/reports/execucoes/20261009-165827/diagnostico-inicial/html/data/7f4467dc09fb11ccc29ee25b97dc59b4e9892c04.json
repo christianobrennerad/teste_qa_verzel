@@ -1,0 +1,52 @@
+{
+  "relatorio": "erros-rota-metodo-produto",
+  "caso": "2-rota_nao_encontrada",
+  "tituloTeste": "Erros de rota: GET /api/rota-inexistente",
+  "arquivoTeste": "/workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts",
+  "projeto": "api",
+  "inicio": "2026-10-09T19:56:44.140Z",
+  "fim": "2026-10-09T19:56:44.527Z",
+  "timezone": "America/Fortaleza",
+  "concluido": true,
+  "resultado": "Falhou",
+  "observacoes": [
+    "O relatório original exige campo no formato comum. A documentação não esclarece a omissão desse campo em erros de rota e método; manter essa dúvida para Produto."
+  ],
+  "verificacoes": [
+    {
+      "etapa": "API",
+      "verificacao": "Status da resposta",
+      "esperado": 404,
+      "encontrado": 404,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Resposta JSON",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Código do erro",
+      "esperado": "ROTA_NAO_ENCONTRADA",
+      "encontrado": "ROTA_NAO_ENCONTRADA",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Mensagem do erro preenchida",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API",
+      "verificacao": "Formato documentado inclui campo relacionado",
+      "esperado": true,
+      "encontrado": false,
+      "resultado": "Falhou"
+    }
+  ]
+}

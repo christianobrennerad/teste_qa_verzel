@@ -1,0 +1,65 @@
+{
+  "horario": "2026-10-09T19:57:00.476Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "statusText": "OK",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:57:00 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=6Z22uMUSLtZDxvi8gCKUN51Bk1lRRHHXH1zQxjsxTwZYNCEH7B6JmvbDgHtmAbt4WyE6wBKeRo3q6E0g1OohcQYZCDpYnMcCiWiDOaKP%2BuHrWsvB6Byc2MedqfBN%2BMGP0ZgLe78vyta8Ymre%2Fj5RBM0ZoaZx7NYz13Gnx7QhZ3Y%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "content-encoding",
+      "value": "br"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff3adae18ad44-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "9"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "transfer-encoding",
+      "value": "chunked"
+    }
+  ],
+  "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P003\",\"nome\":\"Tênis Casual Urbano\",\"precoUnitario\":189.9,\"quantidade\":1,\"total\":189.9}],\"subtotal\":189.9,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":10.1,\"total\":209.8,\"cupom\":null}"
+}

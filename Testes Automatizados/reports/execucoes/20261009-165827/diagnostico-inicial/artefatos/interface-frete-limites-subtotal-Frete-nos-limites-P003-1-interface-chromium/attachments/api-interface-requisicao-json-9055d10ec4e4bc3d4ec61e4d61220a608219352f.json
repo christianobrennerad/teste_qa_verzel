@@ -1,0 +1,16 @@
+{
+  "horario": "2026-10-09T19:57:01.873Z",
+  "metodo": "POST",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "cabecalhos": {
+    "Content-Type": "application/json"
+  },
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P003",
+        "quantidade": 1
+      }
+    ]
+  }
+}

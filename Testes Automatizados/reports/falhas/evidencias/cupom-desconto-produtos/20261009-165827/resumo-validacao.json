@@ -1,0 +1,139 @@
+{
+  "relatorio": "cupom-desconto-produtos",
+  "resultado": "Falhou",
+  "inicio": "2026-10-09T16:58:37.376000-03:00",
+  "fim": "2026-10-09T16:58:39.430000-03:00",
+  "casos": 1,
+  "casosAprovados": 0,
+  "casosFalharam": 1,
+  "verificacoesAprovadas": 15,
+  "verificacoesFalharam": 1,
+  "execucao": {
+    "inicio": "2026-10-09T16:58:27.772121-03:00",
+    "fim": "2026-10-09T16:58:53.235496-03:00",
+    "timezone": "America/Fortaleza",
+    "comando": "npm run test:reteste",
+    "diretorio": "/workspace/teste_qa_verzel/Testes Automatizados",
+    "codigoSaida": 1,
+    "playwright": "1.64.0",
+    "node": "v24.19.0",
+    "chromium": "Chromium 151.0.7922.173 built on Debian GNU/Linux 13 (trixie)",
+    "certificadosVerificados": true,
+    "bypassTLS": false,
+    "commitBase": "ab8fa2342f69f2c894d62e07fb722959cfcb0808"
+  },
+  "verificacoes": [
+    {
+      "etapa": "API independente",
+      "verificacao": "Status",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "desconto",
+      "esperado": 10,
+      "encontrado": 10,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "total",
+      "esperado": 109.9,
+      "encontrado": 109.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API independente",
+      "verificacao": "Mensagem do cupom",
+      "esperado": "Cupom aplicado: 10% de desconto nos produtos.",
+      "encontrado": "Cupom aplicado: 10% de desconto nos produtos.",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "desconto",
+      "esperado": 10,
+      "encontrado": 10,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API usada pela interface",
+      "verificacao": "total",
+      "esperado": 109.9,
+      "encontrado": 109.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "desconto",
+      "esperado": 10,
+      "encontrado": 10,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "total",
+      "esperado": 109.9,
+      "encontrado": 109.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "Mensagem exigida pelo BDD exibida na tela",
+      "esperado": true,
+      "encontrado": false,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "Interface",
+      "verificacao": "Um cupom aplicado",
+      "esperado": 1,
+      "encontrado": 1,
+      "resultado": "Aprovado"
+    }
+  ]
+}

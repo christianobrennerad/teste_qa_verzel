@@ -1,0 +1,1 @@
+{"erro":{"codigo":"ITEM_DUPLICADO","mensagem":"O produto P001 aparece mais de uma vez.","campo":"itens[1].produtoId"}}

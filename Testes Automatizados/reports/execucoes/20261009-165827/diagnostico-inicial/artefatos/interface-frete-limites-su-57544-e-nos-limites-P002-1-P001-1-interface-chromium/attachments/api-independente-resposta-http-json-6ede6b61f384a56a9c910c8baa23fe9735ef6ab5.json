@@ -1,0 +1,65 @@
+{
+  "horario": "2026-10-09T19:57:03.031Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "statusText": "OK",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:57:02 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xrOkV2ZmmzkH3a6TQfN4dt1eLhbapl%2FqGnZu%2BLZT8fJFuEs%2FIy1eE7u9GMRZFaxLYTJrywqZNapfl77Mo0ybyAZl6UwSDtd24%2F8ONQkPDCbidPlqxusolWjXQDgiuul4Jsu5T4x%2B0w71v9CUC%2Fa2%2FebGIsyiGhIdE%2FVIXV4hicY%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "content-encoding",
+      "value": "br"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff3b9ef94300b-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "150"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "transfer-encoding",
+      "value": "chunked"
+    }
+  ],
+  "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P002\",\"nome\":\"Calça Jeans Slim\",\"precoUnitario\":139.9,\"quantidade\":1,\"total\":139.9},{\"produtoId\":\"P001\",\"nome\":\"Camiseta Essencial\",\"precoUnitario\":59.9,\"quantidade\":1,\"total\":59.9}],\"subtotal\":199.8,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":0.2,\"total\":219.7,\"cupom\":null}"
+}

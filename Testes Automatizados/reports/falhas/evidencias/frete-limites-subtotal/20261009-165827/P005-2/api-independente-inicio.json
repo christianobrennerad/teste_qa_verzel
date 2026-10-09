@@ -1,0 +1,13 @@
+{
+  "inicio": "2026-10-09T19:58:48.406Z",
+  "metodo": "POST",
+  "endpoint": "/api/carrinho/calcular",
+  "corpo": {
+    "itens": [
+      {
+        "produtoId": "P005",
+        "quantidade": 2
+      }
+    ]
+  }
+}

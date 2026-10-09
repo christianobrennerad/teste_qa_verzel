@@ -1,0 +1,65 @@
+{
+  "horario": "2026-10-09T19:58:30.730Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/produtos/INEXISTENTE",
+  "status": 404,
+  "statusText": "Not Found",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:58:30 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0lfxQ%2FyQkJCw4RGBuC6JI7Xza9D4yXNxD25VGJ6R4YW6SJGgd%2FXfCkyCLeHDrjWOsUhoTw2IZQMa%2Fjik4WSJJMWaM8m6Ip1oT93E9ve37pIXCfpAXbpdU3yb0gmIhQX%2BY1%2FAe8QspSWq2Yp%2BPORKDqAkCJpV8eYCG58rMLuHmBo%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "content-encoding",
+      "value": "br"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff5e1de7da2db-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "21"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "transfer-encoding",
+      "value": "chunked"
+    }
+  ],
+  "corpoRecebido": "{\"erro\":{\"codigo\":\"PRODUTO_NAO_ENCONTRADO\",\"mensagem\":\"Produto INEXISTENTE não encontrado.\"}}"
+}

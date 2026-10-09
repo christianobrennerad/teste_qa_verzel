@@ -1,0 +1,65 @@
+{
+  "horario": "2026-10-09T19:58:31.702Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/rota-inexistente",
+  "status": 404,
+  "statusText": "Not Found",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:58:31 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xJ5iqQbIVoBaTms3sw522OVBkmHcXNz0YZEzuhlUvow8FwkfjcmpkuqpkEIgs0FabshXgt2jwrm6Pd%2B723ugWiEMyJidmI3XVD5q2nucSlF%2BQSQcekqO72nE90Fixkb30se1%2B98rPQBLf5d9xCUL%2Fhwj8hQBLD5PYooZ4U3bjiI%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "content-encoding",
+      "value": "br"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff5e7db7f38c7-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "93"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "transfer-encoding",
+      "value": "chunked"
+    }
+  ],
+  "corpoRecebido": "{\"erro\":{\"codigo\":\"ROTA_NAO_ENCONTRADA\",\"mensagem\":\"Rota não encontrada.\"}}"
+}

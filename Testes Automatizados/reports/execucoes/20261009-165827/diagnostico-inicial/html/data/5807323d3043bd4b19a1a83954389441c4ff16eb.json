@@ -1,0 +1,234 @@
+{
+  "relatorio": "frete-alteracao-quantidade",
+  "caso": "quantidade-1-2-1",
+  "tituloTeste": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+  "arquivoTeste": "/workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts",
+  "projeto": "interface-chromium",
+  "inicio": "2026-10-09T19:56:56.365Z",
+  "fim": "2026-10-09T19:56:58.661Z",
+  "timezone": "America/Fortaleza",
+  "concluido": true,
+  "resultado": "Falhou",
+  "observacoes": [
+    "Navegador: Chromium 151.0.7922.173; alteração pelos controles da tela, sem modificar o armazenamento."
+  ],
+  "verificacoes": [
+    {
+      "etapa": "API 1-quantidade-1",
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API 1-quantidade-1",
+      "verificacao": "desconto",
+      "esperado": 10,
+      "encontrado": 10,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API 1-quantidade-1",
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API 1-quantidade-1",
+      "verificacao": "total",
+      "esperado": 109.9,
+      "encontrado": 109.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 1-quantidade-1",
+      "verificacao": "Quantidade de P005",
+      "esperado": "1",
+      "encontrado": "1",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 1-quantidade-1",
+      "verificacao": "Um único cupom BEMVINDO10",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 1-quantidade-1",
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 1-quantidade-1",
+      "verificacao": "desconto",
+      "esperado": 10,
+      "encontrado": null,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "Interface 1-quantidade-1",
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 1-quantidade-1",
+      "verificacao": "total",
+      "esperado": 109.9,
+      "encontrado": 109.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API 2-quantidade-2",
+      "verificacao": "subtotal",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API 2-quantidade-2",
+      "verificacao": "desconto",
+      "esperado": 20,
+      "encontrado": 20,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API 2-quantidade-2",
+      "verificacao": "frete",
+      "esperado": 0,
+      "encontrado": 19.9,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "API 2-quantidade-2",
+      "verificacao": "total",
+      "esperado": 180,
+      "encontrado": 199.9,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "Interface 2-quantidade-2",
+      "verificacao": "Quantidade de P005",
+      "esperado": "2",
+      "encontrado": "2",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 2-quantidade-2",
+      "verificacao": "Um único cupom BEMVINDO10",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 2-quantidade-2",
+      "verificacao": "subtotal",
+      "esperado": 200,
+      "encontrado": 200,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 2-quantidade-2",
+      "verificacao": "desconto",
+      "esperado": 20,
+      "encontrado": null,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "Interface 2-quantidade-2",
+      "verificacao": "frete",
+      "esperado": 0,
+      "encontrado": 19.9,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "Interface 2-quantidade-2",
+      "verificacao": "total",
+      "esperado": 180,
+      "encontrado": 199.9,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "API 3-quantidade-1",
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API 3-quantidade-1",
+      "verificacao": "desconto",
+      "esperado": 10,
+      "encontrado": 10,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API 3-quantidade-1",
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "API 3-quantidade-1",
+      "verificacao": "total",
+      "esperado": 109.9,
+      "encontrado": 109.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 3-quantidade-1",
+      "verificacao": "Quantidade de P005",
+      "esperado": "1",
+      "encontrado": "1",
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 3-quantidade-1",
+      "verificacao": "Um único cupom BEMVINDO10",
+      "esperado": true,
+      "encontrado": true,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 3-quantidade-1",
+      "verificacao": "subtotal",
+      "esperado": 100,
+      "encontrado": 100,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 3-quantidade-1",
+      "verificacao": "desconto",
+      "esperado": 10,
+      "encontrado": null,
+      "resultado": "Falhou"
+    },
+    {
+      "etapa": "Interface 3-quantidade-1",
+      "verificacao": "frete",
+      "esperado": 19.9,
+      "encontrado": 19.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface 3-quantidade-1",
+      "verificacao": "total",
+      "esperado": 109.9,
+      "encontrado": 109.9,
+      "resultado": "Aprovado"
+    },
+    {
+      "etapa": "Interface ao voltar para uma unidade",
+      "verificacao": "Aviso de frete",
+      "esperado": "Faltam R$ 100,00 para o frete grátis.",
+      "encontrado": "Faltam R$ 100,00 para o frete grátis.",
+      "resultado": "Aprovado"
+    }
+  ]
+}

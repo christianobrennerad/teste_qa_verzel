@@ -1,0 +1,14 @@
+{
+  "horario": "2026-10-09T19:58:48.106Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/carrinho",
+  "valores": {
+    "subtotal": "R$ 199,80",
+    "desconto": "R$ 0,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 219,70"
+  },
+  "avisoFrete": "Faltam R$ 0,20 para o frete grátis.",
+  "quantidadeCupons": 0,
+  "cupom": null,
+  "textoTela": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n2\nCarrinho\nEsvaziar carrinho\nCalça Jeans Slim\n\nR$ 139,90 cada\n\n-\n1\n+\n\nR$ 139,90\n\nRemover\nCamiseta Essencial\n\nR$ 59,90 cada\n\n-\n1\n+\n\nR$ 59,90\n\nRemover\nCupom de desconto\nAplicar cupom\nResumo do pedido\nSubtotal\nR$ 199,80\nDesconto\nR$ 0,00\nFrete\nR$ 19,90\nTotal\nR$ 219,70\n\nFaltam R$ 0,20 para o frete grátis.\n\nFinalizar compra\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real."
+}

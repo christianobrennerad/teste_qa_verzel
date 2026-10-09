@@ -1,0 +1,900 @@
+
+> teste-qa-verzel@1.0.0 test:reteste
+> playwright test tests/api/erros-rota-metodo-produto.spec.ts tests/api/produto-duplicado.spec.ts tests/api/pedido-cep-formatos.spec.ts tests/interface/frete-limites-subtotal.spec.ts tests/interface/frete-alteracao-quantidade.spec.ts tests/interface/cupom-desconto-produtos.spec.ts
+
+
+Running 15 tests using 1 worker
+
+  ✘   1 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/produtos/INEXISTENTE @api (238ms)
+  ✘   2 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/rota-inexistente @api (252ms)
+  ✘   3 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: POST /api/produtos @api (183ms)
+  ✘   4 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/carrinho/calcular @api (262ms)
+  ✘   5 [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/pedidos @api (184ms)
+  ✓   6 [api] › tests/api/pedido-cep-formatos.spec.ts:5:7 › Pedido com CEP 01310-100 @api (191ms)
+  ✓   7 [api] › tests/api/pedido-cep-formatos.spec.ts:5:7 › Pedido com CEP 01310100 @api (122ms)
+  ✓   8 [api] › tests/api/produto-duplicado.spec.ts:5:7 › Produto duplicado: calculo @api @CA10 (111ms)
+  ✓   9 [api] › tests/api/produto-duplicado.spec.ts:5:7 › Produto duplicado: pedido @api @CA10 (171ms)
+  ✘  10 [interface-chromium] › tests/interface/cupom-desconto-produtos.spec.ts:5:5 › Aplicar desconto apenas aos produtos e exibir a mensagem do BDD @interface @CA01 @CA09 (2.3s)
+  ✘  11 [interface-chromium] › tests/interface/frete-alteracao-quantidade.spec.ts:5:5 › Frete após alterar quantidade com cupom: 1 para 2 e volta para 1 @interface @CA06 @CA07 @CA08 (2.5s)
+  ✓  12 [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P003-1 @api @interface @CA06 @CA07 @CA11 (2.0s)
+  ✓  13 [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P002-1-P001-1 @api @interface @CA06 @CA07 @CA11 (1.7s)
+  ✘  14 [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P005-2 @api @interface @CA06 @CA07 @CA11 (1.9s)
+  ✘  15 [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P007-1 @api @interface @CA06 @CA07 @CA11 (1.8s)
+
+
+  1) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/produtos/INEXISTENTE @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-inicio-json-65f752625725f7a8e1c6813ade1435b2dd304952.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-requisicao-json-659e8e7465026cb5179deff47f90f603a62d3a94.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-resposta-http-json-e422cff84ed5a883de8395ecc4396a52f57ea6ba.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-corpo-recebido-json-75941215973aa83d5b7e55a098f6b5acae4b6a4e.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-comando-txt-b557e6dea9798aae357aa9977c7d5c7e7747adb6.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/validacao-json-5b944b9ff5b028c879c2ce716830cb5b0a3c5476.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/error-context.md
+
+  2) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/rota-inexistente @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-inicio-json-5e012f63dfbbc033662074aaf167272131a05b45.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-requisicao-json-1633d8d300088989f225d1ac01c15a9efd5bd78d.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-resposta-http-json-a5ba1f8a2f6f51bfc000988e09dcdd7464289335.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-corpo-recebido-json-305c5447ad2ccc42ee113f7977d828e659eda057.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-comando-txt-5b442147e2e663e38b80695a55c5031585744020.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/validacao-json-491b6ced90de1f8189a9685a9dec0a5909f3ccd1.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/error-context.md
+
+  3) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: POST /api/produtos @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-inicio-json-398405417113b555be5895303ccc1a1ca9b48ff5.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-requisicao-json-4f9c2ad6754ca3a0edb57c3721c17422f369ed0b.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-resposta-http-json-3bb1df4d0db9dcb24731ee67b56c9524777228ee.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-corpo-recebido-json-ce95bc37fa6ba4fa66559c1c312776a15ecd49d4.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-comando-txt-0c87f1d25b8d5b01df8673395a5384fa39abd9a7.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/validacao-json-49e4e025c3ed265187beae9409bbdbb69510cece.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/error-context.md
+
+  4) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/carrinho/calcular @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-inicio-json-b4815e6971ff45beeb2ef071452c7ecf898a2ec3.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-requisicao-json-e485ab47b89cc3dbc18a429c63f33c1878bcd8b1.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-resposta-http-json-05c186dfe3807baf4cc633156ff42dc001de3081.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-corpo-recebido-json-8f5e995eca9916086993172430e2ef6327a0a5f9.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-comando-txt-8e470b312de119c37b08deea519558af14281dcf.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/validacao-json-647cd4f2d435e2ba6a95d1237f8d4f194dd348e7.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/error-context.md
+
+  5) [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/pedidos @api 
+
+    Error: API: Formato documentado inclui campo relacionado
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5
+
+    attachment #1: api-inicio.json (application/json) ──────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-inicio-json-8c2f3b7f2a396df1d41a884d4968e7ad43991943.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-requisicao.json (application/json) ──────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-requisicao-json-d85258ba4422af6ee8eb7d0f0d3af554e1f221cd.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-resposta-http.json (application/json) ───────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-resposta-http-json-48738458b85317c8d5dd39b6998ccaa6c443e50a.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-corpo-recebido.json (application/json) ──────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-corpo-recebido-json-2d79d800c8d5fd181fd6afc389c74f0626bb424c.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-comando.txt (text/plain) ────────────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-comando-txt-5fe2f3381f38d1571adc5da7ec9ca1ea84da5ab1.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: validacao.json (application/json) ───────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/validacao-json-3ab93184266ae4fc5ed8b4c84201b64528933391.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/error-context.md
+
+  6) [interface-chromium] › tests/interface/cupom-desconto-produtos.spec.ts:5:5 › Aplicar desconto apenas aos produtos e exibir a mensagem do BDD @interface @CA01 @CA09 
+
+    Error: Interface: Mensagem exigida pelo BDD exibida na tela
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:24:7
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:6:3
+
+    attachment #1: api-independente-inicio.json (application/json) ─────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-inicio-json-ec68b7d7b9588d184878a882ee876b605135677a.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-independente-requisicao.json (application/json) ─────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-requisicao-json-db67f720caae5b5b59fb210795ee427e4f20a612.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-independente-resposta-http.json (application/json) ──────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-resposta-http-json-78ae7ca3cdbf33944225de0641a2c12715bb39d3.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-independente-corpo-recebido.json (application/json) ─────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-corpo-recebido-json-112b8a16b0a81472d0cef92b4e0d5c032bf452c0.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-independente-comando.txt (text/plain) ───────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-comando-txt-9f44699f3262d1b87e119bd54d094facb6c02085.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: antes-do-cupom-estado-interface.json (application/json) ─────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-estado-interface-json-9bdf31e2b077006ee09c795e48f52de9d7318fe0.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: antes-do-cupom-texto-tela.txt (text/plain) ──────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-texto-tela-txt-c66ce09465aaa560fcdf3d178c8e959855cca59b.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: antes-do-cupom-tela.png (image/png) ─────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-tela-png-ea0ac8f50e00edf68abc6082d349373b1acf869a.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: api-interface-requisicao.json (application/json) ────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-requisicao-json-63a5fe204e21d1640545631df4f375d0626b41e0.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: api-interface-resposta-http.json (application/json) ────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-resposta-http-json-ce6b7e8fba65d35805d0e341f83ab2a7bca7acab.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #11: api-interface-corpo-recebido.json (application/json) ───────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-corpo-recebido-json-df15f998da369e5b46242ec9a63754fcb9313b8f.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #12: api-interface-comando.txt (text/plain) ─────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-comando-txt-140f3b7757b8a263aafebb6d71fbff6998143277.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #13: depois-do-cupom-estado-interface.json (application/json) ───────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-estado-interface-json-bb7b755e9edce06a5c0b499caa4b6e09f97eb60e.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #14: depois-do-cupom-texto-tela.txt (text/plain) ────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-texto-tela-txt-84be739cd024d078c7dca50faf0dbc939ae2d653.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #15: depois-do-cupom-tela.png (image/png) ───────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-tela-png-0fa40f892be5d555899f4890109cf91b0258c094.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #16: mensagens-interface.json (application/json) ────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/mensagens-interface-json-69a5e8bab369b409087c33851cfd87c8b2ea784c.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #17: validacao.json (application/json) ──────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/validacao-json-9a84724bdd8da27ef1844da5fa05f304e3fdee09.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/error-context.md
+
+  7) [interface-chromium] › tests/interface/frete-alteracao-quantidade.spec.ts:5:5 › Frete após alterar quantidade com cupom: 1 para 2 e volta para 1 @interface @CA06 @CA07 @CA08 
+
+    Error: API 2-quantidade-2: frete
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 0
+    Received: 19.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:22:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3
+
+    Error: API 2-quantidade-2: total
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 180
+    Received: 199.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:22:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3
+
+    Error: Interface 2-quantidade-2: frete
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 0
+    Received: 19.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3
+
+    Error: Interface 2-quantidade-2: total
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 180
+    Received: 199.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3
+
+    attachment #1: 1-quantidade-1-api-requisicao.json (application/json) ───────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-requisicao-json-0d6807a1e6ccf184040e66e0d6541bc279b7ecef.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: 1-quantidade-1-api-resposta-http.json (application/json) ────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-resposta-http-json-624815b9792d43f429dd97fd794cfb918a482d81.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: 1-quantidade-1-api-corpo-recebido.json (application/json) ───────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-corpo-recebido-json-f8e11e9af611d7ec661ec5eb36ca1d69d25e95a3.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: 1-quantidade-1-api-comando.txt (text/plain) ─────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-comando-txt-343336d3f7623180caa85ae62dffe2ccc459b81b.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: 1-quantidade-1-estado-interface.json (application/json) ─────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-estado-interface-json-677d365991e2ac64879fc0e8fe4b1f9a2eb6eb89.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: 1-quantidade-1-texto-tela.txt (text/plain) ──────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-texto-tela-txt-e5edc97140e89b247d921dfc6225d4005e4b8fd8.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: 1-quantidade-1-tela.png (image/png) ─────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-tela-png-26ab62931a18307ff1ba54038d5ac4ae2b4c0ea7.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: 2-quantidade-2-api-requisicao.json (application/json) ───────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-requisicao-json-7093bc74857d14a87f60a052c9a32ed93f638b47.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: 2-quantidade-2-api-resposta-http.json (application/json) ────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-resposta-http-json-57343eda82653ae1bbc64039c26629b17c5acb43.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: 2-quantidade-2-api-corpo-recebido.json (application/json) ──────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-corpo-recebido-json-a4097a8d91db05e9dd386595b4a973100be87680.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #11: 2-quantidade-2-api-comando.txt (text/plain) ────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-comando-txt-721cc45e5b6116b548f90fe7f2c29feaa51edc2f.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #12: 2-quantidade-2-estado-interface.json (application/json) ────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-estado-interface-json-593e364e505606517d6b18989a70e77a1e410caa.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #13: 2-quantidade-2-texto-tela.txt (text/plain) ─────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-texto-tela-txt-011b3ee6ab6e6ed01658e689eb84d0dbb446d94a.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #14: 2-quantidade-2-tela.png (image/png) ────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-tela-png-f13a71507c0f85051ccc25d435c4e56495bd05ce.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #15: 3-quantidade-1-api-requisicao.json (application/json) ──────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-requisicao-json-cf45a7fda8c023e0de45defd3af5a1b84fd50352.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #16: 3-quantidade-1-api-resposta-http.json (application/json) ───────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-resposta-http-json-1b211dfc744f843cfe0abfa3442bedc86a85ad63.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #17: 3-quantidade-1-api-corpo-recebido.json (application/json) ──────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-corpo-recebido-json-7c8d455399a274f4bf9785f466cd4f496d8a4d45.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #18: 3-quantidade-1-api-comando.txt (text/plain) ────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-comando-txt-e116643df573c3348f90673677b2acd14e3bc6e9.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #19: 3-quantidade-1-estado-interface.json (application/json) ────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-estado-interface-json-a286fa3c2a81ff126e9e26d45eecb91c3dec70b9.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #20: 3-quantidade-1-texto-tela.txt (text/plain) ─────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-texto-tela-txt-a2d87957a504db34577528c3bc8fbc9433532775.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #21: 3-quantidade-1-tela.png (image/png) ────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-tela-png-1e235f7f6839f88f07fe9872ae72afd8ee9ef447.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #22: validacao.json (application/json) ──────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/validacao-json-6bd8c7f1b1f1bb204a4d563bd4c040ade0cd4ca2.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/error-context.md
+
+  8) [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P005-2 @api @interface @CA06 @CA07 @CA11 
+
+    Error: API independente: frete
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 0
+    Received: 19.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API independente: freteGratis
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API independente: total
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 200
+    Received: 219.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API usada pela interface: frete
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 0
+    Received: 19.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:29:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API usada pela interface: freteGratis
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:29:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: API usada pela interface: total
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 200
+    Received: 219.9
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:43:65)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:29:21
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: Interface: frete exibido com duas casas
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: "R$ 0,00"
+    Received: "R$ 19,90"
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: Interface: total exibido com duas casas
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: "R$ 200,00"
+    Received: "R$ 219,90"
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: Interface: Frete grátis
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: true
+    Received: false
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:36:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    Error: Interface: Informação de quanto falta para frete grátis
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: null
+    Received: "Faltam R$ 0,00 para o frete grátis."
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:38:9
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    attachment #1: api-independente-inicio.json (application/json) ─────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-inicio-json-5cf4a6753ce730533f37dda8c9ab6a150b70abb8.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-independente-requisicao.json (application/json) ─────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-requisicao-json-17dd519376eedf74e2e0fbfa963ab762aa40c80f.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-independente-resposta-http.json (application/json) ──────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-resposta-http-json-714338f695b0223df2e88be61e3055d4a3257010.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-independente-corpo-recebido.json (application/json) ─────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-corpo-recebido-json-729d27e3dc9a51889402fb1a25c1c3aa2be15536.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-independente-comando.txt (text/plain) ───────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-comando-txt-a591f1cba1fccbd4d48c2cc0ee2a697e79d8ef74.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: api-interface-requisicao.json (application/json) ────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-requisicao-json-6887bd727019dcf76cc1ddadc2e116b89e00ed76.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: api-interface-resposta-http.json (application/json) ─────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-resposta-http-json-4262aea1fde2c085e0c635e914cc600a14bcd9fa.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: api-interface-corpo-recebido.json (application/json) ────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-corpo-recebido-json-e101af17f1e9b78768c60adf5642d8258a2d5e89.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: api-interface-comando.txt (text/plain) ──────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-comando-txt-221fe3f069c74d2a7c4fdba438896466ccaf05f0.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: carrinho-estado-interface.json (application/json) ──────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-estado-interface-json-f6677ee7131661bb8944270224d00058afbcb18f.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #11: carrinho-texto-tela.txt (text/plain) ───────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-texto-tela-txt-0145ab5b999bac5103a1bece2595e846505c9d64.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #12: carrinho-tela.png (image/png) ──────────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-tela-png-d93e5f90a44b9eea0bc67c01bce2eae7fbe2147e.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #13: validacao.json (application/json) ──────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/validacao-json-c6ae287f323376f232c6eb43011fdf46b6e2aedc.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/error-context.md
+
+  9) [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P007-1 @api @interface @CA06 @CA07 @CA11 
+
+    Error: Interface: frete exibido com duas casas
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: "R$ 0,00"
+    Received: "Grátis"
+
+       at suporte/conferencia.ts:41
+
+      39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',
+      40 |     });
+    > 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);
+         |                                                         ^
+      42 |   }
+      43 |
+      44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {
+        at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11
+        at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)
+        at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5
+
+    attachment #1: api-independente-inicio.json (application/json) ─────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-inicio-json-54a4835fb0c749caa90418db24089a028a66f09e.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-independente-requisicao.json (application/json) ─────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-requisicao-json-badac2f411b1a314bc98f045d24c928215294e62.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-independente-resposta-http.json (application/json) ──────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-resposta-http-json-d3c82f90ea441a68b68e33f4d5d110542ecc504d.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: api-independente-corpo-recebido.json (application/json) ─────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-corpo-recebido-json-45e16d537b8dcb8aabb0924a900070b9b7a8898f.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #5: api-independente-comando.txt (text/plain) ───────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-comando-txt-e2b0bafeeff2e12b39f096b4493542a82a0f32e3.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #6: api-interface-requisicao.json (application/json) ────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-requisicao-json-fde571902cb12615afb29bdfbff55cacbf25229f.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #7: api-interface-resposta-http.json (application/json) ─────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-resposta-http-json-4ecef17eaa590d7d8899999cfc32d7740aabafa4.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #8: api-interface-corpo-recebido.json (application/json) ────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-corpo-recebido-json-f50a843b99cb698472551fec55694720cf17a077.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #9: api-interface-comando.txt (text/plain) ──────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-comando-txt-842ed948e3864f83728c93732e7d264cfaa02d5c.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #10: carrinho-estado-interface.json (application/json) ──────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-estado-interface-json-fdaf990abd14340f2e8ad8314e1eb2fd2c3909fc.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #11: carrinho-texto-tela.txt (text/plain) ───────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-texto-tela-txt-53f490d5077fe9afea83e221ad59fa2256b54c8e.txt
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #12: carrinho-tela.png (image/png) ──────────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-tela-png-547441fe71e4770869e79b60bf0eca7bf87a4383.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #13: validacao.json (application/json) ──────────────────────────────────────────────
+    ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/validacao-json-8bd8f93236db6c9812876944e7e3b8968e348cd7.json
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/error-context.md
+
+  9 failed
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/produtos/INEXISTENTE @api 
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/rota-inexistente @api 
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: POST /api/produtos @api 
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/carrinho/calcular @api 
+    [api] › tests/api/erros-rota-metodo-produto.spec.ts:13:7 › Erros de rota: GET /api/pedidos @api 
+    [interface-chromium] › tests/interface/cupom-desconto-produtos.spec.ts:5:5 › Aplicar desconto apenas aos produtos e exibir a mensagem do BDD @interface @CA01 @CA09 
+    [interface-chromium] › tests/interface/frete-alteracao-quantidade.spec.ts:5:5 › Frete após alterar quantidade com cupom: 1 para 2 e volta para 1 @interface @CA06 @CA07 @CA08 
+    [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P005-2 @api @interface @CA06 @CA07 @CA11 
+    [interface-chromium] › tests/interface/frete-limites-subtotal.spec.ts:13:7 › Frete nos limites: P007-1 @api @interface @CA06 @CA07 @CA11 
+  6 passed (23.8s)

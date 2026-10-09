@@ -1,0 +1,73 @@
+{
+  "workerIndex": 4,
+  "parallelIndex": 0,
+  "status": "failed",
+  "duration": 184,
+  "error": {
+    "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+    "stack": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5",
+    "location": {
+      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+      "column": 57,
+      "line": 41
+    },
+    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+  },
+  "errors": [
+    {
+      "location": {
+        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+        "column": 57,
+        "line": 41
+      },
+      "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5"
+    }
+  ],
+  "stdout": [],
+  "stderr": [],
+  "retry": 0,
+  "startTime": "2026-10-09T19:58:34.395Z",
+  "annotations": [],
+  "attachments": [
+    {
+      "name": "api-inicio.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-inicio-json-8c2f3b7f2a396df1d41a884d4968e7ad43991943.json"
+    },
+    {
+      "name": "api-requisicao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-requisicao-json-d85258ba4422af6ee8eb7d0f0d3af554e1f221cd.json"
+    },
+    {
+      "name": "api-resposta-http.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-resposta-http-json-48738458b85317c8d5dd39b6998ccaa6c443e50a.json"
+    },
+    {
+      "name": "api-corpo-recebido.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-corpo-recebido-json-2d79d800c8d5fd181fd6afc389c74f0626bb424c.json"
+    },
+    {
+      "name": "api-comando.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-comando-txt-5fe2f3381f38d1571adc5da7ec9ca1ea84da5ab1.txt"
+    },
+    {
+      "name": "validacao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/validacao-json-3ab93184266ae4fc5ed8b4c84201b64528933391.json"
+    },
+    {
+      "name": "error-context",
+      "contentType": "text/markdown",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/error-context.md"
+    }
+  ],
+  "errorLocation": {
+    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+    "column": 57,
+    "line": 41
+  }
+}

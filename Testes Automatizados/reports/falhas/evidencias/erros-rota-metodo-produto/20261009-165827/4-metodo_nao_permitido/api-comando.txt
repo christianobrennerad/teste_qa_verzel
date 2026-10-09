@@ -1,0 +1,1 @@
+curl -i -X GET 'https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular' -H 'Content-Type: application/json' --max-time 30 --silent --show-error

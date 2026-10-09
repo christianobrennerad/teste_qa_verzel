@@ -1,0 +1,108 @@
+{
+  "workerIndex": 9,
+  "parallelIndex": 0,
+  "status": "failed",
+  "duration": 1804,
+  "error": {
+    "message": "Error: Interface: frete exibido com duas casas\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 0,00\"\u001b[39m\nReceived: \u001b[31m\"Grátis\"\u001b[39m",
+    "stack": "Error: Interface: frete exibido com duas casas\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 0,00\"\u001b[39m\nReceived: \u001b[31m\"Grátis\"\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5",
+    "location": {
+      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+      "column": 57,
+      "line": 41
+    },
+    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+  },
+  "errors": [
+    {
+      "location": {
+        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+        "column": 57,
+        "line": 41
+      },
+      "message": "Error: Interface: frete exibido com duas casas\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 0,00\"\u001b[39m\nReceived: \u001b[31m\"Grátis\"\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+    }
+  ],
+  "stdout": [],
+  "stderr": [],
+  "retry": 0,
+  "startTime": "2026-10-09T19:58:50.813Z",
+  "annotations": [],
+  "attachments": [
+    {
+      "name": "api-independente-inicio.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-inicio-json-54a4835fb0c749caa90418db24089a028a66f09e.json"
+    },
+    {
+      "name": "api-independente-requisicao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-requisicao-json-badac2f411b1a314bc98f045d24c928215294e62.json"
+    },
+    {
+      "name": "api-independente-resposta-http.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-resposta-http-json-d3c82f90ea441a68b68e33f4d5d110542ecc504d.json"
+    },
+    {
+      "name": "api-independente-corpo-recebido.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-corpo-recebido-json-45e16d537b8dcb8aabb0924a900070b9b7a8898f.json"
+    },
+    {
+      "name": "api-independente-comando.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-comando-txt-e2b0bafeeff2e12b39f096b4493542a82a0f32e3.txt"
+    },
+    {
+      "name": "api-interface-requisicao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-requisicao-json-fde571902cb12615afb29bdfbff55cacbf25229f.json"
+    },
+    {
+      "name": "api-interface-resposta-http.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-resposta-http-json-4ecef17eaa590d7d8899999cfc32d7740aabafa4.json"
+    },
+    {
+      "name": "api-interface-corpo-recebido.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-corpo-recebido-json-f50a843b99cb698472551fec55694720cf17a077.json"
+    },
+    {
+      "name": "api-interface-comando.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-comando-txt-842ed948e3864f83728c93732e7d264cfaa02d5c.txt"
+    },
+    {
+      "name": "carrinho-estado-interface.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-estado-interface-json-fdaf990abd14340f2e8ad8314e1eb2fd2c3909fc.json"
+    },
+    {
+      "name": "carrinho-texto-tela.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-texto-tela-txt-53f490d5077fe9afea83e221ad59fa2256b54c8e.txt"
+    },
+    {
+      "name": "carrinho-tela.png",
+      "contentType": "image/png",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-tela-png-547441fe71e4770869e79b60bf0eca7bf87a4383.png"
+    },
+    {
+      "name": "validacao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/validacao-json-8bd8f93236db6c9812876944e7e3b8968e348cd7.json"
+    },
+    {
+      "name": "error-context",
+      "contentType": "text/markdown",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/error-context.md"
+    }
+  ],
+  "errorLocation": {
+    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+    "column": 57,
+    "line": 41
+  }
+}

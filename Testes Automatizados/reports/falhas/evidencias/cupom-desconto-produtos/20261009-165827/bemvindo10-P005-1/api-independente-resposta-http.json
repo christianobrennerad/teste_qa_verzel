@@ -1,0 +1,65 @@
+{
+  "horario": "2026-10-09T19:58:37.588Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "statusText": "OK",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:58:37 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hqT4Hwfw1KzHalB7gZhacePBkyCU%2BVuUrwvmFnQliCoqKXx0MKgGB1DVP3P%2B62slCbvF%2BX4nICBtPBKxLSWwDOIpyK5XzKs6SM%2Bp8XLuQzYJyzuoqgmmbPqq%2FAjT0bRWqurZfg6vxHmLIJmn1dRoK35KRyMnvQT33pescMwfExI%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "content-encoding",
+      "value": "br"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff60c9a5097f0-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "20"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "transfer-encoding",
+      "value": "chunked"
+    }
+  ],
+  "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":1,\"total\":100}],\"subtotal\":100,\"desconto\":10,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":100,\"total\":109.9,\"cupom\":{\"codigo\":\"BEMVINDO10\",\"aplicado\":true,\"mensagem\":\"Cupom aplicado: 10% de desconto nos produtos.\"}}"
+}

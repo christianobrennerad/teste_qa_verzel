@@ -1,0 +1,65 @@
+{
+  "horario": "2026-10-09T19:58:46.770Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "statusText": "OK",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:58:46 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=H6SqPK9rwENiV9Jv1TDcEAH%2BErG3t6OjMZLB74RaW3ZIcdGZ6tAb8VA9WMUZ5BpTX7JBf8mg3do9DVH2zsOmf4d1yJSHUQ0tVeS%2BZoWQ%2FtkP7yWvP2Pq8NmTDOomRobcOoDUNFb2lvCboFI6I%2BE%2F9gEa6x7A%2B5HrY6qAxj6J6tw%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "content-encoding",
+      "value": "br"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff6462c72cf27-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "13"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    },
+    {
+      "name": "transfer-encoding",
+      "value": "chunked"
+    }
+  ],
+  "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P002\",\"nome\":\"Calça Jeans Slim\",\"precoUnitario\":139.9,\"quantidade\":1,\"total\":139.9},{\"produtoId\":\"P001\",\"nome\":\"Camiseta Essencial\",\"precoUnitario\":59.9,\"quantidade\":1,\"total\":59.9}],\"subtotal\":199.8,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":0.2,\"total\":219.7,\"cupom\":null}"
+}

@@ -1,0 +1,79 @@
+{
+  "workerIndex": 8,
+  "parallelIndex": 0,
+  "status": "passed",
+  "duration": 2001,
+  "errors": [],
+  "stdout": [],
+  "stderr": [],
+  "retry": 0,
+  "startTime": "2026-10-09T19:58:44.095Z",
+  "annotations": [],
+  "attachments": [
+    {
+      "name": "api-independente-inicio.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-inicio-json-683e3491d9712769df5be4323ec1b920fccabfc5.json"
+    },
+    {
+      "name": "api-independente-requisicao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-requisicao-json-42646a6ece66813ac78c87c377df7d32492a1e33.json"
+    },
+    {
+      "name": "api-independente-resposta-http.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-resposta-http-json-5ac9d009bc03637ad7aba2d2911fe683c1977781.json"
+    },
+    {
+      "name": "api-independente-corpo-recebido.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-corpo-recebido-json-0322b197253d5701c6cb48550116abca8a67e312.json"
+    },
+    {
+      "name": "api-independente-comando.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-comando-txt-87e323a4c8f8866b8d903eb3e07b267ef572b45f.txt"
+    },
+    {
+      "name": "api-interface-requisicao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-requisicao-json-7d1b075a70669e536aa66505737480f0cc443346.json"
+    },
+    {
+      "name": "api-interface-resposta-http.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-resposta-http-json-07c49a72bc6a4816ec439661a03d243e39766132.json"
+    },
+    {
+      "name": "api-interface-corpo-recebido.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-corpo-recebido-json-c9b4e92e33b8fb9b341745c9f79fcd7db7b27154.json"
+    },
+    {
+      "name": "api-interface-comando.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-comando-txt-b70e0da367cbf0046242f0e6c610cd96ca953ed5.txt"
+    },
+    {
+      "name": "carrinho-estado-interface.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-estado-interface-json-a4affadb5d5291f34ffb3b125530652a838032cc.json"
+    },
+    {
+      "name": "carrinho-texto-tela.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-texto-tela-txt-e39bb33acc1fd22cac68ac3cad780516f9473d68.txt"
+    },
+    {
+      "name": "carrinho-tela.png",
+      "contentType": "image/png",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-tela-png-4e88a1a9d5cde61b3392740595662d0767616b68.png"
+    },
+    {
+      "name": "validacao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/validacao-json-0ad618c53e68aa3c3715575434b81a0b88b23271.json"
+    }
+  ]
+}

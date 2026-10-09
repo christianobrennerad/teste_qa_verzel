@@ -1,0 +1,128 @@
+{
+  "workerIndex": 6,
+  "parallelIndex": 0,
+  "status": "failed",
+  "duration": 2331,
+  "error": {
+    "message": "Error: Interface: Mensagem exigida pelo BDD exibida na tela\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+    "stack": "Error: Interface: Mensagem exigida pelo BDD exibida na tela\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:24:7\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:6:3",
+    "location": {
+      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+      "column": 57,
+      "line": 41
+    },
+    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+  },
+  "errors": [
+    {
+      "location": {
+        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+        "column": 57,
+        "line": 41
+      },
+      "message": "Error: Interface: Mensagem exigida pelo BDD exibida na tela\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:24:7\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:6:3"
+    }
+  ],
+  "stdout": [],
+  "stderr": [],
+  "retry": 0,
+  "startTime": "2026-10-09T19:58:36.735Z",
+  "annotations": [],
+  "attachments": [
+    {
+      "name": "api-independente-inicio.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-inicio-json-ec68b7d7b9588d184878a882ee876b605135677a.json"
+    },
+    {
+      "name": "api-independente-requisicao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-requisicao-json-db67f720caae5b5b59fb210795ee427e4f20a612.json"
+    },
+    {
+      "name": "api-independente-resposta-http.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-resposta-http-json-78ae7ca3cdbf33944225de0641a2c12715bb39d3.json"
+    },
+    {
+      "name": "api-independente-corpo-recebido.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-corpo-recebido-json-112b8a16b0a81472d0cef92b4e0d5c032bf452c0.json"
+    },
+    {
+      "name": "api-independente-comando.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-comando-txt-9f44699f3262d1b87e119bd54d094facb6c02085.txt"
+    },
+    {
+      "name": "antes-do-cupom-estado-interface.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-estado-interface-json-9bdf31e2b077006ee09c795e48f52de9d7318fe0.json"
+    },
+    {
+      "name": "antes-do-cupom-texto-tela.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-texto-tela-txt-c66ce09465aaa560fcdf3d178c8e959855cca59b.txt"
+    },
+    {
+      "name": "antes-do-cupom-tela.png",
+      "contentType": "image/png",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-tela-png-ea0ac8f50e00edf68abc6082d349373b1acf869a.png"
+    },
+    {
+      "name": "api-interface-requisicao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-requisicao-json-63a5fe204e21d1640545631df4f375d0626b41e0.json"
+    },
+    {
+      "name": "api-interface-resposta-http.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-resposta-http-json-ce6b7e8fba65d35805d0e341f83ab2a7bca7acab.json"
+    },
+    {
+      "name": "api-interface-corpo-recebido.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-corpo-recebido-json-df15f998da369e5b46242ec9a63754fcb9313b8f.json"
+    },
+    {
+      "name": "api-interface-comando.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-comando-txt-140f3b7757b8a263aafebb6d71fbff6998143277.txt"
+    },
+    {
+      "name": "depois-do-cupom-estado-interface.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-estado-interface-json-bb7b755e9edce06a5c0b499caa4b6e09f97eb60e.json"
+    },
+    {
+      "name": "depois-do-cupom-texto-tela.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-texto-tela-txt-84be739cd024d078c7dca50faf0dbc939ae2d653.txt"
+    },
+    {
+      "name": "depois-do-cupom-tela.png",
+      "contentType": "image/png",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-tela-png-0fa40f892be5d555899f4890109cf91b0258c094.png"
+    },
+    {
+      "name": "mensagens-interface.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/mensagens-interface-json-69a5e8bab369b409087c33851cfd87c8b2ea784c.json"
+    },
+    {
+      "name": "validacao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/validacao-json-9a84724bdd8da27ef1844da5fa05f304e3fdee09.json"
+    },
+    {
+      "name": "error-context",
+      "contentType": "text/markdown",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/error-context.md"
+    }
+  ],
+  "errorLocation": {
+    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+    "column": 57,
+    "line": 41
+  }
+}

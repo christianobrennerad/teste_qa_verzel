@@ -1,0 +1,57 @@
+{
+  "horario": "2026-10-09T19:58:42.767Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/carrinho/calcular",
+  "status": 200,
+  "statusText": "",
+  "cabecalhos": [
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff62d1f37d4f9-SJC"
+    },
+    {
+      "name": "content-encoding",
+      "value": "zstd"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:58:42 GMT"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aDiHFdIfSpI4RtRTRNa1KV3Lkl%2FTx7sotGzmiuaMJJJzZIOj9Nlw7Zw8svOajnVBFpVc9ssizvM9v3kx5cY%2Fr%2F98fuGZokvbnSq1W%2Fek6U9U%2FIh%2FGxqGUGySlKQ0OprxmcDHm%2BLwTJbKhbPbqeVTLSa%2FNWaF29QQdUjcWXZQOmw%3D\"}]}"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "14"
+    }
+  ],
+  "corpoRecebido": "{\"itens\":[{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":2,\"total\":200}],\"subtotal\":200,\"desconto\":20,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":0,\"total\":199.9,\"cupom\":{\"codigo\":\"BEMVINDO10\",\"aplicado\":true,\"mensagem\":\"Cupom aplicado: 10% de desconto nos produtos.\"}}"
+}

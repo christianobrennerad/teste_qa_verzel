@@ -1,0 +1,1911 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/teste_qa_verzel/Testes Automatizados/node_modules/.bin/playwright",
+      "test",
+      "tests/api/erros-rota-metodo-produto.spec.ts",
+      "tests/api/produto-duplicado.spec.ts",
+      "tests/api/pedido-cep-formatos.spec.ts",
+      "tests/interface/frete-limites-subtotal.spec.ts",
+      "tests/interface/frete-alteracao-quantidade.spec.ts",
+      "tests/interface/cupom-desconto-produtos.spec.ts"
+    ],
+    "configFile": "/workspace/teste_qa_verzel/Testes Automatizados/playwright.config.ts",
+    "rootDir": "/workspace/teste_qa_verzel/Testes Automatizados/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "/workspace/teste_qa_verzel/Testes Automatizados/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/api/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "interface-chromium",
+        "name": "interface-chromium",
+        "testDir": "/workspace/teste_qa_verzel/Testes Automatizados/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/interface/*.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "api",
+        "testDir": "/workspace/teste_qa_verzel/Testes Automatizados/tests",
+        "snapshotDir": "/workspace/teste_qa_verzel/Testes Automatizados/tests",
+        "testIgnore": [],
+        "testMatch": "**/api/*.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://verzel-store.qa-test-verzel-store.workers.dev",
+          "extraHTTPHeaders": {
+            "Content-Type": "application/json"
+          },
+          "ignoreHTTPSErrors": false,
+          "locale": "pt-BR",
+          "viewport": {
+            "width": 1280,
+            "height": 1000
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "api"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "interface-chromium",
+        "testDir": "/workspace/teste_qa_verzel/Testes Automatizados/tests",
+        "snapshotDir": "/workspace/teste_qa_verzel/Testes Automatizados/tests",
+        "testIgnore": [],
+        "testMatch": "**/interface/*.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://verzel-store.qa-test-verzel-store.workers.dev",
+          "extraHTTPHeaders": {
+            "Content-Type": "application/json"
+          },
+          "ignoreHTTPSErrors": false,
+          "locale": "pt-BR",
+          "viewport": {
+            "width": 1280,
+            "height": 1000
+          },
+          "browserName": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "interface-chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "/tmp/verzel-playwright-reteste-20261009-165638/html"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/tmp/verzel-playwright-reteste-20261009-165638/resultados.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api/erros-rota-metodo-produto.spec.ts",
+      "file": "api/erros-rota-metodo-produto.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Erros de rota: GET /api/produtos/INEXISTENTE",
+          "ok": false,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 292,
+                  "error": {
+                    "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5",
+                    "location": {
+                      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                      "column": 57,
+                      "line": 41
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:42.405Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-inicio-json-57d5ac7375e6cf370d931495c3ad288131b91b59.json"
+                    },
+                    {
+                      "name": "api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-requisicao-json-ee25f335b9533b78c3cad36b73f11066a25fd7ec.json"
+                    },
+                    {
+                      "name": "api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-resposta-http-json-9ef4ce953c1c1d031feb768cdc6290d01a732b16.json"
+                    },
+                    {
+                      "name": "api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-corpo-recebido-json-0e1224942672bceae8010a9d5bef74d4240a6c62.json"
+                    },
+                    {
+                      "name": "api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/api-comando-txt-bf02700748a3997729752769bb9e2f6577fad449.txt"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/attachments/validacao-json-f73994b980331c711dd1560ad18b3fa0dcf78214.json"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-1d9d7-ET-api-produtos-INEXISTENTE-api/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                    "column": 57,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2c5160836dcd7f400b98-917c54e940784d21977b",
+          "file": "api/erros-rota-metodo-produto.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Erros de rota: GET /api/rota-inexistente",
+          "ok": false,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 418,
+                  "error": {
+                    "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5",
+                    "location": {
+                      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                      "column": 57,
+                      "line": 41
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:44.043Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-inicio-json-690865efed6add6b672363760e8734d69ee0ac01.json"
+                    },
+                    {
+                      "name": "api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-requisicao-json-302263b91f7f91425bcc8ea25d7e20186b2f3492.json"
+                    },
+                    {
+                      "name": "api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-resposta-http-json-78f5f8c0edb4a5b63c048b3de2a2c744a9ab1b57.json"
+                    },
+                    {
+                      "name": "api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-corpo-recebido-json-1280998a97e1f44a8ca8af95ed3650f6309738a6.json"
+                    },
+                    {
+                      "name": "api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/api-comando-txt-2f430c24945db1142fcc150f06e466bce729b567.txt"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/attachments/validacao-json-e9764f3f31dd1070b6234e81cf6531e240649a1d.json"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-eb80b-ta-GET-api-rota-inexistente-api/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                    "column": 57,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2c5160836dcd7f400b98-3575990ffd8baf7c98a1",
+          "file": "api/erros-rota-metodo-produto.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Erros de rota: POST /api/produtos",
+          "ok": false,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 387,
+                  "error": {
+                    "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5",
+                    "location": {
+                      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                      "column": 57,
+                      "line": 41
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:45.922Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-inicio-json-e50665d01f3aeca9f6d1e1a680b238389bd08a90.json"
+                    },
+                    {
+                      "name": "api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-requisicao-json-e3ff35108294b5f214c9b0128736f5e3eda01dd8.json"
+                    },
+                    {
+                      "name": "api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-resposta-http-json-2bd29f5d788b5daaf63b389a025b3d6d1b9b21ad.json"
+                    },
+                    {
+                      "name": "api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-corpo-recebido-json-ad32e146072d04321688fc613bb835afd3d73bef.json"
+                    },
+                    {
+                      "name": "api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/api-comando-txt-95b673fae83c7f0377762a9b5e456408e9baa462.txt"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/attachments/validacao-json-69fec446f1c2996018694a45bc80594def0e654d.json"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-7bf12-s-de-rota-POST-api-produtos-api/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                    "column": 57,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2c5160836dcd7f400b98-27e6f6ed151082852ec2",
+          "file": "api/erros-rota-metodo-produto.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Erros de rota: GET /api/carrinho/calcular",
+          "ok": false,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 312,
+                  "error": {
+                    "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5",
+                    "location": {
+                      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                      "column": 57,
+                      "line": 41
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:47.547Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-inicio-json-ef39c42849749c3a364e1a8aede09532227f7579.json"
+                    },
+                    {
+                      "name": "api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-requisicao-json-ff00f87b9c4e5332e6f8f8222271f805436e4d9f.json"
+                    },
+                    {
+                      "name": "api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-resposta-http-json-a52c3ab20bec8944268efd832feaf3219f8cd027.json"
+                    },
+                    {
+                      "name": "api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-corpo-recebido-json-edbffccc1ec99f689f42d2f52db835f087d7486c.json"
+                    },
+                    {
+                      "name": "api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/api-comando-txt-2d92f6de121c27047f092fc211461265e503a561.txt"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/attachments/validacao-json-486e96f064ba439eafddb3b63d20582dd887fe0a.json"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-prod-47208-a-GET-api-carrinho-calcular-api/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                    "column": 57,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2c5160836dcd7f400b98-0ffbd728fa87a470eac0",
+          "file": "api/erros-rota-metodo-produto.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Erros de rota: GET /api/pedidos",
+          "ok": false,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 295,
+                  "error": {
+                    "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5",
+                    "location": {
+                      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                      "column": 57,
+                      "line": 41
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API: Formato documentado inclui campo relacionado\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:20:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/api/erros-rota-metodo-produto.spec.ts:14:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:48.942Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-inicio-json-f86c5a09f21b374f75a5af13d5d169712b98333e.json"
+                    },
+                    {
+                      "name": "api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-requisicao-json-746572836963cd46e19d2d4086f948d36a5dc11f.json"
+                    },
+                    {
+                      "name": "api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-resposta-http-json-e3ee46227d9146af46ef7cb2f2917217ee7170ee.json"
+                    },
+                    {
+                      "name": "api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-corpo-recebido-json-8f97fc5779426abf1bfb17ea8384c3eaa56c3968.json"
+                    },
+                    {
+                      "name": "api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/api-comando-txt-c33a8505e42fe1a5533e3832c384bc8f8dae37fc.txt"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/attachments/validacao-json-06fcec8e19e1432bc8167522504b73d760de8677.json"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-erros-rota-metodo-produto-Erros-de-rota-GET-api-pedidos-api/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                    "column": 57,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2c5160836dcd7f400b98-7911d7bfc0bdffcae6df",
+          "file": "api/erros-rota-metodo-produto.spec.ts",
+          "line": 13,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "api/pedido-cep-formatos.spec.ts",
+      "file": "api/pedido-cep-formatos.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Pedido com CEP 01310-100",
+          "ok": true,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 213,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:50.199Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-inicio-json-0064043caa3ac8396bb5d9ab0bf318d9e715c593.json"
+                    },
+                    {
+                      "name": "api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-requisicao-json-59d3afb6ea3c1f782cc3a290a87c6dcefcc27157.json"
+                    },
+                    {
+                      "name": "api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-resposta-http-json-65e236261e0c63536853241d2bf39cf43b3bfca8.json"
+                    },
+                    {
+                      "name": "api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-corpo-recebido-json-7b11abca17278c1fb7351efa110932a0cca0b586.json"
+                    },
+                    {
+                      "name": "api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/api-comando-txt-88de4d410ca47defc12c764e52fa30fc52f6f4d7.txt"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310-100-api/attachments/validacao-json-0f74d6bbe44c76d0e48808bc787c25a270a1e33e.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a60298f6cc77d341a172-a89b79e98f2eb3b1c642",
+          "file": "api/pedido-cep-formatos.spec.ts",
+          "line": 5,
+          "column": 7
+        },
+        {
+          "title": "Pedido com CEP 01310100",
+          "ok": true,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:50.494Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-inicio-json-ca0bcbeb26ac537012d19e3f2b79e20bb810478e.json"
+                    },
+                    {
+                      "name": "api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-requisicao-json-37907a774786c5d058a399ea32a2ff8217ed159f.json"
+                    },
+                    {
+                      "name": "api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-resposta-http-json-1d556cf30a46098d9c4d86e7c807c36bb8eb4639.json"
+                    },
+                    {
+                      "name": "api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-corpo-recebido-json-976c64372fbb350c92885e6dfd039f38b6c99cf0.json"
+                    },
+                    {
+                      "name": "api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/api-comando-txt-7ec6e885303fe1631a5000cfc690b4e8ce1720fb.txt"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-pedido-cep-formatos-Pedido-com-CEP-01310100-api/attachments/validacao-json-1c5a0e6399c8e06f90ee19c8d7f59da6ad72263e.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a60298f6cc77d341a172-8191531de8f3ced5a086",
+          "file": "api/pedido-cep-formatos.spec.ts",
+          "line": 5,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "api/produto-duplicado.spec.ts",
+      "file": "api/produto-duplicado.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Produto duplicado: calculo",
+          "ok": true,
+          "tags": [
+            "api",
+            "CA10"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 89,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:50.692Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-inicio-json-09e906c195fc341474e66a662667ffd750f7a271.json"
+                    },
+                    {
+                      "name": "api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-requisicao-json-719ccbfaf455251c5bcb8ad6fa10defa52ebc4dc.json"
+                    },
+                    {
+                      "name": "api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-resposta-http-json-76a76454479062ee735f9adfa5857ff1d302da0a.json"
+                    },
+                    {
+                      "name": "api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-corpo-recebido-json-ac9b3442622fbd44cb8a666e35f80dc12e104bfb.json"
+                    },
+                    {
+                      "name": "api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-comando-txt-34b76cfbe078358f3700a88cc38d272e7a67ba30.txt"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/validacao-json-e709b88d7e6efeca16931d1e1cc3503ccb960670.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f508c5dfa89b9d259a1e-cdff6c27ec9c22307716",
+          "file": "api/produto-duplicado.spec.ts",
+          "line": 5,
+          "column": 7
+        },
+        {
+          "title": "Produto duplicado: pedido",
+          "ok": true,
+          "tags": [
+            "api",
+            "CA10"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 104,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:50.800Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-inicio-json-cd799eb1f25ebd9f3083b6290612a0a55a087439.json"
+                    },
+                    {
+                      "name": "api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-requisicao-json-fc79c27c063bab204926ae8794710b661d7724fd.json"
+                    },
+                    {
+                      "name": "api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-resposta-http-json-8f25b9db1e52efae3c43b9f39d3324be5730c035.json"
+                    },
+                    {
+                      "name": "api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-corpo-recebido-json-05e8b1dccc02459a7a7a4163e3c5b19eae09267b.json"
+                    },
+                    {
+                      "name": "api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/api-comando-txt-0730cde0f13bc6e2c99d165280ee1743fa595ff0.txt"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/api-produto-duplicado-Produto-duplicado-pedido-api/attachments/validacao-json-c4f0826ba7b14e5dd055d36c82a9bd9aa9dec554.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f508c5dfa89b9d259a1e-e3957ec7c5534a38f5ec",
+          "file": "api/produto-duplicado.spec.ts",
+          "line": 5,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "interface/cupom-desconto-produtos.spec.ts",
+      "file": "interface/cupom-desconto-produtos.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Aplicar desconto apenas aos produtos e exibir a mensagem do BDD",
+          "ok": false,
+          "tags": [
+            "interface",
+            "CA01",
+            "CA09"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "interface-chromium",
+              "projectName": "interface-chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2720,
+                  "error": {
+                    "message": "Error: Interface: desconto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 10,00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m- \u001b[27mR$ 10,00\"\u001b[39m",
+                    "stack": "Error: Interface: desconto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 10,00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m- \u001b[27mR$ 10,00\"\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:21:62\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:6:3",
+                    "location": {
+                      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                      "column": 57,
+                      "line": 41
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface: desconto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 10,00\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7m- \u001b[27mR$ 10,00\"\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:21:62\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:6:3"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface: Mensagem exigida pelo BDD exibida na tela\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:24:7\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/cupom-desconto-produtos.spec.ts:6:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:51.732Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-independente-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-inicio-json-379f02421c2173749646428b6ecd033e2d368901.json"
+                    },
+                    {
+                      "name": "api-independente-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-requisicao-json-fa5f47a0c176001fa2df1ea7f1b83fa83eb7f619.json"
+                    },
+                    {
+                      "name": "api-independente-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-resposta-http-json-e2446b33df10c9b72dfe4811b1106e7c5e06648d.json"
+                    },
+                    {
+                      "name": "api-independente-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-corpo-recebido-json-5f8c1eb6037bd0718f8e267f8372c0ad6e1d1393.json"
+                    },
+                    {
+                      "name": "api-independente-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-independente-comando-txt-905b864429ff91a3631357167bb0d27312c5abb3.txt"
+                    },
+                    {
+                      "name": "antes-do-cupom-estado-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-estado-interface-json-76c5e9db9a7ae696694ac4fb05223c85ac446f0d.json"
+                    },
+                    {
+                      "name": "antes-do-cupom-texto-tela.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-texto-tela-txt-fad4306ff32228409590c3f0fd4683acd6ebd3c7.txt"
+                    },
+                    {
+                      "name": "antes-do-cupom-tela.png",
+                      "contentType": "image/png",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/antes-do-cupom-tela-png-45363b9a370ffff305a9ee72d5ea37f2811303c2.png"
+                    },
+                    {
+                      "name": "api-interface-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-requisicao-json-d307e8069cf13745d1c265b1240dcf8b1abccf48.json"
+                    },
+                    {
+                      "name": "api-interface-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-resposta-http-json-27ea4ff61ea66312a6ac1bea236517fc34adc0f2.json"
+                    },
+                    {
+                      "name": "api-interface-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-corpo-recebido-json-eefed88906b9477356567b616c92dcfdb4cdbf61.json"
+                    },
+                    {
+                      "name": "api-interface-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/api-interface-comando-txt-1985cfa6900e27e183408eaafb6b9bc1d3415120.txt"
+                    },
+                    {
+                      "name": "depois-do-cupom-estado-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-estado-interface-json-10fe5066b4019423f94fcbdb8915f64eda9d026e.json"
+                    },
+                    {
+                      "name": "depois-do-cupom-texto-tela.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-texto-tela-txt-445b4e572da41d2760d7d5a4ec4bc7d20da9d216.txt"
+                    },
+                    {
+                      "name": "depois-do-cupom-tela.png",
+                      "contentType": "image/png",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/depois-do-cupom-tela-png-02b9c751a65e32b2b41358281d88b403edd4198d.png"
+                    },
+                    {
+                      "name": "mensagens-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/mensagens-interface-json-bd04f41a3f5245b27e6d643dae0a4b07d74cda5a.json"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/attachments/validacao-json-23888bdc810369cda0b09b02dd5ee19dfea283e9.json"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-cupom-desconto-p-d2013--e-exibir-a-mensagem-do-BDD-interface-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                    "column": 57,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "77a27c5b33ce8085eee0-a69038a968a3d5be0b40",
+          "file": "interface/cupom-desconto-produtos.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "interface/frete-alteracao-quantidade.spec.ts",
+      "file": "interface/frete-alteracao-quantidade.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Frete após alterar quantidade com cupom: 1 para 2 e volta para 1",
+          "ok": false,
+          "tags": [
+            "interface",
+            "CA06",
+            "CA07",
+            "CA08"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "interface-chromium",
+              "projectName": "interface-chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2623,
+                  "error": {
+                    "message": "Error: Interface 1-quantidade-1: desconto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m10\u001b[39m\nReceived: \u001b[31mNaN\u001b[39m",
+                    "stack": "Error: Interface 1-quantidade-1: desconto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m10\u001b[39m\nReceived: \u001b[31mNaN\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3",
+                    "location": {
+                      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                      "column": 57,
+                      "line": 41
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface 1-quantidade-1: desconto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m10\u001b[39m\nReceived: \u001b[31mNaN\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API 2-quantidade-2: frete\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m19.9\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:41:65)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:22:21\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API 2-quantidade-2: total\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m180\u001b[39m\nReceived: \u001b[31m199.9\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:41:65)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:22:21\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface 2-quantidade-2: desconto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m20\u001b[39m\nReceived: \u001b[31mNaN\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface 2-quantidade-2: frete\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m19.9\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface 2-quantidade-2: total\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m180\u001b[39m\nReceived: \u001b[31m199.9\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface 3-quantidade-1: desconto\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m10\u001b[39m\nReceived: \u001b[31mNaN\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:26:64\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-alteracao-quantidade.spec.ts:6:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:55.691Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "1-quantidade-1-api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-requisicao-json-19274f13c5e98491b44785564a430678d266d895.json"
+                    },
+                    {
+                      "name": "1-quantidade-1-api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-resposta-http-json-d4627a99bf577b7ab0deac062b65780c44711094.json"
+                    },
+                    {
+                      "name": "1-quantidade-1-api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-corpo-recebido-json-be9e4a06247a0d8c030d2aa81b7bfa3f088d2f5a.json"
+                    },
+                    {
+                      "name": "1-quantidade-1-api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-api-comando-txt-12cc36b5c75a2bce23fcdbabb0395218b4cf8cca.txt"
+                    },
+                    {
+                      "name": "1-quantidade-1-estado-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-estado-interface-json-a55fb0fd1819e840ca2ac56adfdd5c2e79a69454.json"
+                    },
+                    {
+                      "name": "1-quantidade-1-texto-tela.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-texto-tela-txt-e8d3149b7114f69b2d2756e068a1efdd8834e42f.txt"
+                    },
+                    {
+                      "name": "1-quantidade-1-tela.png",
+                      "contentType": "image/png",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/1-quantidade-1-tela-png-c2e447ecf2f6eabaafcc1459f9a20c493fe478c8.png"
+                    },
+                    {
+                      "name": "2-quantidade-2-api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-requisicao-json-6e896d9bb4e7b44a950ba271990e14119b1afb1d.json"
+                    },
+                    {
+                      "name": "2-quantidade-2-api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-resposta-http-json-082bd1671ae5ee73d43ab0a673d448a9c414f24a.json"
+                    },
+                    {
+                      "name": "2-quantidade-2-api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-corpo-recebido-json-357e1c08f7d250a9d1e2afa97ca8fa5075d0c1cc.json"
+                    },
+                    {
+                      "name": "2-quantidade-2-api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-api-comando-txt-a2832300443506f4fe4515100008001572e427db.txt"
+                    },
+                    {
+                      "name": "2-quantidade-2-estado-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-estado-interface-json-cd5f2363c180127f1052d687900eade74abae7e0.json"
+                    },
+                    {
+                      "name": "2-quantidade-2-texto-tela.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-texto-tela-txt-926e81e7c6c274d930a76f06323f028eaba29b2e.txt"
+                    },
+                    {
+                      "name": "2-quantidade-2-tela.png",
+                      "contentType": "image/png",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/2-quantidade-2-tela-png-681b17b24a25c8f8790b9d7895329166f3a898de.png"
+                    },
+                    {
+                      "name": "3-quantidade-1-api-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-requisicao-json-af729bdbd5f2d2854d68b195fab375fb63ee75e9.json"
+                    },
+                    {
+                      "name": "3-quantidade-1-api-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-resposta-http-json-47272a50eb8531d99e544c2494ceb8992f0a45f7.json"
+                    },
+                    {
+                      "name": "3-quantidade-1-api-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-corpo-recebido-json-1b59c45bfa60885f7a0df3df16df042cdcba1b29.json"
+                    },
+                    {
+                      "name": "3-quantidade-1-api-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-api-comando-txt-fe5be507424f664cde7a2b167cbd995640389853.txt"
+                    },
+                    {
+                      "name": "3-quantidade-1-estado-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-estado-interface-json-e3e3733ffc730370d560115ae1b26f0ca0dfda0f.json"
+                    },
+                    {
+                      "name": "3-quantidade-1-texto-tela.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-texto-tela-txt-280ab05f662cb46186e9a1c7f3bee0c6a75dd09f.txt"
+                    },
+                    {
+                      "name": "3-quantidade-1-tela.png",
+                      "contentType": "image/png",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/3-quantidade-1-tela-png-fd0312801bd22c4c28db65090ff68cf6fdfd4ab2.png"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/attachments/validacao-json-c4e173b6b031a245e5e547ce0b1b98b5adaeda53.json"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-alteracao--aded8-pom-1-para-2-e-volta-para-1-interface-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                    "column": 57,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ea0e62d99eadd495f792-45f1eaff716d1305eb5e",
+          "file": "interface/frete-alteracao-quantidade.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "interface/frete-limites-subtotal.spec.ts",
+      "file": "interface/frete-limites-subtotal.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Frete nos limites: P003-1",
+          "ok": true,
+          "tags": [
+            "api",
+            "interface",
+            "CA06",
+            "CA07",
+            "CA11"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "interface-chromium",
+              "projectName": "interface-chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2081,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:56:59.577Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-independente-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-inicio-json-f05fedd409fad5e1ccf154f9da7246a36303ec92.json"
+                    },
+                    {
+                      "name": "api-independente-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-requisicao-json-e2fe8d96c7afe9a9f04af84acafb1ba5e520b1fa.json"
+                    },
+                    {
+                      "name": "api-independente-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-resposta-http-json-945c1b09578b3b121e61791fe41ae658797fdac2.json"
+                    },
+                    {
+                      "name": "api-independente-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-corpo-recebido-json-21f9b3d5f2a8f510e5a777ac13603fc0ab52bb1b.json"
+                    },
+                    {
+                      "name": "api-independente-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-independente-comando-txt-28168e43388c61dd9d955355576859a4e7744c7a.txt"
+                    },
+                    {
+                      "name": "api-interface-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-requisicao-json-9055d10ec4e4bc3d4ec61e4d61220a608219352f.json"
+                    },
+                    {
+                      "name": "api-interface-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-resposta-http-json-7dea355b6289bf5a100bb14555e64eea93a6a7ac.json"
+                    },
+                    {
+                      "name": "api-interface-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-corpo-recebido-json-ab2d2edef7d55bba3e6c861895061366d46db017.json"
+                    },
+                    {
+                      "name": "api-interface-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/api-interface-comando-txt-9e0219f88d44d60bb97e279630a6eeb7a5b56aa5.txt"
+                    },
+                    {
+                      "name": "carrinho-estado-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-estado-interface-json-1b706bd761fe5af8c8dbc7d2e817978b940efda0.json"
+                    },
+                    {
+                      "name": "carrinho-texto-tela.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-texto-tela-txt-ea1b1c30d881ff5a746fbfe0915c371a8d59f641.txt"
+                    },
+                    {
+                      "name": "carrinho-tela.png",
+                      "contentType": "image/png",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/carrinho-tela-png-5eec4b16944421299a6ff8a02a062da3d3ecb46b.png"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P003-1-interface-chromium/attachments/validacao-json-3ce2ac2290f2758f5688939152aebda5c7fa1f30.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d70a278f88922318af1a-03b859f7451bdee2b05f",
+          "file": "interface/frete-limites-subtotal.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Frete nos limites: P002-1-P001-1",
+          "ok": true,
+          "tags": [
+            "api",
+            "interface",
+            "CA06",
+            "CA07",
+            "CA11"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "interface-chromium",
+              "projectName": "interface-chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2985,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:57:02.081Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-independente-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-inicio-json-4aa1d3684aef1f099a18ec953c7175c7da9a9d1f.json"
+                    },
+                    {
+                      "name": "api-independente-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-requisicao-json-457ca9f9766f45d2ad97c79f83fdab9f6656089b.json"
+                    },
+                    {
+                      "name": "api-independente-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-resposta-http-json-6ede6b61f384a56a9c910c8baa23fe9735ef6ab5.json"
+                    },
+                    {
+                      "name": "api-independente-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-corpo-recebido-json-1931a82f939b455737fccf4f3d1f3e41b1fe3fdf.json"
+                    },
+                    {
+                      "name": "api-independente-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-independente-comando-txt-6dc5a2efa707dffd80ecbca98e8e7ff1c82dcf35.txt"
+                    },
+                    {
+                      "name": "api-interface-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-requisicao-json-c30a2fded691b6138936ebb1eccbf938f25ab038.json"
+                    },
+                    {
+                      "name": "api-interface-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-resposta-http-json-bb4dc36187b7e79e798511dea42e507c8d8bbe6a.json"
+                    },
+                    {
+                      "name": "api-interface-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-corpo-recebido-json-8f1301beb037cc63423c20ae9d6cd7e3dd03d420.json"
+                    },
+                    {
+                      "name": "api-interface-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/api-interface-comando-txt-9c40f185c04d53a28e18b90d568ff6fc7c999bee.txt"
+                    },
+                    {
+                      "name": "carrinho-estado-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/carrinho-estado-interface-json-d43f708d2895a4fc9da8131b2ff2cedd545a80ca.json"
+                    },
+                    {
+                      "name": "carrinho-texto-tela.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/carrinho-texto-tela-txt-88f30335e8952e0fdeb8b34db9662c3d3db2afb5.txt"
+                    },
+                    {
+                      "name": "carrinho-tela.png",
+                      "contentType": "image/png",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/carrinho-tela-png-4305cb91ea2816de1b0b65553f2c853c0e4e6c81.png"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-su-57544-e-nos-limites-P002-1-P001-1-interface-chromium/attachments/validacao-json-ab282a9609250d58d320c56a196ed5f8843d8375.json"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d70a278f88922318af1a-058a04595be57ab7b68c",
+          "file": "interface/frete-limites-subtotal.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Frete nos limites: P005-2",
+          "ok": false,
+          "tags": [
+            "api",
+            "interface",
+            "CA06",
+            "CA07",
+            "CA11"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "interface-chromium",
+              "projectName": "interface-chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2299,
+                  "error": {
+                    "message": "Error: API independente: frete\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m19.9\u001b[39m",
+                    "stack": "Error: API independente: frete\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m19.9\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:41:65)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5",
+                    "location": {
+                      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                      "column": 57,
+                      "line": 41
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API independente: frete\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m19.9\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:41:65)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API independente: freteGratis\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:41:65)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API independente: total\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m219.9\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:41:65)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:18:21\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API usada pela interface: frete\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m19.9\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:41:65)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:29:21\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API usada pela interface: freteGratis\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:41:65)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:29:21\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: API usada pela interface: total\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m219.9\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at conferirResumo (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/carrinho.ts:41:65)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:29:21\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface: frete exibido com duas casas\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ \u001b[7m0,0\u001b[27m0\"\u001b[39m\nReceived: \u001b[31m\"R$ \u001b[7m19,9\u001b[27m0\"\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface: total exibido com duas casas\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 2\u001b[7m00,0\u001b[27m0\"\u001b[39m\nReceived: \u001b[31m\"R$ 2\u001b[7m19,9\u001b[27m0\"\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface: Frete grátis\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:36:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface: Informação de quanto falta para frete grátis\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32mnull\u001b[39m\nReceived: \u001b[31m\"Faltam R$ 0,00 para o frete grátis.\"\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:38:9\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:57:05.114Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-independente-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-inicio-json-62f25168c041ee8f5b055df2e349e39ed6236015.json"
+                    },
+                    {
+                      "name": "api-independente-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-requisicao-json-d7374e56337b8995e6ac115848c1f477ed4d18af.json"
+                    },
+                    {
+                      "name": "api-independente-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-resposta-http-json-91bf6092deec12a779427bcb887fe951a04e6176.json"
+                    },
+                    {
+                      "name": "api-independente-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-corpo-recebido-json-78065bea86b38924799ca137b06e2f4cf5f86c97.json"
+                    },
+                    {
+                      "name": "api-independente-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-independente-comando-txt-aaddbb21be0866389f76c38466db8cc94ceb467b.txt"
+                    },
+                    {
+                      "name": "api-interface-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-requisicao-json-860ffbdb649b9d5095671a93dc8dd16cac31faa8.json"
+                    },
+                    {
+                      "name": "api-interface-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-resposta-http-json-c127e0d60f4b4127f40d287b6fb808b9e7d46702.json"
+                    },
+                    {
+                      "name": "api-interface-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-corpo-recebido-json-111ab5b0794e5487ebeccca849f24cb4b4b04d7f.json"
+                    },
+                    {
+                      "name": "api-interface-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/api-interface-comando-txt-d083ea32651b97c8847367190c8b648f864bb767.txt"
+                    },
+                    {
+                      "name": "carrinho-estado-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-estado-interface-json-2dfd8aca6abc692b59caadcef094e1952773713e.json"
+                    },
+                    {
+                      "name": "carrinho-texto-tela.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-texto-tela-txt-90443a9bb33f09b3e61fa35531feb6716236b1a5.txt"
+                    },
+                    {
+                      "name": "carrinho-tela.png",
+                      "contentType": "image/png",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/carrinho-tela-png-3aba0e41b319fac4e469dcd4727a61a9f0da7d10.png"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/attachments/validacao-json-f137dcc44b66049989c81a01a7c4a1f4b9ba140e.json"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P005-2-interface-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                    "column": 57,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d70a278f88922318af1a-a9e12e33d43943bc0f82",
+          "file": "interface/frete-limites-subtotal.spec.ts",
+          "line": 13,
+          "column": 7
+        },
+        {
+          "title": "Frete nos limites: P007-1",
+          "ok": false,
+          "tags": [
+            "api",
+            "interface",
+            "CA06",
+            "CA07",
+            "CA11"
+          ],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "interface-chromium",
+              "projectName": "interface-chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2428,
+                  "error": {
+                    "message": "Error: Interface: frete exibido com duas casas\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 0,00\"\u001b[39m\nReceived: \u001b[31m\"Grátis\"\u001b[39m",
+                    "stack": "Error: Interface: frete exibido com duas casas\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 0,00\"\u001b[39m\nReceived: \u001b[31m\"Grátis\"\u001b[39m\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5",
+                    "location": {
+                      "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                      "column": 57,
+                      "line": 41
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39msuporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                        "column": 57,
+                        "line": 41
+                      },
+                      "message": "Error: Interface: frete exibido com duas casas\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m\"R$ 0,00\"\u001b[39m\nReceived: \u001b[31m\"Grátis\"\u001b[39m\n\n   at suporte/conferencia.ts:41\n\n  39 |       resultado: isDeepStrictEqual(encontrado, esperado) ? 'Aprovado' : 'Falhou',\n  40 |     });\n> 41 |     expect.soft(encontrado, `${etapa}: ${verificacao}`).toEqual(esperado);\n     |                                                         ^\n  42 |   }\n  43 |\n  44 |   async capturarHTTP(prefixo: string, resposta: APIResponse | Response, corpoEnviado?: unknown, metodoEnviado?: string) {\n    at Sessao.comparar (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:41:57)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:33:11\n    at executarCaso (/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts:111:5)\n    at /workspace/teste_qa_verzel/Testes Automatizados/tests/interface/frete-limites-subtotal.spec.ts:14:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T19:57:08.660Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "api-independente-inicio.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-inicio-json-627c1546b9b8e8e34e49e2e11b0b4cd55018f657.json"
+                    },
+                    {
+                      "name": "api-independente-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-requisicao-json-647d5ae886f1fcf9edd91f90debf5a74d9900111.json"
+                    },
+                    {
+                      "name": "api-independente-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-resposta-http-json-b9ba33a160b6ba75751e6b0a5123359001b7afd0.json"
+                    },
+                    {
+                      "name": "api-independente-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-corpo-recebido-json-b460dbcbf1087c119c79ca23dabe545676a4918d.json"
+                    },
+                    {
+                      "name": "api-independente-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-independente-comando-txt-9412ebe0a5fff94d79fed811d19bdd9baeabb3bc.txt"
+                    },
+                    {
+                      "name": "api-interface-requisicao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-requisicao-json-d20536eade27b88252265ee195abcb9f75a5e346.json"
+                    },
+                    {
+                      "name": "api-interface-resposta-http.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-resposta-http-json-d497effb043f3a96ce5338088a73964ae60d682b.json"
+                    },
+                    {
+                      "name": "api-interface-corpo-recebido.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-corpo-recebido-json-302936117b937efa61b494ee707f9fd33d6d67cf.json"
+                    },
+                    {
+                      "name": "api-interface-comando.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/api-interface-comando-txt-8c3400592610bd1000b381a1b28a273d2bfb3ded.txt"
+                    },
+                    {
+                      "name": "carrinho-estado-interface.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-estado-interface-json-a678da4aa8d4be8c7dafb029d052cbe71371b165.json"
+                    },
+                    {
+                      "name": "carrinho-texto-tela.txt",
+                      "contentType": "text/plain",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-texto-tela-txt-e13a33c349752b6935c275e9647642b1306d70f0.txt"
+                    },
+                    {
+                      "name": "carrinho-tela.png",
+                      "contentType": "image/png",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/carrinho-tela-png-50c4d0c74d42e82f59cbdffc89a19fabd696cd0a.png"
+                    },
+                    {
+                      "name": "validacao.json",
+                      "contentType": "application/json",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/attachments/validacao-json-98ca9e719494749e752668a8fb331fc2e92adb63.json"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/verzel-playwright-reteste-20261009-165638/artefatos/interface-frete-limites-subtotal-Frete-nos-limites-P007-1-interface-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/teste_qa_verzel/Testes Automatizados/tests/suporte/conferencia.ts",
+                    "column": 57,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d70a278f88922318af1a-a077d819307000f994ed",
+          "file": "interface/frete-limites-subtotal.spec.ts",
+          "line": 13,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-09T19:56:41.294Z",
+    "duration": 30424.082,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 9,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "workerIndex": 5,
+  "parallelIndex": 0,
+  "status": "passed",
+  "duration": 111,
+  "errors": [],
+  "stdout": [],
+  "stderr": [],
+  "retry": 0,
+  "startTime": "2026-10-09T19:58:35.749Z",
+  "annotations": [],
+  "attachments": [
+    {
+      "name": "api-inicio.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-inicio-json-1cd6f5e1fa68c469b47cf229b90675e39eddc180.json"
+    },
+    {
+      "name": "api-requisicao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-requisicao-json-4558812bce732d4ee452ffbc1b6e1df66b89c71d.json"
+    },
+    {
+      "name": "api-resposta-http.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-resposta-http-json-25f725d562ed511386f28ecb2170fbeb0955cf3f.json"
+    },
+    {
+      "name": "api-corpo-recebido.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-corpo-recebido-json-01f393e2371b2f15815c6a6d1444266c48743b85.json"
+    },
+    {
+      "name": "api-comando.txt",
+      "contentType": "text/plain",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/api-comando-txt-e6dbfcfa737f27136a314e58870f0b445a330e0b.txt"
+    },
+    {
+      "name": "validacao.json",
+      "contentType": "application/json",
+      "path": "/tmp/verzel-playwright-reteste-20261009-165827/artefatos/api-produto-duplicado-Produto-duplicado-calculo-api/attachments/validacao-json-c4d88f8e05c308695fb9c6de767c1c3c8263119e.json"
+    }
+  ]
+}

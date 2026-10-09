@@ -1,0 +1,61 @@
+{
+  "horario": "2026-10-09T19:58:35.561Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/api/pedidos",
+  "status": 201,
+  "statusText": "Created",
+  "cabecalhos": [
+    {
+      "name": "date",
+      "value": "Fri, 09 Oct 2026 19:58:35 GMT"
+    },
+    {
+      "name": "content-type",
+      "value": "application/json; charset=utf-8"
+    },
+    {
+      "name": "content-length",
+      "value": "363"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "access-control-allow-headers",
+      "value": "content-type"
+    },
+    {
+      "name": "access-control-allow-methods",
+      "value": "GET, POST, OPTIONS"
+    },
+    {
+      "name": "report-to",
+      "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Yftk6%2B24C31n6DSysAD1alY9a775YH5zDMv9tHPSws%2FyRDz5iPbLCML8HBYNZwTT34GuML4KfGCwKefqdGhnoCB9XsEKoYtO17NkXM8xs%2BcwTV9vTzoIR1a3xgIypyFCqTOqIMQMukq3GfR1HQ5xm2DcNGAenyDeqK%2BTNeYeeIM%3D\"}]}"
+    },
+    {
+      "name": "nel",
+      "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    },
+    {
+      "name": "server",
+      "value": "envoy"
+    },
+    {
+      "name": "cf-ray",
+      "value": "a47ff6001855ad44-SJC"
+    },
+    {
+      "name": "alt-svc",
+      "value": "h3=\":443\"; ma=86400"
+    },
+    {
+      "name": "x-envoy-upstream-service-time",
+      "value": "9"
+    },
+    {
+      "name": "connection",
+      "value": "close"
+    }
+  ],
+  "corpoRecebido": "{\"numero\":\"VZ-876046\",\"criadoEm\":\"2026-10-09T19:58:35.542Z\",\"cliente\":{\"nome\":\"Maria Silva\",\"email\":\"maria@exemplo.com\",\"cep\":\"01310100\"},\"itens\":[{\"produtoId\":\"P005\",\"nome\":\"Mochila Urbana 20L\",\"precoUnitario\":100,\"quantidade\":1,\"total\":100}],\"subtotal\":100,\"desconto\":0,\"frete\":19.9,\"freteGratis\":false,\"valorFaltanteFreteGratis\":100,\"total\":119.9,\"cupom\":null}"
+}

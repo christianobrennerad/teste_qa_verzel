@@ -1,0 +1,14 @@
+{
+  "horario": "2026-10-09T19:57:07.111Z",
+  "url": "https://verzel-store.qa-test-verzel-store.workers.dev/carrinho",
+  "valores": {
+    "subtotal": "R$ 200,00",
+    "desconto": "R$ 0,00",
+    "frete": "R$ 19,90",
+    "total": "R$ 219,90"
+  },
+  "avisoFrete": "Faltam R$ 0,00 para o frete grátis.",
+  "quantidadeCupons": 0,
+  "cupom": null,
+  "textoTela": "Ambiente de teste técnico do processo seletivo de QA da Verzel. Leia a documentação antes de começar.\n\nverzel\nstore\nProdutos\nDocumentação\nCarrinho\n2\nCarrinho\nEsvaziar carrinho\nMochila Urbana 20L\n\nR$ 100,00 cada\n\n-\n2\n+\n\nR$ 200,00\n\nRemover\nCupom de desconto\nAplicar cupom\nResumo do pedido\nSubtotal\nR$ 200,00\nDesconto\nR$ 0,00\nFrete\nR$ 19,90\nTotal\nR$ 219,90\n\nFaltam R$ 0,00 para o frete grátis.\n\nFinalizar compra\n\nVerzel Store é um ambiente fictício criado para o teste técnico do processo seletivo de QA da Verzel. Nenhuma compra é real."
+}

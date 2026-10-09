@@ -1,0 +1,14 @@
+{
+  "inicio": "2026-10-09T16:58:27.772121-03:00",
+  "fim": "2026-10-09T16:58:53.235496-03:00",
+  "timezone": "America/Fortaleza",
+  "comando": "npm run test:reteste",
+  "diretorio": "/workspace/teste_qa_verzel/Testes Automatizados",
+  "codigoSaida": 1,
+  "playwright": "1.64.0",
+  "node": "v24.19.0",
+  "chromium": "Chromium 151.0.7922.173 built on Debian GNU/Linux 13 (trixie)",
+  "certificadosVerificados": true,
+  "bypassTLS": false,
+  "commitBase": "ab8fa2342f69f2c894d62e07fb722959cfcb0808"
+}
